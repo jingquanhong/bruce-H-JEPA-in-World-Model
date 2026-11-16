@@ -1,0 +1,84 @@
+sim:
+  dt: 0.0005
+  substeps: 1
+  backend: gpu
+record_hz: 100
+episode_seconds: 3.5
+warmup_steps: 10
+scenes:
+- id: box_04
+  kind: step_over
+  h_obs: 0.04
+  box:
+    cx: 0.1
+    hx: 0.025
+    hy: 0.15
+- id: box_06
+  kind: step_over
+  h_obs: 0.06
+  box:
+    cx: 0.1
+    hx: 0.025
+    hy: 0.15
+- id: box_08
+  kind: step_over
+  h_obs: 0.08
+  box:
+    cx: 0.1
+    hx: 0.025
+    hy: 0.15
+- id: step_10
+  kind: step_up
+  h_plat: 0.1
+  x_plat: 0.14
+  T_a: 1.0
+  T_b: 0.8
+  T_c: 1.0
+  T_d: 0.5
+  box:
+    cx: 0.34
+    hx: 0.25
+    hy: 0.15
+domain_randomization:
+  box_x_jitter: 0.02
+  bx0:
+    choices:
+    - -0.06
+    - -0.03
+    - 0.0
+  lift_extra:
+    choices:
+    - 0.005
+    - 0.045
+    - 0.08
+  T_lipm:
+    choices:
+    - 0.8
+    - 1.2
+  friction:
+    range:
+    - 0.6
+    - 1.2
+  kp_scale:
+    range:
+    - 0.85
+    - 1.15
+sensor:
+  foot_contact_force_thresh: 5.0
+  imu_acc_noise: 0.01
+  imu_gyro_noise: 0.01
+  imu_bias_rw: 0.0001
+  joint_q_noise: 0.002
+  joint_dq_noise: 0.002
+  torque_gain_std: 0.05
+  exp_filter_w: 0.9
+  est_pos_sigma: 0.01
+  est_vel_sigma: 0.05
+  est_acc_sigma: 0.1
+  est_yaw_sigma: 0.0349
+output:
+  dataset_name: bruce_assisted_reference_50
+  episodes: 50
+  seed: 0
+  cache_dir: null
+control_mode: assisted

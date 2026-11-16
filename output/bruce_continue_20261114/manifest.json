@@ -1,0 +1,54 @@
+{
+  "snapshot_kind": "20261114_support_geometry_repair_and_failed_trials",
+  "sources": {
+    "scripts/data/bruce/test_collection.py": "46270c67cd819a508b2cbc10caabd83aae2ca2ca24ec22f87450b6a0a839113c",
+    "scripts/data/bruce/validate_physics.py": "656521c4e250807ec493d525937dbd0c41a9991d403343b4d495e0bcd3fd6a62",
+    "scripts/data/bruce/collect_bruce.py": "a1fe5761f4e9252e839eab33c723ee79e6c7a2222a76eebf073b67fb5664106c",
+    "scripts/data/bruce/present_collection.py": "381b613a0a35cf1fadc4b6b20d28723d136be95b11524e7df3c92aeedf2e46df",
+    "scripts/data/bruce/standing_wbc.py": "95ad3d8d2531932f7e1ca773cfd1d76e32e4a6cc2e32446af7c00852653f8a13",
+    "scripts/data/bruce/bruce_signals.py": "eee6f5b8309cb68d933d07aedf2954b6e3071b52ebf7ef610f123ad73d9c8fdb",
+    "scripts/data/bruce/test_support.py": "bd956c9b200cf5452c9420b20276a350440a06c5c7cf51a432e34ba72a8b5fae",
+    "scripts/data/bruce/qualification.py": "ac9519ededc9862f6031418bc525c02cf5c031cd1ea377fc4504e8ce3ffbca51",
+    "scripts/data/bruce/support_wbc.py": "38725ff6a50e3e89834a9b47c4bebc357f2f0aad8fd0c2cf8d00a10759193219",
+    "scripts/data/bruce/verify_physics_hjepa_read.py": "37b8bdeb8f049e5fbdf3bad84919e1260dce53f0899485d9301b8dc22fdfa469",
+    "scripts/data/bruce/check_dataset.py": "53a668271f63118a67c0b7dd63d597b8d779b4b2fe0248bad0fddd403a035c62",
+    "scripts/data/bruce/make_figures.py": "6f63af4df2a68d459b3728137c105dbf491dfdb9ae0dead84289bd25c92a5b84",
+    "scripts/data/bruce/bruce_expert.py": "b5a8170a81638604a75f6498313ef66dd48e69fe4d0c3329bd4acc48f6758405",
+    "scripts/data/bruce/probe_support.py": "b6366b3e6925a56ee713fb01ccafff7b7e43b96c83e29a0d2aac47033757ac93",
+    "scripts/data/bruce/check_physics_record.py": "f15d7caab4dd8416a91c7e25c5eb562acaac017a77079dc13d620ecdae0c7454",
+    "scripts/data/bruce/audit_reference.py": "422cf97972262b438932da2057a1a085c3b192069bbd85f8e0f9ce294dcb2585",
+    "scripts/data/bruce/support_geometry.py": "fb02acea7245be505151724aacbf55647804eb0b97a9e7e86fecd342807fef70",
+    "scripts/data/bruce/bruce_env.py": "6c6a60dd3c5140ae983cb9956c7e5d48c2f5c9a6dc12837705b35b3d9d25e1c9",
+    "scripts/data/bruce/support_reference.py": "8f73d0d46b8c2dcbebe200fb250ffb70c1c9f862458a3ee1ec3feca21b6d6f26",
+    "scripts/data/bruce/verify_hjepa_read.py": "a3f9637f1a48cf138b2b0f5968a2b5a2e8008018f3758d42fc5303e216e85eeb",
+    "BRUCE仿真命令.sh": "4fb23a5f4b44ba7b9fb74c39716eaec437646bc5d25fe22f2907fd74ed80cdcf",
+    "BRUCE仿真命令.txt": "66f3deb5c199b2c9f21a9a7c2ae0e4826dc144573f1528bfccd9c7e645d95637",
+    "BRUCE仿真说明.md": "01e1ee25e5b2bfae3f9a768a0c5b476fd575a2e3312d0a3c047dbcbc49a40eab",
+    "scripts/data/bruce/README.md": "02572b7925b9104e158587876fc9c2a9d63da5c9f3500eeabc85f81f1c19eb86",
+    "output/bruce_continue_20261114/README.md": "9c35b519ce57b5833cfc4defb81073a4325614a15d046650dc0d0611d00f4553",
+    "BRUCE-OP-main/Simulation/models/bruce/urdf/bruce_physical.urdf": "950dfffd951d47ebc9cd02fc69133cb7315040c301417a77dc339cc89ec1079e"
+  },
+  "verified_artifacts": {
+    "output/bruce_continue_20261114/verified/video_review.png": "24f4d0e046a8712504a3b344ea35ed754a39f8e224e17b6e6ea3750447169d0b",
+    "output/bruce_continue_20261114/verified/box08.json": "dd2961756d9f502354c8ed323c364db19061c24269970d002b8ab460a3a2d870",
+    "output/bruce_continue_20261114/verified/box08_integrity.json": "c4dc5467a03a99d46164e8a3eebe3de588642e4f8651159a15b6bd51d34ffb15",
+    "output/bruce_continue_20261114/verified/stand.h5": "c188f97f9898256b54c11b815a7b31f9e7df5c6d22e986f6e9bda0232f4e62cf",
+    "output/bruce_continue_20261114/verified/stand_integrity.json": "33e88b6b5ac03cca1d5908cd319e15c33c6d5275c5da9c1e19de9fbf7872c022",
+    "output/bruce_continue_20261114/verified/box08.mp4": "a31b3ae3a2dc3f7c0471d8f4542c0bf5e9c61a723cbf4eb66231ddc3a2be4f58",
+    "output/bruce_continue_20261114/verified/stand.json": "8ae35aa528b28d7eb296aa26ec1247d7facf6a341f40931cb5d1954c5192edc6",
+    "output/bruce_continue_20261114/verified/stand.mp4": "299c26ad1c3126fbf0415a24c8d4a3c7850ef15787b52c61e97288ba77189d6e",
+    "output/bruce_continue_20261114/verified/box08.h5": "8b1254bd4deb66fd88392cdba8532e93775ef1111e20f4029c83a34a4be83077",
+    "output/bruce_continue_20261114/verified/support.json": "28c2a480c69a8c23a8f395caa43a072ebed0ae681f70ecbc61096e627318b0f0",
+    "output/bruce_continue_20261114/verified/support.mp4": "a1db346b93dd85f341dee1c873fbb45650609c3dcf79ac71eada15c2397fb10a",
+    "output/bruce_continue_20261114/verified/support_integrity.json": "1259492b017c7db8a3844feae1e0f8260b41761ae46a184008074727ce518e4b",
+    "output/bruce_continue_20261114/verified/support.h5": "e393789a8be147ee196ad27805d7caeeaba690983f6241b990fe497fa1510c2d"
+  },
+  "historical_hdf5_unchanged": {
+    "bruce_assisted_reference_50.h5": true,
+    "bruce_joint_trials_40.h5": true
+  },
+  "previous_v4_hdf5_unchanged": {
+    "output/bruce_repair/validation_v4/stand.h5": true,
+    "output/bruce_repair/validation_v4/box08.h5": true
+  }
+}

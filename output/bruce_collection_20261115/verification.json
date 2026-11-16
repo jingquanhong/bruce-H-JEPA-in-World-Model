@@ -1,0 +1,1218 @@
+[
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_baseline/attempt_000.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 137,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5540
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_baseline/attempt_001.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 179,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 7200
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_baseline/attempt_002.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 115,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 4650
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_baseline/attempt_003.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 130,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5260
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_baseline/attempt_004.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 120,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 4860
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_far_high_friction/attempt_000.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 132,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5350
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_far_high_friction/attempt_001.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 120,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 4860
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_far_high_friction/attempt_002.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 119,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 4830
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_far_high_friction/attempt_003.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 118,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 4780
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_far_high_friction/attempt_004.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 114,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 4610
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu06_verified/attempt_000.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 134,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5410
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu06_verified/attempt_001.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 136,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5510
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu06_verified/attempt_002.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 130,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5250
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu06_verified/attempt_003.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 145,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5860
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu06_verified/attempt_004.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 135,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5450
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_000.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 136,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5510
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_001.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 138,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5570
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_002.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 136,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5510
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_003.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 140,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5660
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_004.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 130,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5250
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_005.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 126,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5080
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_thin_low_friction/attempt_000.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 142,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5720
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_thin_low_friction/attempt_001.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 144,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5830
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_thin_low_friction/attempt_002.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 126,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5110
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_thin_low_friction/attempt_003.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 125,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5060
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_thin_low_friction/attempt_004.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 132,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5330
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_000.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 136,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5490
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_001.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 139,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5620
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_002.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 136,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5490
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_003.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 139,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5600
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_004.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 132,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 5350
+    }
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_005.h5",
+    "recording_valid": true,
+    "checks": {
+      "nonempty": true,
+      "aligned_columns": true,
+      "pixels": true,
+      "proprio": true,
+      "timing": true,
+      "episode": true,
+      "finite": true,
+      "executed_action": true,
+      "no_base_actuation": true,
+      "joint_torque_limit": true,
+      "coupled_current_limit": true,
+      "reset_acceleration_cleared": true,
+      "model_hash": true
+    },
+    "frames": 123,
+    "autonomous_crossing_success": false,
+    "note": "Recording integrity does not imply successful obstacle crossing.",
+    "trace": {
+      "valid": true,
+      "checks": {
+        "trace_hash": true,
+        "finite": true,
+        "physics_timing": true,
+        "aligned_physics": true,
+        "observation_before_action": true,
+        "actual_action_all_substeps": true,
+        "base_force_zero": true,
+        "torque_limit_2khz": true,
+        "motor_current_limit_2khz": true,
+        "contact_count_matches": true
+      },
+      "physics_steps": 4960
+    }
+  }
+]

@@ -1,0 +1,24 @@
+[ 3509.689912] Khadas kernel: usb 2-1: new high-speed USB device number 12 using ehci-platform
+[ 3509.841802] Khadas kernel: usb 2-1: New USB device found, idVendor=05e3, idProduct=0610, bcdDevice=61.60
+[ 3509.841812] Khadas kernel: usb 2-1: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+[ 3509.841816] Khadas kernel: usb 2-1: Product: USB2.0 Hub
+[ 3509.842642] Khadas kernel: hub 2-1:1.0: USB hub found
+[ 3509.842997] Khadas kernel: hub 2-1:1.0: 4 ports detected
+[ 3510.129918] Khadas kernel: usb 2-1.2: new high-speed USB device number 13 using ehci-platform
+[ 3510.273530] Khadas kernel: usb 2-1.2: New USB device found, idVendor=2bc5, idProduct=050e, bcdDevice= 1.00
+[ 3510.273540] Khadas kernel: usb 2-1.2: New USB device strings: Mfr=2, Product=1, SerialNumber=3
+[ 3510.273545] Khadas kernel: usb 2-1.2: Product: USB 2.0 Camera
+[ 3510.273550] Khadas kernel: usb 2-1.2: Manufacturer: Sonix Technology Co., Ltd.
+[ 3510.273554] Khadas kernel: usb 2-1.2: SerialNumber: AU1SB3300W1
+[ 3510.283939] Khadas kernel: uvcvideo: Found UVC 1.00 device USB 2.0 Camera (2bc5:050e)
+[ 3510.769933] Khadas kernel: usb 2-1.4: new high-speed USB device number 14 using ehci-platform
+[ 3510.867396] Khadas kernel: usb 2-1.4: New USB device found, idVendor=2bc5, idProduct=060e, bcdDevice= 0.01
+[ 3510.867407] Khadas kernel: usb 2-1.4: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[ 3510.867411] Khadas kernel: usb 2-1.4: Product: ORBBEC Depth Sensor
+[ 3510.867416] Khadas kernel: usb 2-1.4: Manufacturer: Orbbec(R)
+[ 4012.309285] Khadas kernel: uvcvideo: Found UVC 1.00 device USB 2.0 Camera (2bc5:050e)
+[ 4033.882539] Khadas kernel: usb 2-1.2: usbfs: process 13047 (camera_probe) did not claim interface 1 before use
+[ 4034.133953] Khadas kernel: uvcvideo: Found UVC 1.00 device USB 2.0 Camera (2bc5:050e)
+[ 4034.138507] Khadas kernel: uvcvideo: No streaming interface found for terminal 5.
+[ 4303.688643] Khadas kernel: usb 2-1.2: usbfs: process 13663 (camera_probe) did not claim interface 1 before use
+[ 4305.071151] Khadas kernel: uvcvideo: Found UVC 1.00 device USB 2.0 Camera (2bc5:050e)

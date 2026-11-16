@@ -1,0 +1,10 @@
+{
+  "requested_total_lateral_translation_m": 0.24,
+  "method": "lead foot steps sideways, follower catches up",
+  "single_foot_advance_candidate_m": 0.04,
+  "nominal_pair_count": 6,
+  "status": "planned_not_validated_or_armed",
+  "prerequisite": "validate one actual liftoff/landing pair and measured ground translation before chaining",
+  "actual_displacement_source": "ground markings or external measurement, not encoder odometry",
+  "unattended_execution": false
+}

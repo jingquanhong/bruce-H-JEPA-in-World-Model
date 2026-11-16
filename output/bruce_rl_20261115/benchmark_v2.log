@@ -1,0 +1,13 @@
+[38;5;226m[Genesis] [15:37:30] [WARNING] Scene.show_FPS is deprecated. Please use Scene.options.profiling.show_FPS[0m
+[38;5;226m[Genesis] [15:37:30] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [15:37:30] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [15:37:30] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [15:37:30] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [15:37:30] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [15:37:31] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (3, 5), (8, 10). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+0 0.09128333628177643 {'episodes': 0, 'screen_successes': 0, 'reward_sum': 0.0, 'duration_sum': 0.0, 'max_x': -0.03452260047197342, 'mean_x': -0.03494234383106232, 'timeouts': 0}
+20 0.09736526012420654 {'episodes': 0, 'screen_successes': 0, 'reward_sum': 0.0, 'duration_sum': 0.0, 'max_x': 0.05155310034751892, 'mean_x': -0.006804581731557846, 'timeouts': 0}
+40 -0.006296233274042606 {'episodes': 0, 'screen_successes': 0, 'reward_sum': 0.0, 'duration_sum': 0.0, 'max_x': 0.26600292325019836, 'mean_x': 0.03715149685740471, 'timeouts': 0}
+60 0.060716982930898666 {'episodes': 1, 'screen_successes': 0, 'reward_sum': 2.7117247581481934, 'duration_sum': 1.22, 'max_x': 0.34149235486984253, 'mean_x': 0.06601273268461227, 'timeouts': 0}
+80 0.05891378968954086 {'episodes': 1, 'screen_successes': 0, 'reward_sum': -3.5161328315734863, 'duration_sum': 1.62, 'max_x': 0.3566870391368866, 'mean_x': -5.398539360612631e-05, 'timeouts': 0}
+{"envs": 128, "steps": 100, "seconds": 4.289748126997438, "obs_dim": 72, "screen_successes": 0, "qualified_successes": 0}

@@ -1,0 +1,96 @@
+{
+  "status": "OFFLINE_MODEL_ONLY",
+  "cases": [
+    {
+      "weight": 0,
+      "status": "INTEGRATED_MODEL_ONLY",
+      "failure": null,
+      "last_t": 0.161,
+      "tilt": 0.4248404156466061,
+      "angular_vel": [
+        -0.03531233181154148,
+        1.5882890194807744,
+        -0.015139526229907148
+      ],
+      "vz": 0.20773139036834062,
+      "peak_current": 8.83151413361729
+    },
+    {
+      "weight": 0.1,
+      "status": "INTEGRATED_MODEL_ONLY",
+      "failure": null,
+      "last_t": 0.161,
+      "tilt": 0.22871583647187918,
+      "angular_vel": [
+        -0.03439438212158419,
+        1.5447563763995142,
+        -0.015037876700311373
+      ],
+      "vz": 0.20773424247962421,
+      "peak_current": 8.831777948197981
+    },
+    {
+      "weight": 1,
+      "status": "INTEGRATED_MODEL_ONLY",
+      "failure": null,
+      "last_t": 0.161,
+      "tilt": 0.1618359252441646,
+      "angular_vel": [
+        -0.03426954748379618,
+        1.5346780536369609,
+        -0.01480957845375829
+      ],
+      "vz": 0.20773489229931008,
+      "peak_current": 8.831961678941024
+    },
+    {
+      "weight": 10,
+      "status": "INTEGRATED_MODEL_ONLY",
+      "failure": null,
+      "last_t": 0.161,
+      "tilt": 0.1535250857272543,
+      "angular_vel": [
+        -0.03427507875297384,
+        1.533802335319037,
+        -0.014762384924651824
+      ],
+      "vz": 0.20773494654983493,
+      "peak_current": 8.831994818381025
+    },
+    {
+      "weight": 100,
+      "status": "REJECTED",
+      "failure": {
+        "time_s": 0.14400000000000002,
+        "reason": "QP maximum iterations reached"
+      },
+      "last_t": 0.14300000000000002,
+      "tilt": 0.45023640724995884,
+      "angular_vel": [
+        -4.545247126134052e-07,
+        1.150373889183481e-05,
+        2.1651864198423378e-08
+      ],
+      "vz": 0.3509342219974003,
+      "peak_current": 8.831998396543979
+    },
+    {
+      "weight": 1000,
+      "status": "REJECTED",
+      "failure": {
+        "time_s": 0.14400000000000002,
+        "reason": "QP solved inaccurate"
+      },
+      "last_t": 0.14300000000000002,
+      "tilt": 0.45031948090329166,
+      "angular_vel": [
+        -4.545094016549738e-08,
+        1.1498260739711108e-06,
+        2.166224076268425e-09
+      ],
+      "vz": 0.3509342236086394,
+      "peak_current": 8.831998757206668
+    }
+  ],
+  "hardware_actuation": false
+}

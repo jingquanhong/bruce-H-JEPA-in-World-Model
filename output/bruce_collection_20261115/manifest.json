@@ -1,0 +1,482 @@
+[
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_baseline/attempt_000.h5",
+    "sha256": "f47bc814c9a34ed0ebe88bb8c686ff931dd0f65779a1354ed297f1da7871d160",
+    "bytes": 379860
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_baseline/attempt_000.physics.npz",
+    "sha256": "290f88e0411e3cf9ad948a2167799d2a41111674c8e1cae07c5a86d938d28b8c",
+    "bytes": 1923258
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_baseline/attempt_000.mp4",
+    "sha256": "9904d7b02acf6532b59b201dc88a63266aaa7012f035ec312eb5035be8d99579",
+    "bytes": 197135
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_baseline/attempt_001.h5",
+    "sha256": "b7dbdd24d42cef807e82f3adf583e8688d6fa23df82a52f4f764446a8b144c35",
+    "bytes": 506035
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_baseline/attempt_001.physics.npz",
+    "sha256": "897a0b2eda66e3e3ff614a10b71cf8038584850bf3b8b534a3b061e2e29ddde6",
+    "bytes": 2618645
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_baseline/attempt_001.mp4",
+    "sha256": "0f838d94122db57dcc8705999ebbf5b144d88040618f916c5469b21ba7ddfbac",
+    "bytes": 290024
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_baseline/attempt_002.h5",
+    "sha256": "dc9368530b69dda405cb8f7de559294eeff6b85ddda64602a8f962830715950c",
+    "bytes": 331882
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_baseline/attempt_002.physics.npz",
+    "sha256": "0883cef82cf613d7beb6c4cef3769056f17b5581b5801f86fcf7032586ba0bb4",
+    "bytes": 1610675
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_baseline/attempt_002.mp4",
+    "sha256": "41013568244f05871b61253e0fcc4276ad63a37085b66aea4c068a09cbcae75d",
+    "bytes": 163457
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_baseline/attempt_003.h5",
+    "sha256": "f6bc88f52e4425f74613a6c2342b6db05bbfef1913552885b8b9677e26804f50",
+    "bytes": 373064
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_baseline/attempt_003.physics.npz",
+    "sha256": "dd71dae62e45acdeccd362af7413a27e0e0ac4a17f321fdfe6ace31fc6a05851",
+    "bytes": 1832845
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_baseline/attempt_003.mp4",
+    "sha256": "cde0208e43d427e60887ba9abb4d760c15a17b8c8be04dc1424132650ac928ac",
+    "bytes": 196200
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_baseline/attempt_004.h5",
+    "sha256": "97937fe205cac27e383c8d6cafde83a8ac14376c0b6aaeee09c106ecf4a3e298",
+    "bytes": 345714
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_baseline/attempt_004.physics.npz",
+    "sha256": "5b720085ed09e0410ac433431f3e9b33a6f941f24adfd51e17ef250569054639",
+    "bytes": 1685990
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_baseline/attempt_004.mp4",
+    "sha256": "4df6c3616da72073353319be17840a504b6b4ccc1a6f996d98e7d6a421ac7e9b",
+    "bytes": 175342
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_far_high_friction/attempt_000.h5",
+    "sha256": "2a11021177922d77ee4bf2a766eba2115547c1ca574d6399cdae55e06a8c63b0",
+    "bytes": 377550
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_far_high_friction/attempt_000.physics.npz",
+    "sha256": "c4826ff61548256b13adf5e3b2a7a83911b81d124a9e76543ba6983a3ac5b981",
+    "bytes": 1865323
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_far_high_friction/attempt_000.mp4",
+    "sha256": "01d25768e8a6697c38f12fa1913b98deb7cc795790adcee842b66b2c54868d34",
+    "bytes": 201170
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_far_high_friction/attempt_001.h5",
+    "sha256": "50df576d7768784e64097297567fabd8cc74e92d2f16899ea9e7ba916e56aa76",
+    "bytes": 348275
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_far_high_friction/attempt_001.physics.npz",
+    "sha256": "aac02e4eb54f0c8db802737d166c9eed48edf19ce195681e1ab579581b5f5868",
+    "bytes": 1678228
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_far_high_friction/attempt_001.mp4",
+    "sha256": "f481f095c840df7e52ec9cd273fb116c05861fafc0773648d91b80d77b569c48",
+    "bytes": 180112
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_far_high_friction/attempt_002.h5",
+    "sha256": "ab18cb486a84d1d4dbb064de4fef9f38496329fed9682e63d70ed52765c13ff1",
+    "bytes": 345686
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_far_high_friction/attempt_002.physics.npz",
+    "sha256": "d1355c94e2be32d74c9d60e32cc074f0f5b9127e7f97f4bd97b15853b0ad5443",
+    "bytes": 1665631
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_far_high_friction/attempt_002.mp4",
+    "sha256": "7ab1733f5c85c583af9ce28d48cb901b6c7bf63cc9334b33557d38487bdde1a1",
+    "bytes": 175381
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_far_high_friction/attempt_003.h5",
+    "sha256": "5d85577698182d1331c254cc2d7e82fbea7da15b8b14f4b596a876ab78c5403a",
+    "bytes": 345297
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_far_high_friction/attempt_003.physics.npz",
+    "sha256": "55344f35985e67199d53b7a076ff63148e05977e817156638c3a6f5e0e4872c9",
+    "bytes": 1644970
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_far_high_friction/attempt_003.mp4",
+    "sha256": "b3a695641a18315a671d383a6013e9406f77409f9a0c0bb3d28fe26dd720dbac",
+    "bytes": 179516
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_far_high_friction/attempt_004.h5",
+    "sha256": "4be7dff98f07df9e1f10078d96a42f52c7c3b32c3e131639ec757eff2ceea65f",
+    "bytes": 328938
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_far_high_friction/attempt_004.physics.npz",
+    "sha256": "7bb25cee3280ec32f3a60a4096cf833954318428ede04ee75505085d2711ce8d",
+    "bytes": 1577684
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_far_high_friction/attempt_004.mp4",
+    "sha256": "0aefaa210fa1bec689d49392fcadf99629c30677521dbfb86b3fe1e4a56e3e0e",
+    "bytes": 168896
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu06_verified/attempt_000.h5",
+    "sha256": "a765fb1bde3c43966a9df639b0e14d5be889cd64836e7df44d545a27d601c51f",
+    "bytes": 376679
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu06_verified/attempt_000.physics.npz",
+    "sha256": "c40bbd4abb4fd7d2c5a1812d49cc00ad9a743296426a8f792f611d24e6cbdd7f",
+    "bytes": 1872001
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu06_verified/attempt_000.mp4",
+    "sha256": "4d90459c8488bfd6911c231045b4041be472b9d631c29e0ffbaa6150b64b3db6",
+    "bytes": 193621
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu06_verified/attempt_001.h5",
+    "sha256": "e505ea3f9683c6485ac62be1eaf8780dbade941da01ecc05946bc6f408b7a5d1",
+    "bytes": 380785
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu06_verified/attempt_001.physics.npz",
+    "sha256": "76c888e14828c49ab7025473754cf40892aa36fee16f8d877441e88eee6a74a7",
+    "bytes": 1915631
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu06_verified/attempt_001.mp4",
+    "sha256": "74445c9bb2121a8878eacf11a089927aa43c49aba4721efb2bb094532b5eda44",
+    "bytes": 196333
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu06_verified/attempt_002.h5",
+    "sha256": "14645afdb1eca868c6ab6c6a5a8150746deabf50341f537eca64f63c27056f8c",
+    "bytes": 372982
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu06_verified/attempt_002.physics.npz",
+    "sha256": "46407345443ff868f458f12bc30c7e013a6e79df9c242558ee1305060ff7af98",
+    "bytes": 1845491
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu06_verified/attempt_002.mp4",
+    "sha256": "bb4137832893379e26481a74cffd7bbbd45730a59cdf53a13df0f3fbcb7b966e",
+    "bytes": 191621
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu06_verified/attempt_003.h5",
+    "sha256": "b34026420f1e296e88e77837f1e34f98d9fd53ae71af3d3c579f2463dff1b202",
+    "bytes": 413697
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu06_verified/attempt_003.physics.npz",
+    "sha256": "745d6d4852e2b5824ad69ed6039ed1eb7f631f1ea9ba8901927422096b64dcc0",
+    "bytes": 2070729
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu06_verified/attempt_003.mp4",
+    "sha256": "8de23d0236a7580192a91768a2581ad71126674803953b245d0139bb85e8818c",
+    "bytes": 216034
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu06_verified/attempt_004.h5",
+    "sha256": "2d2cb9db31408b3ef73e26cb47cc1cc977fe489ecc894a6a2583b2ee19f47368",
+    "bytes": 389181
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu06_verified/attempt_004.physics.npz",
+    "sha256": "75b1c7794e331a850744af56bf7613de4faa98a44cf0881d6b8a3ef6d758e030",
+    "bytes": 1893927
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu06_verified/attempt_004.mp4",
+    "sha256": "7416cb7da6765d37d657d5034a1a8e0581dc7f7f632eca11f1852a1734b07c6f",
+    "bytes": 207539
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_000.h5",
+    "sha256": "505d8a28bd28d42186b4a3d3122e0186de80fab5d3b8be85cbf4ab127fef827e",
+    "bytes": 382420
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_000.physics.npz",
+    "sha256": "80f82753fe3da81aeb8f45bf42b1ea4eeebd9a826df60b2ba895a09b82d73daf",
+    "bytes": 1908259
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_000.mp4",
+    "sha256": "9f51f71b431c27ee9440ca0e38428d7d619865559711df1c976164da15098ef1",
+    "bytes": 197504
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_001.h5",
+    "sha256": "a51c32c961f2735408aad44e04ffb26ae901a94be718554ac2410a78900caaee",
+    "bytes": 388160
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_001.physics.npz",
+    "sha256": "dc79dfcc6ffd45ae0a9cbc7f71969a3f5f5d70f1b51ac3e75e03602e6efd25f0",
+    "bytes": 1930327
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_001.mp4",
+    "sha256": "5f9efb84b467b41b01827c5fe769e6968810b3dd3a7825ef2b602d5067627ac6",
+    "bytes": 201841
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_002.h5",
+    "sha256": "d5630205f51b91cf44d73dd522e983c1035fc551c4ccbd2b20e996ba899f825d",
+    "bytes": 398004
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_002.physics.npz",
+    "sha256": "52df8d09118a415e90e26155a309f026596b1ca6e136cb20463f2a6e8edd348a",
+    "bytes": 1934380
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_002.mp4",
+    "sha256": "e58c1880995fccd5097c0ab78bc2b61e37102bf2db8ed55c90a847f237c10eb7",
+    "bytes": 218509
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_003.h5",
+    "sha256": "614bafd075585833634f4cb468ce2ad389f7aa63080a0f0f32b7ef8436e5ff17",
+    "bytes": 409433
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_003.physics.npz",
+    "sha256": "ec9e24b2f254eb7609b47ae65764373c77765895281a6a0bc9074919d29a796b",
+    "bytes": 1999935
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_003.mp4",
+    "sha256": "ac1374141711d5a50bfa03593bcd43cd2d47ae126091355aa86f44285bf35a6d",
+    "bytes": 224403
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_004.h5",
+    "sha256": "85ceca88fc1fafba516c714dc39fd02f6da47c36bc5c2f0ffb7f4cb232d064cc",
+    "bytes": 381092
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_004.physics.npz",
+    "sha256": "4b06fee25cd6019a79d4abcdb01733aedce8ef77b4ab9390d4ed13b00e2a2c0f",
+    "bytes": 1838608
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_004.mp4",
+    "sha256": "f2b48150a3c40edf205cdecfc23ed2adcd11dfa93020f75123c42e24a805230e",
+    "bytes": 198018
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_005.h5",
+    "sha256": "85dc71d9a99acff3abdd4dfd2ca37bad9d581328780dcce29175ca4cb7309585",
+    "bytes": 364345
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_005.physics.npz",
+    "sha256": "76e3730dbba930939ee49fb6ef1dfe6b9757c6828c8edb810abc5d9e40ff2c11",
+    "bytes": 1778407
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_mu08_verified/attempt_005.mp4",
+    "sha256": "4c41d1145107b56b68100cc91245b618a2637e002c035e6bcfcb4f95b1a2e54e",
+    "bytes": 177920
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_thin_low_friction/attempt_000.h5",
+    "sha256": "78693838f892d2603b5526c0e1fad2b42fa1654ff42a76ebc0150015ab43ee13",
+    "bytes": 390263
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_thin_low_friction/attempt_000.physics.npz",
+    "sha256": "4b46153ff4aa889de4bb53c070644685ed516ef9b985565853214145ea5c4804",
+    "bytes": 1984789
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_thin_low_friction/attempt_000.mp4",
+    "sha256": "70ec306656c7252affa9be55ceeae2db3893f17f375d711bc07b2244b19d3371",
+    "bytes": 203293
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_thin_low_friction/attempt_001.h5",
+    "sha256": "8c9bb0e083d877078508506db9ee5e678219f25868038d705961cef2ef66267b",
+    "bytes": 396081
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_thin_low_friction/attempt_001.physics.npz",
+    "sha256": "d6559a6910242c27818c532f2511688153b9753d600c3bbcfe13e8d952f5cd36",
+    "bytes": 2029287
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_thin_low_friction/attempt_001.mp4",
+    "sha256": "19cf98da81c92783a8b671b2c7e6edad3069e61206c6c8b1188dcdf0863ab52c",
+    "bytes": 213151
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_thin_low_friction/attempt_002.h5",
+    "sha256": "0b01d8e370b60982bd8ee988ad29a04d169c505147a7a6b36c5a898af90e7f19",
+    "bytes": 363948
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_thin_low_friction/attempt_002.physics.npz",
+    "sha256": "a87a08e30c7f977529773b0038cfa7a39f2207498ddda1ed6061af2548282321",
+    "bytes": 1797066
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_thin_low_friction/attempt_002.mp4",
+    "sha256": "4cf652253b473e323b130797e24a1758089faa3db046957d6ae8394a4b15f763",
+    "bytes": 191331
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_thin_low_friction/attempt_003.h5",
+    "sha256": "a480a03a03383ce1df2ccf53f989ac0128d31a2662e967b5dbec42ef7f75d227",
+    "bytes": 360277
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_thin_low_friction/attempt_003.physics.npz",
+    "sha256": "a2f1ff29d4e30d89f2c6380c23b52f6d045ec7eaafe949e0b5fe17063be40b5e",
+    "bytes": 1759488
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_thin_low_friction/attempt_003.mp4",
+    "sha256": "8a6bc0e886027a01de009b1d025da1d7fb2d14810c50d4c2484cab7c756fc20f",
+    "bytes": 185741
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_thin_low_friction/attempt_004.h5",
+    "sha256": "39d2452e38a2dae8e9cff7ccbbb4098bb3bada8dbb930af27b279e91e9375c1c",
+    "bytes": 377780
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_thin_low_friction/attempt_004.physics.npz",
+    "sha256": "8774606ba8c0eccac99ee5872264de4bef374a711662d91c3f72e11072ad7ea9",
+    "bytes": 1853005
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_thin_low_friction/attempt_004.mp4",
+    "sha256": "16a1b7a4d6f585bc78317576f9074ead6e6623c0c12ed03accbc0a00280a2f30",
+    "bytes": 205341
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_000.h5",
+    "sha256": "ec25deb3f8286202c29c293dba5b49e01a3936b98bba6cd05cea865231bea82a",
+    "bytes": 377525
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_000.physics.npz",
+    "sha256": "112f9598112e03398fb9bab452b5f67901967c32883887934d6959e3197d81a8",
+    "bytes": 1900240
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_000.mp4",
+    "sha256": "2809882e40a41e62d292d99696bdf7e96a8f25191a013a45ac6f453741dd9aaa",
+    "bytes": 198910
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_001.h5",
+    "sha256": "7bc3a8ed74bbece682f5aabf435f9be603f80e7c2958e6e716a8cd43165071e1",
+    "bytes": 384875
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_001.physics.npz",
+    "sha256": "65a1262fe413bf8af53e231cbe77711ddfb9607e0befec84344bf86a36437b5f",
+    "bytes": 1950122
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_001.mp4",
+    "sha256": "21984bb91eea4ef648090717b0f3a9ad2d00f594585b918c78bb205fc6880f5b",
+    "bytes": 202379
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_002.h5",
+    "sha256": "57dc99455c8e6e36f26d216c3f2d0fdebee883dfd6db46c94ad52667588553b0",
+    "bytes": 396356
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_002.physics.npz",
+    "sha256": "ebe3ea31ac8a31032ace94c89e1a121b98c44b1cf8c676919a9798ba805de368",
+    "bytes": 1934652
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_002.mp4",
+    "sha256": "11e920ec713db465a874dbbc2d013235916152bf011b5d1e8bf787de5cdf2ae0",
+    "bytes": 217968
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_003.h5",
+    "sha256": "78573e231528aea744dde008943c53d37fe08569017172737220393a18fdcb9b",
+    "bytes": 405668
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_003.physics.npz",
+    "sha256": "5c56c0ed2d3ab1901d5c6552be25a74d0346a53946eb132f632b81b885dd12d9",
+    "bytes": 1975093
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_003.mp4",
+    "sha256": "10711adf48b9310a94334eb3d39fc45d75f2c1a83372467296d3b7bbe54b1b91",
+    "bytes": 221470
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_004.h5",
+    "sha256": "a4b4b4e2207d97411f45621ae94f5c8ea9f2bdb764b621f972c8800330b748d5",
+    "bytes": 385219
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_004.physics.npz",
+    "sha256": "6fc0e4e81d310ef9628dcbf50e353f42baf28953c91597b8838a891321b5518c",
+    "bytes": 1878893
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_004.mp4",
+    "sha256": "827ef015239c0594c0a082d315c887e0b5ed1be1059626faf10042e9f073d040",
+    "bytes": 204398
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_005.h5",
+    "sha256": "8bfe1f5f1c1245257fe4a2b76205aee9346b84c089412ad58ecff87ba6a78248",
+    "bytes": 355572
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_005.physics.npz",
+    "sha256": "4a61e97d77da086ae4e77affb6258019ae3ced1ef6678e8cedcbe850260bb85a",
+    "bytes": 1729887
+  },
+  {
+    "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_success_search_20261115/recorded_wide_mid_friction/attempt_005.mp4",
+    "sha256": "70e82951dba352fe854f4b0ba72d519b75ce2c0b06a7ee99e2c28173895b938b",
+    "bytes": 176814
+  }
+]

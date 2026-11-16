@@ -1,0 +1,24 @@
+{
+  "episode": 2,
+  "video": "BRUCE分场景视频/基座辅助_8cm障碍.mp4",
+  "scene": "box_08",
+  "base_actuated": true,
+  "success_in_original_metadata": false,
+  "obstacle_displaced": true,
+  "clearance_proxy_m": -0.003484572768211361,
+  "max_abs_base_linear_control_force_N": [
+    32.21980285644531,
+    18.948986053466797,
+    122.07222747802734
+  ],
+  "max_abs_base_control_moment_Nm": [
+    7.2857208251953125,
+    9.069003105163574,
+    1.8145756721496582
+  ],
+  "max_abs_leg_control_torque_Nm": 20.263267517089844,
+  "reference_leg_limit_Nm": 10.5,
+  "accepted_as_unassisted_obstacle_success": false,
+  "verdict": "Physically assisted trajectory replay; exclude all assisted records from unassisted action-conditioned robot training.",
+  "training_ready_visual_hjepa_episodes_in_current_delivery": 0
+}

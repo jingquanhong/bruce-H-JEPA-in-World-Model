@@ -1,0 +1,16 @@
+test_assisted_reference_cannot_be_autonomous_success (test_collection.CollectionContract) ... ok
+test_body_frame_specific_force_and_action (test_collection.CollectionContract) ... ok
+test_individually_bounded_joints_can_overload_coupled_motor (test_collection.CollectionContract) ... ok
+test_json_missing_measurements (test_collection.CollectionContract) ... ok
+test_rejects_misaligned_columns (test_collection.CollectionContract) ... ok
+test_restart_discards_uncommitted_rows (test_collection.CollectionContract) ... ok
+test_unverified_geometry_and_actual_over_torque_are_rejected (test_collection.CollectionContract) ... ok
+test_force_moment_arm_at_each_actual_sole_vertex (test_support.SupportTests) ... ok
+test_original_reference_requires_unsupported_contact_wrench (test_support.SupportTests) ... ok
+test_sole_is_narrower_than_historical_support_bound (test_support.SupportTests) ... ok
+test_transfer_rejects_unfinished_unloading_and_capture_error (test_support.SupportTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.078s
+
+OK

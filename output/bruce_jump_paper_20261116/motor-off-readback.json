@@ -1,0 +1,107 @@
+{
+  "time_utc": "2026-11-16T09:34:22.785877+00:00",
+  "serial_writes": "read-register requests only, no parameter/enable writes",
+  "all_off_normal": true,
+  "motors": [
+    {
+      "id": 1,
+      "readback": [
+        [
+          0,
+          128
+        ]
+      ],
+      "confirmed_off_normal": true
+    },
+    {
+      "id": 2,
+      "readback": [
+        [
+          0,
+          128
+        ]
+      ],
+      "confirmed_off_normal": true
+    },
+    {
+      "id": 3,
+      "readback": [
+        [
+          0,
+          128
+        ]
+      ],
+      "confirmed_off_normal": true
+    },
+    {
+      "id": 4,
+      "readback": [
+        [
+          0,
+          128
+        ]
+      ],
+      "confirmed_off_normal": true
+    },
+    {
+      "id": 5,
+      "readback": [
+        [
+          0,
+          128
+        ]
+      ],
+      "confirmed_off_normal": true
+    },
+    {
+      "id": 6,
+      "readback": [
+        [
+          0,
+          128
+        ]
+      ],
+      "confirmed_off_normal": true
+    },
+    {
+      "id": 7,
+      "readback": [
+        [
+          0,
+          128
+        ]
+      ],
+      "confirmed_off_normal": true
+    },
+    {
+      "id": 8,
+      "readback": [
+        [
+          0,
+          128
+        ]
+      ],
+      "confirmed_off_normal": true
+    },
+    {
+      "id": 9,
+      "readback": [
+        [
+          0,
+          128
+        ]
+      ],
+      "confirmed_off_normal": true
+    },
+    {
+      "id": 10,
+      "readback": [
+        [
+          0,
+          128
+        ]
+      ],
+      "confirmed_off_normal": true
+    }
+  ]
+}

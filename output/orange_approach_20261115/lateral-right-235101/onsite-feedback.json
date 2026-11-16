@@ -1,0 +1,9 @@
+{
+  "user_observation": "右移量不是很大；幅度小，但踏步和收步稳定",
+  "direction": "right",
+  "directional_translation": "small",
+  "stability_confirmed": true,
+  "measured_distance_m": null,
+  "nominal_speed_not_measured_speed": true,
+  "estimator_displacement_is_not_ground_truth": true
+}

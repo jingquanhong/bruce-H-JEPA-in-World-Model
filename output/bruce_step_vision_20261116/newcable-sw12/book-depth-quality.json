@@ -1,0 +1,223 @@
+{
+  "source": "Current camera capture after cable replacement, not historical images",
+  "pairs": 16,
+  "resolution": [
+    640,
+    480
+  ],
+  "last_frame_valid_depth_fraction": 0.546455078125,
+  "book_roi_xyxy": [
+    348,
+    318,
+    451,
+    444
+  ],
+  "roi_source": "Manual association of visible red book in current RGB image; not a general object detector",
+  "floor_fit": {
+    "normal_camera": [
+      -0.045204460268963687,
+      -0.7470157242027252,
+      -0.6632677171140394
+    ],
+    "offset_m": 0.9594320286781677,
+    "inliers": 9662,
+    "residual_rms_m": 0.0031061689001456337
+  },
+  "book_frames": [
+    {
+      "index": 0,
+      "red_pixels": 2612,
+      "valid_red_depth_pixels": 2612,
+      "valid_red_depth_fraction": 1.0,
+      "optical_depth_median_m": 0.994,
+      "plane_relative_height_percentiles_m": [
+        0.023156147367914104,
+        0.03189340437331495,
+        0.03587536583685326
+      ]
+    },
+    {
+      "index": 1,
+      "red_pixels": 2483,
+      "valid_red_depth_pixels": 2483,
+      "valid_red_depth_fraction": 1.0,
+      "optical_depth_median_m": 0.987,
+      "plane_relative_height_percentiles_m": [
+        0.02463654202066372,
+        0.032535743729041666,
+        0.03714755529270506
+      ]
+    },
+    {
+      "index": 2,
+      "red_pixels": 2677,
+      "valid_red_depth_pixels": 2677,
+      "valid_red_depth_fraction": 1.0,
+      "optical_depth_median_m": 0.994,
+      "plane_relative_height_percentiles_m": [
+        0.02107772889233106,
+        0.03151189855047043,
+        0.03572232599267988
+      ]
+    },
+    {
+      "index": 3,
+      "red_pixels": 2636,
+      "valid_red_depth_pixels": 2636,
+      "valid_red_depth_fraction": 1.0,
+      "optical_depth_median_m": 0.991,
+      "plane_relative_height_percentiles_m": [
+        0.021395513367614638,
+        0.03085513244585958,
+        0.035391409370996385
+      ]
+    },
+    {
+      "index": 4,
+      "red_pixels": 2642,
+      "valid_red_depth_pixels": 2642,
+      "valid_red_depth_fraction": 1.0,
+      "optical_depth_median_m": 0.991,
+      "plane_relative_height_percentiles_m": [
+        0.02214571759293047,
+        0.030795217623293125,
+        0.03497131052254095
+      ]
+    },
+    {
+      "index": 5,
+      "red_pixels": 2688,
+      "valid_red_depth_pixels": 2688,
+      "valid_red_depth_fraction": 1.0,
+      "optical_depth_median_m": 0.987,
+      "plane_relative_height_percentiles_m": [
+        0.02204944241053156,
+        0.030658348216065223,
+        0.035022627078496696
+      ]
+    },
+    {
+      "index": 6,
+      "red_pixels": 2704,
+      "valid_red_depth_pixels": 2704,
+      "valid_red_depth_fraction": 1.0,
+      "optical_depth_median_m": 0.991,
+      "plane_relative_height_percentiles_m": [
+        0.02097795805362025,
+        0.030531648195173566,
+        0.0353839640528409
+      ]
+    },
+    {
+      "index": 7,
+      "red_pixels": 2766,
+      "valid_red_depth_pixels": 2766,
+      "valid_red_depth_fraction": 1.0,
+      "optical_depth_median_m": 0.991,
+      "plane_relative_height_percentiles_m": [
+        0.021870248852717378,
+        0.030472052951215522,
+        0.03570120918527048
+      ]
+    },
+    {
+      "index": 8,
+      "red_pixels": 2734,
+      "valid_red_depth_pixels": 2734,
+      "valid_red_depth_fraction": 1.0,
+      "optical_depth_median_m": 0.991,
+      "plane_relative_height_percentiles_m": [
+        0.02203924303165109,
+        0.03160948923645163,
+        0.03563816216096298
+      ]
+    },
+    {
+      "index": 9,
+      "red_pixels": 2648,
+      "valid_red_depth_pixels": 2648,
+      "valid_red_depth_fraction": 1.0,
+      "optical_depth_median_m": 0.994,
+      "plane_relative_height_percentiles_m": [
+        0.020892694737674845,
+        0.03089679128015127,
+        0.034734575797078136
+      ]
+    },
+    {
+      "index": 10,
+      "red_pixels": 2737,
+      "valid_red_depth_pixels": 2737,
+      "valid_red_depth_fraction": 1.0,
+      "optical_depth_median_m": 0.997,
+      "plane_relative_height_percentiles_m": [
+        0.019383712863708037,
+        0.030483760651907166,
+        0.03538996647269337
+      ]
+    },
+    {
+      "index": 11,
+      "red_pixels": 2747,
+      "valid_red_depth_pixels": 2747,
+      "valid_red_depth_fraction": 1.0,
+      "optical_depth_median_m": 0.997,
+      "plane_relative_height_percentiles_m": [
+        0.019906776343674527,
+        0.030195708632629548,
+        0.03464664000749083
+      ]
+    },
+    {
+      "index": 12,
+      "red_pixels": 2712,
+      "valid_red_depth_pixels": 2712,
+      "valid_red_depth_fraction": 1.0,
+      "optical_depth_median_m": 0.997,
+      "plane_relative_height_percentiles_m": [
+        0.021722572442547917,
+        0.031250684994681865,
+        0.035084309268118286
+      ]
+    },
+    {
+      "index": 13,
+      "red_pixels": 2783,
+      "valid_red_depth_pixels": 2783,
+      "valid_red_depth_fraction": 1.0,
+      "optical_depth_median_m": 0.994,
+      "plane_relative_height_percentiles_m": [
+        0.022028170600018982,
+        0.03132147768889304,
+        0.0357270752752288
+      ]
+    },
+    {
+      "index": 14,
+      "red_pixels": 2765,
+      "valid_red_depth_pixels": 2765,
+      "valid_red_depth_fraction": 1.0,
+      "optical_depth_median_m": 0.991,
+      "plane_relative_height_percentiles_m": [
+        0.021037323787088114,
+        0.03115618478924176,
+        0.036390603314970106
+      ]
+    },
+    {
+      "index": 15,
+      "red_pixels": 2664,
+      "valid_red_depth_pixels": 2663,
+      "valid_red_depth_fraction": 0.9996246246246246,
+      "optical_depth_median_m": 0.991,
+      "plane_relative_height_percentiles_m": [
+        0.02214125980259667,
+        0.030927705916889425,
+        0.03501142755377214
+      ]
+    }
+  ],
+  "camera_to_body_extrinsic_calibrated": false,
+  "motion_enabled": false,
+  "note": "Software RGB-depth alignment and plane estimate only. No external height/distance verification; optical depth is not foot-to-obstacle distance."
+}

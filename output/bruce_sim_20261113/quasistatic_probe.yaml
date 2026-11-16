@@ -1,0 +1,40 @@
+domain_randomization:
+  T_lipm: 1.0
+  bx0: -0.04
+  friction: 1.0
+  kp_scale: 1.0
+  lift_extra: 0.06
+episode_seconds: 3.5
+output:
+  cache_dir: null
+  dataset_name: bruce_stepover_50
+  episodes: 50
+  seed: 0
+record_hz: 100
+scenes:
+- box:
+    cx: 0.1
+    hx: 0.025
+    hy: 0.15
+  h_obs: 0.04
+  id: box_04
+  kind: step_over
+  policy: quasistatic
+sensor:
+  est_acc_sigma: 0.1
+  est_pos_sigma: 0.01
+  est_vel_sigma: 0.05
+  est_yaw_sigma: 0.0349
+  exp_filter_w: 0.9
+  foot_contact_force_thresh: 5.0
+  imu_acc_noise: 0.01
+  imu_bias_rw: 0.0001
+  imu_gyro_noise: 0.01
+  joint_dq_noise: 0.002
+  joint_q_noise: 0.002
+  torque_gain_std: 0.05
+sim:
+  backend: gpu
+  dt: 0.0005
+  substeps: 1
+warmup_steps: 10

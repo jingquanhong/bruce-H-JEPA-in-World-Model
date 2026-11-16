@@ -1,0 +1,6 @@
+{
+  "baseline_supervisor_sha256": "e022f33b1883fea148cc5c2a99f9e43aefe9f5281cf2b42223a5c7ae162ff369",
+  "candidate_supervisor_sha256": "49ffdb564af0ef08a3fc6124d5cb05cddb0c0f11646b4f507e84177fddb38e28",
+  "policy_sha256": "bc64d65e36e88ff0b92ac3f414159fd4d617c8ba90fdf1c7c34f7888e49e74e7",
+  "installed": false
+}

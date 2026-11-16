@@ -1,0 +1,14 @@
+- data.dataset.name=runtime_train
+- data.dataset.val_name=runtime_val
+- data.dataset.val_total_transitions=null
+- loader.batch_size=2
+- num_workers=0
+- loader.persistent_workers=false
+- loader.prefetch_factor=null
+- +trainer.fast_dev_run=true
+- trainer.devices=1
+- planning_eval.enabled=false
+- final_probing_decoding_eval.enabled=false
+- output_model_name=runtime_smoke
+- subdir=runtime_smoke
+- resume_every_n_steps=0

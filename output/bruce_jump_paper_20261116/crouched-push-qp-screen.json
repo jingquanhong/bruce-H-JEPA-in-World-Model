@@ -1,0 +1,281 @@
+{
+  "status": "OFFLINE_ISOLATED_ACCELERATION_SCREEN_ONLY",
+  "model_mass_kg": 4.53031,
+  "physical_mass_measured": false,
+  "initial_joint_and_body_velocity": "zero",
+  "hardware_actuation": false,
+  "physical_jump_validated": false,
+  "cases": [
+    {
+      "body_depth_m": 0.03,
+      "target_com_acceleration_m_s2": 0.0,
+      "solver_status": "solved",
+      "max_constraint_violation": 7.105427357601002e-15,
+      "actual_com_acceleration_m_s2": [
+        6.776263578034403e-20,
+        -8.470329472543003e-22,
+        -6.776263578034403e-21
+      ],
+      "contact_acceleration_max_m_s2": 4.54009659728305e-19,
+      "body_pitch_acceleration_rad_s2": 0.0031653029190380653,
+      "max_joint_acceleration_rad_s2": 0.0036260202669567924,
+      "max_joint_torque_Nm": 2.126831860366448,
+      "max_motor_current_A": 6.755564539544922,
+      "contact_normal_forces_N": [
+        12.115759287115688,
+        9.768057533659585,
+        12.333782686341825,
+        10.224741592882905
+      ]
+    },
+    {
+      "body_depth_m": 0.03,
+      "target_com_acceleration_m_s2": 1.0,
+      "solver_status": "solved",
+      "max_constraint_violation": 7.105427357601002e-15,
+      "actual_com_acceleration_m_s2": [
+        -1.3877787807814457e-17,
+        5.204170427930421e-18,
+        1.0000000000000002
+      ],
+      "contact_acceleration_max_m_s2": 8.881784197001252e-16,
+      "body_pitch_acceleration_rad_s2": 0.13421095132772054,
+      "max_joint_acceleration_rad_s2": 10.285306156754181,
+      "max_joint_torque_Nm": 2.451303613659644,
+      "max_motor_current_A": 7.451199425511488,
+      "contact_normal_forces_N": [
+        12.111892267004231,
+        11.998704543646005,
+        12.354522706798342,
+        12.507531582551435
+      ]
+    },
+    {
+      "body_depth_m": 0.03,
+      "target_com_acceleration_m_s2": 3.0,
+      "solver_status": "solved",
+      "max_constraint_violation": 2.6645352591003757e-15,
+      "actual_com_acceleration_m_s2": [
+        -5.551115123125783e-17,
+        -1.3877787807814457e-17,
+        3.0
+      ],
+      "contact_acceleration_max_m_s2": 2.6645352591003757e-15,
+      "body_pitch_acceleration_rad_s2": 0.39630224814508536,
+      "max_joint_acceleration_rad_s2": 30.856216360378717,
+      "max_joint_torque_Nm": 3.1002471202460358,
+      "max_motor_current_A": 8.842469197444615,
+      "contact_normal_forces_N": [
+        12.104158226781317,
+        16.459998563618825,
+        12.396002747711366,
+        17.0731115618885
+      ]
+    },
+    {
+      "body_depth_m": 0.03,
+      "target_com_acceleration_m_s2": 5.0,
+      "solver_status": "solved",
+      "max_constraint_violation": 2.842170943040401e-14,
+      "actual_com_acceleration_m_s2": [
+        3.3306690738754696e-16,
+        6.938893903907228e-18,
+        5.000000000000001
+      ],
+      "contact_acceleration_max_m_s2": 3.552713678800501e-15,
+      "body_pitch_acceleration_rad_s2": 0.6583935449624497,
+      "max_joint_acceleration_rad_s2": 51.42712656400324,
+      "max_joint_torque_Nm": 3.7491906268324295,
+      "max_motor_current_A": 10.233738969377749,
+      "contact_normal_forces_N": [
+        12.096424186558389,
+        20.921292583591686,
+        12.437482788624383,
+        21.63869154122558
+      ]
+    },
+    {
+      "body_depth_m": 0.045,
+      "target_com_acceleration_m_s2": 0.0,
+      "solver_status": "solved",
+      "max_constraint_violation": 7.105427357601002e-15,
+      "actual_com_acceleration_m_s2": [
+        -1.3552527156068805e-20,
+        -6.776263578034403e-21,
+        -6.776263578034403e-20
+      ],
+      "contact_acceleration_max_m_s2": 4.1335207826009857e-19,
+      "body_pitch_acceleration_rad_s2": 0.0038631950136216535,
+      "max_joint_acceleration_rad_s2": 0.004447506752702814,
+      "max_joint_torque_Nm": 2.2968853132905918,
+      "max_motor_current_A": 7.395542690470626,
+      "contact_normal_forces_N": [
+        12.77704451745162,
+        9.105523763742639,
+        12.964589113480299,
+        9.59518370532545
+      ]
+    },
+    {
+      "body_depth_m": 0.045,
+      "target_com_acceleration_m_s2": 1.0,
+      "solver_status": "solved",
+      "max_constraint_violation": 7.105427357601002e-15,
+      "actual_com_acceleration_m_s2": [
+        1.5265566588595902e-16,
+        6.938893903907228e-18,
+        0.9999999999999999
+      ],
+      "contact_acceleration_max_m_s2": 4.440892098500626e-16,
+      "body_pitch_acceleration_rad_s2": 0.12512904416533696,
+      "max_joint_acceleration_rad_s2": 9.454815306806589,
+      "max_joint_torque_Nm": 2.630582780825797,
+      "max_motor_current_A": 8.15878766051746,
+      "contact_normal_forces_N": [
+        12.945871719182247,
+        11.163379861547375,
+        13.154580639724598,
+        11.708818879545777
+      ]
+    },
+    {
+      "body_depth_m": 0.045,
+      "target_com_acceleration_m_s2": 3.0,
+      "solver_status": "solved",
+      "max_constraint_violation": 1.4210854715202004e-14,
+      "actual_com_acceleration_m_s2": [
+        4.996003610813204e-16,
+        6.938893903907228e-18,
+        2.9999999999999987
+      ],
+      "contact_acceleration_max_m_s2": 8.881784197001252e-16,
+      "body_pitch_acceleration_rad_s2": 0.36766074246876734,
+      "max_joint_acceleration_rad_s2": 28.364808558410704,
+      "max_joint_torque_Nm": 3.2979777158962107,
+      "max_motor_current_A": 9.685277600611139,
+      "contact_normal_forces_N": [
+        13.283526122643478,
+        15.279092057156893,
+        13.53456369221317,
+        15.936089227986471
+      ]
+    },
+    {
+      "body_depth_m": 0.045,
+      "target_com_acceleration_m_s2": 5.0,
+      "solver_status": "solved",
+      "max_constraint_violation": 2.1316282072803006e-14,
+      "actual_com_acceleration_m_s2": [
+        0.0,
+        1.3877787807814457e-17,
+        5.000000000000001
+      ],
+      "contact_acceleration_max_m_s2": 3.552713678800501e-15,
+      "body_pitch_acceleration_rad_s2": 0.610192440772198,
+      "max_joint_acceleration_rad_s2": 47.27480181001482,
+      "max_joint_torque_Nm": 3.965372650966621,
+      "max_motor_current_A": 11.211767540704809,
+      "contact_normal_forces_N": [
+        13.621180526104723,
+        19.394804252766374,
+        13.914546744701758,
+        20.163359576427126
+      ]
+    },
+    {
+      "body_depth_m": 0.06,
+      "target_com_acceleration_m_s2": 0.0,
+      "solver_status": "solved",
+      "max_constraint_violation": 4.440892098500626e-16,
+      "actual_com_acceleration_m_s2": [
+        1.2197274440461925e-19,
+        -8.470329472543003e-21,
+        0.0
+      ],
+      "contact_acceleration_max_m_s2": 8.063753657860939e-19,
+      "body_pitch_acceleration_rad_s2": 0.004428890009740085,
+      "max_joint_acceleration_rad_s2": 0.005127668306055379,
+      "max_joint_torque_Nm": 2.446565401937285,
+      "max_motor_current_A": 7.959744798924934,
+      "contact_normal_forces_N": [
+        13.361031433947536,
+        8.520090550264738,
+        13.523446151681357,
+        9.037772964106372
+      ]
+    },
+    {
+      "body_depth_m": 0.06,
+      "target_com_acceleration_m_s2": 1.0,
+      "solver_status": "solved",
+      "max_constraint_violation": 7.105427357601002e-15,
+      "actual_com_acceleration_m_s2": [
+        -4.163336342344337e-17,
+        -5.204170427930421e-18,
+        1.0
+      ],
+      "contact_acceleration_max_m_s2": 4.996003610813204e-16,
+      "body_pitch_acceleration_rad_s2": 0.11856250547958956,
+      "max_joint_acceleration_rad_s2": 8.828409463614001,
+      "max_joint_torque_Nm": 2.7894643295952886,
+      "max_motor_current_A": 8.782639346722933,
+      "contact_normal_forces_N": [
+        13.669546442114527,
+        10.438093298485136,
+        13.850268299405505,
+        11.014743059994846
+      ]
+    },
+    {
+      "body_depth_m": 0.06,
+      "target_com_acceleration_m_s2": 3.0,
+      "solver_status": "solved",
+      "max_constraint_violation": 7.105427357601002e-15,
+      "actual_com_acceleration_m_s2": [
+        0.0,
+        6.938893903907228e-18,
+        3.0
+      ],
+      "contact_acceleration_max_m_s2": 1.7763568394002505e-15,
+      "body_pitch_acceleration_rad_s2": 0.34682973641928844,
+      "max_joint_acceleration_rad_s2": 26.485647138886844,
+      "max_joint_torque_Nm": 3.4752621849112906,
+      "max_motor_current_A": 10.42842844231892,
+      "contact_normal_forces_N": [
+        14.286576458448522,
+        14.274098794925914,
+        14.503912594853796,
+        14.96868325177178
+      ]
+    },
+    {
+      "body_depth_m": 0.06,
+      "target_com_acceleration_m_s2": 5.0,
+      "solver_status": "solved",
+      "max_constraint_violation": 1.4210854715202004e-14,
+      "actual_com_acceleration_m_s2": [
+        2.7755575615628914e-16,
+        3.469446951953614e-17,
+        4.999999999999999
+      ],
+      "contact_acceleration_max_m_s2": 2.6645352591003757e-15,
+      "body_pitch_acceleration_rad_s2": 0.5750969673589869,
+      "max_joint_acceleration_rad_s2": 44.14288481415969,
+      "max_joint_torque_Nm": 4.1610600402272935,
+      "max_motor_current_A": 12.074217537914905,
+      "contact_normal_forces_N": [
+        14.903606474782498,
+        18.1101042913667,
+        15.157556890302088,
+        18.922623443548712
+      ]
+    }
+  ],
+  "limitations": [
+    "Independent static-pose snapshots; not integrated and no takeoff or landing",
+    "Joint acceleration, motor speed, power, thermal and PD transient limits not characterized",
+    "Contact friction and physical mass/inertia are assumed, not measured",
+    "Pitch acceleration is allowed and is not a planned orientation trajectory",
+    "Solver feasibility is not evidence that the robot can perform a jump"
+  ]
+}

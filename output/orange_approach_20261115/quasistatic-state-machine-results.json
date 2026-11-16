@@ -1,0 +1,57 @@
+{
+  "result": "PASS_PERFECT_TRACKING_GEOMETRY_ONLY",
+  "cases": [
+    {
+      "direction": -1,
+      "completion_s": 3.844,
+      "phases": [
+        0,
+        1,
+        2
+      ],
+      "nominal_foot_advance_m": -0.04,
+      "contact_limited_foot_changes_m": [
+        -0.03858024691358025,
+        -0.03858024691358025
+      ],
+      "hardware_actuation": false
+    },
+    {
+      "direction": 1,
+      "completion_s": 3.844,
+      "phases": [
+        0,
+        1,
+        2
+      ],
+      "nominal_foot_advance_m": 0.04,
+      "contact_limited_foot_changes_m": [
+        0.03858024691358025,
+        0.03858024691358025
+      ],
+      "hardware_actuation": false
+    },
+    {
+      "biased_tracker_gain": 0.0,
+      "stage": "recenter",
+      "time_s": 1.9000000000000001,
+      "hardware_actuation": false
+    },
+    {
+      "biased_tracker_gain": 1.5,
+      "stage": "swing",
+      "time_s": 1.556,
+      "hardware_actuation": false
+    }
+  ],
+  "checks": [
+    "two directions",
+    "stop and land",
+    "weight transfer refusal",
+    "lost support refusal",
+    "support-relative odometry",
+    "original guards unchanged",
+    "bounded biased tracker correction"
+  ],
+  "note": "Not a dynamics simulation; does not prove real balance."
+}

@@ -1,0 +1,16 @@
+{
+  "motor-off-readback.log": "581f31134272685e54b38a8a36b508dfbe62eac60e6e062257cc79e2677aedc4",
+  "test_jump_core.py": "a54b9800b28f7ce150b4f3d984fcc0da5598241bcbdc68fbc7c5666f456fd22b",
+  "motor-off-readback.json": "ee446d08b87c28c38f1aae01bc0e78bbe1387634448881494ab57a7a69aa7b36",
+  "validated-walk-checksums.log": "747d499937581f911bd08b9fdf0c088159f845b0ef822a440d7e4402fc063920",
+  "model-screen.log": "c919fc90eee02b9b0f0429bbcce13daae74562f78ac195aa39708edf263cc1ba",
+  "numerical-checks.json": "69ab63c1531218ea408a9c8d8f9e4b2ee6e90493c8c3339ff61945028f31351d",
+  "preflight_recorded.py": "e4e2e5659ba2e96eb6420895fabb3470bf13966ffb76d80f93db917100ddb857",
+  "numerical-checks.log": "fca9b3d00263f24925f1c3e0d5306cd7fdc9963cc95df2ca6969dc094cbff06a",
+  "verify_motor_off.py": "bdcf98f868d8224964e8c481c23229ce473084aa8dd9195da2528202c014e3e5",
+  "jump_core.py": "899586592aa58f3bce28dfadb732c441643b4536183ee07b64e7fe62fe9925fa",
+  "recorded-standing-fixture.json": "6c480fca3b4e59b0a4e5424c0bc25fd1248252109fae11cb10d5e2b4dfc41760",
+  "khadas-model-screen.json": "0d5a30bbfe19046efc9bc4eab0075bace472ff514e82e33f1c3349b1420ec8b9",
+  "README.md": "68dacd7773516fbea46bdd93e94472da2949e4acde36f19a2c3e2eed3555d522",
+  "session-status.json": "6de74116e04e56d4bdd8fb9411cb676efecf38a04dcd3831504d79c711088071"
+}

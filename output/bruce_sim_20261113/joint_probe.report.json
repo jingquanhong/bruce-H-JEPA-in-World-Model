@@ -1,0 +1,447 @@
+{
+  "dataset": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/joint_probe.h5",
+  "control_mode": "joint_only",
+  "schema_version": "bruce_obstacle_v2",
+  "episodes": 4,
+  "frames": 340,
+  "duration_seconds": 3.4,
+  "collection_valid": true,
+  "success": 0,
+  "scenes": {
+    "box_04": {
+      "episodes": 1,
+      "success": 0,
+      "fell": 1,
+      "kicked": 0,
+      "completed": 0
+    },
+    "box_06": {
+      "episodes": 1,
+      "success": 0,
+      "fell": 1,
+      "kicked": 0,
+      "completed": 0
+    },
+    "box_08": {
+      "episodes": 1,
+      "success": 0,
+      "fell": 1,
+      "kicked": 1,
+      "completed": 0
+    },
+    "step_10": {
+      "episodes": 1,
+      "success": 0,
+      "fell": 1,
+      "kicked": 0,
+      "completed": 0
+    }
+  },
+  "checks": [
+    {
+      "name": "nonempty_episodes",
+      "passed": true,
+      "detail": "[95, 93, 94, 58]"
+    },
+    {
+      "name": "episode_offsets",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "metadata_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_action",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_imu_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_imu_gyro",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_foot_contact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_leg_q",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_leg_dq",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_joint_torque_est",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_est_body_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_est_body_vel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_est_body_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_est_yaw",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_sim_body_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_sim_body_vel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_sim_base_quat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_sim_contact_force",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_sim_joint_torque",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_sim_ankle_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_action",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_action",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_ep_idx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_ep_idx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_est_body_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_est_body_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_est_body_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_est_body_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_est_body_vel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_est_body_vel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_est_yaw",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_est_yaw",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_foot_contact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_foot_contact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_imu_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_imu_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_imu_gyro",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_imu_gyro",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_joint_torque_est",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_joint_torque_est",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_leg_dq",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_leg_dq",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_leg_q",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_leg_q",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_ankle_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_ankle_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_base_quat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_base_quat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_body_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_body_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_body_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_body_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_body_vel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_body_vel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_contact_force",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_contact_force",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_control_force",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_control_force",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_joint_torque",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_joint_torque",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_reference",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_reference",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_step_idx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_step_idx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_timestamp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_timestamp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_0_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_0_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_1_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_1_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_2_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_2_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_3_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_3_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "binary_contact_proxy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "torque_estimate_bound",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "recorded_action_equals_executed_hold_target",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "unactuated_base",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "leg_actuator_force_bound",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "imu_specific_force_transform",
+      "passed": true,
+      "detail": "max error 0.03114 m/s²"
+    }
+  ],
+  "notes": [
+    "Collection validity and obstacle success are separate.",
+    "est_* are synthetic truth-plus-noise proxies, not EKF output.",
+    "clearance is an ankle-based geometric proxy, not full-mesh distance."
+  ]
+}

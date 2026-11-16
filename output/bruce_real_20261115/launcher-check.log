@@ -1,0 +1,4 @@
+Saved control/config/dependency files verified: 81
+cd /home/khadas/BRUCE/BRUCE-OP
+python3 -u Util/stationary_step_test.py --run --keep-standing --translation-tracking --allow-small-motion --max-motion-seconds 10 --hold-hip-yaw --manual-landing --swing-height 0.015 --attitude-scale 0.5 --smooth-stop --foot-spacing 0.08 --forward-bias -0.002 --lateral-bias -0.006 --minimum-step-width 0.1 --max-step-seconds 30 --seconds 0 --ground-wait 180 --stand-seconds 10
+CHECK ONLY: no controller started; no motor port opened.

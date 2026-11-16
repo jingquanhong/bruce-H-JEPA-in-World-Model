@@ -1,0 +1,10 @@
+{
+  "six_cm_crouch_profile.py": "d65d04f6f0da72e663586443f4a00e63f0c5b3494d6c409d317f985e9d3b734a",
+  "six_cm_crouch_kinematics.py": "f74924ab887d20a9fd4679076f527e9537ae587d7f56ec65aa504ca0cfc7480b",
+  "six_cm_crouch_low_level.py": "2b57398bc3ca4e984d6af0f03b20350ed789919b609fa076258575197a6afc69",
+  "stationary_six_cm_crouch_test.py": "b860ee28142c44cd6d3a1c4205879ba6fe3d2029d541b7cb8932b1f94e8a7c78",
+  "observe_six_cm_crouch.py": "8b0ade64f241a2e25c171ea713d71e676473365d2c61012bcf33cf207c4ff3aa",
+  "test_six_cm_crouch.py": "5db3bda119d68cf7bcb45c774ec908b3bfe1eed1eb8a0e100f14baaf7ea9436a",
+  "preparation_feedback_guard.py": "e9aa6cbd0179ff72a836d519b59edbf299e7b682986bd98bafedcf333c774e09",
+  "screen_six_cm.py": "aa5dca0335616b4c785e81d5a3f1e0bea35f456ed532bcc04817ebf51980e7ad"
+}

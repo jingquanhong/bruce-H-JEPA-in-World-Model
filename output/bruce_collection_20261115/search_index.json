@@ -1,0 +1,1212 @@
+{
+  "trials": 134,
+  "qualified_successes": 0,
+  "runs": [
+    {
+      "run": "step_05",
+      "trial": 0,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 2.595,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_05",
+      "trial": 1,
+      "height": 0.04,
+      "stop": "loss_of_balance",
+      "seconds": 2.315,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_05",
+      "trial": 2,
+      "height": 0.08,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 1.94,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_10",
+      "trial": 0,
+      "height": 0.01,
+      "stop": "loss_of_balance",
+      "seconds": 2.43,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_10",
+      "trial": 1,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 2.485,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_10",
+      "trial": 2,
+      "height": 0.04,
+      "stop": "loss_of_balance",
+      "seconds": 2.57,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_04",
+      "trial": 0,
+      "height": 0.02,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 1.98,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_04",
+      "trial": 1,
+      "height": 0.04,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 1.985,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_04",
+      "trial": 2,
+      "height": 0.08,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 1.995,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_02",
+      "trial": 0,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 3.2600000000000002,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_02",
+      "trial": 1,
+      "height": 0.04,
+      "stop": "loss_of_balance",
+      "seconds": 3.105,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_16",
+      "trial": 0,
+      "height": 0.01,
+      "stop": "loss_of_balance",
+      "seconds": 2.5500000000000003,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_16",
+      "trial": 1,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 2.66,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_16",
+      "trial": 2,
+      "height": 0.04,
+      "stop": "loss_of_balance",
+      "seconds": 2.61,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_17",
+      "trial": 0,
+      "height": 0.01,
+      "stop": "loss_of_balance",
+      "seconds": 2.935,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_17",
+      "trial": 1,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 2.9250000000000003,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_far_high_friction",
+      "trial": 0,
+      "height": 0.01,
+      "stop": "loss_of_balance",
+      "seconds": 2.6750000000000003,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_far_high_friction",
+      "trial": 1,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 2.43,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_far_high_friction",
+      "trial": 2,
+      "height": 0.04,
+      "stop": "loss_of_balance",
+      "seconds": 2.415,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_far_high_friction",
+      "trial": 3,
+      "height": 0.06,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 2.39,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_far_high_friction",
+      "trial": 4,
+      "height": 0.08,
+      "stop": "loss_of_balance",
+      "seconds": 2.305,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_09",
+      "trial": 0,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 3.185,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_08",
+      "trial": 0,
+      "height": null,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 0.8,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_08",
+      "trial": 1,
+      "height": null,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 0.8,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_08",
+      "trial": 2,
+      "height": null,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 0.8,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_08",
+      "trial": 3,
+      "height": null,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 0.8,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_wide_mid_friction",
+      "trial": 0,
+      "height": 0.01,
+      "stop": "loss_of_balance",
+      "seconds": 2.745,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_wide_mid_friction",
+      "trial": 1,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 2.81,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_wide_mid_friction",
+      "trial": 2,
+      "height": 0.03,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 2.745,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_wide_mid_friction",
+      "trial": 3,
+      "height": 0.04,
+      "stop": "loss_of_balance",
+      "seconds": 2.8000000000000003,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_wide_mid_friction",
+      "trial": 4,
+      "height": 0.06,
+      "stop": "loss_of_balance",
+      "seconds": 2.6750000000000003,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_wide_mid_friction",
+      "trial": 5,
+      "height": 0.08,
+      "stop": "loss_of_balance",
+      "seconds": 2.48,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_21",
+      "trial": 0,
+      "height": 0.01,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 3.71,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_21",
+      "trial": 1,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 2.745,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_21",
+      "trial": 2,
+      "height": 0.04,
+      "stop": "loss_of_balance",
+      "seconds": 2.5500000000000003,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_24",
+      "trial": 0,
+      "height": 0.01,
+      "stop": "leading_support_capture_not_ready",
+      "seconds": 3.835,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_24",
+      "trial": 1,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 2.54,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_04",
+      "trial": 0,
+      "height": null,
+      "stop": "loss_of_balance",
+      "seconds": 1.17,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_04",
+      "trial": 1,
+      "height": null,
+      "stop": "loss_of_balance",
+      "seconds": 1.1300000000000001,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_04",
+      "trial": 2,
+      "height": null,
+      "stop": "loss_of_balance",
+      "seconds": 1.165,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_04",
+      "trial": 3,
+      "height": null,
+      "stop": "loss_of_balance",
+      "seconds": 1.135,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_20",
+      "trial": 0,
+      "height": 0.01,
+      "stop": "loss_of_balance",
+      "seconds": 2.7800000000000002,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_20",
+      "trial": 1,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 2.93,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_05",
+      "trial": 0,
+      "height": null,
+      "stop": "loss_of_balance",
+      "seconds": 1.355,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_05",
+      "trial": 1,
+      "height": null,
+      "stop": "loss_of_balance",
+      "seconds": 1.31,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_11",
+      "trial": 0,
+      "height": null,
+      "stop": "loss_of_balance",
+      "seconds": 1.325,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_11",
+      "trial": 1,
+      "height": null,
+      "stop": "loss_of_balance",
+      "seconds": 1.325,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_11",
+      "trial": 2,
+      "height": null,
+      "stop": "loss_of_balance",
+      "seconds": 1.315,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_11",
+      "trial": 3,
+      "height": null,
+      "stop": "loss_of_balance",
+      "seconds": 1.32,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_14",
+      "trial": 0,
+      "height": 0.01,
+      "stop": "loss_of_balance",
+      "seconds": 2.65,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_14",
+      "trial": 1,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 2.57,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_14",
+      "trial": 2,
+      "height": 0.04,
+      "stop": "loss_of_balance",
+      "seconds": 2.3850000000000002,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_14",
+      "trial": 3,
+      "height": 0.08,
+      "stop": "loss_of_balance",
+      "seconds": 2.0100000000000002,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_06",
+      "trial": 0,
+      "height": null,
+      "stop": "loss_of_balance",
+      "seconds": 1.545,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_06",
+      "trial": 1,
+      "height": null,
+      "stop": "loss_of_balance",
+      "seconds": 2.89,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_11",
+      "trial": 0,
+      "height": 0.01,
+      "stop": "loss_of_balance",
+      "seconds": 2.9,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_11",
+      "trial": 1,
+      "height": 0.01,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 2.115,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_11",
+      "trial": 2,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 3.465,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_11",
+      "trial": 3,
+      "height": 0.02,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 2.105,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_11",
+      "trial": 4,
+      "height": 0.04,
+      "stop": "loss_of_balance",
+      "seconds": 2.56,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_11",
+      "trial": 5,
+      "height": 0.04,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 2.075,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_23",
+      "trial": 0,
+      "height": 0.01,
+      "stop": "loss_of_balance",
+      "seconds": 2.77,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_23",
+      "trial": 1,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 4.565,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_09",
+      "trial": 0,
+      "height": null,
+      "stop": "loss_of_balance",
+      "seconds": 1.825,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_09",
+      "trial": 1,
+      "height": null,
+      "stop": "loss_of_balance",
+      "seconds": 1.96,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_mu08_verified",
+      "trial": 0,
+      "height": 0.01,
+      "stop": "loss_of_balance",
+      "seconds": 2.755,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_mu08_verified",
+      "trial": 1,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 2.785,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_mu08_verified",
+      "trial": 2,
+      "height": 0.03,
+      "stop": "loss_of_balance",
+      "seconds": 2.755,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_mu08_verified",
+      "trial": 3,
+      "height": 0.04,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 2.83,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_mu08_verified",
+      "trial": 4,
+      "height": 0.06,
+      "stop": "loss_of_balance",
+      "seconds": 2.625,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_mu08_verified",
+      "trial": 5,
+      "height": 0.08,
+      "stop": "loss_of_balance",
+      "seconds": 2.54,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_12",
+      "trial": 0,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 2.6750000000000003,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_12",
+      "trial": 1,
+      "height": 0.04,
+      "stop": "loss_of_balance",
+      "seconds": 2.705,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_12",
+      "trial": 2,
+      "height": 0.08,
+      "stop": "loss_of_balance",
+      "seconds": 2.045,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_03",
+      "trial": 0,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 3.065,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_03",
+      "trial": 1,
+      "height": 0.04,
+      "stop": "loss_of_balance",
+      "seconds": 3.025,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_08",
+      "trial": 0,
+      "height": 0.02,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 2.095,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_08",
+      "trial": 1,
+      "height": 0.04,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 1.985,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_22",
+      "trial": 0,
+      "height": 0.01,
+      "stop": "loss_of_balance",
+      "seconds": 2.555,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_22",
+      "trial": 1,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 2.54,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_22",
+      "trial": 2,
+      "height": 0.04,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 2.5,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_22",
+      "trial": 3,
+      "height": 0.08,
+      "stop": "loss_of_balance",
+      "seconds": 2.365,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_07",
+      "trial": 0,
+      "height": 0.02,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 1.895,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_07",
+      "trial": 1,
+      "height": 0.04,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 1.9000000000000001,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_07",
+      "trial": 2,
+      "height": 0.08,
+      "stop": "loss_of_balance",
+      "seconds": 2.015,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_07",
+      "trial": 0,
+      "height": null,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 1.035,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_07",
+      "trial": 1,
+      "height": null,
+      "stop": "loss_of_balance",
+      "seconds": 2.185,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_baseline",
+      "trial": 0,
+      "height": 0.01,
+      "stop": "loss_of_balance",
+      "seconds": 2.77,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_baseline",
+      "trial": 1,
+      "height": 0.02,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 3.6,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_baseline",
+      "trial": 2,
+      "height": 0.04,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 2.325,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_baseline",
+      "trial": 3,
+      "height": 0.06,
+      "stop": "loss_of_balance",
+      "seconds": 2.63,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_baseline",
+      "trial": 4,
+      "height": 0.08,
+      "stop": "loss_of_balance",
+      "seconds": 2.43,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_01",
+      "trial": 0,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 3.015,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_01",
+      "trial": 1,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 2.495,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_01",
+      "trial": 2,
+      "height": 0.04,
+      "stop": "loss_of_balance",
+      "seconds": 2.665,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_01",
+      "trial": 3,
+      "height": 0.04,
+      "stop": "loss_of_balance",
+      "seconds": 2.485,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_01",
+      "trial": 4,
+      "height": 0.08,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 2.085,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_01",
+      "trial": 5,
+      "height": 0.08,
+      "stop": "loss_of_balance",
+      "seconds": 2.4250000000000003,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_18",
+      "trial": 0,
+      "height": 0.01,
+      "stop": "loss_of_balance",
+      "seconds": 2.7,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_18",
+      "trial": 1,
+      "height": 0.02,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 3.145,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_18",
+      "trial": 2,
+      "height": 0.04,
+      "stop": "loss_of_balance",
+      "seconds": 2.5,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_18",
+      "trial": 3,
+      "height": 0.08,
+      "stop": "loss_of_balance",
+      "seconds": 2.4250000000000003,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_thin_low_friction",
+      "trial": 0,
+      "height": 0.01,
+      "stop": "loss_of_balance",
+      "seconds": 2.86,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_thin_low_friction",
+      "trial": 1,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 2.915,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_thin_low_friction",
+      "trial": 2,
+      "height": 0.04,
+      "stop": "loss_of_balance",
+      "seconds": 2.555,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_thin_low_friction",
+      "trial": 3,
+      "height": 0.06,
+      "stop": "loss_of_balance",
+      "seconds": 2.5300000000000002,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_thin_low_friction",
+      "trial": 4,
+      "height": 0.08,
+      "stop": "loss_of_balance",
+      "seconds": 2.665,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "static_02",
+      "trial": 0,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 4.7700000000000005,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_13",
+      "trial": 0,
+      "height": 0.01,
+      "stop": "loss_of_balance",
+      "seconds": 2.73,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_13",
+      "trial": 1,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 2.695,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_13",
+      "trial": 2,
+      "height": 0.04,
+      "stop": "loss_of_balance",
+      "seconds": 2.645,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_13",
+      "trial": 3,
+      "height": 0.08,
+      "stop": "loss_of_balance",
+      "seconds": 1.99,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_10",
+      "trial": 0,
+      "height": null,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 1.315,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_10",
+      "trial": 1,
+      "height": null,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 0.895,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_10",
+      "trial": 2,
+      "height": null,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 0.905,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "jump_10",
+      "trial": 3,
+      "height": null,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 0.885,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_06",
+      "trial": 0,
+      "height": 0.02,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 1.895,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_06",
+      "trial": 1,
+      "height": 0.04,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 1.9000000000000001,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_06",
+      "trial": 2,
+      "height": 0.08,
+      "stop": "loss_of_balance",
+      "seconds": 2.015,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "static_01",
+      "trial": 0,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 4.265,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "static_01",
+      "trial": 1,
+      "height": 0.08,
+      "stop": "loss_of_balance",
+      "seconds": 4.325,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_mu06_verified",
+      "trial": 0,
+      "height": 0.01,
+      "stop": "loss_of_balance",
+      "seconds": 2.705,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_mu06_verified",
+      "trial": 1,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 2.755,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_mu06_verified",
+      "trial": 2,
+      "height": 0.04,
+      "stop": "loss_of_balance",
+      "seconds": 2.625,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_mu06_verified",
+      "trial": 3,
+      "height": 0.06,
+      "stop": "loss_of_balance",
+      "seconds": 2.93,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "recorded_mu06_verified",
+      "trial": 4,
+      "height": 0.08,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 2.725,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_15",
+      "trial": 0,
+      "height": 0.01,
+      "stop": "loss_of_balance",
+      "seconds": 2.5100000000000002,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_15",
+      "trial": 1,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 2.41,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_15",
+      "trial": 2,
+      "height": 0.04,
+      "stop": "loss_of_balance",
+      "seconds": 2.365,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_15",
+      "trial": 3,
+      "height": 0.08,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 2.035,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "static_03",
+      "trial": 0,
+      "height": 0.02,
+      "stop": "loss_of_balance",
+      "seconds": 4.705,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_19",
+      "trial": 0,
+      "height": 0.01,
+      "stop": "loss_of_balance",
+      "seconds": 2.77,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_19",
+      "trial": 1,
+      "height": 0.02,
+      "stop": "interior QP: PrimalInfeasible",
+      "seconds": 3.595,
+      "candidate": false,
+      "success": false
+    },
+    {
+      "run": "step_19",
+      "trial": 2,
+      "height": 0.04,
+      "stop": "loss_of_balance",
+      "seconds": 2.4050000000000002,
+      "candidate": false,
+      "success": false
+    }
+  ]
+}

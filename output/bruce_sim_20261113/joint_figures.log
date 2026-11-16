@@ -1,0 +1,4 @@
+读取 output/bruce_sim_20261113/bruce_joint_trials_40.h5  40 集
+  -> output/bruce_sim_20261113/joint_figures/traj_xz.png
+  -> output/bruce_sim_20261113/joint_figures/timeseries.png
+  -> output/bruce_sim_20261113/joint_figures/dataset_stats.png

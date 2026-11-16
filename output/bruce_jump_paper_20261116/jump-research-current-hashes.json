@@ -1,0 +1,18 @@
+{
+  "thermal_capture_research.py": "1d54d1c14023bc1c2fdc75acd13d6bdb1ae739237f67be4171ffdfdedfce21df",
+  "test_thermal_capture_research.py": "f138a2e9a3cd53b24abd4eb04f952935baa493e1084e6f4a0df9a5e64d6e2e36",
+  "watch_knee_thermal.py": "7102e546aac3d2951b15a8e6950e5c308739635ba4864d1615be202f6c0de9b5",
+  "test_watch_knee_thermal.py": "10c48eadafd166d3bd190ec388c357a50e77ce52e888388a328593fb5fefb85e",
+  "stationary_six_cm_thermal_candidate.py": "8c0bf7298ea085a6967870b82fdb336899b8d8c5a9a699f145e6d4718a1073ac",
+  "integrate_push_research.py": "a9570a90f99e64c0c1b11688ce029ce8b3e2aa26976bc640b3d60f8a80f1172e",
+  "search_integrated_push.py": "61ea280786cd8ae71a833578fbf562fb029ac62326c53e4e534fa86620265a8e",
+  "flight_retraction_research.py": "73f924a59b537442833db70089ab28759dfc4998d05154e538cdb9611d2e0fff",
+  "landing_impulse_research.py": "2240174e2607af401209881c2f257749cc8dc3934890ca465ed42afd136b21a6",
+  "landing_brake_research.py": "1d9782bc97e316b0dcb2833dc002a621b10fc0ba6e6539471e0698603aa4d8fc",
+  "search_flight_landing_research.py": "bcd73511f56532b6922d161eb19652b621346a74c36c9dd95ca510a48a82e7e9",
+  "flight-landing-grid-research.json": "1b56f00bcd177525e8dd37945360d0a0c939031a3c31e1d4543e93fe1cc93406",
+  "flight-grid-best-research.json": "7052aa29b4732178e6c2c8ea7ba1635a92dc70b169dd12b9f841cd82b8c1dd71",
+  "impact-grid-best-research.json": "702cb9af8449bdc70fba9c7a04abb75234c98acae4d33b48568eb301b33e30a1",
+  "actuator-config-readonly.json": "152c3fdf9e4f73b900b81596393cd0c4679c8560ca3925f9f76edc5ec8658c63",
+  "cooling-latest.json": "11191e8d67394042e9aa3b938612943a4ca236c8e54a6657354ef221c79019ff"
+}

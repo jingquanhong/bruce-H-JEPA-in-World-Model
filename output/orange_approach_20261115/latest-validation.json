@@ -1,0 +1,11 @@
+{
+  "run": "/home/khadas/BRUCE/diagnostics/orange-approach-20261115/live-pid-150802",
+  "range_m_median": 1.736208408302284,
+  "bearing_deg_median": 13.524742412473072,
+  "frames": 114,
+  "filtered_frames": 67,
+  "paired_frames": 100,
+  "actual_motion_enabled": false,
+  "reached": false,
+  "note": "User reported object placed at about 1 m. Sensor still reads about 1.73 m and RGB location is essentially unchanged. Independent physical distance remains unverified; this is not a passed 1 m stop test."
+}

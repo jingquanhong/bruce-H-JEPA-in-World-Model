@@ -1,0 +1,36 @@
+[38;5;159m[Genesis] [03:19:50] [INFO] [38;5;121m╭───────────────────────────────────────────────╮[0m[38;5;159m[0m
+[38;5;159m[Genesis] [03:19:50] [INFO] [38;5;121m│┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈[0m[38;5;159m [38;5;121m[1m[3mGenesis[0m[38;5;159m [38;5;121m┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈│[0m[38;5;159m[0m
+[38;5;159m[Genesis] [03:19:50] [INFO] [38;5;121m╰───────────────────────────────────────────────╯[0m[38;5;159m[0m
+[38;5;159m[Genesis] [03:19:50] [INFO] Running on [38;5;121m[NVIDIA GeForce RTX 3060][0m[38;5;159m with backend [38;5;121mgs.cuda[0m[38;5;159m. Device memory: [38;5;121m11.62[0m[38;5;159m GB.[0m
+[38;5;159m[Genesis] [03:19:50] [INFO] 🚀 Genesis initialized. 🔖 version: [38;5;121m1.4.4[0m[38;5;159m, 🎨 theme: [38;5;121mdark[0m[38;5;159m, 🌱 seed: [38;5;121m0[0m[38;5;159m, 🐛 debug: [38;5;121mFalse[0m[38;5;159m, 📏 precision: [38;5;121m32[0m[38;5;159m, 🔥 performance: [38;5;121mFalse[0m[38;5;159m, 💬 verbose: [38;5;121mINFO[0m[38;5;159m[0m
+[38;5;226m[Genesis] [03:19:50] [WARNING] Scene.show_FPS is deprecated. Please use Scene.options.profiling.show_FPS[0m
+[38;5;159m[Genesis] [03:19:51] [INFO] Scene [38;5;121m[3m<5f5d190>[0m[38;5;159m created.[0m
+[38;5;159m[Genesis] [03:19:51] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mplane_e90c860[0m[38;5;159m. idx: [38;5;121m0[0m[38;5;159m, morph: [38;5;121m<gs.morphs.Plane>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;159m[Genesis] [03:19:51] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mbox_5df5b46[0m[38;5;159m. idx: [38;5;121m1[0m[38;5;159m, morph: [38;5;121m<gs.morphs.Box>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;226m[Genesis] [03:19:51] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [03:19:51] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [03:19:51] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [03:19:51] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [03:19:51] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;159m[Genesis] [03:19:51] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mbruce_d000b91[0m[38;5;159m. idx: [38;5;121m2[0m[38;5;159m, morph: [38;5;121m<gs.morphs.URDF(file='/home/user/桌面/H-JEPA-main./H-JEPA-main/BRUCE-OP-main/Simulation/models/bruce/urdf/bruce_physical.urdf')>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;159m[Genesis] [03:19:51] [INFO] Building scene [38;5;121m[3m<5f5d190>[0m[38;5;159m...[0m
+[38;5;226m[Genesis] [03:19:52] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (3, 5), (8, 10). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+[38;5;159m[Genesis] [03:19:52] [INFO] Compiling simulation kernels...[0m
+[38;5;159m[Genesis] [03:19:53] [INFO] Building visualizer...[0m
+JUMP 2.0 6.0 0.0 prepare [-0.03  0.    0.35] [0. 0. 0.]
+JUMP 2.0 6.0 0.5 prepare [-0.02769135  0.00050608  0.3501681 ] [0.02692814 0.00050763 0.0033015 ]
+TAKEOFF 2.0 6.0 0.895 [0.01856282 0.0008295  0.37127712] [6.9082677e-01 3.4546325e-04 4.6873417e-01] landing 0.30988887446822005
+JUMP 2.0 6.0 1.0 flight [0.02250305 0.00075357 0.38199085] [ 0.03387806 -0.00117059 -0.28099528]
+TOUCHDOWN 1.315 [[ 0.03077258 -0.07513352  0.04642823]
+ [ 0.03186356  0.07658187  0.04637876]] [-0.60316813  0.00945182 -0.81946534]
+RESULT {"ax": 2.0, "az": 6.0, "stop": "interior QP: PrimalInfeasible", "seconds": 1.315, "release_time": 0.895, "first_airborne_time": 1.03, "touchdown": 1.315, "landing_x": 0.30988887446822005, "apex": 0.38881462812423706, "min_up": 0.6903056266828864, "base_force_peak": 0.0, "torque_peak": 4.646866321563721, "current_peak": 15.25138122694833, "box_motion": 0.007971943182698461, "final_feet": [[0.030772581696510315, -0.07513351738452911, 0.04642823338508606], [0.03186355531215668, 0.07658186554908752, 0.046378761529922485]], "candidate_screen_passed": false, "autonomous_crossing_success": false}
+JUMP 2.0 10.0 0.0 prepare [-0.03  0.    0.35] [0. 0. 0.]
+JUMP 2.0 10.0 0.5 prepare [-0.02769135  0.00050608  0.3501681 ] [0.02692814 0.00050763 0.0033015 ]
+RESULT {"ax": 2.0, "az": 10.0, "stop": "interior QP: PrimalInfeasible", "seconds": 0.895, "release_time": null, "first_airborne_time": null, "touchdown": null, "landing_x": 0.28, "apex": 0.38431525230407715, "min_up": 0.6918056977683096, "base_force_peak": 0.0, "torque_peak": 10.496500015258789, "current_peak": 29.99000004359654, "box_motion": 5.0525587192917e-05, "final_feet": [[0.003941148053854704, -0.07808578759431839, 0.024881381541490555], [0.003229729365557432, 0.07676509767770767, 0.025210026651620865]], "candidate_screen_passed": false, "autonomous_crossing_success": false}
+JUMP 4.0 6.0 0.0 prepare [-0.03  0.    0.35] [0. 0. 0.]
+JUMP 4.0 6.0 0.5 prepare [-0.02769135  0.00050608  0.3501681 ] [0.02692814 0.00050763 0.0033015 ]
+RESULT {"ax": 4.0, "az": 6.0, "stop": "interior QP: PrimalInfeasible", "seconds": 0.905, "release_time": null, "first_airborne_time": null, "touchdown": null, "landing_x": 0.28, "apex": 0.37596821784973145, "min_up": 0.6865600089106251, "base_force_peak": 0.0, "torque_peak": 10.5, "current_peak": 29.99000004359654, "box_motion": 0.00017636839091939344, "final_feet": [[-0.0001190739858429879, -0.07536137104034424, 0.02690248377621174], [-0.00029212236404418945, 0.07567509263753891, 0.02639174461364746]], "candidate_screen_passed": false, "autonomous_crossing_success": false}
+JUMP 4.0 10.0 0.0 prepare [-0.03  0.    0.35] [0. 0. 0.]
+JUMP 4.0 10.0 0.5 prepare [-0.02769135  0.00050608  0.3501681 ] [0.02692814 0.00050763 0.0033015 ]
+RESULT {"ax": 4.0, "az": 10.0, "stop": "interior QP: PrimalInfeasible", "seconds": 0.885, "release_time": null, "first_airborne_time": null, "touchdown": null, "landing_x": 0.28, "apex": 0.37636205554008484, "min_up": 0.6934826772734255, "base_force_peak": 0.0, "torque_peak": 10.5, "current_peak": 22.294912338256836, "box_motion": 0.00011750452183352816, "final_feet": [[0.0006344765424728394, -0.07578746974468231, 0.024659469723701477], [-3.306506187072955e-05, 0.07621952891349792, 0.02507670596241951]], "candidate_screen_passed": false, "autonomous_crossing_success": false}
+[38;5;159m[Genesis] [03:20:04] [INFO] 💤 Exiting Genesis and caching compiled kernels...[0m

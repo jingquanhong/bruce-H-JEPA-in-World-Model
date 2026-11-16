@@ -1,0 +1,13 @@
+/home/user/miniconda3/envs/hjepa/lib/python3.11/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+level 3 planning horizon: 5
+GradientSolver.solve completed in 0.0815 seconds.
+level 2 planning horizon: 2
+GradientSolver.solve completed in 0.0344 seconds.
+level 1 planning horizon: 2
+GradientSolver.solve completed in 0.0228 seconds.
+level 1 planning horizon: 1
+GradientSolver.solve completed in 0.0167 seconds.
+{'config': 'ant_hjepa_l3', 'loss': 0.8441473841667175, 'levels': 3, 'input_frames': 13, 'backward': True, 'planning_action_gradient': True, 'serialization': True, 'solver_shapes': [[1, 2, 40], [1, 1, 40]]}
+{'config': 'ant_hwm_l3', 'loss': 0.9058401584625244, 'levels': 3, 'input_frames': 13, 'backward': True, 'planning_action_gradient': True, 'serialization': True, 'solver_shapes': []}
+{'config': 'droid_hjepa_l2', 'loss': 145.2060546875, 'levels': 2, 'input_frames': 8, 'backward': True, 'planning_action_gradient': True, 'serialization': True, 'solver_shapes': []}

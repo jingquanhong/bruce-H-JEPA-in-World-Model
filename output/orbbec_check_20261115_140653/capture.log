@@ -1,0 +1,145 @@
+DEVICE_COUNT [11/15 14:06:53.893997][warning][4638][OpenNIDeviceInfo.cpp:192] New openni device matched.
+1
+[11/15 14:06:53.896643][warning][4638][OpenNIHostProtocol.cpp:739] Get usb core type failed!
+[11/15 14:06:54.023898][warning][4638][OpenNIHostProtocol.cpp:1107] Support sub cmd error!
+[11/15 14:06:54.023910][warning][4638][OpenNISensorFirmware.cpp:153] OpenNI2 camera don't support Watchdog function!
+DEVICE DaBai PID 1550 FIRMWARE RD2434
+[11/15 14:06:54.026392][warning][4638][ObException.cpp:5] Current device does not support frame sync!
+[11/15 14:06:54.028327][warning][4638][Pipeline.cpp:45] Execute failure! A libobsensor_exception has occurred!
+	 - where:45#Pipeline
+	 - msg:Current device does not support frame sync!
+	 - type:N11libobsensor31unsupported_operation_exceptionE
+SENSOR 3 PROFILES 18
+PROFILE 3 640x400 FPS 30 FORMAT 11
+PROFILE 3 320x200 FPS 5 FORMAT 11
+PROFILE 3 320x200 FPS 5 FORMAT 12
+PROFILE 3 320x200 FPS 10 FORMAT 11
+PROFILE 3 320x200 FPS 10 FORMAT 12
+PROFILE 3 320x200 FPS 15 FORMAT 11
+PROFILE 3 320x200 FPS 15 FORMAT 12
+PROFILE 3 320x200 FPS 30 FORMAT 11
+PROFILE 3 320x200 FPS 30 FORMAT 12
+PROFILE 3 640x400 FPS 5 FORMAT 11
+PROFILE 3 640x400 FPS 5 FORMAT 12
+PROFILE 3 640x400 FPS 10 FORMAT 11
+PROFILE 3 640x400 FPS 10 FORMAT 12
+PROFILE 3 640x400 FPS 15 FORMAT 11
+PROFILE 3 640x400 FPS 15 FORMAT 12
+PROFILE 3 640x400 FPS 30 FORMAT 12
+PROFILE 3 1280x800 FPS 7 FORMAT 11
+PROFILE 3 1280x800 FPS 7 FORMAT 12
+[11/15 14:06:54.030593][warning][4638][ObException.cpp:5] Invalid input, No matched video stream profile found!
+SENSOR 2 PROFILES 44
+PROFILE 2 640x480 FPS 30 FORMAT 5
+PROFILE 2 1920x1080 FPS 30 FORMAT 5
+PROFILE 2 1280x720 FPS 30 FORMAT 5
+PROFILE 2 1920x1080 FPS 15 FORMAT 5
+PROFILE 2 1280x720 FPS 15 FORMAT 5
+PROFILE 2 640x480 FPS 15 FORMAT 5
+PROFILE 2 1920x1080 FPS 10 FORMAT 5
+PROFILE 2 1280x720 FPS 10 FORMAT 5
+PROFILE 2 640x480 FPS 10 FORMAT 5
+PROFILE 2 1920x1080 FPS 5 FORMAT 5
+PROFILE 2 1280x720 FPS 5 FORMAT 5
+PROFILE 2 640x480 FPS 5 FORMAT 5
+PROFILE 2 640x480 FPS 30 FORMAT 0
+PROFILE 2 640x480 FPS 15 FORMAT 0
+PROFILE 2 640x480 FPS 10 FORMAT 0
+PROFILE 2 640x480 FPS 5 FORMAT 0
+PROFILE 2 320x240 FPS 30 FORMAT 0
+PROFILE 2 320x240 FPS 15 FORMAT 0
+PROFILE 2 320x240 FPS 10 FORMAT 0
+PROFILE 2 320x240 FPS 5 FORMAT 0
+PROFILE 2 1920x1080 FPS 30 FORMAT 22
+PROFILE 2 1280x720 FPS 30 FORMAT 22
+PROFILE 2 640x480 FPS 30 FORMAT 22
+PROFILE 2 1920x1080 FPS 15 FORMAT 22
+PROFILE 2 1280x720 FPS 15 FORMAT 22
+PROFILE 2 640x480 FPS 15 FORMAT 22
+PROFILE 2 1920x1080 FPS 10 FORMAT 22
+PROFILE 2 1280x720 FPS 10 FORMAT 22
+PROFILE 2 640x480 FPS 10 FORMAT 22
+PROFILE 2 1920x1080 FPS 5 FORMAT 22
+PROFILE 2 1280x720 FPS 5 FORMAT 22
+PROFILE 2 640x480 FPS 5 FORMAT 22
+PROFILE 2 1920x1080 FPS 30 FORMAT 25
+PROFILE 2 1280x720 FPS 30 FORMAT 25
+PROFILE 2 640x480 FPS 30 FORMAT 25
+PROFILE 2 1920x1080 FPS 15 FORMAT 25
+PROFILE 2 1280x720 FPS 15 FORMAT 25
+PROFILE 2 640x480 FPS 15 FORMAT 25
+PROFILE 2 1920x1080 FPS 10 FORMAT 25
+PROFILE 2 1280x720 FPS 10 FORMAT 25
+PROFILE 2 640x480 FPS 10 FORMAT 25
+PROFILE 2 1920x1080 FPS 5 FORMAT 25
+PROFILE 2 1280x720 FPS 5 FORMAT 25
+PROFILE 2 640x480 FPS 5 FORMAT 25
+[11/15 14:07:03.191232][warning][4656][OpenNIUSBLinux.cpp:245] Endpoint  0x81, Buffer1: Failed waiting on asynch transfer event:OB_EVENT_TIMEOUT
+[11/15 14:07:03.294575][warning][4656][OpenNIUSBLinux.cpp:245] Endpoint  0x81, Buffer52: Failed waiting on asynch transfer event:OB_EVENT_TIMEOUT
+[11/15 14:07:03.294605][warning][4656][OpenNIUSBLinux.cpp:204] exist(0) read thread(53)
+[11/15 14:07:03.294754][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294780][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294785][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294789][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294794][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294798][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294802][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294808][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294813][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294818][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294823][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294828][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294833][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294837][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294842][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294847][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294854][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294859][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294865][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294870][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294875][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294880][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294885][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294891][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294896][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294901][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294906][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294910][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294915][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294919][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294924][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294929][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294934][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294938][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294943][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294948][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294952][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294957][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294962][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294966][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294970][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294974][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294979][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294984][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294988][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294992][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.294997][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.295002][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.295006][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.295011][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.295015][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.295020][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.295024][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.295029][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.295034][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.295038][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.295042][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.295046][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.295051][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.295055][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.295060][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.295064][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.295069][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+[11/15 14:07:03.295073][warning][4638][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Broken pipe, number:32 
+POINTS_SAVED 179988
+CAPTURE_SAVED /home/khadas/BRUCE/diagnostics/orbbec-20261114/capture-20261115-140653 DEPTH_FRAMES 235 COLOR_FRAMES 232 VALID 179988

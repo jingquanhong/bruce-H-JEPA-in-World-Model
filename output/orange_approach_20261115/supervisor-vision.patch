@@ -1,0 +1,82 @@
+--- Util/stationary_step_test.py
++++ Util/stationary_step_test.py
+@@ -284,14 +284,25 @@
+         self.mm.THREAD_STATE.set({'top_level':np.ones(1)},opt='only')
+     def checkpoint(self):
+         atomic_json(self.folder/'checkpoint.json',{'result':self.stop_reason,'step_contact_patterns':{k:[list(x) for x in v] for k,v in self.step_observations.items()}})
+-    def perform_steps(self,seconds,forward_velocity=0.):
++    def perform_steps(self,seconds,forward_velocity=0.,vision_session=None):
+         seconds=step_request_seconds(seconds,self.args.max_step_seconds)
+         forward_velocity=checked_forward_velocity(forward_velocity,seconds,self.args.allow_small_motion,self.args.max_motion_seconds)
+-        atomic_json(self.folder/'last-motion-request.json',{'seconds':seconds,'forward_velocity_m_s':forward_velocity})
++        vision_started=time.monotonic()
++        atomic_json(self.folder/'last-motion-request.json',{'seconds':seconds,'forward_velocity_m_s':forward_velocity,'vision_session_id':vision_session})
+         self.step_observations={};observed=set();actual_swing=set()
+         self.phase='stepping';print('SUPPORTED_STEPPING_START',seconds,'FORWARD_VELOCITY_M_S',forward_velocity,flush=True);end=time.monotonic()+seconds
+         while time.monotonic()<end:
+-            self.command(1,forward_velocity);_,contacts,plan=self.watch();phase=int(plan['phase'][0]);observed.add(phase)
++            live_velocity=forward_velocity
++            if vision_session is not None:
++                from Util.vision_range_pid import checked_command
++                try:
++                    message=json.loads((self.folder/'vision-command.json').read_text())
++                    live_velocity=checked_command(message,time.monotonic(),vision_session)
++                except (OSError,ValueError,KeyError,TypeError) as error:
++                    print('VISION_BRAKE',str(error),flush=True);break
++                if live_velocity==0.:
++                    print('VISION_BRAKE',message.get('reason','balance requested'),flush=True);break
++            self.command(1,live_velocity);_,contacts,plan=self.watch();phase=int(plan['phase'][0]);observed.add(phase)
+             pattern=tuple(int(x) for x in contacts)
+             self.step_observations.setdefault(str(phase),set()).add(pattern)
+             if phase==1 and np.any(contacts[:2]) and not np.any(contacts[2:]):actual_swing.add(1)
+@@ -309,6 +320,8 @@
+         self.stop_reason='PASS_SHORT_SUPPORTED_STEP_TEST' if complete else 'INCOMPLETE_STEP_CONTACT_EVIDENCE'
+         self.phase='holding_balance';self.checkpoint()
+         print('STEP_FINISHED_KEEPING_BALANCE',self.stop_reason,flush=True)
++        if vision_session is not None:
++            atomic_json(self.folder/'vision-bout-result.json',{'vision_session_id':vision_session,'started_monotonic':vision_started,'ended_monotonic':time.monotonic(),'phase':'holding_balance'})
+     def run(self):
+         from Library.BRUCE_SENSE.Manager import SenseManager
+         import Library.ROBOT_MODEL.BRUCE_kinematics as kin
+@@ -339,7 +352,7 @@
+         tuning_file=self.folder/'planner-tuning.json'
+         atomic_json(tuning_file,{'forward_bias_m':self.args.forward_bias,'minimum_width_m':self.args.minimum_step_width,'lateral_bias_m':self.args.lateral_bias})
+         os.environ['BRUCE_STATIONARY_TUNING_FILE']=str(tuning_file)
+-        atomic_json(self.folder/'profile.json',{'max_motion_seconds':self.args.max_motion_seconds,'translation_tracking':self.args.translation_tracking,'allow_small_motion':self.args.allow_small_motion,'hold_hip_yaw':self.args.hold_hip_yaw,'attitude_scale':self.args.attitude_scale,'smooth_stop':self.args.smooth_stop,'swing_height_m':self.args.swing_height if self.args.swing_height is not None else .035,'foot_spacing_command_m':self.args.foot_spacing,'max_step_seconds':self.args.max_step_seconds})
++        atomic_json(self.folder/'profile.json',{'allow_vision_control':self.args.allow_vision_control,'max_motion_seconds':self.args.max_motion_seconds,'translation_tracking':self.args.translation_tracking,'allow_small_motion':self.args.allow_small_motion,'hold_hip_yaw':self.args.hold_hip_yaw,'attitude_scale':self.args.attitude_scale,'smooth_stop':self.args.smooth_stop,'swing_height_m':self.args.swing_height if self.args.swing_height is not None else .035,'foot_spacing_command_m':self.args.foot_spacing,'max_step_seconds':self.args.max_step_seconds})
+         for key,module,answer in [('sense','Startups.run_sense',False),('estimation','Startups.run_estimation',False),('low_level','Play.Walking.low_level',True),('high_level','Play.Walking.high_level',True)]:
+             self.preload(key,module,answer)
+         deadline=time.monotonic()+180
+@@ -415,9 +428,15 @@
+                         data=json.loads(request.read_text())
+                         seconds=step_request_seconds(data['seconds'],self.args.max_step_seconds)
+                         velocity=checked_forward_velocity(data.get('forward_velocity_m_s',0.),seconds,self.args.allow_small_motion,self.args.max_motion_seconds)
++                        vision_session=data.get('vision_session_id')
++                        if vision_session is not None:
++                            if (not self.args.allow_vision_control or not self.args.translation_tracking
++                                    or not isinstance(vision_session,str) or not 8<=len(vision_session)<=64
++                                    or not vision_session.replace('-','').replace('_','').isalnum() or velocity<0):
++                                raise ValueError('Invalid or disabled vision control session')
+                     except (OSError,ValueError,KeyError,TypeError) as error:
+                         print('STEP_REQUEST_REJECTED',str(error),flush=True);request.unlink(missing_ok=True);continue
+-                    request.unlink();self.perform_steps(seconds,velocity)
++                    request.unlink();self.perform_steps(seconds,velocity,vision_session)
+             print('OPERATOR_REQUESTED_STOP',flush=True)
+     def close(self):
+         self.mm.LEG_COMMAND.set({'BEAR_enable':np.zeros(1)},opt='only')
+@@ -455,6 +474,7 @@
+     p.add_argument('--max-motion-seconds',type=float,default=4.,help='Moving-bout ceiling, 0.5..30 seconds, also bounded by max-step-seconds.')
+     p.add_argument('--translation-tracking',action='store_true',help='Opt-in bounded forward tracking only during moving single support.')
+     p.add_argument('--allow-small-motion',action='store_true',help='Permit explicitly requested forward/backward bouts up to 0.05 m/s within the configured duration ceiling.')
++    p.add_argument('--allow-vision-control',action='store_true',help='Opt in to fresh session-bound range commands; stale vision returns to balance.')
+     p.add_argument('--hold-hip-yaw',action='store_true',help='Supervised zero-yaw profile: anchor stance hip yaw with unchanged gains and limits.')
+     p.add_argument('--swing-height',type=float,help='Optional zero-velocity diagnostic swing apex in meters, 0.01..0.035; ordinary startup is unchanged.')
+     p.add_argument('--attitude-scale',type=float,default=1.,help='Supported diagnostic roll/pitch feedback scale, 0.25..1; does not scale gravity compensation.')
+@@ -478,6 +498,7 @@
+         if args.worker=='preload':return preload_worker(args.folder,args.module,args.key)
+         return motor_worker(args.folder) if args.worker=='bear' else guard_worker(args.folder)
+     if not (0<=args.seconds<=args.max_step_seconds and 5<=args.ground_wait<=300 and 3<=args.stand_seconds<=60):p.error('Bounded test requires stepping within max-step-seconds, 5..300 ground-wait seconds, 3..60 standing seconds')
++    if args.allow_vision_control and not (args.allow_small_motion and args.translation_tracking and args.keep_standing):p.error('Vision control requires supported translation and keep-standing')
+     if not args.run:
+         for name in ['Library.ROBOT_MODEL.BRUCE_kinematics','Library.ROBOT_MODEL.BRUCE_dynamics','Library.STATE_ESTIMATION.BRUCE_estimation_KF']:importlib.import_module(name)
+         print('Non-actuating dependency check passed. --run starts a bounded supported test.')

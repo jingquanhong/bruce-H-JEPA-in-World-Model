@@ -1,0 +1,64 @@
+ M Library/ACTUATORS/BEAR_controller.py
+ M Library/BRUCE_SENSE/Manager.py
+ M Library/SHARED_MEMORY/Manager.py
+ M Library/STATE_ESTIMATION/BRUCE_ESTIMATION_KF_AOT.py
+ M Play/Demo/demo_macros.py
+ M Play/Demo/top_level.py
+ M Play/Walking/high_level.py
+ M Play/Walking/low_level.py
+ M Play/Walking/top_level.py
+ M Play/bootup.sh
+ M Play/bootup_gamepad.sh
+ M Play/config.py
+ M Play/initialize.py
+ M Play/terminate.sh
+ M Settings/BRUCE_data.py
+ M Simulation/sim_bruce.py
+ M Startups/run_bear.py
+ M Startups/run_dxl.py
+ M Startups/run_estimation.py
+ M Startups/run_sense.py
+ M Startups/startup_setup.sh
+ M Startups/usb_latency_setup.sh
+?? Library/ACTUATORS/__pycache__/
+?? Library/BRUCE_GAMEPAD/__pycache__/
+?? Library/BRUCE_SENSE/__pycache__/
+?? Library/ROBOT_MODEL/BRUCE_dynamics.cpython-310-aarch64-linux-gnu.so
+?? Library/ROBOT_MODEL/BRUCE_kinematics.cpython-310-aarch64-linux-gnu.so
+?? Library/ROBOT_MODEL/__pycache__/
+?? Library/SHARED_MEMORY/__pycache__/
+?? Library/STATE_ESTIMATION/BRUCE_estimation_CF.cpython-310-aarch64-linux-gnu.so
+?? Library/STATE_ESTIMATION/BRUCE_estimation_KF.cpython-310-aarch64-linux-gnu.so
+?? Library/STATE_ESTIMATION/BRUCE_orientation.cpython-310-aarch64-linux-gnu.so
+?? Library/STATE_ESTIMATION/__pycache__/
+?? Play/Demo/__pycache__/
+?? Play/Demo/high_level-aarch64
+?? Play/Demo/high_level-x86_64
+?? Play/Demo/low_level-aarch64
+?? Play/Demo/low_level-x86_64
+?? Play/Walking/.low_level.py.swp
+?? Play/Walking/.top_level.py.swp
+?? Play/Walking/__pycache__/
+?? Play/Walking/auto_walk.py
+?? Play/__pycache__/
+?? Settings/__pycache__/
+?? Simulation/__pycache__/
+?? Startups/__pycache__/
+?? Startups/auto_start.sh
+?? Startups/check_usb_health.sh
+?? Startups/launch_thread.sh
+?? Startups/rt_run.sh
+?? Util/.sun_test_sense.py.swp
+?? Util/__pycache__/
+?? Util/control_preflight.py
+?? Util/hip_yaw_hold.py
+?? Util/hip_yaw_reference.py
+?? Util/observe_supported_step.py
+?? Util/sensor_contact_probe.py
+?? Util/smooth_stop_reference.py
+?? Util/stationary_planner_tuning.py
+?? Util/stationary_step_test.py
+?? Util/sun_test_sense.py
+?? Util/sun_test_sense.py.save
+?? Util/translation_feedback.py
+?? bench_tmp.py

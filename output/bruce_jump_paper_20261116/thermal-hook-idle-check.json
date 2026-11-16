@@ -1,0 +1,59 @@
+{
+  "status": "PASS_MOTOR_OFF_IDLE_HOOK_READ",
+  "time": 1794841573.5355947,
+  "legacy_driver_return": [
+    [
+      [
+        16.206043243408203,
+        35.5
+      ],
+      128
+    ],
+    [
+      [
+        16.218425750732422,
+        31.0
+      ],
+      128
+    ]
+  ],
+  "captured": {
+    "monotonic": 4446.185346512,
+    "status": "ok",
+    "ids": [
+      4,
+      9
+    ],
+    "registers": [
+      "input_voltage",
+      "winding_temperature",
+      "powerstage_temperature",
+      "ic_temperature"
+    ],
+    "values": [
+      [
+        [
+          16.206043243408203,
+          35.5,
+          37.5078125,
+          40.0
+        ],
+        128
+      ],
+      [
+        [
+          16.218425750732422,
+          31.0,
+          34.5703125,
+          35.875
+        ],
+        128
+      ]
+    ],
+    "maximum_component_temperature_c": 40.0,
+    "attention_70c": false
+  },
+  "all_motors_off_verified": true,
+  "hardware_commands_changed": false,
+  "runtime_driver_installed": false
+}

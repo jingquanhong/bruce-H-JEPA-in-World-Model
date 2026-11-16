@@ -1,0 +1,124 @@
+{
+  "status": "IDEALIZED_IMPACT_SNAPSHOT_ONLY",
+  "source_flight_report": "/tmp/tmpvcu6raii/flight.json",
+  "physical_jump_validated": false,
+  "hardware_actuation": false,
+  "landing_controller_validated": false,
+  "cases": [
+    {
+      "foot_clearance_reference_m": 0.002,
+      "impact_contact_assumption": "first_point",
+      "contact_points": [
+        "right_heel"
+      ],
+      "solver_status": "primal infeasible",
+      "preimpact_com_vz_m_s": -0.06700632245875432,
+      "preimpact_contact_velocity_m_s": [
+        -0.03939415288489545,
+        -0.00016935218201909533,
+        -0.1866259844637364
+      ]
+    },
+    {
+      "foot_clearance_reference_m": 0.002,
+      "impact_contact_assumption": "first_point_sliding",
+      "contact_points": [
+        "right_heel"
+      ],
+      "solver_status": "solved",
+      "preimpact_com_vz_m_s": -0.06700632245875432,
+      "preimpact_contact_velocity_m_s": [
+        -0.03939415288489545,
+        -0.00016935218201909533,
+        -0.1866259844637364
+      ],
+      "contact_impulse_N_s": [
+        [
+          0.0023768697980114852,
+          1.809179790644657e-09,
+          0.004753691673553864
+        ]
+      ],
+      "postimpact_com_vz_m_s": -0.06595701420533373,
+      "postimpact_contact_velocity_max_m_s": 0.14172708924485206,
+      "postimpact_contact_velocities_m_s": [
+        [
+          -0.14172708924485206,
+          -0.017403187386584452,
+          3.412907179090041e-10
+        ]
+      ],
+      "kinetic_energy_dissipated_J": 0.000658832014390015,
+      "model_configuration": [
+        -0.0008408706083841464,
+        -0.00155462972966763,
+        0.3835126490271585,
+        -0.0036489128290898365,
+        0.05075100657330854,
+        0.045084650564902316,
+        0.9976865214336627,
+        -1.5471795718646977,
+        1.59171480905487,
+        0.5200578386525111,
+        -0.8075103463415876,
+        0.394640034182021,
+        -1.566103842702681,
+        1.5476331013229745,
+        0.5114953437222258,
+        -0.800257920848007,
+        0.3620987302135534
+      ],
+      "postimpact_model_velocity": [
+        0.05410493823869715,
+        0.0013532568622788962,
+        0.021519081218659617,
+        -0.046799359689312744,
+        2.604230094535884,
+        -0.02377518288044881,
+        0.026993439634794877,
+        -0.014098305803121103,
+        1.8690797793392497,
+        1.6805654244620865,
+        -6.063566350543823,
+        0.03329029037147399,
+        0.03178277853719775,
+        1.8568287634630278,
+        1.5363894556492022,
+        -0.4467463761610633
+      ],
+      "constraint_violation": 2.5770414344150616e-08
+    },
+    {
+      "foot_clearance_reference_m": 0.002,
+      "impact_contact_assumption": "four_points",
+      "contact_points": [
+        "right_toe",
+        "right_heel",
+        "left_toe",
+        "left_heel"
+      ],
+      "solver_status": "primal infeasible",
+      "preimpact_com_vz_m_s": -0.06700632245875432,
+      "preimpact_contact_velocity_m_s": [
+        -0.038929961722105,
+        -0.005743086302638544,
+        -0.15674846515598256,
+        -0.03939415288489517,
+        -0.00016935218201909186,
+        -0.1866259844637364,
+        -0.038998094675828154,
+        -0.0020852697669420522,
+        -0.15741726804111772,
+        -0.039181378718396664,
+        -0.008763227923213372,
+        -0.1864763589828566
+      ]
+    }
+  ],
+  "limitations": [
+    "Assumed perfectly inelastic rigid impact and friction coefficient; single-point sliding is only an impulse snapshot",
+    "No physical impact duration, force peak, compliance, motor dynamics, terrain or control",
+    "Unmeasured actual mass/inertia and approximate simultaneous contacts",
+    "Impact impulses are not peak forces and cannot certify safe landing"
+  ]
+}

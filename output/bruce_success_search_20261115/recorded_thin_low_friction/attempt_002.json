@@ -1,0 +1,301 @@
+{
+  "height": 0.04,
+  "swing_time": 0.24,
+  "stop": "loss_of_balance",
+  "seconds": 2.555,
+  "body_height": 0.38,
+  "second_time": 0.5,
+  "config": {
+    "out": "output/bruce_success_search_20261115/recorded_thin_low_friction",
+    "heights": [
+      0.01,
+      0.02,
+      0.04,
+      0.06,
+      0.08
+    ],
+    "swing_time": [
+      0.24
+    ],
+    "second_time": 0.5,
+    "pulse_acc": 1.3,
+    "lateral": -0.03,
+    "swing_weight": 1000.0,
+    "attitude_weight": 50.0,
+    "attitude_kp": 40.0,
+    "foot_kp": 200.0,
+    "momentum_weight": 0.0,
+    "capture_mode": "recapture",
+    "landing_min": null,
+    "swing_profile": "plateau",
+    "line_single": false,
+    "audit": true,
+    "track_swing_roll": false,
+    "capture_bias": 0.0,
+    "capture_wait": 0.6,
+    "second_y": null,
+    "arm_weight": 100.0,
+    "limit_horizon": 0.1,
+    "landing_z": 0.025,
+    "soft_single_com": false,
+    "record": true,
+    "second_profile": "arch",
+    "policy": "dynamic",
+    "duration": 6.0,
+    "body_height": 0.38,
+    "base_x": -0.03,
+    "center_x": 0.12,
+    "thickness": 0.02,
+    "width": 0.3,
+    "friction": 0.6
+  },
+  "obstacle": {
+    "center_x": 0.12,
+    "height": 0.04,
+    "thickness": 0.02,
+    "width": 0.3
+  },
+  "friction": 0.6,
+  "base_force_peak": 0.0,
+  "torque_peak": 10.492268562316895,
+  "current_peak": 26.525927271161763,
+  "box_motion": 0.08361967208638645,
+  "initial_mesh_intersections": [],
+  "contact_audit_at_2000hz": true,
+  "collision_mesh_transform_peak_error_m": 5.165676975060762e-08,
+  "robot_obstacle_contact_steps": 697,
+  "first_robot_obstacle_contact_s": 1.6159999999999999,
+  "sampled_mesh_intersections": [
+    {
+      "t": 1.62,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 1.6400000000000001,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 1.74,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 1.76,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 1.78,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 1.8,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 1.82,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 1.84,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 1.92,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.12,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.14,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.16,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.18,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.2,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.22,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.24,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.48,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.5,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.52,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.54,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    }
+  ],
+  "final_feet": [
+    [
+      0.0010208288440480828,
+      -0.07256630063056946,
+      0.028205586597323418
+    ],
+    [
+      0.2761302590370178,
+      0.14069631695747375,
+      0.03243144601583481
+    ]
+  ],
+  "events": [
+    {
+      "phase": "accelerate",
+      "t": 1.5,
+      "com": [
+        0.025372363148086965,
+        -0.029616124359970866,
+        0.3357763931949747
+      ],
+      "velocity": [
+        6.744674616635917e-06,
+        2.5410781498626465e-05,
+        3.298371598789243e-05
+      ]
+    },
+    {
+      "phase": "first_swing",
+      "t": 1.52,
+      "com": [
+        0.025578559897595964,
+        -0.029594393552798574,
+        0.3357501241974539
+      ],
+      "velocity": [
+        0.02324101368731941,
+        0.0017990596445978143,
+        -0.0009238792246915088
+      ]
+    },
+    {
+      "phase": "capture",
+      "t": 1.76,
+      "com": [
+        0.059235905187723786,
+        0.028739039397626075,
+        0.33988306917388267
+      ],
+      "velocity": [
+        0.2505032594080837,
+        0.4760525514252376,
+        -0.02383169765945201
+      ]
+    },
+    {
+      "phase": "recapture",
+      "t": 2.2600000000000002,
+      "com": [
+        0.17475657328293523,
+        0.16152624396264192,
+        0.32840775179517717
+      ],
+      "velocity": [
+        0.22298994838400216,
+        0.23659238084688897,
+        -0.1061792360206352
+      ]
+    }
+  ],
+  "candidate_screen_passed": false,
+  "autonomous_crossing_success": false,
+  "trial": "crossing_attempt",
+  "recorded_frames": 126,
+  "record_hz": 50,
+  "control_hz": 200,
+  "physics_hz": 2000,
+  "warmup_seconds": 0.02,
+  "visual_hjepa_ready": false,
+  "control_mode": "joint_only",
+  "base_actuated": false,
+  "urdf": "/home/user/桌面/H-JEPA-main./H-JEPA-main/BRUCE-OP-main/Simulation/models/bruce/urdf/bruce_physical.urdf",
+  "urdf_sha256": "950dfffd951d47ebc9cd02fc69133cb7315040c301417a77dc339cc89ec1079e",
+  "action_kind": "four_consecutive_16_joint_torque_commands_Nm",
+  "action_order": "right_leg_5,left_leg_5,right_arm_3,left_arm_3",
+  "action_timing": "observation precedes four 5 ms commands; final incomplete block excluded",
+  "proprio_kind": "q10,dq10,body_specific_force3,body_gyro3,executed_leg_torque10",
+  "pixels_kind": "64x64 RGB fixed external camera; simulator truth, not onboard vision",
+  "physics_trace": "attempt_002.physics.npz",
+  "physics_trace_sha256": "a87a08e30c7f977529773b0038cfa7a39f2207498ddda1ed6061af2548282321",
+  "link_names": [
+    "base_link",
+    "hip_yaw_link_r",
+    "hip_pitch_link_r",
+    "hip_roll_link_r",
+    "knee_pitch_link_r",
+    "ankle_pitch_link_r",
+    "hip_yaw_link_l",
+    "hip_pitch_link_l",
+    "hip_roll_link_l",
+    "knee_pitch_link_l",
+    "ankle_pitch_link_l",
+    "shoulder_pitch_link_r",
+    "shoulder_roll_link_r",
+    "elbow_pitch_link_r",
+    "shoulder_pitch_link_l",
+    "shoulder_roll_link_l",
+    "elbow_pitch_link_l"
+  ],
+  "leg_armature_kg_m2": 0.00182,
+  "purpose": "experimental_obstacle_attempt_not_success_demonstration"
+}

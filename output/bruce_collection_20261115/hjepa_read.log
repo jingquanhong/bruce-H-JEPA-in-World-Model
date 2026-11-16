@@ -1,0 +1,27 @@
+[
+  {
+    "dataset": "bruce_obstacle_attempts_20261115",
+    "frames": 4244,
+    "clips": 4020,
+    "sample_shapes": {
+      "pixels_level1": [
+        4,
+        3,
+        64,
+        64
+      ],
+      "proprio_level1": [
+        4,
+        36
+      ],
+      "action_level1": [
+        4,
+        128
+      ]
+    },
+    "episodes_checked": 32,
+    "boundary_clips_checked": 64,
+    "action_alignment_passed": true,
+    "model_training_performed": false
+  }
+]

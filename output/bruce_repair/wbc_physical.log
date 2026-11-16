@@ -1,0 +1,30 @@
+REF {'T': 7.2, 'name': 'quasistatic_COM_IK', 'swing': {'l': (1.6, 3.1), 'r': (4.7, 6.2)}, 'over': [(0, 'l', 1.6, 3.1), (0, 'r', 4.7, 6.2)], 'kinematic_foot_error': 0.01078397689212793}
+[38;5;159m[Genesis] [14:52:12] [INFO] [38;5;121m╭───────────────────────────────────────────────╮[0m[38;5;159m[0m
+[38;5;159m[Genesis] [14:52:12] [INFO] [38;5;121m│┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈[0m[38;5;159m [38;5;121m[1m[3mGenesis[0m[38;5;159m [38;5;121m┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈│[0m[38;5;159m[0m
+[38;5;159m[Genesis] [14:52:12] [INFO] [38;5;121m╰───────────────────────────────────────────────╯[0m[38;5;159m[0m
+[38;5;159m[Genesis] [14:52:12] [INFO] Running on [38;5;121m[NVIDIA GeForce RTX 3060][0m[38;5;159m with backend [38;5;121mgs.cuda[0m[38;5;159m. Device memory: [38;5;121m11.62[0m[38;5;159m GB.[0m
+[38;5;159m[Genesis] [14:52:12] [INFO] 🚀 Genesis initialized. 🔖 version: [38;5;121m1.4.4[0m[38;5;159m, 🎨 theme: [38;5;121mdark[0m[38;5;159m, 🌱 seed: [38;5;121m0[0m[38;5;159m, 🐛 debug: [38;5;121mFalse[0m[38;5;159m, 📏 precision: [38;5;121m32[0m[38;5;159m, 🔥 performance: [38;5;121mFalse[0m[38;5;159m, 💬 verbose: [38;5;121mINFO[0m[38;5;159m[0m
+[38;5;226m[Genesis] [14:52:12] [WARNING] Scene.show_FPS is deprecated. Please use Scene.options.profiling.show_FPS[0m
+[38;5;159m[Genesis] [14:52:12] [INFO] Scene [38;5;121m[3m<f172170>[0m[38;5;159m created.[0m
+[38;5;159m[Genesis] [14:52:12] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mplane_1dbb6f7[0m[38;5;159m. idx: [38;5;121m0[0m[38;5;159m, morph: [38;5;121m<gs.morphs.Plane>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;159m[Genesis] [14:52:12] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mbox_f45d9a2[0m[38;5;159m. idx: [38;5;121m1[0m[38;5;159m, morph: [38;5;121m<gs.morphs.Box>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;226m[Genesis] [14:52:12] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [14:52:12] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [14:52:12] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [14:52:12] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [14:52:12] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;159m[Genesis] [14:52:12] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mbruce_2888d03[0m[38;5;159m. idx: [38;5;121m2[0m[38;5;159m, morph: [38;5;121m<gs.morphs.URDF(file='/home/user/桌面/H-JEPA-main./H-JEPA-main/BRUCE-OP-main/Simulation/models/bruce/urdf/bruce_physical.urdf')>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;159m[Genesis] [14:52:12] [INFO] Building scene [38;5;121m[3m<f172170>[0m[38;5;159m...[0m
+[38;5;226m[Genesis] [14:52:13] [WARNING] Neutral robot position (qpos0) exceeds joint limits.[0m
+[38;5;226m[Genesis] [14:52:13] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (3, 5), (8, 10). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+[38;5;159m[Genesis] [14:52:13] [INFO] Compiling simulation kernels...[0m
+[38;5;159m[Genesis] [14:52:14] [INFO] Building visualizer...[0m
+CROSS 0 base [-5.5093091e-02 -2.3743261e-04  3.7000006e-01] quat [1. 0. 0. 0.] feet {'ankle_pitch_link_r': (-2.265721559524536e-05, 0.025438830256462097), 'ankle_pitch_link_l': (1.3559332728618756e-05, 0.02456844225525856)} fail 0
+CROSS 25 base [-7.3420890e-02  1.8640995e-04  3.7615791e-01] quat [9.9999356e-01 9.4018600e-05 3.4340075e-03 1.1088977e-03] feet {'ankle_pitch_link_r': (-0.003654439002275467, 0.028791019693017006), 'ankle_pitch_link_l': (-0.004117414355278015, 0.02868637442588806)} fail 0
+CROSS 50 base [-0.06188788  0.00150846  0.36865804] quat [9.9991065e-01 3.6515179e-03 1.2836735e-02 7.9760031e-04] feet {'ankle_pitch_link_r': (-0.003657020628452301, 0.026326104998588562), 'ankle_pitch_link_l': (-0.0038932866882532835, 0.026898030191659927)} fail 0
+CROSS 75 base [-0.09093636 -0.00307496  0.37498915] quat [0.99980277 0.01538377 0.01085844 0.00630676] feet {'ankle_pitch_link_r': (-0.00705775897949934, 0.028159862384200096), 'ankle_pitch_link_l': (-0.007962942123413086, 0.028644993901252747)} fail 0
+CROSS 100 base [-0.09015501 -0.02478249  0.36918378] quat [ 0.9937898   0.10126942 -0.00419037  0.04592261] feet {'ankle_pitch_link_r': (-0.006047531962394714, 0.025854647159576416), 'ankle_pitch_link_l': (-0.010783776640892029, 0.03162406384944916)} fail 0
+CROSS 125 base [-0.0928537  -0.03639794  0.36999747] quat [ 0.9624468   0.2284573  -0.12839058  0.07084751] feet {'ankle_pitch_link_r': (-0.009415514767169952, 0.028086796402931213), 'ankle_pitch_link_l': (-0.017556486651301384, 0.03783457726240158)} fail 0
+CROSS 150 base [-0.10212753 -0.02996797  0.36312175] quat [ 0.8806853   0.328066   -0.33388692  0.07270146] feet {'ankle_pitch_link_r': (-0.015472537837922573, 0.0346219576895237), 'ankle_pitch_link_l': (-0.02794881910085678, 0.0431441068649292)} fail 0
+DONE 156
+[38;5;159m[Genesis] [14:52:18] [INFO] 💤 Exiting Genesis and caching compiled kernels...[0m

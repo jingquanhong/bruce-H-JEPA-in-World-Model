@@ -1,0 +1,10 @@
+{
+  "status": "PASS_PRIVATE_SIX_CM_REFERENCE_ONLY",
+  "trajectory_samples": 726,
+  "max_joint_delta_deg": 30.971183645868525,
+  "max_joint_speed_rad_s": 0.167962841442011,
+  "max_ankle_error_m": 2.7162531211675344e-13,
+  "no_reference_output_unchanged": true,
+  "tracking_abort_checked": true,
+  "motor_commands_changed": false
+}

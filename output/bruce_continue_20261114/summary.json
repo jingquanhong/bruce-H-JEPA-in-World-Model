@@ -1,0 +1,116 @@
+{
+  "episodes": 3,
+  "frames": 471,
+  "simulated_seconds": 9.42,
+  "autonomous_crossing_successes": 0,
+  "trials": [
+    {
+      "trial": "stand",
+      "recorded_frames": 250,
+      "simulated_seconds": 5.0,
+      "stop_reason": "duration_complete",
+      "stand_check_passed": true,
+      "autonomous_crossing_success": false,
+      "base_control_force_peak_abs": 0.0
+    },
+    {
+      "trial": "box08",
+      "recorded_frames": 71,
+      "simulated_seconds": 1.42,
+      "stop_reason": "Inverse dynamics failed: maximum iterations reached",
+      "stand_check_passed": false,
+      "autonomous_crossing_success": false,
+      "base_control_force_peak_abs": 0.0
+    },
+    {
+      "trial": "support",
+      "recorded_frames": 150,
+      "simulated_seconds": 3.0,
+      "stop_reason": "support_transfer_not_ready",
+      "stand_check_passed": false,
+      "autonomous_crossing_success": false,
+      "base_control_force_peak_abs": 0.0
+    }
+  ],
+  "regression_tests_passed": 11,
+  "recording_integrity_passed": true,
+  "hjepa_read": [
+    {
+      "dataset": "stand",
+      "frames": 250,
+      "clips": 243,
+      "sample_shapes": {
+        "pixels_level1": [
+          4,
+          3,
+          64,
+          64
+        ],
+        "proprio_level1": [
+          4,
+          36
+        ],
+        "action_level1": [
+          4,
+          128
+        ]
+      },
+      "action_alignment_passed": true,
+      "model_training_performed": false
+    },
+    {
+      "dataset": "box08",
+      "frames": 71,
+      "clips": 64,
+      "sample_shapes": {
+        "pixels_level1": [
+          4,
+          3,
+          64,
+          64
+        ],
+        "proprio_level1": [
+          4,
+          36
+        ],
+        "action_level1": [
+          4,
+          128
+        ]
+      },
+      "action_alignment_passed": true,
+      "model_training_performed": false
+    },
+    {
+      "dataset": "support",
+      "frames": 150,
+      "clips": 143,
+      "sample_shapes": {
+        "pixels_level1": [
+          4,
+          3,
+          64,
+          64
+        ],
+        "proprio_level1": [
+          4,
+          36
+        ],
+        "action_level1": [
+          4,
+          128
+        ]
+      },
+      "action_alignment_passed": true,
+      "model_training_performed": false
+    }
+  ],
+  "historical_hdf5_unchanged": {
+    "bruce_assisted_reference_50.h5": true,
+    "bruce_joint_trials_40.h5": true
+  },
+  "previous_v4_hdf5_unchanged": {
+    "output/bruce_repair/validation_v4/stand.h5": true,
+    "output/bruce_repair/validation_v4/box08.h5": true
+  }
+}

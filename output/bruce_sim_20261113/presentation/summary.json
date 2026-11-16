@@ -1,0 +1,66 @@
+[
+  {
+    "mode": "assisted",
+    "scene": "box_04",
+    "episodes": 13,
+    "historical_criterion_passed": 7,
+    "autonomous_success": 0,
+    "falls": 0
+  },
+  {
+    "mode": "assisted",
+    "scene": "box_06",
+    "episodes": 13,
+    "historical_criterion_passed": 11,
+    "autonomous_success": 0,
+    "falls": 0
+  },
+  {
+    "mode": "assisted",
+    "scene": "box_08",
+    "episodes": 12,
+    "historical_criterion_passed": 9,
+    "autonomous_success": 0,
+    "falls": 0
+  },
+  {
+    "mode": "assisted",
+    "scene": "step_10",
+    "episodes": 12,
+    "historical_criterion_passed": 10,
+    "autonomous_success": 0,
+    "falls": 0
+  },
+  {
+    "mode": "joint_only",
+    "scene": "box_04",
+    "episodes": 10,
+    "historical_criterion_passed": 0,
+    "autonomous_success": 0,
+    "falls": 10
+  },
+  {
+    "mode": "joint_only",
+    "scene": "box_06",
+    "episodes": 10,
+    "historical_criterion_passed": 0,
+    "autonomous_success": 0,
+    "falls": 10
+  },
+  {
+    "mode": "joint_only",
+    "scene": "box_08",
+    "episodes": 10,
+    "historical_criterion_passed": 0,
+    "autonomous_success": 0,
+    "falls": 10
+  },
+  {
+    "mode": "joint_only",
+    "scene": "step_10",
+    "episodes": 10,
+    "historical_criterion_passed": 0,
+    "autonomous_success": 0,
+    "falls": 10
+  }
+]

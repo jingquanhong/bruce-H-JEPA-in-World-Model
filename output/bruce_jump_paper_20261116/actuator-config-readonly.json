@@ -1,0 +1,677 @@
+{
+  "timestamp": 1794841706.4111836,
+  "motor_reads": [
+    {
+      "id": 1,
+      "readbacks": {
+        "get_torque_enable": [
+          [
+            0,
+            128
+          ]
+        ],
+        "get_limit_velocity_max": [
+          [
+            [
+              1000.0
+            ],
+            128
+          ]
+        ],
+        "get_limit_acc_max": [
+          [
+            [
+              50.0
+            ],
+            128
+          ]
+        ],
+        "get_limit_iq_max": [
+          [
+            [
+              30.0
+            ],
+            128
+          ]
+        ],
+        "get_p_gain_force": [
+          [
+            [
+              10.0
+            ],
+            128
+          ]
+        ],
+        "get_d_gain_force": [
+          [
+            [
+              1.0
+            ],
+            128
+          ]
+        ],
+        "get_temp_limit_low": [
+          [
+            [
+              80.0
+            ],
+            128
+          ]
+        ],
+        "get_temp_limit_high": [
+          [
+            [
+              100.0
+            ],
+            128
+          ]
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "readbacks": {
+        "get_torque_enable": [
+          [
+            0,
+            128
+          ]
+        ],
+        "get_limit_velocity_max": [
+          [
+            [
+              10.0
+            ],
+            128
+          ]
+        ],
+        "get_limit_acc_max": [
+          [
+            [
+              5.0
+            ],
+            128
+          ]
+        ],
+        "get_limit_iq_max": [
+          [
+            [
+              30.0
+            ],
+            128
+          ]
+        ],
+        "get_p_gain_force": [
+          [
+            [
+              10.0
+            ],
+            128
+          ]
+        ],
+        "get_d_gain_force": [
+          [
+            [
+              1.0
+            ],
+            128
+          ]
+        ],
+        "get_temp_limit_low": [
+          [
+            [
+              80.0
+            ],
+            128
+          ]
+        ],
+        "get_temp_limit_high": [
+          [
+            [
+              100.0
+            ],
+            128
+          ]
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "readbacks": {
+        "get_torque_enable": [
+          [
+            0,
+            128
+          ]
+        ],
+        "get_limit_velocity_max": [
+          [
+            [
+              10.0
+            ],
+            128
+          ]
+        ],
+        "get_limit_acc_max": [
+          [
+            [
+              5.0
+            ],
+            128
+          ]
+        ],
+        "get_limit_iq_max": [
+          [
+            [
+              30.0
+            ],
+            128
+          ]
+        ],
+        "get_p_gain_force": [
+          [
+            [
+              10.0
+            ],
+            128
+          ]
+        ],
+        "get_d_gain_force": [
+          [
+            [
+              1.0
+            ],
+            128
+          ]
+        ],
+        "get_temp_limit_low": [
+          [
+            [
+              80.0
+            ],
+            128
+          ]
+        ],
+        "get_temp_limit_high": [
+          [
+            [
+              100.0
+            ],
+            128
+          ]
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "readbacks": {
+        "get_torque_enable": [
+          [
+            0,
+            128
+          ]
+        ],
+        "get_limit_velocity_max": [
+          [
+            [
+              10.0
+            ],
+            128
+          ]
+        ],
+        "get_limit_acc_max": [
+          [
+            [
+              5.0
+            ],
+            128
+          ]
+        ],
+        "get_limit_iq_max": [
+          [
+            [
+              30.0
+            ],
+            128
+          ]
+        ],
+        "get_p_gain_force": [
+          [
+            [
+              10.0
+            ],
+            128
+          ]
+        ],
+        "get_d_gain_force": [
+          [
+            [
+              1.0
+            ],
+            128
+          ]
+        ],
+        "get_temp_limit_low": [
+          [
+            [
+              80.0
+            ],
+            128
+          ]
+        ],
+        "get_temp_limit_high": [
+          [
+            [
+              100.0
+            ],
+            128
+          ]
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "readbacks": {
+        "get_torque_enable": [
+          [
+            0,
+            128
+          ]
+        ],
+        "get_limit_velocity_max": [
+          [
+            [
+              10.0
+            ],
+            128
+          ]
+        ],
+        "get_limit_acc_max": [
+          [
+            [
+              5.0
+            ],
+            128
+          ]
+        ],
+        "get_limit_iq_max": [
+          [
+            [
+              30.0
+            ],
+            128
+          ]
+        ],
+        "get_p_gain_force": [
+          [
+            [
+              10.0
+            ],
+            128
+          ]
+        ],
+        "get_d_gain_force": [
+          [
+            [
+              1.0
+            ],
+            128
+          ]
+        ],
+        "get_temp_limit_low": [
+          [
+            [
+              80.0
+            ],
+            128
+          ]
+        ],
+        "get_temp_limit_high": [
+          [
+            [
+              100.0
+            ],
+            128
+          ]
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "readbacks": {
+        "get_torque_enable": [
+          [
+            0,
+            128
+          ]
+        ],
+        "get_limit_velocity_max": [
+          [
+            [
+              10.0
+            ],
+            128
+          ]
+        ],
+        "get_limit_acc_max": [
+          [
+            [
+              5.0
+            ],
+            128
+          ]
+        ],
+        "get_limit_iq_max": [
+          [
+            [
+              30.0
+            ],
+            128
+          ]
+        ],
+        "get_p_gain_force": [
+          [
+            [
+              10.0
+            ],
+            128
+          ]
+        ],
+        "get_d_gain_force": [
+          [
+            [
+              1.0
+            ],
+            128
+          ]
+        ],
+        "get_temp_limit_low": [
+          [
+            [
+              80.0
+            ],
+            128
+          ]
+        ],
+        "get_temp_limit_high": [
+          [
+            [
+              100.0
+            ],
+            128
+          ]
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "readbacks": {
+        "get_torque_enable": [
+          [
+            0,
+            128
+          ]
+        ],
+        "get_limit_velocity_max": [
+          [
+            [
+              10.0
+            ],
+            128
+          ]
+        ],
+        "get_limit_acc_max": [
+          [
+            [
+              5.0
+            ],
+            128
+          ]
+        ],
+        "get_limit_iq_max": [
+          [
+            [
+              30.0
+            ],
+            128
+          ]
+        ],
+        "get_p_gain_force": [
+          [
+            [
+              10.0
+            ],
+            128
+          ]
+        ],
+        "get_d_gain_force": [
+          [
+            [
+              1.0
+            ],
+            128
+          ]
+        ],
+        "get_temp_limit_low": [
+          [
+            [
+              80.0
+            ],
+            128
+          ]
+        ],
+        "get_temp_limit_high": [
+          [
+            [
+              100.0
+            ],
+            128
+          ]
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "readbacks": {
+        "get_torque_enable": [
+          [
+            0,
+            128
+          ]
+        ],
+        "get_limit_velocity_max": [
+          [
+            [
+              10.0
+            ],
+            128
+          ]
+        ],
+        "get_limit_acc_max": [
+          [
+            [
+              5.0
+            ],
+            128
+          ]
+        ],
+        "get_limit_iq_max": [
+          [
+            [
+              30.0
+            ],
+            128
+          ]
+        ],
+        "get_p_gain_force": [
+          [
+            [
+              10.0
+            ],
+            128
+          ]
+        ],
+        "get_d_gain_force": [
+          [
+            [
+              1.0
+            ],
+            128
+          ]
+        ],
+        "get_temp_limit_low": [
+          [
+            [
+              80.0
+            ],
+            128
+          ]
+        ],
+        "get_temp_limit_high": [
+          [
+            [
+              100.0
+            ],
+            128
+          ]
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "readbacks": {
+        "get_torque_enable": [
+          [
+            0,
+            128
+          ]
+        ],
+        "get_limit_velocity_max": [
+          [
+            [
+              10.0
+            ],
+            128
+          ]
+        ],
+        "get_limit_acc_max": [
+          [
+            [
+              5.0
+            ],
+            128
+          ]
+        ],
+        "get_limit_iq_max": [
+          [
+            [
+              30.0
+            ],
+            128
+          ]
+        ],
+        "get_p_gain_force": [
+          [
+            [
+              10.0
+            ],
+            128
+          ]
+        ],
+        "get_d_gain_force": [
+          [
+            [
+              1.0
+            ],
+            128
+          ]
+        ],
+        "get_temp_limit_low": [
+          [
+            [
+              80.0
+            ],
+            128
+          ]
+        ],
+        "get_temp_limit_high": [
+          [
+            [
+              100.0
+            ],
+            128
+          ]
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "readbacks": {
+        "get_torque_enable": [
+          [
+            0,
+            128
+          ]
+        ],
+        "get_limit_velocity_max": [
+          [
+            [
+              10.0
+            ],
+            128
+          ]
+        ],
+        "get_limit_acc_max": [
+          [
+            [
+              5.0
+            ],
+            128
+          ]
+        ],
+        "get_limit_iq_max": [
+          [
+            [
+              30.0
+            ],
+            128
+          ]
+        ],
+        "get_p_gain_force": [
+          [
+            [
+              10.0
+            ],
+            128
+          ]
+        ],
+        "get_d_gain_force": [
+          [
+            [
+              1.0
+            ],
+            128
+          ]
+        ],
+        "get_temp_limit_low": [
+          [
+            [
+              80.0
+            ],
+            128
+          ]
+        ],
+        "get_temp_limit_high": [
+          [
+            [
+              100.0
+            ],
+            128
+          ]
+        ]
+      }
+    }
+  ],
+  "read_only": true,
+  "warning": "Configured limits and gains; not physical actuator performance certification"
+}

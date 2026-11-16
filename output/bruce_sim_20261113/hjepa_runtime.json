@@ -1,0 +1,43 @@
+[
+  {
+    "config": "ant_hjepa_l3",
+    "loss": 0.8441473841667175,
+    "levels": 3,
+    "input_frames": 13,
+    "backward": true,
+    "planning_action_gradient": true,
+    "serialization": true,
+    "solver_shapes": [
+      [
+        1,
+        2,
+        40
+      ],
+      [
+        1,
+        1,
+        40
+      ]
+    ]
+  },
+  {
+    "config": "ant_hwm_l3",
+    "loss": 0.9058401584625244,
+    "levels": 3,
+    "input_frames": 13,
+    "backward": true,
+    "planning_action_gradient": true,
+    "serialization": true,
+    "solver_shapes": []
+  },
+  {
+    "config": "droid_hjepa_l2",
+    "loss": 145.2060546875,
+    "levels": 2,
+    "input_frames": 8,
+    "backward": true,
+    "planning_action_gradient": true,
+    "serialization": true,
+    "solver_shapes": []
+  }
+]

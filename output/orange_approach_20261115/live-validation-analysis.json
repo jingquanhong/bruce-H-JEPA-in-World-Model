@@ -1,0 +1,17 @@
+{
+  "frames": 107,
+  "filtered_range_frames": 59,
+  "paired_depth_valid_frames": 85,
+  "range_m_median": 1.7366395443924483,
+  "range_m_min_max": [
+    1.7273527019090662,
+    1.7366395443924483
+  ],
+  "bearing_deg_median": 13.524742412473072,
+  "frame_age_s_median_max": [
+    0.0963638359999095,
+    0.17818042199996853
+  ],
+  "motion_commands_written": false,
+  "note": "Original accepted_filtered_frames counter counted PID updates only; this file derives valid measurement count from unchanged raw observations."
+}

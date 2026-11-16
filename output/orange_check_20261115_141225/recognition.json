@@ -1,0 +1,23 @@
+{
+  "object": "orange",
+  "label_zh": "橙子",
+  "recognition_method": "assistant visual inspection of newly captured RGB frame; not a deployed detector",
+  "rgb_resolution": [
+    640,
+    480
+  ],
+  "approximate_rgb_bbox_xyxy": [
+    306,
+    267,
+    324,
+    284
+  ],
+  "approximate_rgb_center_xy": [
+    315,
+    275
+  ],
+  "description_zh": "画面中央略下方，两个白色柜体之间，地面绿色胶带近侧。",
+  "distance_m": null,
+  "distance_reason": "RGB and depth are not registered; object-specific metric distance has not been established.",
+  "robot_motion_requested": false
+}

@@ -1,0 +1,13 @@
+{
+  "saved_at": "2026-11-15T00:26:28.208839+08:00",
+  "primary_location": "/home/khadas/BRUCE/session-save-20261115",
+  "archive": "bruce-gait-camera-full-20261115.tar.gz",
+  "archive_sha256": "42a7546728c23800ad7d076e261a20dbc6edea31a83605d71c79e2389feac8d6",
+  "archive_bytes": 1014059565,
+  "archive_checksum_verified": true,
+  "launch_check_returncode": 0,
+  "checked_source_config_dependency_files": 81,
+  "motor_actuation_during_save": false,
+  "vision_obstacle_crossing_verified": false,
+  "real_synchronized_obstacle_dataset_collected": false
+}

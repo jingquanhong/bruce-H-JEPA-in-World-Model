@@ -1,0 +1,298 @@
+[
+  {
+    "i": 0,
+    "printed_reference": {
+      "color_pixels": 297,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    },
+    "orange": {
+      "color_pixels": 147,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    }
+  },
+  {
+    "i": 1,
+    "printed_reference": {
+      "color_pixels": 296,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    },
+    "orange": {
+      "color_pixels": 148,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    }
+  },
+  {
+    "i": 2,
+    "printed_reference": {
+      "color_pixels": 301,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    },
+    "orange": {
+      "color_pixels": 146,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    }
+  },
+  {
+    "i": 3,
+    "printed_reference": {
+      "color_pixels": 303,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    },
+    "orange": {
+      "color_pixels": 147,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    }
+  },
+  {
+    "i": 4,
+    "printed_reference": {
+      "color_pixels": 310,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    },
+    "orange": {
+      "color_pixels": 151,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    }
+  },
+  {
+    "i": 5,
+    "printed_reference": {
+      "color_pixels": 293,
+      "valid_depth_pixels": 292,
+      "median_m": 2.045,
+      "all_roi_valid_pixels": 702,
+      "range_m": [
+        2.045,
+        2.101
+      ]
+    },
+    "orange": {
+      "color_pixels": 150,
+      "valid_depth_pixels": 150,
+      "median_m": 2.045,
+      "all_roi_valid_pixels": 335,
+      "range_m": [
+        2.045,
+        2.161
+      ]
+    }
+  },
+  {
+    "i": 6,
+    "printed_reference": {
+      "color_pixels": 307,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    },
+    "orange": {
+      "color_pixels": 149,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    }
+  },
+  {
+    "i": 7,
+    "printed_reference": {
+      "color_pixels": 302,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    },
+    "orange": {
+      "color_pixels": 145,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    }
+  },
+  {
+    "i": 8,
+    "printed_reference": {
+      "color_pixels": 296,
+      "valid_depth_pixels": 292,
+      "median_m": 2.045,
+      "all_roi_valid_pixels": 674,
+      "range_m": [
+        2.045,
+        2.072
+      ]
+    },
+    "orange": {
+      "color_pixels": 146,
+      "valid_depth_pixels": 146,
+      "median_m": 2.045,
+      "all_roi_valid_pixels": 337,
+      "range_m": [
+        2.018,
+        2.161
+      ]
+    }
+  },
+  {
+    "i": 9,
+    "printed_reference": {
+      "color_pixels": 298,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    },
+    "orange": {
+      "color_pixels": 148,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    }
+  },
+  {
+    "i": 10,
+    "printed_reference": {
+      "color_pixels": 297,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    },
+    "orange": {
+      "color_pixels": 148,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    }
+  },
+  {
+    "i": 11,
+    "printed_reference": {
+      "color_pixels": 293,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    },
+    "orange": {
+      "color_pixels": 146,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    }
+  },
+  {
+    "i": 12,
+    "printed_reference": {
+      "color_pixels": 295,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    },
+    "orange": {
+      "color_pixels": 151,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    }
+  },
+  {
+    "i": 13,
+    "printed_reference": {
+      "color_pixels": 291,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    },
+    "orange": {
+      "color_pixels": 148,
+      "valid_depth_pixels": 0,
+      "median_m": null,
+      "all_roi_valid_pixels": 0,
+      "range_m": null
+    }
+  },
+  {
+    "i": 14,
+    "printed_reference": {
+      "color_pixels": 290,
+      "valid_depth_pixels": 290,
+      "median_m": 2.045,
+      "all_roi_valid_pixels": 788,
+      "range_m": [
+        2.018,
+        2.101
+      ]
+    },
+    "orange": {
+      "color_pixels": 151,
+      "valid_depth_pixels": 151,
+      "median_m": 2.045,
+      "all_roi_valid_pixels": 329,
+      "range_m": [
+        1.991,
+        2.13
+      ]
+    }
+  },
+  {
+    "i": 15,
+    "printed_reference": {
+      "color_pixels": 306,
+      "valid_depth_pixels": 304,
+      "median_m": 2.045,
+      "all_roi_valid_pixels": 752,
+      "range_m": [
+        2.045,
+        2.13
+      ]
+    },
+    "orange": {
+      "color_pixels": 149,
+      "valid_depth_pixels": 148,
+      "median_m": 2.045,
+      "all_roi_valid_pixels": 327,
+      "range_m": [
+        2.045,
+        2.161
+      ]
+    }
+  }
+]

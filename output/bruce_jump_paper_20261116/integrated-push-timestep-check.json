@@ -1,0 +1,45 @@
+{
+  "status": "OFFLINE_NUMERICAL_CONVERGENCE_ONLY",
+  "cases": [
+    {
+      "dt_s": 0.002,
+      "status": "INTEGRATED_MODEL_ONLY",
+      "failure": null,
+      "samples": 82,
+      "final_com_z_m": 0.32130836069901303,
+      "final_com_vz_m_s": 0.4625983604252658,
+      "max_constraint_violation": 6.17594293228732e-05,
+      "peak_motor_speed_rad_s": 8.2273217516533,
+      "peak_motor_acceleration_rad_s2": 162.86112162418854,
+      "peak_motor_current_A": 12.87614907199666,
+      "max_foot_drift_m": 5.0841726123877595e-05
+    },
+    {
+      "dt_s": 0.001,
+      "status": "INTEGRATED_MODEL_ONLY",
+      "failure": null,
+      "samples": 164,
+      "final_com_z_m": 0.32172254348827306,
+      "final_com_vz_m_s": 0.44724983438856153,
+      "max_constraint_violation": 9.245074575349642e-05,
+      "peak_motor_speed_rad_s": 8.220762547525293,
+      "peak_motor_acceleration_rad_s2": 169.56736768779672,
+      "peak_motor_current_A": 12.87603993710375,
+      "max_foot_drift_m": 2.4574171136650812e-05
+    },
+    {
+      "dt_s": 0.0005,
+      "status": "INTEGRATED_MODEL_ONLY",
+      "failure": null,
+      "samples": 327,
+      "final_com_z_m": 0.32170674678727745,
+      "final_com_vz_m_s": 0.444544438806618,
+      "max_constraint_violation": 8.400208921473004e-05,
+      "peak_motor_speed_rad_s": 8.216633847627419,
+      "peak_motor_acceleration_rad_s2": 170.9036677861859,
+      "peak_motor_current_A": 12.8769956926489,
+      "max_foot_drift_m": 1.2073963295871463e-05
+    }
+  ],
+  "physical_jump_validated": false
+}

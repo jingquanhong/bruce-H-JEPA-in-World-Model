@@ -1,0 +1,16 @@
+Bus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 008 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 007 Device 005: ID 0403:6014 Future Technology Devices International, Ltd FT232H Single HS USB-UART/FIFO IC
+Bus 007 Device 004: ID 2e8a:000a Raspberry Pi Pico
+Bus 007 Device 003: ID 0403:6001 Future Technology Devices International, Ltd FT232 Serial (UART) IC
+Bus 007 Device 002: ID 1a40:0101 Terminus Technology Inc. Hub
+Bus 007 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 002 Device 014: ID 2bc5:060e Orbbec 3D Technology International, Inc ORBBEC Depth Sensor
+Bus 002 Device 013: ID 2bc5:050e Orbbec 3D Technology International, Inc USB 2.0 Camera
+Bus 002 Device 012: ID 05e3:0610 Genesys Logic, Inc. Hub
+Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 001 Device 002: ID 1a40:0101 Terminus Technology Inc. Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub

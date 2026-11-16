@@ -1,0 +1,676 @@
+{
+  "schema_version": 1,
+  "run_id": "4a632c93ea97",
+  "run_dir": "/home/user/\u684c\u9762/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/ckpts/runtime_smoke/spt/runs/20261113/135730/4a632c93ea97",
+  "updated_at": 1794549452.103684,
+  "step": 0,
+  "epoch": 0,
+  "metrics": {
+    "fit/mse_loss_level1": {
+      "last": 0.2792166769504547,
+      "min": 0.2792166769504547,
+      "max": 0.2792166769504547,
+      "count": 1
+    },
+    "fit/l1_loss_level1": {
+      "last": 0.13743050396442413,
+      "min": 0.13743050396442413,
+      "max": 0.13743050396442413,
+      "count": 1
+    },
+    "fit/dim_mean_loss_level1": {
+      "last": 0.00921630859375,
+      "min": 0.00921630859375,
+      "max": 0.00921630859375,
+      "count": 1
+    },
+    "fit/dim_std_loss_level1": {
+      "last": 0.38671875,
+      "min": 0.38671875,
+      "max": 0.38671875,
+      "count": 1
+    },
+    "fit/dim_min_loss_level1": {
+      "last": -1.28125,
+      "min": -1.28125,
+      "max": -1.28125,
+      "count": 1
+    },
+    "fit/dim_max_loss_level1": {
+      "last": 1.421875,
+      "min": 1.421875,
+      "max": 1.421875,
+      "count": 1
+    },
+    "fit/teacher_forcing_loss_level1": {
+      "last": 0.2792166769504547,
+      "min": 0.2792166769504547,
+      "max": 0.2792166769504547,
+      "count": 1
+    },
+    "fit/pred_loss_level1": {
+      "last": 0.2792166769504547,
+      "min": 0.2792166769504547,
+      "max": 0.2792166769504547,
+      "count": 1
+    },
+    "fit/sigreg_loss_level1": {
+      "last": 0.79296875,
+      "min": 0.79296875,
+      "max": 0.79296875,
+      "count": 1
+    },
+    "fit/embed_loss_level1": {
+      "last": 0.3505057394504547,
+      "min": 0.3505057394504547,
+      "max": 0.3505057394504547,
+      "count": 1
+    },
+    "fit/loss_level1": {
+      "last": 0.3505057394504547,
+      "min": 0.3505057394504547,
+      "max": 0.3505057394504547,
+      "count": 1
+    },
+    "fit/mse_loss_level2": {
+      "last": 0.1726648360490799,
+      "min": 0.1726648360490799,
+      "max": 0.1726648360490799,
+      "count": 1
+    },
+    "fit/l1_loss_level2": {
+      "last": 0.08585619926452637,
+      "min": 0.08585619926452637,
+      "max": 0.08585619926452637,
+      "count": 1
+    },
+    "fit/dim_mean_loss_level2": {
+      "last": 0.0029144287109375,
+      "min": 0.0029144287109375,
+      "max": 0.0029144287109375,
+      "count": 1
+    },
+    "fit/dim_std_loss_level2": {
+      "last": 0.212890625,
+      "min": 0.212890625,
+      "max": 0.212890625,
+      "count": 1
+    },
+    "fit/dim_min_loss_level2": {
+      "last": -0.75390625,
+      "min": -0.75390625,
+      "max": -0.75390625,
+      "count": 1
+    },
+    "fit/dim_max_loss_level2": {
+      "last": 0.78515625,
+      "min": 0.78515625,
+      "max": 0.78515625,
+      "count": 1
+    },
+    "fit/teacher_forcing_loss_level2": {
+      "last": 0.1726648360490799,
+      "min": 0.1726648360490799,
+      "max": 0.1726648360490799,
+      "count": 1
+    },
+    "fit/pred_loss_level2": {
+      "last": 0.1726648360490799,
+      "min": 0.1726648360490799,
+      "max": 0.1726648360490799,
+      "count": 1
+    },
+    "fit/sigreg_loss_level2": {
+      "last": 0.8046875,
+      "min": 0.8046875,
+      "max": 0.8046875,
+      "count": 1
+    },
+    "fit/embed_loss_level2": {
+      "last": 0.2449304610490799,
+      "min": 0.2449304610490799,
+      "max": 0.2449304610490799,
+      "count": 1
+    },
+    "fit/loss_level2": {
+      "last": 0.2449304610490799,
+      "min": 0.2449304610490799,
+      "max": 0.2449304610490799,
+      "count": 1
+    },
+    "fit/mse_loss_level3": {
+      "last": 0.17049233615398407,
+      "min": 0.17049233615398407,
+      "max": 0.17049233615398407,
+      "count": 1
+    },
+    "fit/l1_loss_level3": {
+      "last": 0.08496080338954926,
+      "min": 0.08496080338954926,
+      "max": 0.08496080338954926,
+      "count": 1
+    },
+    "fit/dim_mean_loss_level3": {
+      "last": -0.0089111328125,
+      "min": -0.0089111328125,
+      "max": -0.0089111328125,
+      "count": 1
+    },
+    "fit/dim_std_loss_level3": {
+      "last": 0.1884765625,
+      "min": 0.1884765625,
+      "max": 0.1884765625,
+      "count": 1
+    },
+    "fit/dim_min_loss_level3": {
+      "last": -0.625,
+      "min": -0.625,
+      "max": -0.625,
+      "count": 1
+    },
+    "fit/dim_max_loss_level3": {
+      "last": 0.625,
+      "min": 0.625,
+      "max": 0.625,
+      "count": 1
+    },
+    "fit/teacher_forcing_loss_level3": {
+      "last": 0.17049233615398407,
+      "min": 0.17049233615398407,
+      "max": 0.17049233615398407,
+      "count": 1
+    },
+    "fit/pred_loss_level3": {
+      "last": 0.17049233615398407,
+      "min": 0.17049233615398407,
+      "max": 0.17049233615398407,
+      "count": 1
+    },
+    "fit/sigreg_loss_level3": {
+      "last": 0.8046875,
+      "min": 0.8046875,
+      "max": 0.8046875,
+      "count": 1
+    },
+    "fit/embed_loss_level3": {
+      "last": 0.24275796115398407,
+      "min": 0.24275796115398407,
+      "max": 0.24275796115398407,
+      "count": 1
+    },
+    "fit/loss_level3": {
+      "last": 0.24275796115398407,
+      "min": 0.24275796115398407,
+      "max": 0.24275796115398407,
+      "count": 1
+    },
+    "fit/loss": {
+      "last": 0.8381941914558411,
+      "min": 0.8381941914558411,
+      "max": 0.8381941914558411,
+      "count": 1
+    },
+    "hparams/lr_default_0": {
+      "last": 4.999999873689376e-05,
+      "min": 4.999999873689376e-05,
+      "max": 4.999999873689376e-05,
+      "count": 1
+    },
+    "hardware/cpu_percent": {
+      "last": 25.0,
+      "min": 25.0,
+      "max": 25.0,
+      "count": 1
+    },
+    "hardware/ram_used_pct": {
+      "last": 61.20000076293945,
+      "min": 61.20000076293945,
+      "max": 61.20000076293945,
+      "count": 1
+    },
+    "hardware/ram_used_gb": {
+      "last": 9.364822387695312,
+      "min": 9.364822387695312,
+      "max": 9.364822387695312,
+      "count": 1
+    },
+    "hardware/disk_read_mb_s": {
+      "last": 226.45050048828125,
+      "min": 226.45050048828125,
+      "max": 226.45050048828125,
+      "count": 1
+    },
+    "hardware/disk_write_mb_s": {
+      "last": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "count": 1
+    },
+    "hardware/net_recv_mb_s": {
+      "last": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "count": 1
+    },
+    "hardware/net_sent_mb_s": {
+      "last": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "count": 1
+    },
+    "epoch": {
+      "last": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "count": 2
+    },
+    "validate/mse_loss_level1_step": {
+      "last": 0.10996544361114502,
+      "min": 0.10996544361114502,
+      "max": 0.10996544361114502,
+      "count": 1
+    },
+    "validate/l1_loss_level1_step": {
+      "last": 0.05491277948021889,
+      "min": 0.05491277948021889,
+      "max": 0.05491277948021889,
+      "count": 1
+    },
+    "validate/dim_mean_loss_level1_step": {
+      "last": 0.0020904541015625,
+      "min": 0.0020904541015625,
+      "max": 0.0020904541015625,
+      "count": 1
+    },
+    "validate/dim_std_loss_level1_step": {
+      "last": 0.267578125,
+      "min": 0.267578125,
+      "max": 0.267578125,
+      "count": 1
+    },
+    "validate/dim_min_loss_level1_step": {
+      "last": -1.171875,
+      "min": -1.171875,
+      "max": -1.171875,
+      "count": 1
+    },
+    "validate/dim_max_loss_level1_step": {
+      "last": 1.390625,
+      "min": 1.390625,
+      "max": 1.390625,
+      "count": 1
+    },
+    "validate/teacher_forcing_loss_level1_step": {
+      "last": 0.10996544361114502,
+      "min": 0.10996544361114502,
+      "max": 0.10996544361114502,
+      "count": 1
+    },
+    "validate/pred_loss_level1_step": {
+      "last": 0.10996544361114502,
+      "min": 0.10996544361114502,
+      "max": 0.10996544361114502,
+      "count": 1
+    },
+    "validate/sigreg_loss_level1_step": {
+      "last": 0.8515625,
+      "min": 0.8515625,
+      "max": 0.8515625,
+      "count": 1
+    },
+    "validate/embed_loss_level1_step": {
+      "last": 0.18662559986114502,
+      "min": 0.18662559986114502,
+      "max": 0.18662559986114502,
+      "count": 1
+    },
+    "validate/loss_level1_step": {
+      "last": 0.18662559986114502,
+      "min": 0.18662559986114502,
+      "max": 0.18662559986114502,
+      "count": 1
+    },
+    "validate/mse_loss_level2_step": {
+      "last": 0.05525293946266174,
+      "min": 0.05525293946266174,
+      "max": 0.05525293946266174,
+      "count": 1
+    },
+    "validate/l1_loss_level2_step": {
+      "last": 0.02762646973133087,
+      "min": 0.02762646973133087,
+      "max": 0.02762646973133087,
+      "count": 1
+    },
+    "validate/dim_mean_loss_level2_step": {
+      "last": -0.000518798828125,
+      "min": -0.000518798828125,
+      "max": -0.000518798828125,
+      "count": 1
+    },
+    "validate/dim_std_loss_level2_step": {
+      "last": 0.20703125,
+      "min": 0.20703125,
+      "max": 0.20703125,
+      "count": 1
+    },
+    "validate/dim_min_loss_level2_step": {
+      "last": -0.640625,
+      "min": -0.640625,
+      "max": -0.640625,
+      "count": 1
+    },
+    "validate/dim_max_loss_level2_step": {
+      "last": 0.73046875,
+      "min": 0.73046875,
+      "max": 0.73046875,
+      "count": 1
+    },
+    "validate/teacher_forcing_loss_level2_step": {
+      "last": 0.05525293946266174,
+      "min": 0.05525293946266174,
+      "max": 0.05525293946266174,
+      "count": 1
+    },
+    "validate/pred_loss_level2_step": {
+      "last": 0.05525293946266174,
+      "min": 0.05525293946266174,
+      "max": 0.05525293946266174,
+      "count": 1
+    },
+    "validate/sigreg_loss_level2_step": {
+      "last": 0.828125,
+      "min": 0.828125,
+      "max": 0.828125,
+      "count": 1
+    },
+    "validate/embed_loss_level2_step": {
+      "last": 0.12995997071266174,
+      "min": 0.12995997071266174,
+      "max": 0.12995997071266174,
+      "count": 1
+    },
+    "validate/loss_level2_step": {
+      "last": 0.12995997071266174,
+      "min": 0.12995997071266174,
+      "max": 0.12995997071266174,
+      "count": 1
+    },
+    "validate/mse_loss_level3_step": {
+      "last": 0.04137357696890831,
+      "min": 0.04137357696890831,
+      "max": 0.04137357696890831,
+      "count": 1
+    },
+    "validate/l1_loss_level3_step": {
+      "last": 0.020686788484454155,
+      "min": 0.020686788484454155,
+      "max": 0.020686788484454155,
+      "count": 1
+    },
+    "validate/dim_mean_loss_level3_step": {
+      "last": -0.00775146484375,
+      "min": -0.00775146484375,
+      "max": -0.00775146484375,
+      "count": 1
+    },
+    "validate/dim_std_loss_level3_step": {
+      "last": 0.1806640625,
+      "min": 0.1806640625,
+      "max": 0.1806640625,
+      "count": 1
+    },
+    "validate/dim_min_loss_level3_step": {
+      "last": -0.64453125,
+      "min": -0.64453125,
+      "max": -0.64453125,
+      "count": 1
+    },
+    "validate/dim_max_loss_level3_step": {
+      "last": 0.62890625,
+      "min": 0.62890625,
+      "max": 0.62890625,
+      "count": 1
+    },
+    "validate/teacher_forcing_loss_level3_step": {
+      "last": 0.04137357696890831,
+      "min": 0.04137357696890831,
+      "max": 0.04137357696890831,
+      "count": 1
+    },
+    "validate/pred_loss_level3_step": {
+      "last": 0.04137357696890831,
+      "min": 0.04137357696890831,
+      "max": 0.04137357696890831,
+      "count": 1
+    },
+    "validate/sigreg_loss_level3_step": {
+      "last": 0.8203125,
+      "min": 0.8203125,
+      "max": 0.8203125,
+      "count": 1
+    },
+    "validate/embed_loss_level3_step": {
+      "last": 0.11510404944419861,
+      "min": 0.11510404944419861,
+      "max": 0.11510404944419861,
+      "count": 1
+    },
+    "validate/loss_level3_step": {
+      "last": 0.11510404944419861,
+      "min": 0.11510404944419861,
+      "max": 0.11510404944419861,
+      "count": 1
+    },
+    "validate/loss_step": {
+      "last": 0.43168962001800537,
+      "min": 0.43168962001800537,
+      "max": 0.43168962001800537,
+      "count": 1
+    },
+    "validate/mse_loss_level1_epoch": {
+      "last": 0.10996544361114502,
+      "min": 0.10996544361114502,
+      "max": 0.10996544361114502,
+      "count": 1
+    },
+    "validate/l1_loss_level1_epoch": {
+      "last": 0.05491277948021889,
+      "min": 0.05491277948021889,
+      "max": 0.05491277948021889,
+      "count": 1
+    },
+    "validate/dim_mean_loss_level1_epoch": {
+      "last": 0.0020904541015625,
+      "min": 0.0020904541015625,
+      "max": 0.0020904541015625,
+      "count": 1
+    },
+    "validate/dim_std_loss_level1_epoch": {
+      "last": 0.267578125,
+      "min": 0.267578125,
+      "max": 0.267578125,
+      "count": 1
+    },
+    "validate/dim_min_loss_level1_epoch": {
+      "last": -1.171875,
+      "min": -1.171875,
+      "max": -1.171875,
+      "count": 1
+    },
+    "validate/dim_max_loss_level1_epoch": {
+      "last": 1.390625,
+      "min": 1.390625,
+      "max": 1.390625,
+      "count": 1
+    },
+    "validate/teacher_forcing_loss_level1_epoch": {
+      "last": 0.10996544361114502,
+      "min": 0.10996544361114502,
+      "max": 0.10996544361114502,
+      "count": 1
+    },
+    "validate/pred_loss_level1_epoch": {
+      "last": 0.10996544361114502,
+      "min": 0.10996544361114502,
+      "max": 0.10996544361114502,
+      "count": 1
+    },
+    "validate/sigreg_loss_level1_epoch": {
+      "last": 0.8515625,
+      "min": 0.8515625,
+      "max": 0.8515625,
+      "count": 1
+    },
+    "validate/embed_loss_level1_epoch": {
+      "last": 0.18662559986114502,
+      "min": 0.18662559986114502,
+      "max": 0.18662559986114502,
+      "count": 1
+    },
+    "validate/loss_level1_epoch": {
+      "last": 0.18662559986114502,
+      "min": 0.18662559986114502,
+      "max": 0.18662559986114502,
+      "count": 1
+    },
+    "validate/mse_loss_level2_epoch": {
+      "last": 0.05525293946266174,
+      "min": 0.05525293946266174,
+      "max": 0.05525293946266174,
+      "count": 1
+    },
+    "validate/l1_loss_level2_epoch": {
+      "last": 0.02762646973133087,
+      "min": 0.02762646973133087,
+      "max": 0.02762646973133087,
+      "count": 1
+    },
+    "validate/dim_mean_loss_level2_epoch": {
+      "last": -0.000518798828125,
+      "min": -0.000518798828125,
+      "max": -0.000518798828125,
+      "count": 1
+    },
+    "validate/dim_std_loss_level2_epoch": {
+      "last": 0.20703125,
+      "min": 0.20703125,
+      "max": 0.20703125,
+      "count": 1
+    },
+    "validate/dim_min_loss_level2_epoch": {
+      "last": -0.640625,
+      "min": -0.640625,
+      "max": -0.640625,
+      "count": 1
+    },
+    "validate/dim_max_loss_level2_epoch": {
+      "last": 0.73046875,
+      "min": 0.73046875,
+      "max": 0.73046875,
+      "count": 1
+    },
+    "validate/teacher_forcing_loss_level2_epoch": {
+      "last": 0.05525293946266174,
+      "min": 0.05525293946266174,
+      "max": 0.05525293946266174,
+      "count": 1
+    },
+    "validate/pred_loss_level2_epoch": {
+      "last": 0.05525293946266174,
+      "min": 0.05525293946266174,
+      "max": 0.05525293946266174,
+      "count": 1
+    },
+    "validate/sigreg_loss_level2_epoch": {
+      "last": 0.828125,
+      "min": 0.828125,
+      "max": 0.828125,
+      "count": 1
+    },
+    "validate/embed_loss_level2_epoch": {
+      "last": 0.12995997071266174,
+      "min": 0.12995997071266174,
+      "max": 0.12995997071266174,
+      "count": 1
+    },
+    "validate/loss_level2_epoch": {
+      "last": 0.12995997071266174,
+      "min": 0.12995997071266174,
+      "max": 0.12995997071266174,
+      "count": 1
+    },
+    "validate/mse_loss_level3_epoch": {
+      "last": 0.04137357696890831,
+      "min": 0.04137357696890831,
+      "max": 0.04137357696890831,
+      "count": 1
+    },
+    "validate/l1_loss_level3_epoch": {
+      "last": 0.020686788484454155,
+      "min": 0.020686788484454155,
+      "max": 0.020686788484454155,
+      "count": 1
+    },
+    "validate/dim_mean_loss_level3_epoch": {
+      "last": -0.00775146484375,
+      "min": -0.00775146484375,
+      "max": -0.00775146484375,
+      "count": 1
+    },
+    "validate/dim_std_loss_level3_epoch": {
+      "last": 0.1806640625,
+      "min": 0.1806640625,
+      "max": 0.1806640625,
+      "count": 1
+    },
+    "validate/dim_min_loss_level3_epoch": {
+      "last": -0.64453125,
+      "min": -0.64453125,
+      "max": -0.64453125,
+      "count": 1
+    },
+    "validate/dim_max_loss_level3_epoch": {
+      "last": 0.62890625,
+      "min": 0.62890625,
+      "max": 0.62890625,
+      "count": 1
+    },
+    "validate/teacher_forcing_loss_level3_epoch": {
+      "last": 0.04137357696890831,
+      "min": 0.04137357696890831,
+      "max": 0.04137357696890831,
+      "count": 1
+    },
+    "validate/pred_loss_level3_epoch": {
+      "last": 0.04137357696890831,
+      "min": 0.04137357696890831,
+      "max": 0.04137357696890831,
+      "count": 1
+    },
+    "validate/sigreg_loss_level3_epoch": {
+      "last": 0.8203125,
+      "min": 0.8203125,
+      "max": 0.8203125,
+      "count": 1
+    },
+    "validate/embed_loss_level3_epoch": {
+      "last": 0.11510404944419861,
+      "min": 0.11510404944419861,
+      "max": 0.11510404944419861,
+      "count": 1
+    },
+    "validate/loss_level3_epoch": {
+      "last": 0.11510404944419861,
+      "min": 0.11510404944419861,
+      "max": 0.11510404944419861,
+      "count": 1
+    },
+    "validate/loss_epoch": {
+      "last": 0.43168962001800537,
+      "min": 0.43168962001800537,
+      "max": 0.43168962001800537,
+      "count": 1
+    }
+  }
+}

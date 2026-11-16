@@ -1,0 +1,41 @@
+{
+  "reference_only": true,
+  "automatically_executed": false,
+  "requires_supported_grounded_stance_and_preflight": true,
+  "steps": [
+    {
+      "profile": "forward",
+      "planner_tuning": {
+        "forward_bias_m": 0.015,
+        "lateral_bias_m": -0.006,
+        "minimum_width_m": 0.1
+      },
+      "step_request": {
+        "seconds": 10,
+        "forward_velocity_m_s": 0.05
+      },
+      "after_motion": {
+        "mode": 0,
+        "wait_for_stance": true,
+        "restore_forward_bias_m": -0.002
+      }
+    },
+    {
+      "profile": "backward",
+      "planner_tuning": {
+        "forward_bias_m": -0.015,
+        "lateral_bias_m": -0.006,
+        "minimum_width_m": 0.1
+      },
+      "step_request": {
+        "seconds": 10,
+        "forward_velocity_m_s": -0.05
+      },
+      "after_motion": {
+        "mode": 0,
+        "wait_for_stance": true,
+        "restore_forward_bias_m": -0.002
+      }
+    }
+  ]
+}

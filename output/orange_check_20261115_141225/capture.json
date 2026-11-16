@@ -1,0 +1,6 @@
+{
+"device":"DaBai","pid":1550,"firmware":"RD2434",
+"depth_width":640,"depth_height":400,"depth_format":8,"depth_scale_mm":1,"depth_frames":236,"color_frames":233,"duration_seconds":8.75874,"valid_depth_pixels":134480,
+"color_width":640,"color_height":480,"color_format":22,
+"depth_intrinsics":{"fx":477.694,"fy":477.694,"cx":320.091,"cy":198.87,"width":640,"height":400}
+}

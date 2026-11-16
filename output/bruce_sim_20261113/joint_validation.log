@@ -1,0 +1,45 @@
+{
+  "dataset": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/bruce_joint_trials_40.h5",
+  "control_mode": "joint_only",
+  "schema_version": "bruce_obstacle_v2",
+  "episodes": 40,
+  "frames": 3386,
+  "duration_seconds": 33.86,
+  "collection_valid": true,
+  "success": 0,
+  "scenes": {
+    "box_04": {
+      "episodes": 10,
+      "success": 0,
+      "fell": 10,
+      "kicked": 0,
+      "completed": 0
+    },
+    "box_06": {
+      "episodes": 10,
+      "success": 0,
+      "fell": 10,
+      "kicked": 4,
+      "completed": 0
+    },
+    "box_08": {
+      "episodes": 10,
+      "success": 0,
+      "fell": 10,
+      "kicked": 2,
+      "completed": 0
+    },
+    "step_10": {
+      "episodes": 10,
+      "success": 0,
+      "fell": 10,
+      "kicked": 0,
+      "completed": 0
+    }
+  },
+  "notes": [
+    "Collection validity and obstacle success are separate.",
+    "est_* are synthetic truth-plus-noise proxies, not EKF output.",
+    "clearance is an ankle-based geometric proxy, not full-mesh distance."
+  ]
+}

@@ -1,0 +1,69 @@
+[38;5;159m[Genesis] [16:09:25] [INFO] [38;5;121m╭───────────────────────────────────────────────╮[0m[38;5;159m[0m
+[38;5;159m[Genesis] [16:09:25] [INFO] [38;5;121m│┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈[0m[38;5;159m [38;5;121m[1m[3mGenesis[0m[38;5;159m [38;5;121m┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈│[0m[38;5;159m[0m
+[38;5;159m[Genesis] [16:09:25] [INFO] [38;5;121m╰───────────────────────────────────────────────╯[0m[38;5;159m[0m
+[38;5;159m[Genesis] [16:09:25] [INFO] Running on [38;5;121m[NVIDIA GeForce RTX 3060][0m[38;5;159m with backend [38;5;121mgs.cuda[0m[38;5;159m. Device memory: [38;5;121m11.62[0m[38;5;159m GB.[0m
+[38;5;159m[Genesis] [16:09:25] [INFO] 🚀 Genesis initialized. 🔖 version: [38;5;121m1.4.4[0m[38;5;159m, 🎨 theme: [38;5;121mdark[0m[38;5;159m, 🌱 seed: [38;5;121m0[0m[38;5;159m, 🐛 debug: [38;5;121mFalse[0m[38;5;159m, 📏 precision: [38;5;121m32[0m[38;5;159m, 🔥 performance: [38;5;121mFalse[0m[38;5;159m, 💬 verbose: [38;5;121mINFO[0m[38;5;159m[0m
+[38;5;226m[Genesis] [16:09:25] [WARNING] Scene.show_FPS is deprecated. Please use Scene.options.profiling.show_FPS[0m
+[38;5;159m[Genesis] [16:09:25] [INFO] Scene [38;5;121m[3m<39267cb>[0m[38;5;159m created.[0m
+[38;5;159m[Genesis] [16:09:25] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mplane_03b5012[0m[38;5;159m. idx: [38;5;121m0[0m[38;5;159m, morph: [38;5;121m<gs.morphs.Plane>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;159m[Genesis] [16:09:25] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mbox_2f9de3f[0m[38;5;159m. idx: [38;5;121m1[0m[38;5;159m, morph: [38;5;121m<gs.morphs.Box>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;226m[Genesis] [16:09:26] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [16:09:26] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [16:09:26] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [16:09:26] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [16:09:26] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;159m[Genesis] [16:09:26] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mbruce_fdc5516[0m[38;5;159m. idx: [38;5;121m2[0m[38;5;159m, morph: [38;5;121m<gs.morphs.URDF(file='/home/user/桌面/H-JEPA-main./H-JEPA-main/BRUCE-OP-main/Simulation/models/bruce/urdf/bruce_physical.urdf')>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;159m[Genesis] [16:09:26] [INFO] Building scene [38;5;121m[3m<39267cb>[0m[38;5;159m...[0m
+[38;5;226m[Genesis] [16:09:26] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (3, 5), (8, 10). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+[38;5;159m[Genesis] [16:09:27] [INFO] Compiling simulation kernels...[0m
+[38;5;159m[Genesis] [16:09:28] [INFO] Building visualizer...[0m
+box08: 0.00s, base z=0.4498
+box08: 0.50s, base z=0.4499
+box08: 1.00s, base z=0.4500
+{
+  "trial": "box08",
+  "stop_reason": "Inverse dynamics failed: maximum iterations reached",
+  "recorded_frames": 53,
+  "simulated_seconds": 1.06,
+  "warmup_seconds": 0.01,
+  "total_simulated_seconds": 1.07,
+  "record_hz": 50,
+  "control_hz": 200,
+  "physics_hz": 2000,
+  "stand_check_passed": false,
+  "autonomous_crossing_success": false,
+  "base_control_force_peak_abs": 0.0,
+  "leg_torque_peak_abs_Nm": 9.105958938598633,
+  "max_box_displacement_m": 2.8777867555618286e-05,
+  "min_base_height_m": 0.4497825503349304,
+  "min_base_up_dot": 0.9999197585717112,
+  "qp_failures": 1,
+  "coupled_motor_current_peak_abs_A": 21.682493346078058,
+  "urdf": "/home/user/桌面/H-JEPA-main./H-JEPA-main/BRUCE-OP-main/Simulation/models/bruce/urdf/bruce_physical.urdf",
+  "urdf_sha256": "950dfffd951d47ebc9cd02fc69133cb7315040c301417a77dc339cc89ec1079e",
+  "default_armature": 0.0,
+  "leg_armature_kg_m2": 0.00182,
+  "armature_source": "BRUCE_macros.REFLECTED_INERTIA; diagonal joint approximation",
+  "armature_calibrated_on_hardware": false,
+  "obstacle": {
+    "height": 0.08,
+    "thickness": 0.05,
+    "width": 0.3,
+    "center_x": 0.15
+  },
+  "action_kind": "four_consecutive_16_joint_torque_commands_Nm",
+  "action_order": "right_leg_5,left_leg_5,right_arm_3,left_arm_3",
+  "action_timing": "o_t before action[t,0:4]; each subcommand held 5ms",
+  "proprio": "q10,dq10,body_specific_force3,body_gyro3,executed_leg_torque10",
+  "pixels": "64x64 RGB, fixed external camera; not robot onboard vision",
+  "sensor_kind": "simulator_truth_not_hardware_measurement",
+  "visual_hjepa_ready": false,
+  "limitations": [
+    "Controller uses simulator ground truth.",
+    "No verified mesh clearance or stable obstacle landing.",
+    "Current proxy uses BRUCE differential mapping and nominal 0.35 Nm/A; not hardware calibrated.",
+    "Reflected motor inertia is diagonal; differential coupling inertia is omitted.",
+    "Partial final control block, if any, is excluded from HDF5 rows."
+  ]
+}
+[38;5;159m[Genesis] [16:09:32] [INFO] 💤 Exiting Genesis and caching compiled kernels...[0m

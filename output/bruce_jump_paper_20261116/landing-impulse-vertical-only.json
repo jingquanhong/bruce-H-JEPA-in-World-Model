@@ -1,0 +1,134 @@
+{
+  "status": "IDEALIZED_IMPACT_SNAPSHOT_ONLY",
+  "physical_jump_validated": false,
+  "hardware_actuation": false,
+  "landing_controller_validated": false,
+  "cases": [
+    {
+      "foot_clearance_reference_m": 0.003,
+      "impact_contact_assumption": "first_point",
+      "contact_points": [
+        "left_heel"
+      ],
+      "solver_status": "primal infeasible",
+      "preimpact_com_vz_m_s": -0.39695793629086507,
+      "preimpact_contact_velocity_m_s": [
+        -1.0823615011354646,
+        -0.10526148172153763,
+        -0.029902054859573673
+      ]
+    },
+    {
+      "foot_clearance_reference_m": 0.003,
+      "impact_contact_assumption": "four_points",
+      "contact_points": [
+        "right_toe",
+        "right_heel",
+        "left_toe",
+        "left_heel"
+      ],
+      "solver_status": "primal infeasible",
+      "preimpact_com_vz_m_s": -0.39695793629086507,
+      "preimpact_contact_velocity_m_s": [
+        -1.072783774090532,
+        -0.1322987333805596,
+        -0.02993469152815366,
+        -1.0737892972651268,
+        -0.12307303375986675,
+        -0.029935309030080848,
+        -1.0835850476911721,
+        -0.09314059760082857,
+        -0.029901332012417736,
+        -1.0823615011354646,
+        -0.10526148172153763,
+        -0.0299020548595737
+      ]
+    },
+    {
+      "foot_clearance_reference_m": 0.006,
+      "impact_contact_assumption": "first_point",
+      "contact_points": [
+        "left_heel"
+      ],
+      "solver_status": "primal infeasible",
+      "preimpact_com_vz_m_s": -0.426382241970033,
+      "preimpact_contact_velocity_m_s": [
+        -1.1149134397260396,
+        -0.10830957241336461,
+        -0.018735558688075388
+      ]
+    },
+    {
+      "foot_clearance_reference_m": 0.006,
+      "impact_contact_assumption": "four_points",
+      "contact_points": [
+        "right_toe",
+        "right_heel",
+        "left_toe",
+        "left_heel"
+      ],
+      "solver_status": "primal infeasible",
+      "preimpact_com_vz_m_s": -0.426382241970033,
+      "preimpact_contact_velocity_m_s": [
+        -1.1051318260538652,
+        -0.13622985718804992,
+        -0.018773158950286334,
+        -1.1061483502691467,
+        -0.12686968366668028,
+        -0.018773930215271628,
+        -1.1161632429490553,
+        -0.0959898861543386,
+        -0.018734650129015123,
+        -1.1149134397260398,
+        -0.10830957241336461,
+        -0.01873555868807547
+      ]
+    },
+    {
+      "foot_clearance_reference_m": 0.01,
+      "impact_contact_assumption": "first_point",
+      "contact_points": [
+        "left_heel"
+      ],
+      "solver_status": "primal infeasible",
+      "preimpact_com_vz_m_s": -0.4754258827294243,
+      "preimpact_contact_velocity_m_s": [
+        -1.152010940848694,
+        -0.11210697456487466,
+        -0.0074299190661004655
+      ]
+    },
+    {
+      "foot_clearance_reference_m": 0.01,
+      "impact_contact_assumption": "four_points",
+      "contact_points": [
+        "right_toe",
+        "right_heel",
+        "left_toe",
+        "left_heel"
+      ],
+      "solver_status": "primal infeasible",
+      "preimpact_com_vz_m_s": -0.4754258827294243,
+      "preimpact_contact_velocity_m_s": [
+        -1.1421632847232748,
+        -0.14067026956035478,
+        -0.007465481503228982,
+        -1.1431990684675652,
+        -0.13107130117842236,
+        -0.0074663945287522515,
+        -1.1533121822078058,
+        -0.09939518808282863,
+        -0.007428840917188179,
+        -1.152010940848694,
+        -0.11210697456487465,
+        -0.007429919066100521
+      ]
+    }
+  ],
+  "limitations": [
+    "Assumed sticking, perfectly inelastic rigid impact and friction coefficient",
+    "No physical impact duration, force peak, compliance, motor dynamics, terrain or control",
+    "Unmeasured actual mass/inertia and approximate simultaneous contacts",
+    "Impact impulses are not peak forces and cannot certify safe landing"
+  ]
+}

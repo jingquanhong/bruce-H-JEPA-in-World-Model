@@ -1,0 +1,16 @@
+{
+  "status": "NOT_EVALUATED_NO_LANDING_CANDIDATE",
+  "source_impact_report": "output/bruce_jump_paper_20261116/landing-impulse-low-research.json",
+  "physical_jump_validated": false,
+  "hardware_actuation": false,
+  "standing_recovery_simulated": false,
+  "cases": [],
+  "limitations": [
+    "Ideal simultaneous sticking impact; real contacts may differ",
+    "Velocity register is effective in modes 1 and 2, not direct force mode 3; not a physical speed rating",
+    "No impact duration, peak force, compliance, contact debounce, actuator bandwidth or PD tracking",
+    "Constant commanded acceleration transitions are not smooth, not a full landing controller",
+    "Friction and physical mass/inertia assumed; no thermal model or disturbance robustness",
+    "No demonstration that actual robot can safely follow these motions"
+  ]
+}

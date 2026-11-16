@@ -1,0 +1,4 @@
+读取 output/bruce_sim_20261113/bruce_assisted_reference_50.h5  50 集
+  -> output/bruce_sim_20261113/assisted_figures/traj_xz.png
+  -> output/bruce_sim_20261113/assisted_figures/timeseries.png
+  -> output/bruce_sim_20261113/assisted_figures/dataset_stats.png

@@ -1,0 +1,90 @@
+{
+  "target": "visually confirmed orange, tracked by color and geometry",
+  "observation_count": 4,
+  "valid_direct_ranges": 1,
+  "range_accepted": false,
+  "distance_m": null,
+  "candidate_range_median_m": 2.049238377550682,
+  "acceptance_rule": ">=3 valid frames, >=75% frames valid, range spread <=0.10m; no hole filling",
+  "target_range_m": 1.0,
+  "range_is": "camera to visible orange surface; center offset not calibrated",
+  "samples": [
+    {
+      "index": 0,
+      "target_candidates": 0,
+      "direct_range_valid": false,
+      "distance_m": null,
+      "spatial_alignment": "SDK ALIGN_D2C_SW_MODE",
+      "hardware_frame_sync": false
+    },
+    {
+      "index": 1,
+      "target_candidates": 1,
+      "direct_range_valid": true,
+      "distance_m": 2.049238377550682,
+      "spatial_alignment": "SDK ALIGN_D2C_SW_MODE",
+      "hardware_frame_sync": false,
+      "bbox_xyxy": [
+        312,
+        266,
+        320,
+        271
+      ],
+      "center_xy": [
+        315.5,
+        268.0
+      ],
+      "mask_pixels": 29,
+      "inner_pixels": 11,
+      "valid_depth_pixels": 11,
+      "valid_depth_fraction": 1.0,
+      "optical_depth_m": 2.045,
+      "depth_spread_10_90_m": 0.027000000000000135
+    },
+    {
+      "index": 2,
+      "target_candidates": 1,
+      "direct_range_valid": false,
+      "distance_m": null,
+      "spatial_alignment": "SDK ALIGN_D2C_SW_MODE",
+      "hardware_frame_sync": false,
+      "bbox_xyxy": [
+        310,
+        264,
+        320,
+        272
+      ],
+      "center_xy": [
+        314.5,
+        267.5
+      ],
+      "mask_pixels": 60,
+      "inner_pixels": 34,
+      "valid_depth_pixels": 0,
+      "valid_depth_fraction": 0.0
+    },
+    {
+      "index": 3,
+      "target_candidates": 1,
+      "direct_range_valid": false,
+      "distance_m": null,
+      "spatial_alignment": "SDK ALIGN_D2C_SW_MODE",
+      "hardware_frame_sync": false,
+      "bbox_xyxy": [
+        310,
+        264,
+        320,
+        273
+      ],
+      "center_xy": [
+        314.5,
+        268.0
+      ],
+      "mask_pixels": 74,
+      "inner_pixels": 45,
+      "valid_depth_pixels": 0,
+      "valid_depth_fraction": 0.0
+    }
+  ],
+  "motor_commands_written": false
+}

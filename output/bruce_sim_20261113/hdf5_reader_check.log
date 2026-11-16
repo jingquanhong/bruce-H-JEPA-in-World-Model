@@ -1,0 +1,29 @@
+== H-JEPA 读入验证 ==
+  h5            : output/bruce_sim_20261113/bruce_joint_trials_40.h5
+  episodes      : 40
+  总帧数        : 3386
+  训练窗口数    : 2626
+  读入列        : ['action', 'imu_acc', 'imu_gyro', 'foot_contact', 'leg_q', 'leg_dq', 'joint_torque_est', 'proprio']
+  proprio 维度  : 36 (期望 36)
+  sim_*/est_* 列泄漏  : 无（符合预期）
+
+  单样本形状：
+    action_level1      (4, 50)
+    imu_acc_level1     (4, 3)
+    imu_gyro_level1    (4, 3)
+    foot_contact_level1 (4, 4)
+    leg_q_level1       (4, 10)
+    leg_dq_level1      (4, 10)
+    joint_torque_est_level1 (4, 10)
+    proprio_level1     (4, 36)
+
+  [PASS] proprio 维度正确
+  [PASS] 无 sim_*/est_* 泄漏
+  [PASS] clip 窗口非空
+  [PASS] action 形状 (num_steps, frameskip*10)
+  [PASS] proprio 形状 (num_steps, 36)
+  [PASS] 数值无 NaN
+  [PASS] action 与原始行对齐
+
+结论: HDF5 读取与动作对齐检查通过
+本检查不代表视觉 H-JEPA 已完成训练适配：本数据未包含逐帧 pixels。

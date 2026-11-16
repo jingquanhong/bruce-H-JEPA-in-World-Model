@@ -1,0 +1,30 @@
+[38;5;159m[Genesis] [14:57:15] [INFO] [38;5;121m╭───────────────────────────────────────────────╮[0m[38;5;159m[0m
+[38;5;159m[Genesis] [14:57:15] [INFO] [38;5;121m│┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈[0m[38;5;159m [38;5;121m[1m[3mGenesis[0m[38;5;159m [38;5;121m┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈│[0m[38;5;159m[0m
+[38;5;159m[Genesis] [14:57:15] [INFO] [38;5;121m╰───────────────────────────────────────────────╯[0m[38;5;159m[0m
+[38;5;159m[Genesis] [14:57:15] [INFO] Running on [38;5;121m[NVIDIA GeForce RTX 3060][0m[38;5;159m with backend [38;5;121mgs.cuda[0m[38;5;159m. Device memory: [38;5;121m11.62[0m[38;5;159m GB.[0m
+[38;5;159m[Genesis] [14:57:15] [INFO] 🚀 Genesis initialized. 🔖 version: [38;5;121m1.4.4[0m[38;5;159m, 🎨 theme: [38;5;121mdark[0m[38;5;159m, 🌱 seed: [38;5;121m0[0m[38;5;159m, 🐛 debug: [38;5;121mFalse[0m[38;5;159m, 📏 precision: [38;5;121m32[0m[38;5;159m, 🔥 performance: [38;5;121mFalse[0m[38;5;159m, 💬 verbose: [38;5;121mINFO[0m[38;5;159m[0m
+[38;5;226m[Genesis] [14:57:15] [WARNING] Scene.show_FPS is deprecated. Please use Scene.options.profiling.show_FPS[0m
+[38;5;159m[Genesis] [14:57:15] [INFO] Scene [38;5;121m[3m<9a8804c>[0m[38;5;159m created.[0m
+[38;5;159m[Genesis] [14:57:15] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mplane_67cf62d[0m[38;5;159m. idx: [38;5;121m0[0m[38;5;159m, morph: [38;5;121m<gs.morphs.Plane>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;226m[Genesis] [14:57:16] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [14:57:16] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [14:57:16] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [14:57:16] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [14:57:16] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;159m[Genesis] [14:57:16] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mbruce_fc8790b[0m[38;5;159m. idx: [38;5;121m1[0m[38;5;159m, morph: [38;5;121m<gs.morphs.URDF(file='/home/user/桌面/H-JEPA-main./H-JEPA-main/BRUCE-OP-main/Simulation/models/bruce/urdf/bruce_physical.urdf')>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;159m[Genesis] [14:57:16] [INFO] Building scene [38;5;121m[3m<9a8804c>[0m[38;5;159m...[0m
+[38;5;226m[Genesis] [14:57:16] [WARNING] Neutral robot position (qpos0) exceeds joint limits.[0m
+[38;5;226m[Genesis] [14:57:16] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (2, 4), (7, 9). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+[38;5;159m[Genesis] [14:57:17] [INFO] Compiling simulation kernels...[0m
+[38;5;159m[Genesis] [14:57:18] [INFO] Building visualizer...[0m
+0 pos [-0.03   0.     0.445] q [1. 0. 0. 0.] fails 0
+100 pos [-0.03003277  0.00107433  0.44500706] q [9.9999976e-01 6.3899643e-04 1.7536493e-04 3.6830720e-04] fails 0
+200 pos [-0.02998907  0.00138187  0.4450488 ] q [ 9.9999547e-01  2.9884174e-03 -1.7768197e-04 -2.9428114e-04] fails 0
+300 pos [-0.02997859  0.00137632  0.44500712] q [ 9.9999601e-01  2.7421047e-03 -1.7879278e-04 -6.7914394e-04] fails 0
+400 pos [-0.0300158   0.00129837  0.44498578] q [9.9999756e-01 2.2333809e-03 9.5810807e-05 2.2730481e-05] fails 0
+500 pos [-0.03002444  0.00131825  0.44499227] q [ 9.9999684e-01  2.5091292e-03  1.3811434e-04 -1.9887693e-05] fails 0
+600 pos [-0.0300133   0.00135273  0.44500518] q [ 9.9999601e-01  2.8143933e-03  3.0379595e-05 -3.1172970e-04] fails 0
+700 pos [-0.0299997   0.00134656  0.44499663] q [ 9.9999613e-01  2.7923910e-03 -5.6972963e-06 -3.0251368e-04] fails 0
+800 pos [-0.02999702  0.00132793  0.4449779 ] q [ 9.9999648e-01  2.6395496e-03  1.2117343e-05 -2.0402849e-04] fails 0
+900 pos [-0.03000754  0.00131658  0.44498232] q [ 9.9999684e-01  2.5394310e-03  5.9497877e-05 -1.7592656e-04] fails 0
+[38;5;159m[Genesis] [14:57:26] [INFO] 💤 Exiting Genesis and caching compiled kernels...[0m

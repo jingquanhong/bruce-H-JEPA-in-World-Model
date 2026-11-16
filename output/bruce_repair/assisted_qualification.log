@@ -1,0 +1,53 @@
+{
+  "dataset": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/bruce_assisted_reference_50.h5",
+  "control_mode": "assisted",
+  "schema_version": "bruce_obstacle_v2",
+  "episodes": 50,
+  "frames": 17500,
+  "duration_seconds": 175.0,
+  "collection_valid": true,
+  "success": 0,
+  "historical_criterion_passed": 37,
+  "visual_hjepa_ready": false,
+  "scenes": {
+    "box_04": {
+      "episodes": 13,
+      "success": 0,
+      "historical_criterion_passed": 7,
+      "fell": 0,
+      "kicked": 5,
+      "completed": 12
+    },
+    "box_06": {
+      "episodes": 13,
+      "success": 0,
+      "historical_criterion_passed": 11,
+      "fell": 0,
+      "kicked": 2,
+      "completed": 13
+    },
+    "box_08": {
+      "episodes": 12,
+      "success": 0,
+      "historical_criterion_passed": 9,
+      "fell": 0,
+      "kicked": 3,
+      "completed": 12
+    },
+    "step_10": {
+      "episodes": 12,
+      "success": 0,
+      "historical_criterion_passed": 10,
+      "fell": 0,
+      "kicked": 0,
+      "completed": 10
+    }
+  },
+  "notes": [
+    "Collection validity and obstacle success are separate.",
+    "Historical success flags are trajectory criteria, not verified autonomous successes.",
+    "No episode has verified full-mesh clearance and stable landing.",
+    "est_* are synthetic truth-plus-noise proxies, not EKF output.",
+    "clearance is an ankle-based geometric proxy, not full-mesh distance."
+  ]
+}

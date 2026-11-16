@@ -1,0 +1,71 @@
+# BRUCE 传感器调试采集；解析参考轨迹尚不能实现无辅助稳定越障。
+
+control_mode: joint_only  # 正式模式不驱动基座；assisted 仅作辅助参考
+
+sim:
+  dt: 5.0e-4          # 2000 Hz
+  substeps: 1
+  backend: gpu        # 后端失败时报错，避免静默改变采集环境
+  default_armature: 0.0
+  leg_armature: 0.00182  # BRUCE_macros.REFLECTED_INERTIA 的对角近似
+
+record_hz: 100        # 数据集存储频率
+episode_seconds: 3.5 # 闭式轨迹最长 3.3s（step_up T_a+T_b+T_c+T_d），尾部留静置
+warmup_steps: 10     # 复位后的空跑步数（10*0.5ms=5ms），避开 set_qpos 后的脏加速度
+
+# 场景表：箱体几何与专家参数严格一致
+#   box_* : 跨过一个箱子（箱高 h_obs）
+#   step_10: 上 10cm 台阶（平台）
+scenes:
+  - id: box_04
+    kind: step_over
+    h_obs: 0.04
+    box: {cx: 0.10, hx: 0.025, hy: 0.15}
+  - id: box_06
+    kind: step_over
+    h_obs: 0.06
+    box: {cx: 0.10, hx: 0.025, hy: 0.15}
+  - id: box_08
+    kind: step_over
+    h_obs: 0.08
+    box: {cx: 0.10, hx: 0.025, hy: 0.15}
+  - id: step_10
+    kind: step_up
+    h_plat: 0.10
+    x_plat: 0.14
+    T_a: 1.0
+    T_b: 0.8
+    T_c: 1.0
+    T_d: 0.5
+    box: {cx: 0.34, hx: 0.25, hy: 0.15}
+
+# 域随机化
+#   choices: 从离散集合里等概率抽；range: 区间均匀采样
+domain_randomization:
+  box_x_jitter: 0.02                              # 箱体 x 向抖动（±）
+  bx0: {choices: [-0.06, -0.03, 0.0]}             # 预备位基座前后偏移
+  lift_extra: {choices: [0.005, 0.045, 0.08]}     # 抬脚净空余量
+  T_lipm: {choices: [0.8, 1.2]}                   # LIPM 单支撑时长
+  friction: {range: [0.6, 1.2]}                   # 接触摩擦
+  kp_scale: {range: [0.85, 1.15]}                 # PD 增益 ±15%
+
+# 传感器代理参数：字段来源于 BRUCE-OP，噪声/阈值未做实机标定
+sensor:
+  foot_contact_force_thresh: 5.0    # N，足底接触阈值（PICO 只有布尔）
+  imu_acc_noise: 0.01               # 假设标准差；不等同于 EKF 的 Qa
+  imu_gyro_noise: 0.01
+  imu_bias_rw: 1.0e-4               # 每采样周期的零偏随机游走幅值
+  joint_q_noise: 0.002              # BEAR 编码器量化 (rad)
+  joint_dq_noise: 0.002
+  torque_gain_std: 0.05             # 电流→力矩 ±5% 增益误差（每关节固定）
+  exp_filter_w: 0.90                # BEAR 一阶低通权重
+  est_pos_sigma: 0.01               # est_* 估计级噪声
+  est_vel_sigma: 0.05
+  est_acc_sigma: 0.10
+  est_yaw_sigma: 0.0349             # 2 度
+
+output:
+  dataset_name: bruce_stepover_50
+  episodes: 50
+  seed: 0
+  cache_dir: null                   # null -> $HJEPA_HOME 或 ~/.stable_worldmodel

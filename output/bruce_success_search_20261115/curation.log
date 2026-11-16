@@ -1,0 +1,10 @@
+{
+  "episodes": 32,
+  "frames": 4244,
+  "recorded_seconds": 84.88,
+  "physics_steps": 171560,
+  "qualified_success_episodes": 0,
+  "excluded_recordings": [],
+  "dataset": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_collection_20261115/bruce_obstacle_attempts_20261115.h5",
+  "dataset_sha256": "ed27695f06979e944fda4e55621e0feed09b7f9ce31e2825457ac3ff6e4029cc"
+}

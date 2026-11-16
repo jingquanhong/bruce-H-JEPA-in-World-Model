@@ -1,0 +1,141 @@
+{
+  "status": "ILLUSTRATIVE_MODEL_ONLY",
+  "model_mass_kg": 4.53031,
+  "physical_mass_measured": false,
+  "takeoff_body_depth_m": 0.015,
+  "assumed_flight_apex_above_takeoff_m": 0.01,
+  "required_com_takeoff_speed_m_s": 0.442944691807002,
+  "required_body_takeoff_speed_m_s": 0.5113277474878863,
+  "target_body_takeoff_acceleration_m_s2": -11.378265418335573,
+  "cases": [
+    {
+      "push_duration_s": 0.12,
+      "status": "REJECTED",
+      "failure": {
+        "reason": "contact force and actuator constraint QP primal infeasible",
+        "u": 0.96,
+        "depth_m": 0.01757511772992572
+      },
+      "peak_joint_speed_rad_s_before_failure": 5.722890614854708,
+      "peak_joint_torque_Nm_before_failure": 4.705348913645737,
+      "peak_motor_current_A_before_failure": 16.161248879237633,
+      "max_model_contact_velocity_m_s": 0.0012639069354257043,
+      "normal_force_min_N": 12.951433080754235,
+      "samples_evaluated": 97
+    },
+    {
+      "push_duration_s": 0.16,
+      "status": "REJECTED",
+      "failure": {
+        "reason": "contact force and actuator constraint QP primal infeasible",
+        "u": 0.97,
+        "depth_m": 0.01757288456671406
+      },
+      "peak_joint_speed_rad_s_before_failure": 5.6217821589485055,
+      "peak_joint_torque_Nm_before_failure": 4.245749112712045,
+      "peak_motor_current_A_before_failure": 14.610534556791258,
+      "max_model_contact_velocity_m_s": 0.0012099748857738873,
+      "normal_force_min_N": 16.431540732230108,
+      "samples_evaluated": 98
+    },
+    {
+      "push_duration_s": 0.2,
+      "status": "REJECTED",
+      "failure": {
+        "reason": "outside screened geometry",
+        "u": 0.09,
+        "depth_m": 0.060105070614371696
+      },
+      "peak_joint_speed_rad_s_before_failure": 0.09839625066915811,
+      "peak_joint_torque_Nm_before_failure": 2.4465273959870104,
+      "peak_motor_current_A_before_failure": 7.959743051739882,
+      "max_model_contact_velocity_m_s": 3.1189491623649385e-05,
+      "normal_force_min_N": 39.16162812853035,
+      "samples_evaluated": 10
+    },
+    {
+      "push_duration_s": 0.24,
+      "status": "REJECTED",
+      "failure": {
+        "reason": "outside screened geometry",
+        "u": 0.07,
+        "depth_m": 0.060106980340853614
+      },
+      "peak_joint_speed_rad_s_before_failure": 0.1026829747879272,
+      "peak_joint_torque_Nm_before_failure": 2.4465273959870104,
+      "peak_motor_current_A_before_failure": 7.959743051739882,
+      "max_model_contact_velocity_m_s": 3.254579961902999e-05,
+      "normal_force_min_N": 37.79350959530534,
+      "samples_evaluated": 8
+    },
+    {
+      "push_duration_s": 0.3,
+      "status": "REJECTED",
+      "failure": {
+        "reason": "outside screened geometry",
+        "u": 0.06,
+        "depth_m": 0.06012803903112982
+      },
+      "peak_joint_speed_rad_s_before_failure": 0.10953710590461029,
+      "peak_joint_torque_Nm_before_failure": 2.4465273959870104,
+      "peak_motor_current_A_before_failure": 7.959743051739882,
+      "max_model_contact_velocity_m_s": 3.4720779979605446e-05,
+      "normal_force_min_N": 37.43748599312801,
+      "samples_evaluated": 7
+    },
+    {
+      "push_duration_s": 0.4,
+      "status": "REJECTED",
+      "failure": {
+        "reason": "outside screened geometry",
+        "u": 0.05,
+        "depth_m": 0.06014408228222232
+      },
+      "peak_joint_speed_rad_s_before_failure": 0.10307544804704667,
+      "peak_joint_torque_Nm_before_failure": 2.4465273959870104,
+      "peak_motor_current_A_before_failure": 7.959743051739882,
+      "max_model_contact_velocity_m_s": 3.2672427693975804e-05,
+      "normal_force_min_N": 38.1348946759763,
+      "samples_evaluated": 6
+    },
+    {
+      "push_duration_s": 0.5,
+      "status": "REJECTED",
+      "failure": {
+        "reason": "outside screened geometry",
+        "u": 0.04,
+        "depth_m": 0.06011773702227927
+      },
+      "peak_joint_speed_rad_s_before_failure": 0.07457112533314207,
+      "peak_joint_torque_Nm_before_failure": 2.4465273959870104,
+      "peak_motor_current_A_before_failure": 7.959743051739882,
+      "max_model_contact_velocity_m_s": 2.3630913570723373e-05,
+      "normal_force_min_N": 39.4945964962801,
+      "samples_evaluated": 5
+    },
+    {
+      "push_duration_s": 0.6,
+      "status": "REJECTED",
+      "failure": {
+        "reason": "outside screened geometry",
+        "u": 0.04,
+        "depth_m": 0.06016683787840144
+      },
+      "peak_joint_speed_rad_s_before_failure": 0.08805050332466378,
+      "peak_joint_torque_Nm_before_failure": 2.4465273959870104,
+      "peak_motor_current_A_before_failure": 7.959743051739882,
+      "max_model_contact_velocity_m_s": 2.7908818099770102e-05,
+      "normal_force_min_N": 39.57195951683862,
+      "samples_evaluated": 5
+    }
+  ],
+  "hardware_actuation": false,
+  "jump_trajectory_validated": false,
+  "limitations": [
+    "One fixed-foot path family and quintic push, not an optimizer or complete jump",
+    "Foot motion and contact acceleration are approximations; actual terrain and impact not modeled",
+    "Model omits measured arm removal/camera mass changes, motor PD and transient current",
+    "No certified joint velocity or actuator power/thermal limits included",
+    "Infeasibility of an example does not establish infeasibility of another trajectory"
+  ]
+}

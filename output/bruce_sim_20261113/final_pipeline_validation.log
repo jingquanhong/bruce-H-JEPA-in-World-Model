@@ -1,0 +1,24 @@
+{
+  "dataset": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/final_pipeline_smoke.h5",
+  "control_mode": "joint_only",
+  "schema_version": "bruce_obstacle_v2",
+  "episodes": 1,
+  "frames": 95,
+  "duration_seconds": 0.95,
+  "collection_valid": true,
+  "success": 0,
+  "scenes": {
+    "box_04": {
+      "episodes": 1,
+      "success": 0,
+      "fell": 1,
+      "kicked": 0,
+      "completed": 0
+    }
+  },
+  "notes": [
+    "Collection validity and obstacle success are separate.",
+    "est_* are synthetic truth-plus-noise proxies, not EKF output.",
+    "clearance is an ankle-based geometric proxy, not full-mesh distance."
+  ]
+}

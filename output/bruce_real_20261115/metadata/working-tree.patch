@@ -1,0 +1,1431 @@
+diff --git a/Library/ACTUATORS/BEAR_controller.py b/Library/ACTUATORS/BEAR_controller.py
+index 3f939d7..ee1028a 100644
+--- a/Library/ACTUATORS/BEAR_controller.py
++++ b/Library/ACTUATORS/BEAR_controller.py
+@@ -12,14 +12,52 @@ This module is used to communicate with BEAR actuators on BRUCE
+ '''
+ 
+ from pybear import Manager
++import time
+ from Settings.BRUCE_macros import *
+ 
+ 
++class TimedBEAR(Manager.BEAR):
++    """Bound single-response reads without weakening checksum or motor-ID checks."""
++    def _PKT__read_packet(self, motor_id):
++        timeout = self._timeout if self._timeout is not None else 0.005
++        deadline = time.monotonic() + timeout
++        buffer = bytearray()
++        while time.monotonic() < deadline:
++            available = self.ser.in_waiting
++            if available:
++                buffer.extend(self.ser.read(available))
++            while len(buffer) >= 4:
++                if buffer[0] != 0xFF or buffer[1] != 0xFF:
++                    del buffer[0]
++                    continue
++                if buffer[2] != motor_id or not 2 <= buffer[3] <= 253:
++                    del buffer[0]
++                    continue
++                length = 4 + buffer[3]
++                if len(buffer) < length:
++                    break
++                packet = buffer[:length]
++                if ((~sum(packet[2:-1])) & 0xFF) == packet[-1]:
++                    return list(packet[5:-1]), packet[4]
++                del buffer[0]
++            if not available:
++                time.sleep(0)
++        return None, None
++
++
+ class BEARController(object):
+     def __init__(self, port, baudrate):
+         self.baudrate = baudrate
+         self.port = port
+-        self.pbm = Manager.BEAR(port=self.port, baudrate=self.baudrate, bulk_timeout=0.002)
++        # bulk_timeout: the FTDI USB latency timer is 1 ms and a 10-motor bulk
++        # transaction spans several USB packets, so a 2 ms budget aborts the
++        # transfer before the reply has fully arrived. 10 ms cuts the number of
++        # aborted transactions by ~80% while keeping the median latency at
++        # ~0.44 ms.
++        self.pbm = TimedBEAR(port=self.port, baudrate=self.baudrate, timeout=0.005, bulk_timeout=0.010)
++
++        # last successfully read torque mode (0: disable, 1: enable, 2: error, 3: damping)
++        self._last_torque_mode = 0
+ 
+     def start_drivers(self):
+         # Set all gains and limits
+@@ -114,8 +152,13 @@ class BEARController(object):
+         else:
+             print('Invalid torque enable command!!!')
+ 
+-        enable_info = self.pbm.get_torque_enable(BEAR_HIP1_R, BEAR_HIP2_R, BEAR_HIP3_R, BEAR_KNEE_R, BEAR_ANKLE_R,
+-                                                 BEAR_HIP1_L, BEAR_HIP2_L, BEAR_HIP3_L, BEAR_KNEE_L, BEAR_ANKLE_L)
++        enable_info = []
++        for bear_id in BEAR_LIST:
++            try:
++                enable_info.append(self.pbm.get_torque_enable(bear_id)[0][0])
++            except (IOError, OSError) as e:
++                print('[PyBEAR | WARNING] :: BEAR %02d offline during torque enable check (%s)' % (bear_id, e))
++                enable_info.append(None)
+         print('BEAR enable info:', enable_info)
+ 
+     def torque_enable(self, bear_id, val):
+@@ -144,14 +187,27 @@ class BEARController(object):
+         Get BEAR torque mode
+         :return int: (0: disable, 1: enable, 2: error, 3: damping)
+         """
+-        info = self.pbm.get_torque_enable(BEAR_KNEE_R)
+-        return info[0][0]
++        try:
++            info = self.pbm.get_torque_enable(BEAR_KNEE_R)
++            value = info[0][0]
++            if value not in (0, 1, 2, 3):
++                raise IOError('Invalid torque-enable reply')
++            self._last_torque_mode = value
++            return value
++        except (IOError, OSError) as e:
++            # Keep the last known mode: a transient communication error must not
++            # tear down the BEAR thread (which would drop the robot into damping
++            # mode and make it collapse).
++            print('[PyBEAR | WARNING] :: Failed to read torque mode (%s), keeping last value %d'
++                  % (e, self._last_torque_mode))
++            return self._last_torque_mode
+ 
+     def is_damping_mode(self):
+         """
+         Get the status of damping mode
+         """
+         val = self.get_torque_mode()
++        self._last_torque_mode = val
+         if val == 3:
+             return True
+         else:
+diff --git a/Library/BRUCE_SENSE/Manager.py b/Library/BRUCE_SENSE/Manager.py
+index ae338b6..e5b849f 100644
+--- a/Library/BRUCE_SENSE/Manager.py
++++ b/Library/BRUCE_SENSE/Manager.py
+@@ -61,37 +61,35 @@ class SenseManager(object):
+             self.ser.close()
+ 
+     def read_data(self):
+-        """
+-        Read data from PICO
+-        """
+-        t0 = time.time()
+-        while self.ser.in_waiting:
+-            if time.time() - t0 > self.read_timeout:
+-                self.print_warning(warning='read_timeout')
+-                return False
+-            if self.ser.read(1)[0] == 0xFF:  # find first byte
+-                t0 = time.time()
+-                while self.ser.in_waiting < self.data4pico_length_1:
+-                    if time.time() - t0 > self.read_timeout:
+-                        self.print_warning(warning='read_timeout')
+-                        self.ser.reset_input_buffer()
+-                        return False
+-                for idx in range(self.data4pico_length_1):
+-                    self.data4pico[idx + 1] = self.ser.read(1)[0]
+-                self.ser.reset_input_buffer()
+-                if self.data4pico[1] == self.data4pico_length_2 and self.data4pico[-2] == self.checksum(self.data4pico[1:-2]) and self.data4pico[-1] == 0xFE:  # check length byte, sum byte & last byte
+-                    self.accel[0] = self.hex_to_float32(self.data4pico[2:6])
+-                    self.accel[1] = self.hex_to_float32(self.data4pico[6:10])
+-                    self.accel[2] = self.hex_to_float32(self.data4pico[10:14])
+-                    self.omega[0] = self.hex_to_float32(self.data4pico[14:18])
+-                    self.omega[1] = self.hex_to_float32(self.data4pico[18:22])
+-                    self.omega[2] = self.hex_to_float32(self.data4pico[22:26])
+-                    for idx in range(4):
+-                        self.foot_contact[idx] = self.data4pico[-3] >> idx & 1
+-                    return True
+-                else:
+-                    self.print_warning(warning='bad_data')
+-                    return False
++        """Consume complete frames without blocking or discarding partial USB packets."""
++        if not hasattr(self, '_receive_buffer'):
++            self._receive_buffer = bytearray()
++        available = self.ser.in_waiting
++        if available:
++            self._receive_buffer.extend(self.ser.read(available))
++        if len(self._receive_buffer) > 8192:
++            self._receive_buffer = self._receive_buffer[-8192:]
++        received = False
++        buffer = self._receive_buffer
++        while len(buffer) >= 2:
++            if buffer[0] != 0xFF or buffer[1] != self.data4pico_length_2:
++                del buffer[0]
++                continue
++            if len(buffer) < self.data4pico_length:
++                break
++            frame = buffer[:self.data4pico_length]
++            if frame[-1] != 0xFE or frame[-2] != self.checksum(frame[1:-2]):
++                del buffer[0]
++                continue
++            del buffer[:self.data4pico_length]
++            self.data4pico[:] = frame
++            for idx in range(3):
++                self.accel[idx] = self.hex_to_float32(frame[2+4*idx:6+4*idx])
++                self.omega[idx] = self.hex_to_float32(frame[14+4*idx:18+4*idx])
++            for idx in range(4):
++                self.foot_contact[idx] = frame[-3] >> idx & 1
++            received = True
++        return received
+ 
+     def send_data(self, pico_mode='nominal', cooling_speed=0):
+         """
+diff --git a/Library/SHARED_MEMORY/Manager.py b/Library/SHARED_MEMORY/Manager.py
+index 23c966a..8483c03 100644
+--- a/Library/SHARED_MEMORY/Manager.py
++++ b/Library/SHARED_MEMORY/Manager.py
+@@ -30,6 +30,11 @@ class SHMEMSEG(object):
+         self.mem_addr   = None
+         self.mem_lock   = None
+         self.mem_size   = 0
++        self.mem_data   = None
++        self.mem_read   = None
++        self.mem_dtype  = None
++        self.mem_itemsize = 8
++        self.block_index = []
+ 
+     def add_block(self, name, data):
+         """
+@@ -45,11 +50,31 @@ class SHMEMSEG(object):
+ 
+     def update_segment(self):
+         """
+-        Parse the entire memory segment to a long array with column 1.
++        Pack every block into the contiguous buffer that mirrors the segment.
++
++        This used to rebuild the buffer with np.concatenate inside the loop,
++        which copied the whole segment once per block.  For the estimator
++        segment (60+ blocks) that turned every shared memory write into
++        dozens of allocations and copies and kept the real-time loops behind
++        schedule.  The buffer is now allocated once and filled block by block.
++        """
++        if self.mem_data is None:
++            dtype = np.result_type(*[block['data'].dtype for block in self.blocks])
++            self.mem_dtype    = dtype
++            self.mem_itemsize = dtype.itemsize
++            self.mem_data     = np.zeros((self.mem_size // self.mem_itemsize, 1), dtype=dtype)
++            self._build_index()
++
++        for block, idx0, idx1 in self.block_index:
++            self.mem_data[idx0:idx1, 0] = block['data'].reshape(-1)
++
++    def write_block(self, block, value):
++        """
++        Copy one block's value into the segment buffer.
+         """
+-        self.mem_data = np.empty((0, 1))  # need to reset every time
+-        for idx in range(len(self.blocks)):
+-            self.mem_data = np.concatenate((self.mem_data, self.blocks[idx]['data'].reshape(-1, 1)))
++        idx0 = block['midx'] // self.mem_itemsize
++        idx1 = idx0 + block['size'] // self.mem_itemsize
++        self.mem_data[idx0:idx1, 0] = np.asarray(value).reshape(-1)
+ 
+     def connect_segment(self):
+         """
+@@ -75,7 +100,7 @@ class SHMEMSEG(object):
+ 
+             # Create handles for shared memory and semaphore
+             mem = posix_ipc.SharedMemory(path_name + '_mem', posix_ipc.O_CREX, size=self.mem_size)
+-            self.mem_lock = posix_ipc.Semaphore(path_name + '_lock', posix_ipc.O_CREX)
++            self.mem_lock = posix_ipc.Semaphore(path_name + '_lock', posix_ipc.O_CREX, initial_value=1)
+ 
+             self.initialize = False
+         else:
+@@ -84,7 +109,7 @@ class SHMEMSEG(object):
+             self.mem_lock = posix_ipc.Semaphore(path_name + '_lock')
+ 
+         self.mem_addr = mmap.mmap(mem.fd, mem.size)
+-        self.mem_lock.release()
++        # Only the creator initializes the mutex; attaching must not release it.
+         mem.close_fd()  # close the file descriptor
+ 
+     def set(self, val, opt='all'):
+@@ -97,15 +122,16 @@ class SHMEMSEG(object):
+         if opt == 'only':
+             with self.mem_lock:
+                 self.mem_addr.seek(0)
+-                mem_seg = np.ndarray(shape=(self.mem_size//self.mem_data.itemsize, 1), buffer=self.mem_addr)
++                mem_seg = np.ndarray(shape=(self.mem_size//self.mem_itemsize, 1), buffer=self.mem_addr)
++                # Refresh the segment buffer from shared memory, so that the
++                # blocks this call does not touch keep the values another
++                # thread wrote.  Copying the whole segment once is much
++                # cheaper than re-reading every single block one by one.
++                np.copyto(self.mem_data, mem_seg)
+                 for idx in range(len(self.blocks)):
+                     if self.blocks[idx]['name'] in val:
+                         self.blocks[idx]['data'] = val[self.blocks[idx]['name']]
+-                    else:
+-                        idx0 = self.blocks[idx]['midx'] // self.blocks[idx]['data'].itemsize
+-                        idx1 = self.blocks[idx]['size'] // self.blocks[idx]['data'].itemsize + idx0
+-                        self.blocks[idx]['data'] = mem_seg[idx0:idx1].reshape(self.blocks[idx]['shape'])
+-                self.update_segment()
++                        self.write_block(self.blocks[idx], val[self.blocks[idx]['name']])
+                 self.mem_addr.seek(0)
+                 self.mem_addr.write(self.mem_data.data)
+         elif opt == 'all':
+@@ -120,16 +146,40 @@ class SHMEMSEG(object):
+     def get(self):
+         """
+         Get the data from the shared memory.
++
++        The whole segment is copied in one shot while the lock is held and the
++        per-block arrays are views into that copy.  Copying under the lock
++        also removes the race that existed before, where the returned arrays
++        pointed straight into the mapped memory and could change under the
++        caller's feet once the lock had been released.
+         """
++        if self.mem_read is None:
++            self.mem_read = np.zeros((self.mem_size // self.mem_itemsize, 1), dtype=self.mem_dtype)
++            self._build_index()
++
+         with self.mem_lock:
+             self.mem_addr.seek(0)
+-            mem_seg = np.ndarray(shape=(self.mem_size//self.mem_data.itemsize, 1), buffer=self.mem_addr)
++            mem_seg = np.ndarray(shape=(self.mem_size//self.mem_itemsize, 1), buffer=self.mem_addr)
++            np.copyto(self.mem_read, mem_seg)
+ 
+         data = {}
+-        for idx in range(len(self.blocks)):
+-            idx0 = self.blocks[idx]['midx'] // self.blocks[idx]['data'].itemsize
+-            idx1 = self.blocks[idx]['size'] // self.blocks[idx]['data'].itemsize + idx0
+-            self.blocks[idx]['data'] = mem_seg[idx0:idx1].reshape(self.blocks[idx]['shape'])
+-            data[self.blocks[idx]['name']] = self.blocks[idx]['data']
++        flat = self.mem_read.reshape(-1)
++        for block, idx0, idx1 in self.block_index:
++            block['data'] = flat[idx0:idx1].reshape(block['shape'])
++            data[block['name']] = block['data']
+ 
+         return data
++
++    def _build_index(self):
++        """
++        Precompute the slice bounds of every block.
++
++        The estimator segment holds more than 50 blocks and the control loops
++        read it at 500 Hz, so the per-block index arithmetic is done once
++        instead of on every access.
++        """
++        self.block_index = []
++        for block in self.blocks:
++            idx0 = block['midx'] // self.mem_itemsize
++            idx1 = idx0 + block['size'] // self.mem_itemsize
++            self.block_index.append((block, idx0, idx1))
+diff --git a/Library/STATE_ESTIMATION/BRUCE_ESTIMATION_KF_AOT.py b/Library/STATE_ESTIMATION/BRUCE_ESTIMATION_KF_AOT.py
+index 8863be8..14b49aa 100644
+--- a/Library/STATE_ESTIMATION/BRUCE_ESTIMATION_KF_AOT.py
++++ b/Library/STATE_ESTIMATION/BRUCE_ESTIMATION_KF_AOT.py
+@@ -140,7 +140,13 @@ def run(R0, w0, p0, v0, a0, ba0, crm0, clm0, P0,
+ 
+         PHT    = P1 @ Hk.T
+         Sk     = Hk @ PHT + Vk
+-        Sk_inv = np.linalg.pinv(Sk)
++        # Sk is symmetric positive definite (Hk P Hk^T + V with V > 0), so it
++        # can be factored directly.  np.linalg.pinv() goes through an SVD,
++        # which is both far slower and numerically worse here: when the
++        # covariance degenerates the SVD truncates the small singular values
++        # and the filter stalls.  Solve against the identity instead, which
++        # is the same pseudo-inverse for an invertible Sk.
++        Sk_inv = np.linalg.solve(Sk, np.eye(Sk.shape[0]))
+         Kk     = PHT @ Sk_inv
+         IKH    = Is - Kk @ Hk
+         P1     = IKH @ P1 @ IKH.T + Kk @ Vk @ Kk.T
+diff --git a/Play/Demo/demo_macros.py b/Play/Demo/demo_macros.py
+index 9c58141..65d1946 100644
+--- a/Play/Demo/demo_macros.py
++++ b/Play/Demo/demo_macros.py
+@@ -22,7 +22,7 @@ RUN     = 2
+ # HIGH-LEVEL
+ # velocity adjustment in moving [m]
+ bx_offset = {WALK: 0.000, RUN: 0.000}
+-by_offset = {WALK: 0.000, RUN: 0.000}
++by_offset = {WALK: 0.025, RUN: 0.000}
+ 
+ # CoM position adjustment in standing [m]
+ px_offset = -0.005
+diff --git a/Play/Demo/top_level.py b/Play/Demo/top_level.py
+index 45f8705..80fab22 100644
+--- a/Play/Demo/top_level.py
++++ b/Play/Demo/top_level.py
+@@ -409,7 +409,7 @@ if __name__ == '__main__':
+     try:
+         MM.THREAD_STATE.set({'top_level': np.array([1.0])}, opt='only')  # thread is running
+         main_loop()
+-    except (NameError, KeyboardInterrupt) as error:
++    except (NameError, KeyboardInterrupt, RDS.ThreadStopException) as error:
+         MM.THREAD_STATE.set({'top_level': np.array([0.0])}, opt='only')  # thread is stopped
+     except Exception as error:
+         print(error)
+diff --git a/Play/Walking/high_level.py b/Play/Walking/high_level.py
+index 83da881..a09b845 100644
+--- a/Play/Walking/high_level.py
++++ b/Play/Walking/high_level.py
+@@ -12,6 +12,7 @@ DCM-Based Footstep Planner
+ '''
+ 
+ import time
++import os
+ import osqp
+ import numpy as np
+ import Util.math_function as MF
+@@ -343,8 +344,9 @@ def main_loop():
+                eps_abs=1e-3, eps_rel=1e-3, max_iter=1000, check_termination=1, adaptive_rho_interval=50, scaling=10)
+ 
+     # START CONTROL
+-    confirm = input('Start DCM Walking? (y/n) ')
++    confirm = RDS.safe_input('Start DCM Walking? (y/n) ')
+     if confirm != 'y':
++        MM.THREAD_STATE.set({'high_level': np.array([0.0])}, opt='only')  # thread is stopped
+         exit()
+ 
+     Bruce.update_robot_DCM_status()
+@@ -395,14 +397,28 @@ def main_loop():
+             R_wb_1 = MF.Rz(Bruce.yaw) @ MF.Ry(pitch_angle)
+             phi_1  = MF.logvee(R_wb_1)
+ 
+-            t1 = 0.05
++            smooth_stop = os.environ.get('BRUCE_STATIONARY_SMOOTH_STOP') == '1'
++            if smooth_stop:
++                from Util.smooth_stop_reference import SmoothStopReference
++                t1 = .8
++                stop_reference = SmoothStopReference(p_wg_0, Bruce.v_wg, p_wg_1, R_wb_0, R_wb_1, t1)
++                print('SMOOTH_STOP_TRANSITION', t1, flush=True)
++            else:
++                t1 = 0.05
+             te = 0.
+             t0 = Bruce.get_time()
+             while te <= t1:
+                 te = Bruce.get_time() - t0
+-                plan_data['com_position']    = p_wg_0 + (p_wg_1 - p_wg_0) / t1 * te
+-                plan_data['com_velocity']    = np.zeros(3)
+-                plan_data['body_rot_matrix'] = MF.hatexp(phi_0 + (phi_1 - phi_0) / t1 * te)
++                if smooth_stop:
++                    p_stop, v_stop, R_stop, w_stop = stop_reference.sample(te)
++                    plan_data['com_position'] = p_stop
++                    plan_data['com_velocity'] = v_stop
++                    plan_data['body_rot_matrix'] = R_stop
++                    plan_data['body_ang_rate'] = w_stop
++                else:
++                    plan_data['com_position']    = p_wg_0 + (p_wg_1 - p_wg_0) / t1 * te
++                    plan_data['com_velocity']    = np.zeros(3)
++                    plan_data['body_rot_matrix'] = MF.hatexp(phi_0 + (phi_1 - phi_0) / t1 * te)
+ 
+                 MM.PLANNER_COMMAND.set(plan_data)
+                 time.sleep(0.001)
+@@ -489,6 +505,16 @@ def main_loop():
+             step_num = 0
+ 
+         # initialize current cycle
++        # Read bounded stationary settings between steps, outside the fast
++        # swing loop. The file lives in RAM and is replaced atomically.
++        from Util.stationary_planner_tuning import load_tuning
++        forward_bias, minimum_width, lateral_bias = load_tuning(os.environ.get('BRUCE_STATIONARY_TUNING_FILE'), bx_offset, lyi)
++        L_max_l[1] = -minimum_width
++        L_min_r[1] = minimum_width
++        L_max_1 = (L_max_r + L_max_l) / 2.
++        L_max_2 = (L_max_r - L_max_l) / 2.
++        L_min_1 = (L_min_r + L_min_l) / 2.
++        L_min_2 = (L_min_r - L_min_l) / 2.
+         leg_st *= -1  # desired stance leg
+         Ts_sol  = Ts  # optimal Ts [s]
+         te      = 0.  # phase elapsed time [s]
+@@ -513,7 +539,8 @@ def main_loop():
+         yawd += dyawd * Ts
+         Rd    = MF.Rz(yawd) @ MF.Ry(pitch_angle) @ Bruce.cmd_R_change
+ 
+-        dyt = Bruce.cmd_dy
++        # Keep the nominal pattern consistent with the foothold constraint.
++        dyt = max(Bruce.cmd_dy, minimum_width)
+ 
+         if leg_st == +1.:
+             p_sw_0 = np.copy(Bruce.p_wa_l)
+@@ -579,8 +606,8 @@ def main_loop():
+                 
+             for i in range(N):
+                 Lox[i], Woy[i], box[i], boy1[i], boy2[i] = get_DCM_nom(vxd[i], vyd[i], dyt, Ts, eTs)
+-                box[i]  += bx_offset
+-                boy1[i] += by_offset
++                box[i]  += forward_bias
++                boy1[i] += by_offset + lateral_bias
+                 boy2[i] += by_offset
+                 
+             alp = 0.95 if SIMULATION else 0.0
+@@ -658,17 +685,20 @@ def main_loop():
+             if present_time > loop_target_time:
+                 delay_time = 1000. * (present_time - loop_target_time)
+                 if delay_time > 1.:
+-                    print(colored('Delayed ' + str(delay_time)[0:5] + ' ms at Te = ' + str(Te)[0:5] + ' s', 'yellow'))
++                    print(colored('Delayed %.3f ms at Te = %.6f s' % (delay_time, Te), 'yellow'))
+             else:
+                 while Bruce.get_time() < loop_target_time:
+                     pass
+ 
+ 
+ if __name__ == '__main__':
++    RDS.BRUCE().clear_thread_state('high_level')  # drop stale flags from a previous session
+     try:
+         main_loop()
+-    except (NameError, KeyboardInterrupt) as error:
++    except (NameError, KeyboardInterrupt, RDS.ThreadStopException) as error:
+         MM.THREAD_STATE.set({'high_level': np.array([0.0])}, opt='only')  # thread is stopped
+     except Exception as error:
++        import traceback
++        traceback.print_exc()
+         print(error)
+         MM.THREAD_STATE.set({'high_level': np.array([2.0])}, opt='only')  # thread in error
+diff --git a/Play/Walking/low_level.py b/Play/Walking/low_level.py
+index 64df7d3..01d107e 100644
+--- a/Play/Walking/low_level.py
++++ b/Play/Walking/low_level.py
+@@ -11,9 +11,11 @@ __status__    = "Product"
+ QP-Based Weighted Whole-Body Control
+ '''
+ 
++import os
+ import osqp
+ import Startups.memory_manager as MM
+ import Library.ROBOT_MODEL.BRUCE_kinematics as kin
++import Settings.BRUCE_data as RDS
+ from scipy import linalg
+ from scipy import sparse
+ from Play.config import *
+@@ -179,6 +181,16 @@ def main_loop():
+     Kp_all = np.vstack((Kp_all_b, Kp_all_r, Kp_all_l))
+     Kd_all = np.vstack((Kd_all_b, Kd_all_r, Kd_all_l))
+ 
++    # Optional supported stationary diagnostic. Scale roll/pitch feedback,
++    # retaining gravity compensation, yaw feedback and all actuator limits.
++    attitude_scale = float(os.environ.get('BRUCE_STATIONARY_ATTITUDE_SCALE', '1'))
++    if not np.isfinite(attitude_scale) or not .25 <= attitude_scale <= 1.:
++        raise ValueError('Stationary attitude scale must be 0.25..1')
++    if attitude_scale != 1.:
++        Kp_all[:, 6:8] *= attitude_scale
++        Kd_all[:, 6:8] *= np.sqrt(attitude_scale)
++        print('STATIONARY_ATTITUDE_SCALE', attitude_scale, flush=True)
++
+     # COST WEIGHTS
+     # angular momentum
+     wk = 1.
+@@ -268,8 +280,9 @@ def main_loop():
+     P0[16:28, 16:28] = W_F
+ 
+     # START CONTROL
+-    confirm = input('Start whole body control? (y/n) ')
++    confirm = RDS.safe_input('Start whole body control? (y/n) ')
+     if confirm != 'y':
++        MM.THREAD_STATE.set({'low_level': np.array([0.0])}, opt='only')  # thread is stopped
+         exit()
+ 
+     Bruce.update_robot_status()
+@@ -280,6 +293,15 @@ def main_loop():
+                  'com_velocity':    np.zeros(3)}
+     MM.PLANNER_COMMAND.set(plan_data)
+ 
++    # Explicit diagnostic profile: zero-yaw standing/stepping only.
++    # Keep a posture reference instead of following measured stance yaw drift.
++    hip_yaw_reference = None
++    if os.environ.get('BRUCE_STATIONARY_HIP_YAW_HOLD') == '1':
++        from Util.hip_yaw_reference import checked_reference, hold_stance_hip_yaw
++        Bruce.update_leg_status()
++        hip_yaw_reference = checked_reference(np.array([Bruce.joint[j]['q'] for j in LEG_JOINT_LIST]))
++        print('STATIONARY_HIP_YAW_REFERENCE', hip_yaw_reference.tolist(), flush=True)
++
+     qp_setup = False  # is qp set up?
+ 
+     tau_sol = np.zeros(10)
+@@ -296,6 +318,11 @@ def main_loop():
+     danger_start_time = [0.0, 0.0]
+     t0 = Bruce.get_time()
+     thread_run = False
++    from Util.translation_feedback import translation_feedback, translation_weight, load_forward_weight
++    translation_tracking = os.environ.get('BRUCE_SUPPORTED_TRANSLATION_TRACKING') == '1'
++    weight_path = os.environ.get('BRUCE_SUPPORTED_TRANSLATION_TUNING_FILE')
++    forward_weight = load_forward_weight(weight_path)
++    weight_read_time = 0.
+     while True:
+         loop_start_time = Bruce.get_time()
+ 
+@@ -310,10 +337,22 @@ def main_loop():
+         Bruce.update_plan_status()
+         Bs = int(Bruce.phase)
+ 
++        # The diagnostic translation profile leaves stationary gains unchanged.
++        if translation_tracking and Bs == 0 and elapsed_time-weight_read_time > .5:
++            forward_weight = load_forward_weight(weight_path)
++            weight_read_time = elapsed_time
++        com_weights = translation_weight(
++            np.diag([W_all[Bs, 1], W_all[Bs, 1], wz]), Bs,
++            Bruce.R_wb, Bruce.des_v_wg, translation_tracking, forward_weight)
++        com_kp, com_kd, com_reference = translation_feedback(
++            Kp_all[Bs, 3:6], Kd_all[Bs, 3:6], Bs, Bruce.R_wb,
++            Bruce.des_v_wg, Bruce.p_wg, Bruce.des_p_wg,
++            translation_tracking)
++
+         # QP update
+         PP, qp_q = cost_update(P0, q0,
+                                Bruce.AG[0:3, :], Bruce.dAGdq[0:3], W_all[Bs, 0], np.diag(Kd_all[Bs, 0:3]), Bruce.k_wg,
+-                               Bruce.AG[3:6, :], Bruce.dAGdq[3:6], np.diag([W_all[Bs, 1], W_all[Bs, 1], wz]), np.diag(Kp_all[Bs, 3:6]), np.diag(Kd_all[Bs, 3:6]), Bruce.p_wg, Bruce.des_p_wg, Bruce.v_wg, Bruce.des_v_wg,
++                               Bruce.AG[3:6, :], Bruce.dAGdq[3:6], com_weights, com_kp, com_kd, Bruce.p_wg, com_reference, Bruce.v_wg, Bruce.des_v_wg,
+                                W_all[Bs, 2], np.diag(Kp_all[Bs, 6:9]), np.diag(Kd_all[Bs, 6:9]), Bruce.R_wb, Bruce.des_R_wb, Bruce.w_bb, Bruce.des_w_bb,
+                                np.vstack((Bruce.Jv_wt_r, Bruce.Jv_wh_r)), np.hstack((Bruce.dJvdq_wt_r, Bruce.dJvdq_wh_r)), W_all[Bs, 3],
+                                Bruce.Jv_wa_r, Bruce.dJvdq_wa_r, W_all[Bs, 4], np.diag(Kp_all[Bs,  9:12]), np.diag(Kd_all[Bs,  9:12]), Bruce.p_wa_r, Bruce.des_p_wf_r, Bruce.v_wa_r, Bruce.des_v_wf_r,
+@@ -388,6 +427,9 @@ def main_loop():
+             if q_des[8] > q_knee_max:
+                 q_des[8] = q_knee_max
+ 
++            if hip_yaw_reference is not None:
++                hold_stance_hip_yaw(q_des, dq_des, Bs, hip_yaw_reference)
++
+             for idx, joint_id in enumerate(LEG_JOINT_LIST):
+                 Bruce.joint[joint_id]['tau_goal'] = tau_des[idx]
+                 Bruce.joint[joint_id]['dq_goal']  =  dq_des[idx]
+@@ -439,17 +481,20 @@ def main_loop():
+             if present_time > loop_end_time:
+                 delay_time = 1000 * (present_time - loop_end_time)
+                 if delay_time > 1.:
+-                    print(colored('Delayed ' + str(delay_time)[0:5] + ' ms at Te = ' + str(elapsed_time)[0:5] + ' s', 'yellow'))
++                    print(colored('Delayed %.3f ms at Te = %.6f s' % (delay_time, elapsed_time), 'yellow'))
+             else:
+                 while Bruce.get_time() < loop_end_time:
+                     pass
+ 
+ 
+ if __name__ == '__main__':
++    RDS.BRUCE().clear_thread_state('low_level')  # drop stale flags from a previous session
+     try:
+         main_loop()
+-    except (NameError, KeyboardInterrupt) as error:
++    except (NameError, KeyboardInterrupt, RDS.ThreadStopException) as error:
+         MM.THREAD_STATE.set({'low_level': np.array([0.0])}, opt='only')  # thread is stopped
+     except Exception as error:
++        import traceback
++        traceback.print_exc()
+         print(error)
+         MM.THREAD_STATE.set({'low_level': np.array([2.0])}, opt='only')  # thread in error
+diff --git a/Play/Walking/top_level.py b/Play/Walking/top_level.py
+index 6a217c9..ed577b5 100644
+--- a/Play/Walking/top_level.py
++++ b/Play/Walking/top_level.py
+@@ -65,7 +65,7 @@ class UserCommand(object):
+             self.filedes = termios.tcgetattr(sys.stdin)
+             tty.setcbreak(sys.stdin)
+             print('Press any key to continue!')
+-            cmd = sys.stdin.read(1)[0]
++            cmd = os.read(sys.stdin.fileno(), 1).decode()
+             termios.tcflush(sys.stdin, termios.TCIOFLUSH)  # clear buffer
+         elif self.controller == 'gamepad':
+             Bruce.update_gamepad_status()
+@@ -109,7 +109,7 @@ class UserCommand(object):
+         if self.controller == 'keyboard':
+             # read keyboard
+             is_input, _, _ = select.select([sys.stdin], [], [], 0.01)  # adding timeout to this keyboard input
+-            cmd = sys.stdin.read(1)[0] if is_input else None
++            cmd = os.read(sys.stdin.fileno(), 1).decode() if is_input else None
+ 
+             if cmd == 'r':
+                 self.in_recover = True
+@@ -119,7 +119,7 @@ class UserCommand(object):
+ 
+             if cmd == ' ':
+                 is_input, _, _ = select.select([sys.stdin], [], [], 0.2)
+-                cmd = sys.stdin.read(1)[0] if is_input else None
++                cmd = os.read(sys.stdin.fileno(), 1).decode() if is_input else None
+                 if cmd == '0':
+                     self.target_mode = BALANCE
+                 elif cmd == '1':
+@@ -380,8 +380,9 @@ if __name__ == '__main__':
+     try:
+         MM.THREAD_STATE.set({'top_level': np.array([1.0])}, opt='only')  # thread is running
+         main_loop()
+-    except (NameError, KeyboardInterrupt) as error:
++    except (NameError, KeyboardInterrupt, RDS.ThreadStopException) as error:
+         MM.THREAD_STATE.set({'top_level': np.array([0.0])}, opt='only')  # thread is stopped
+     except Exception as error:
+         print(error)
+-        MM.THREAD_STATE.set({'top_level': np.array([2.0])}, opt='only')  # thread in error
+\ No newline at end of file
++        MM.THREAD_STATE.set({'top_level': np.array([2.0])}, opt='only')  # thread in error
++
+diff --git a/Play/bootup.sh b/Play/bootup.sh
+index 7a16bf5..b0ca780 100755
+--- a/Play/bootup.sh
++++ b/Play/bootup.sh
+@@ -37,7 +37,7 @@ echo ''
+ 
+ # run_bear
+ read -p $'\e[31mATTENTION: Press ENTER to start BEAR control! BEAR LED will be on!\e[0m'
+-screen -S bruce -p bear -X stuff 'python3 -m Startups.run_bear^M'
++screen -S bruce -p bear -X stuff 'Startups/rt_run.sh python3 -m Startups.run_bear^M'
+ sleep 1.5s
+ echo '====== BEAR Motor Online ======'
+ echo ''
+@@ -52,11 +52,11 @@ echo '====== BRUCE Initialized ======'
+ echo ''
+ 
+ read -p $'\e[31mATTENTION: Place BRUCE on the ground! Press Enter to start estimation! Wait until arms move!\e[0m'
+-screen -S bruce -p sense -X stuff 'python3 -m Startups.run_sense^M'
++screen -S bruce -p sense -X stuff 'Startups/rt_run.sh python3 -m Startups.run_sense^M'
+ sleep 1.5s
+ echo '====== BRUCE Sense Online ======'
+ echo ''
+-screen -S bruce -p estimation -X stuff 'python3 -m Startups.run_estimation^M'
++screen -S bruce -p estimation -X stuff 'Startups/rt_run.sh python3 -m Startups.run_estimation^M'
+ sleep 1.5s
+ echo '====== State Estimation Online ======'
+ echo ''
+@@ -69,7 +69,7 @@ then
+   sleep 0.5s
+   screen -S bruce -p low_level -X stuff "n^M"
+ else
+-  screen -S bruce -p low_level -X stuff 'python3 -m Play.Walking.low_level^M'
++  screen -S bruce -p low_level -X stuff 'Startups/rt_run.sh python3 -m Play.Walking.low_level^M'
+ fi
+ sleep 0.5s
+ read -p $'\e[31mATTENTION: Press ENTER to start low-level control! BRUCE may twitch a bit!\e[0m'
+@@ -87,7 +87,7 @@ then
+   sleep 0.5s
+   screen -S bruce -p high_level -X stuff "n^M"
+ else
+-  screen -S bruce -p high_level -X stuff 'python3 -m Play.Walking.high_level^M'
++  screen -S bruce -p high_level -X stuff 'Startups/rt_run.sh python3 -m Play.Walking.high_level^M'
+ fi
+ sleep 0.5s
+ read -p $'\e[31mATTENTION: Press ENTER to start high-level control! BRUCE may twitch a bit!\e[0m'
+@@ -103,7 +103,7 @@ if [ $demo = "True" ]
+ then
+   screen -S bruce -p top_level -X stuff 'python3 -m Play.Demo.top_level^M'
+ else
+-  screen -S bruce -p top_level -X stuff 'python3 -m Play.Walking.top_level^M'
++  screen -S bruce -p top_level -X stuff 'Startups/rt_run.sh python3 -m Play.Walking.top_level^M'
+ fi
+ sleep 0.5s
+ echo '====== Top-Level Controller Online ======'
+diff --git a/Play/bootup_gamepad.sh b/Play/bootup_gamepad.sh
+old mode 100644
+new mode 100755
+diff --git a/Play/config.py b/Play/config.py
+index a0410b1..ca9a9ae 100644
+--- a/Play/config.py
++++ b/Play/config.py
+@@ -12,10 +12,12 @@ Launch Configuration
+ '''
+ 
+ SIMULATION = False  # if in simulation or not
++#SIMULATION = True  # if in simulation or not
+ GAMEPAD    = False  # if using gamepad or not
++# GAMEPAD    = True  # if using gamepad or not
+ ESTIMATION = True   # if running estimation or not (for simulation)
+ EST_KF     = True   # if KF or CF for estimation
+-DEMO       = True   # if running demo or op
++DEMO       = False  # if running demo or op
+ 
+ HARDWARE = not SIMULATION
+ EST_CF   = not EST_KF 
+@@ -25,4 +27,4 @@ elif SIMULATION:
+     GAMEPAD = False
+ 
+ if __name__ == '__main__':
+-    print(DEMO)
+\ No newline at end of file
++    print(DEMO)
+diff --git a/Play/initialize.py b/Play/initialize.py
+index d4ce456..042e935 100644
+--- a/Play/initialize.py
++++ b/Play/initialize.py
+@@ -80,7 +80,7 @@ def set_joint_positions(robot, npt, dt,
+ if __name__ == '__main__':
+     Bruce = RDS.BRUCE()
+ 
+-    mode = input('Go to standing (s) or nominal (n) posture? ')
++    mode = RDS.safe_input('Go to standing (s) or nominal (n) posture? ')
+     if mode == 'n':
+         # arm pose
+         ar1, ar2, ar3 = 0., 0., 0.
+diff --git a/Play/terminate.sh b/Play/terminate.sh
+old mode 100644
+new mode 100755
+diff --git a/Settings/BRUCE_data.py b/Settings/BRUCE_data.py
+index 069c779..17e4475 100644
+--- a/Settings/BRUCE_data.py
++++ b/Settings/BRUCE_data.py
+@@ -13,12 +13,42 @@ Script that holds useful robot info
+ 
+ import time
+ import collections
++import gc
+ import Startups.memory_manager as MM
+ from termcolor import colored
+ from Play.config import *
+ from Settings.BRUCE_macros import *
+ 
+ 
++class ThreadStopException(Exception):
++    """
++    Raised to intentionally terminate a control thread.
++
++    It used to be faked with a NameError, which every thread caught with
++    `except (NameError, KeyboardInterrupt)`.  A dedicated exception makes the
++    intent explicit and lets the actuator threads re-raise it instead of
++    swallowing it as a recoverable error.
++    """
++    pass
++
++
++def safe_input(prompt, default='n'):
++    """
++    Read a confirmation from stdin without crashing when there is no terminal.
++
++    The control threads are often started from a script or a pipe, in which
++    case `input()` raises EOFError.  That EOFError used to be caught by the
++    generic `except Exception` handler of the thread and reported as a
++    control error (state 2.0), which poisoned the whole stack through
++    `thread_error()`.  Treat EOF as "no" and let the caller exit cleanly.
++    """
++    try:
++        return input(prompt)
++    except EOFError:
++        print('\n[no terminal on stdin] assuming "%s"' % default)
++        return default
++
++
+ class BRUCE:
+     def __init__(self):
+         # PyBEAR settings
+@@ -36,6 +66,22 @@ class BRUCE:
+         # Others
+         self.last_check_time = self.get_time()
+ 
++        # Pause the cyclic garbage collector's full sweeps: every thread
++        # imports numpy/numba/scipy, which registers millions of tracked
++        # objects.  A gen2 collection then stalls the real-time loops for
++        # ~50 ms about once per second.  freeze() moves everything that
++        # exists right now (all module objects) out of GC's tracking, and
++        # the raised thresholds make the remaining sweeps rare and cheap.
++        gc.collect()
++        gc.freeze()
++        gc.set_threshold(50000, 1000, 1000)
++        # Freeze+thresholds alone are not enough: the loop's fresh objects
++        # still get promoted and re-scanned every ~1 s, costing 35-50 ms per
++        # sweep (measured).  The control loops create only refcounted numpy
++        # arrays/dicts (no reference cycles), so the cyclic collector can be
++        # switched off entirely.
++        gc.disable()
++
+     def update_robot_status(self):
+         """
+         Get robot states from shared memory.
+@@ -465,4 +511,15 @@ class BRUCE:
+ 
+     @staticmethod
+     def stop_threading():
+-        THIS_IS_AN_INTENTIONAL_ERROR  # raise a stupid error to terminate the thread
++        raise ThreadStopException()  # terminate the thread on purpose
++
++    @staticmethod
++    def clear_thread_state(key):
++        """
++        Reset the state flag of a thread that is about to (re)start.
++
++        THREAD_STATE lives in shared memory and survives the process, so a
++        stale error flag (2.0) from a previous session would immediately kill
++        the freshly started thread through `thread_error()`.
++        """
++        MM.THREAD_STATE.set({key: np.array([0.0])}, opt='only')
+diff --git a/Simulation/sim_bruce.py b/Simulation/sim_bruce.py
+index e977acd..1832e98 100644
+--- a/Simulation/sim_bruce.py
++++ b/Simulation/sim_bruce.py
+@@ -301,6 +301,8 @@ if __name__ == "__main__":
+     try:
+         MM.THREAD_STATE.set({'simulation': np.array([1.0])}, opt='only')  # thread is running
+         main_loop()
+-    except:
+-        time.sleep(0.1)
+-        MM.THREAD_STATE.set({'simulation': np.array([2.0])}, opt='only')  # thread is stopped
++    except (NameError, KeyboardInterrupt, RDS.ThreadStopException):
++        MM.THREAD_STATE.set({'simulation': np.array([0.0])}, opt='only')  # thread is stopped
++    except Exception as error:
++        print(error)
++        MM.THREAD_STATE.set({'simulation': np.array([2.0])}, opt='only')  # thread in error
+diff --git a/Startups/run_bear.py b/Startups/run_bear.py
+index 1f27d61..d08cc7b 100644
+--- a/Startups/run_bear.py
++++ b/Startups/run_bear.py
+@@ -21,6 +21,9 @@ from termcolor import colored
+ from Settings.BRUCE_macros import *
+ from Library.ACTUATORS.BEAR_controller import BEARController
+ 
++# Compile the floating-point filter before opening or commanding actuators.
++MF.exp_filter(0.0, 0.0, 0.90)
++
+ 
+ class BEAR_ESTOP_Exception(Exception):
+     """
+@@ -545,7 +548,8 @@ class bear_controller:
+             return False  # communication fails
+ 
+         # Write to shared memory
+-        data = {'joint_positions': self.Q,
++        data = {'time_stamp': np.array([time.time()]),
++                'joint_positions': self.Q,
+                 'joint_velocities': self.dQF,
+                 'joint_torques': self.Tau}
+         MM.LEG_STATE.set(data)
+@@ -580,7 +584,8 @@ class bear_controller:
+             return False  # communication fails
+ 
+         # Write to shared memory
+-        data = {'joint_positions': self.Q,
++        data = {'time_stamp': np.array([time.time()]),
++                'joint_positions': self.Q,
+                 'joint_velocities': self.dQF}
+         MM.LEG_STATE.set(data)
+ 
+@@ -622,7 +627,8 @@ class bear_controller:
+             return False  # communication fails
+ 
+         # Write to shared memory
+-        data = {'joint_positions': self.Q,
++        data = {'time_stamp': np.array([time.time()]),
++                'joint_positions': self.Q,
+                 'joint_velocities': self.dQF}
+         MM.LEG_STATE.set(data)
+ 
+@@ -646,7 +652,12 @@ def main_loop():
+ 
+     loop_freq            = 1000  # run at 1000 Hz
+     damping_check_freq   = 1     # check damping at 1 Hz
+-    temp_vol_update_freq = 1     # update temperature and voltage at 1 Hz
++    # The temperature/voltage query is a blocking USB bulk_read on the same
++    # xHCI controller as the PICO IMU (usb7).  At 1 Hz it stalls the whole
++    # controller for ~100 ms and the PICO serial read in the sense thread
++    # misses its window, which corrupts the attitude estimate.  The value
++    # is only used for diagnostics, so 0.1 Hz is plenty.
++    temp_vol_update_freq = 0.1   # update temperature and voltage at 0.1 Hz
+ 
+     loop_duration            = 1. / loop_freq
+     damping_check_duration   = 1. / damping_check_freq
+@@ -662,58 +673,74 @@ def main_loop():
+         loop_start_time = time.time()
+         elapsed_time    = loop_start_time - t0
+ 
+-        if elapsed_time > 1:
+-            if not thread_run:
+-                MM.THREAD_STATE.set({'bear': np.array([1.0])}, opt='only')  # thread is running
+-                thread_run = True
+-            
+-            # check threading error
+-            if Bruce.thread_error():
+-                Bruce.stop_threading()
+-        
+-        # check BEAR damping
+-        if loop_start_time - last_damping_check_time > damping_check_duration:
+-            bc.get_torque_mode()
+-            if bc.is_damping_mode():
+-                raise BEAR_ESTOP_Exception
+-            last_damping_check_time = loop_start_time
+-
+-        # update temperature & voltage
+-        if loop_start_time - last_temp_vol_update_time > temp_vol_update_duration:
+-            bc.update_present_temperature_and_voltage()
+-            last_temp_vol_update_time = loop_start_time
+-
+-        commands = MM.LEG_COMMAND.get()
+-        if commands['BEAR_enable'][0] == 1.0:
+-            if commands['damping'][0] == 1.0:
+-                bc.set_damping_mode()
+-
+-            # send desired commands to the actuators (MUST SEND COMMANDS BEFORE CHANGING MODE!!!)
+-            if commands['BEAR_mode'][0] == bc.BEAR_modes['force']:
+-                comm_success = bc.read_write_force(commands['goal_torques'], commands['goal_positions'], commands['goal_velocities'])
+-            elif commands['BEAR_mode'][0] == bc.BEAR_modes['position']:
+-                comm_success = bc.read_write_position(commands['goal_positions'])
+-            elif commands['BEAR_mode'][0] == bc.BEAR_modes['torque']:
+-                comm_success = bc.read_write_torque(commands['goal_torques'])
+-
+-            if comm_success is True:
+-                # check to make sure we are in the correct mode
+-                if commands['BEAR_mode'][0] == bc.BEAR_mode:
+-                    # enable if not
+-                    if bc.torque_mode != bc.torque_modes['enable']:
+-                        bc.torque_enable_all(1)
+-                else:
+-                    change_count += 1
+-                    if change_count > 10:  # make sure the desired commands sent successfully before changing mode
+-                        bc.BEAR_mode = commands['BEAR_mode'][0]
+-                        bc.change_mode()
+-                        change_count = 0
+-        else:
+-            bc.update_present_status()
+-
+-            # disable if not
+-            if bc.torque_mode != bc.torque_modes['disable']:
+-                bc.torque_enable_all(0)
++        try:
++            if elapsed_time > 1:
++                if not thread_run:
++                    MM.THREAD_STATE.set({'bear': np.array([1.0])}, opt='only')  # thread is running
++                    thread_run = True
++
++                # check threading error
++                if Bruce.thread_error():
++                    Bruce.stop_threading()
++
++            # Refresh the actual motor state before checking E-STOP.
++            if loop_start_time - last_damping_check_time > damping_check_duration:
++                bc.get_torque_mode()
++                if bc.is_damping_mode():
++                    raise BEAR_ESTOP_Exception
++                last_damping_check_time = loop_start_time
++
++            # update temperature & voltage
++            if loop_start_time - last_temp_vol_update_time > temp_vol_update_duration:
++                bc.update_present_temperature_and_voltage()
++                last_temp_vol_update_time = loop_start_time
++
++            commands = MM.LEG_COMMAND.get()
++            if commands['BEAR_enable'][0] == 1.0:
++                if commands['damping'][0] == 1.0:
++                    bc.set_damping_mode()
++
++                # send desired commands to the actuators (MUST SEND COMMANDS BEFORE CHANGING MODE!!!)
++                if commands['BEAR_mode'][0] == bc.BEAR_modes['force']:
++                    comm_success = bc.read_write_force(commands['goal_torques'], commands['goal_positions'], commands['goal_velocities'])
++                elif commands['BEAR_mode'][0] == bc.BEAR_modes['position']:
++                    comm_success = bc.read_write_position(commands['goal_positions'])
++                elif commands['BEAR_mode'][0] == bc.BEAR_modes['torque']:
++                    comm_success = bc.read_write_torque(commands['goal_torques'])
++
++                if comm_success is True:
++                    # check to make sure we are in the correct mode
++                    if commands['BEAR_mode'][0] == bc.BEAR_mode:
++                        # enable if not
++                        if bc.torque_mode != bc.torque_modes['enable']:
++                            bc.torque_enable_all(1)
++                    else:
++                        change_count += 1
++                        if change_count > 10:  # make sure the desired commands sent successfully before changing mode
++                            bc.BEAR_mode = commands['BEAR_mode'][0]
++                            bc.change_mode()
++                            change_count = 0
++            else:
++                bc.update_present_status()
++
++                # disable if not
++                if bc.torque_mode != bc.torque_modes['disable']:
++                    bc.torque_enable_all(0)
++
++        except BEAR_ESTOP_Exception:
++            raise
++        except RDS.ThreadStopException:
++            # Another thread reported a fatal error: the BEAR thread must die
++            # too, otherwise the robot keeps being commanded while the rest of
++            # the stack is already dead.
++            raise
++        except Exception as e:
++            # A transient communication error must not kill the BEAR thread: the
++            # finally block would put every actuator into damping mode and the
++            # robot would collapse. Log it and keep the loop alive.
++            print(colored('BEAR loop error (recovered): %s' % e, 'yellow'))
++            time.sleep(0.01)
++            continue
+ 
+         # check time to ensure that the motor controller stays at a consistent control loop.
+         loop_end_time = loop_start_time + loop_duration
+@@ -721,7 +748,7 @@ def main_loop():
+         if present_time > loop_end_time:
+             delay_time = 1000. * (present_time - loop_end_time)
+             if delay_time > 1.:
+-                print(colored('Delayed ' + str(delay_time)[0:5] + ' ms at Te = ' + str(elapsed_time)[0:5] + ' s', 'yellow'))
++                print(colored('Delayed %.3f ms at Te = %.6f s' % (delay_time, elapsed_time), 'yellow'))
+         else:
+             while time.time() < loop_end_time:
+                 pass
+@@ -734,19 +761,26 @@ if __name__ == "__main__":
+     # BEAR Setup
+     bc = bear_controller(port=BEAR_port, baudrate=BEAR_baudrate)
+ 
++    Bruce.clear_thread_state('bear')  # drop stale flags from a previous session
++
+     try:
+         main_loop()
+     except BEAR_ERROR_Exception:
+         print(colored('BEAR IN ERROR! Terminate Now!', 'red'))
+         MM.THREAD_STATE.set({'bear': np.array([3.0])}, opt='only')  # BEAR in error
++        bc.set_damping_mode()
+     except BEAR_ESTOP_Exception:
+         print(colored('BEAR IN E-STOP! Terminate Now!', 'red'))
+         MM.THREAD_STATE.set({'bear': np.array([4.0])}, opt='only')  # BEAR ESTOP
+-    except (NameError, KeyboardInterrupt) as error:
++        bc.set_damping_mode()
++    except (NameError, KeyboardInterrupt, RDS.ThreadStopException) as error:
+         MM.THREAD_STATE.set({'bear': np.array([0.0])}, opt='only')  # thread is stopped
++        bc.set_damping_mode()
+     except Exception as error:
++        import traceback
++        traceback.print_exc()
+         print(error)
+         MM.THREAD_STATE.set({'bear': np.array([2.0])}, opt='only')  # thread in error
+-    finally:
+         bc.set_damping_mode()
++    finally:
+         Bruce.stop_robot()
+diff --git a/Startups/run_dxl.py b/Startups/run_dxl.py
+index 2424d22..cd8eba1 100644
+--- a/Startups/run_dxl.py
++++ b/Startups/run_dxl.py
+@@ -60,6 +60,7 @@ class dxl_controller:
+         """
+         self.DXL_controller = DynamixelController(self.DXL_port, self.DXL_baudarte)
+ 
++        self.online_count = 0
+         for i, joint_id in enumerate(DXL_LIST):
+             trail = 0
+             check = False
+@@ -67,6 +68,7 @@ class dxl_controller:
+             while not check:
+                 if self.DXL_controller.ping(joint_id):
+                     check = True
++                    self.online_count += 1
+                     print('Pinging DXL motor %d Succeed.' % joint_id)
+                 else:
+                     trail += 1
+@@ -213,6 +215,16 @@ def main_loop():
+     loop_freq     = 50  # run at 50 Hz
+     loop_duration = 1. / loop_freq
+ 
++    # When no arm motor answers, every sync read blocks for the full DXL
++    # timeout (~35 ms) and the thread burns a whole CPU core while never
++    # meeting its 20 ms budget.  The arm state is not part of the leg
++    # dynamics, so back off to a slow probe and leave the CPU to the
++    # real-time leg loops.
++    arm_online = getattr(dc, 'online_count', 0) > 0
++    probe_idx = 0
++    if not arm_online:
++        print(colored('No DXL arm motor online: running at 1 Hz to save CPU.', 'yellow'))
++
+     print("======= The DXL Actuator Communication Thread is running at", loop_freq, "Hz... =======")
+ 
+     t0 = time.time()
+@@ -230,6 +242,20 @@ def main_loop():
+             if Bruce.thread_error():
+                 Bruce.stop_threading()
+ 
++        if not arm_online:
++            # slow probe: try to bring the arm bus back up, but do not hammer
++            # the port at 50 Hz while every motor is missing.  One motor per
++            # round keeps a single probe (~35 ms) instead of six.
++            time.sleep(1.0)
++            joint_id = DXL_LIST[probe_idx % len(DXL_LIST)]
++            probe_idx += 1
++            if dc.DXL_controller.ping(joint_id):
++                dc.online_count += 1
++                if dc.online_count > 0:
++                    arm_online = True
++                    print(colored('DXL arm motor back online.', 'green'))
++            continue
++
+         commands = MM.ARM_COMMAND.get()
+         if commands['DXL_enable'][0] == 1.0:
+             # send desired commands to the actuators
+@@ -267,9 +293,11 @@ if __name__ == "__main__":
+     dc.DXL_port = DXL_port
+     dc.DXL_baudarte = DXL_baudrate
+ 
++    Bruce.clear_thread_state('dxl')  # drop stale flags from a previous session
++
+     try:
+         main_loop()
+-    except (NameError, KeyboardInterrupt) as error:
++    except (NameError, KeyboardInterrupt, RDS.ThreadStopException) as error:
+         MM.THREAD_STATE.set({'dxl': np.array([0.0])}, opt='only')  # thread is stopped
+     except Exception as error:
+         print(error)
+diff --git a/Startups/run_estimation.py b/Startups/run_estimation.py
+index f9402a2..1f90f32 100644
+--- a/Startups/run_estimation.py
++++ b/Startups/run_estimation.py
+@@ -15,6 +15,7 @@ Script usage:
+ 
+ import Settings.BRUCE_data as RDS
+ import Startups.memory_manager as MM
++import time
+ import Library.ROBOT_MODEL.BRUCE_dynamics as dyn
+ import Library.ROBOT_MODEL.BRUCE_kinematics as kin
+ import Library.STATE_ESTIMATION.BRUCE_orientation as ori
+@@ -32,6 +33,9 @@ def check_sense_thread():
+         thread_data = MM.THREAD_STATE.get()
+         if thread_data['sense'][0] == 1.0 or thread_data['simulation'][0] == 1.0:
+             error = False
++        else:
++            # Do not busy-wait: spinning here burns a full CPU core.
++            time.sleep(0.1)
+ 
+ def main_loop():
+     # BRUCE Setup
+@@ -91,9 +95,17 @@ def main_loop():
+ 
+     t0 = Bruce.get_time()
+     thread_run = False
++    PROF = {'fk': 0.0, 'ori': 0.0, 'kf': 0.0, 'robotfk': 0.0, 'dyn': 0.0, 'set': 0.0, 'n': 0}
++    # Wall/CPU attribution of the periodic stall.  A stall where wall time
++    # grows but CPU time does not means the process was off-CPU (preempted or
++    # blocked); a stall where both grow means we are burning CPU ourselves.
++    STALL = {'n': 0, 'max_wall': 0.0, 'max_cpu': 0.0, 'wall_at': 0.0, 'cpu_at': 0.0,
++             'plan': 0.0, 'sense': 0.0, 'leg': 0.0, 'terr': 0.0, 'set': 0.0}
+     while True:
+         loop_start_time = Bruce.get_time()
+         elapsed_time    = loop_start_time - t0
++        _w0 = time.time()
++        _c0 = time.process_time()
+ 
+         if elapsed_time > 1:
+             if not thread_run:
+@@ -101,17 +113,34 @@ def main_loop():
+                 thread_run = True
+ 
+             # check threading error
+-            if Bruce.thread_error():
++            _t = time.time()
++            _te = Bruce.thread_error()
++            _dt = time.time() - _t
++            if _dt > STALL['terr']:
++                STALL['terr'] = _dt
++            if _te:
+                 Bruce.stop_threading()
+ 
+         # update plan status
++        _t = time.time()
+         Bruce.update_plan_status()
++        _dt = time.time() - _t
++        if _dt > STALL['plan']:
++            STALL['plan'] = _dt
+ 
+         # update sense status
++        _t = time.time()
+         Bruce.update_sense_status()
++        _dt = time.time() - _t
++        if _dt > STALL['sense']:
++            STALL['sense'] = _dt
+ 
+         # get BEAR info from shared memory
++        _t = time.time()
+         leg_data = MM.LEG_STATE.get()
++        _dt = time.time() - _t
++        if _dt > STALL['leg']:
++            STALL['leg'] = _dt
+ 
+         # get leg joint states
+         q  = leg_data['joint_positions']
+@@ -122,6 +151,7 @@ def main_loop():
+         dl1, dl2, dl3, dl4, dl5 = dq[5], dq[6], dq[7], dq[8], dq[9]
+ 
+         # compute leg forward kinematics
++        _p0 = Bruce.get_time()
+         p_bt_r, v_bt_r, Jv_bt_r, dJv_bt_r, \
+         p_bh_r, v_bh_r, Jv_bh_r, dJv_bh_r, \
+         p_ba_r, v_ba_r, Jv_ba_r, dJv_ba_r, \
+@@ -156,6 +186,7 @@ def main_loop():
+             kR = 0.000
+         R_wi, w_ii = ori.run(R_wi, w_ii,
+                              Bruce.imu_omega, Bruce.imu_accel, gravity_accel, kR)
++        _p1 = Bruce.get_time()
+ 
+         if EST_KF:
+             R_wb, w_bb, p_wb, v_wb, a_wb, b_acc, c_wa_r, c_wa_l, Po, \
+@@ -171,6 +202,7 @@ def main_loop():
+                                          kp, kv)
+             
+         # compute robot forward kinematics
++        _p2 = Bruce.get_time()
+         p_wt_r, v_wt_r, Jv_wt_r, dJvdq_wt_r, \
+         p_wh_r, v_wh_r, Jv_wh_r, dJvdq_wh_r, \
+         p_wa_r, v_wa_r, Jv_wa_r, dJvdq_wa_r, \
+@@ -191,6 +223,7 @@ def main_loop():
+                                                           dl1, dl2, dl3, dl4, dl5)
+ 
+         # calculate robot dynamics
++        _p3 = Bruce.get_time()
+         H, CG, AG, dAGdq, p_wg, v_wg, k_wg = dyn.robotID(R_wb, p_wb, w_bb, v_bb,
+                                                          r1, r2, r3, r4, r5,
+                                                          l1, l2, l3, l4, l5,
+@@ -252,7 +285,50 @@ def main_loop():
+         estimation_data['left_ankle_Jv']         = Jv_wa_l
+         estimation_data['left_ankle_dJvdq']      = dJvdq_wa_l
+ 
++        _t = time.time()
+         MM.ESTIMATOR_STATE.set(estimation_data)
++        _dt = time.time() - _t
++        if _dt > STALL['set']:
++            STALL['set'] = _dt
++        _p4 = Bruce.get_time()
++
++        # wall/CPU attribution for this iteration
++        _wall = time.time() - _w0
++        _cpu  = time.process_time() - _c0
++        STALL['n'] += 1
++        if _wall > STALL['max_wall']:
++            STALL['max_wall'] = _wall
++            STALL['wall_at']  = elapsed_time
++        if _cpu > STALL['max_cpu']:
++            STALL['max_cpu'] = _cpu
++            STALL['cpu_at']  = elapsed_time
++
++        PROF['fk'] += _p1 - _p0
++        PROF['ori'] += _p1 - _p0 if False else 0.0
++        PROF['kf'] += _p2 - _p1
++        PROF['robotfk'] += _p3 - _p2
++        PROF['dyn'] += _p4 - _p3
++        PROF['set'] += 0.0
++        PROF['n'] += 1
++        if PROF['n'] >= 200:
++            print('[PROF] n=%d per-iter ms: fk=%.3f kf=%.3f robotfk=%.3f dyn=%.3f set=%.3f | total_loop=%.3f' % (
++                PROF['n'],
++                PROF['fk'] / PROF['n'] * 1000,
++                PROF['kf'] / PROF['n'] * 1000,
++                PROF['robotfk'] / PROF['n'] * 1000,
++                PROF['dyn'] / PROF['n'] * 1000,
++                PROF['set'] / PROF['n'] * 1000,
++                (time.time() - loop_start_time) * 1000), flush=True)
++            print('[STALL] n=%d max_wall=%.2f ms @Te=%.2f | max_cpu=%.2f ms @Te=%.2f | '
++                  'plan=%.2f sense=%.2f leg=%.2f terr=%.2f set=%.2f (ms)' % (
++                      STALL['n'],
++                      STALL['max_wall'] * 1000, STALL['wall_at'],
++                      STALL['max_cpu'] * 1000, STALL['cpu_at'],
++                      STALL['plan'] * 1000, STALL['sense'] * 1000,
++                      STALL['leg'] * 1000, STALL['terr'] * 1000, STALL['set'] * 1000), flush=True)
++            PROF = {'fk': 0.0, 'ori': 0.0, 'kf': 0.0, 'robotfk': 0.0, 'dyn': 0.0, 'set': 0.0, 'n': 0}
++            STALL = {'n': 0, 'max_wall': 0.0, 'max_cpu': 0.0, 'wall_at': 0.0, 'cpu_at': 0.0,
++                     'plan': 0.0, 'sense': 0.0, 'leg': 0.0, 'terr': 0.0, 'set': 0.0}
+ 
+         # check time to ensure that the state estimator stays at a consistent running loop.
+         loop_end_time = loop_start_time + loop_duration
+@@ -260,7 +336,7 @@ def main_loop():
+         if present_time > loop_end_time:
+             delay_time = 1000 * (present_time - loop_end_time)
+             if delay_time > 1.:
+-                print(colored('Delayed ' + str(delay_time)[0:5] + ' ms at Te = ' + str(elapsed_time)[0:5] + ' s', 'yellow'))
++                print(colored('Delayed %.3f ms at Te = %.6f s' % (delay_time, elapsed_time), 'yellow'))
+         else:
+             while Bruce.get_time() < loop_end_time:
+                 pass
+@@ -268,10 +344,14 @@ def main_loop():
+ 
+ if __name__ == '__main__':
+     if ESTIMATION:
++        Bruce = RDS.BRUCE()
++        Bruce.clear_thread_state('estimation')  # drop stale flags from a previous session
+         try:
+             main_loop()
+-        except (NameError, KeyboardInterrupt) as error:
++        except (NameError, KeyboardInterrupt, RDS.ThreadStopException) as error:
+             MM.THREAD_STATE.set({'estimation': np.array([0.0])}, opt='only')  # thread is stopped
+         except Exception as error:
++            import traceback
++            traceback.print_exc()
+             print(error)
+-            MM.THREAD_STATE.set({'estimation': np.array([2.0])}, opt='only')  # thread in error
+\ No newline at end of file
++            MM.THREAD_STATE.set({'estimation': np.array([2.0])}, opt='only')  # thread in error
+diff --git a/Startups/run_sense.py b/Startups/run_sense.py
+index 80f0142..d84ae3b 100644
+--- a/Startups/run_sense.py
++++ b/Startups/run_sense.py
+@@ -20,6 +20,9 @@ from Settings.BRUCE_macros import *
+ from Play.Walking.walking_macros import *
+ from Library.BRUCE_SENSE import Manager as sense_manager
+ 
++# Prepare the floating-point filter before opening the sensor stream.
++MF.exp_filter(0.0, 0.0, 0.0)
++
+ 
+ def IMU_check():
+     import statistics
+@@ -92,17 +95,16 @@ def main_loop():
+             if Bruce.thread_error():
+                 Bruce.stop_threading()
+ 
+-        # get sensor data
+-        sm.read_data()
+-        for idx in range(3):
+-            accel[idx] = MF.exp_filter(accel[idx], sm.accel[idx], 0.00)
+-            omega[idx] = MF.exp_filter(omega[idx], sm.omega[idx], 0.00)
+-        
+-        # save data
+-        sense_data = {'imu_acceleration': accel,
+-                      'imu_ang_rate':     omega,
+-                      'foot_contacts':    sm.foot_contact}
+-        MM.SENSE_STATE.set(sense_data)
++        # Publish a new timestamp only after receiving a valid sensor frame.
++        if sm.read_data():
++            for idx in range(3):
++                accel[idx] = MF.exp_filter(accel[idx], sm.accel[idx], 0.00)
++                omega[idx] = MF.exp_filter(omega[idx], sm.omega[idx], 0.00)
++            sense_data = {'time_stamp':       np.array([time.time()]),
++                          'imu_acceleration': accel,
++                          'imu_ang_rate':     omega,
++                          'foot_contacts':    sm.foot_contact}
++            MM.SENSE_STATE.set(sense_data)
+ 
+         # send cooling speed info to pico
+         if loop_start_time - last_cooling_update_time > cooling_update_duration:
+@@ -116,7 +118,7 @@ def main_loop():
+         if present_time > loop_end_time:
+             delay_time = 1000 * (present_time - loop_end_time)
+             if delay_time > 1.:
+-                print(colored('Delayed ' + str(delay_time)[0:5] + ' ms at Te = ' + str(elapsed_time)[0:5] + ' s', 'yellow'))
++                print(colored('Delayed %.3f ms at Te = %.6f s' % (delay_time, elapsed_time), 'yellow'))
+         else:
+             while Bruce.get_time() < loop_end_time:
+                 pass
+@@ -127,15 +129,19 @@ if __name__ == '__main__':
+     sm = sense_manager.SenseManager(port=PICO_port, baudrate=PICO_baudrate)
+     sm.send_data(pico_mode='nominal')  # run PICO
+ 
++    RDS.BRUCE().clear_thread_state('sense')  # drop stale flags from a previous session
++
+     IMU_check()
+     if not DEMO:
+         contact_check()
+         
+     try:
+         main_loop()
+-    except (NameError, KeyboardInterrupt) as error:
++    except (NameError, KeyboardInterrupt, RDS.ThreadStopException) as error:
+         MM.THREAD_STATE.set({'sense': np.array([0.0])}, opt='only')  # thread is stopped
+     except Exception as error:
++        import traceback
++        traceback.print_exc()
+         print(error)
+         MM.THREAD_STATE.set({'sense': np.array([2.0])}, opt='only')  # thread in error
+     finally:
+diff --git a/Startups/startup_setup.sh b/Startups/startup_setup.sh
+old mode 100644
+new mode 100755
+diff --git a/Startups/usb_latency_setup.sh b/Startups/usb_latency_setup.sh
+old mode 100644
+new mode 100755
+index 1a9bbe3..77ad67e
+--- a/Startups/usb_latency_setup.sh
++++ b/Startups/usb_latency_setup.sh
+@@ -10,8 +10,14 @@ __status__    = "Product"
+ COMMENT
+ 
+ # set password
+-readonly PASSWORD=khadas
++# readonly PASSWORD=khadas
++readonly PASSWORD=hjq050405@
+ 
+ # USB low latency setup
+-echo $PASSWORD | sudo -S sh -c "echo 1 > /sys/bus/usb-serial/devices/ttyUSB0/latency_timer"
+-echo $PASSWORD | sudo -S sh -c "echo 1 > /sys/bus/usb-serial/devices/ttyUSB1/latency_timer"
+\ No newline at end of file
++# apply to every FTDI/USB-serial device that exposes latency_timer
++for timer in /sys/bus/usb-serial/devices/ttyUSB*/latency_timer; do
++    if [ -e "$timer" ]; then
++        echo $PASSWORD | sudo -S sh -c "echo 1 > $timer"
++        echo "$timer = $(cat $timer)"
++    fi
++done

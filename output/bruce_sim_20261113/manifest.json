@@ -1,0 +1,23 @@
+{
+  "snapshot_kind": "final_delivery_source_snapshot",
+  "files": {
+    "scripts/data/bruce/test_collection.py": "df370ca90c21ec276fb5d2229b06b0cebece8c81fa0cb2f0ca92054a9f9cbc3f",
+    "scripts/data/bruce/collect_bruce.py": "97de1dea15d99db9b43a303f4f96adb4e7074f0a7c697356e00468e34a9775c1",
+    "scripts/data/bruce/present_collection.py": "7f707ddaecf093816ddc3897c446c31abd9491bc84b02856d78a9ea604df3c1d",
+    "scripts/data/bruce/bruce_signals.py": "eee6f5b8309cb68d933d07aedf2954b6e3071b52ebf7ef610f123ad73d9c8fdb",
+    "scripts/data/bruce/check_dataset.py": "63d484c8910923812501122a267aec79efcd2accb7fd48c737e3407f7987f403",
+    "scripts/data/bruce/make_figures.py": "6f63af4df2a68d459b3728137c105dbf491dfdb9ae0dead84289bd25c92a5b84",
+    "scripts/data/bruce/bruce_expert.py": "3285324d545ea65557e8676c3142b1eab49a9ff9d122ba3959a639779235987b",
+    "scripts/data/bruce/bruce_env.py": "c698655008e90a9ec17cf65479e5b1e762ab8ca2283fb24b69386ec8e5b95394",
+    "scripts/data/bruce/verify_hjepa_read.py": "a3f9637f1a48cf138b2b0f5968a2b5a2e8008018f3758d42fc5303e216e85eeb",
+    "h_jepa/main_hjepa.py": "9aea0c3da7b3b0957341546d983b1072200c8c50df60c9f1bbe12e7f2c6bc024",
+    "h_jepa/hjepa_utils.py": "7d1b70482f3cbce1e8a23f71fd5a1478708c9acb376cee35a7e4935adcbdb7c0",
+    "h_jepa/models/hjepa.py": "69e7cb255658d9cd4000f55d0adadfad968a8f8f95e6e7998fdb6fbd843a01f7",
+    "scripts/check_hjepa_runtime.py": "42a112ec0bea6032b7990ed756b33b11ad4ec8b60fe40d8e1ac887ea10b95f98",
+    "scripts/check_hjepa_entry.py": "455d200858e366a529ffdfb882442d8ee6156964448fef8b87b6a885bf1f3fbc"
+  },
+  "datasets": {
+    "bruce_assisted_reference_50.h5": "afa834967a13a4c75e241ed486e2da46383776119d107116c5d1b00225875611",
+    "bruce_joint_trials_40.h5": "b433a199ccf0dda03b838d49650b93da6d38280bcd6c1a1f07f23cf24a66b03f"
+  }
+}

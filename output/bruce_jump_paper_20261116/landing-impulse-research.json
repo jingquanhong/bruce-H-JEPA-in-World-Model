@@ -1,0 +1,14 @@
+{
+  "status": "NOT_EVALUATED_NO_LANDING_CANDIDATE",
+  "source_flight_report": "/home/user/\u684c\u9762/H-JEPA-main./H-JEPA-main/output/bruce_jump_paper_20261116/flight-retraction-research.json",
+  "physical_jump_validated": false,
+  "hardware_actuation": false,
+  "landing_controller_validated": false,
+  "cases": [],
+  "limitations": [
+    "Assumed perfectly inelastic rigid impact and friction coefficient; single-point sliding is only an impulse snapshot",
+    "No physical impact duration, force peak, compliance, motor dynamics, terrain or control",
+    "Unmeasured actual mass/inertia and approximate simultaneous contacts",
+    "Impact impulses are not peak forces and cannot certify safe landing"
+  ]
+}

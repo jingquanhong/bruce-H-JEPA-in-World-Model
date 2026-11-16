@@ -1,0 +1,1 @@
+Linux Khadas 5.10.198 #1.6.5 SMP PREEMPT Fri Mar 1 10:24:40 CST 2024 aarch64 aarch64 aarch64 GNU/Linux

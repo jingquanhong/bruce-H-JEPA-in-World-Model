@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-14",
+  "configuration": "both arms removed; feet bear weight; support prevents falling; accessible emergency stop",
+  "common": {
+    "hold_hip_yaw": true,
+    "swing_height_m": 0.015,
+    "attitude_scale": 0.5,
+    "smooth_stop_seconds": 0.8,
+    "foot_spacing_command_m": 0.08,
+    "minimum_width_m": 0.1,
+    "lateral_bias_m": -0.006,
+    "translation_tracking": true,
+    "translation_forward_weight": 3.0,
+    "translation_position_gain": 2.0,
+    "translation_velocity_gain_add": 5.0,
+    "translation_position_error_limit_m": 0.05,
+    "max_motion_seconds": 10
+  },
+  "profiles": {
+    "stationary": {
+      "forward_velocity_m_s": 0.0,
+      "forward_bias_m": -0.002,
+      "validated_seconds": 30,
+      "operator_feedback": "基本稳定",
+      "observation": "supported-observation-1794668704667409546.json"
+    },
+    "forward": {
+      "forward_velocity_m_s": 0.05,
+      "forward_bias_m": 0.015,
+      "validated_seconds": 10,
+      "operator_feedback": "前后移动明显，踏步和收步都稳定",
+      "observation": "supported-observation-1794670958546148108.json",
+      "min_voltage_V": 15.382367,
+      "max_abs_iq_A": 10.898287,
+      "max_tilt_deg": 3.262287
+    },
+    "backward": {
+      "forward_velocity_m_s": -0.05,
+      "forward_bias_m": -0.015,
+      "validated_seconds": 10,
+      "operator_feedback": "前后移动明显，踏步和收步都稳定",
+      "observation": "supported-observation-1794671006211096486.json",
+      "min_voltage_V": 15.498917,
+      "max_abs_iq_A": 10.002136,
+      "max_tilt_deg": 3.82261
+    }
+  },
+  "stop_behavior": "After each motion command, zero commanded velocity, smooth return to stance, restore stationary forward bias -0.002; continue holding with protections.",
+  "limits": "Only these supported bouts are physically verified. Commanded speed is not a ground-truth distance measurement. Profiles do not auto-start."
+}

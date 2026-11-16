@@ -1,0 +1,971 @@
+13:57:29 | INFO  | __init__.py | JAX version 0.10.2 available.
+13:57:29 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+[2026-11-13 13:57:30,183][root][INFO] - Cached 'action' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_train.h5'
+[2026-11-13 13:57:30,183][root][INFO] - Cached 'xy' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_train.h5'
+[2026-11-13 13:57:30,183][root][INFO] - Cached 'qpos' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_train.h5'
+[2026-11-13 13:57:30,183][root][INFO] - Cached 'qvel' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_train.h5'
+[2026-11-13 13:57:30,185][root][INFO] - Merged columns ['qpos[2:]', 'qvel'] into 'proprio' and cached it
+[2026-11-13 13:57:30,186][root][INFO] - Cached 'action' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_val.h5'
+[2026-11-13 13:57:30,186][root][INFO] - Cached 'xy' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_val.h5'
+[2026-11-13 13:57:30,186][root][INFO] - Cached 'qpos' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_val.h5'
+[2026-11-13 13:57:30,186][root][INFO] - Cached 'qvel' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_val.h5'
+[2026-11-13 13:57:30,188][root][INFO] - Merged columns ['qpos[2:]', 'qvel'] into 'proprio' and cached it
+/home/user/miniconda3/envs/hjepa/lib/python3.11/site-packages/torch/nn/modules/transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+13:57:30 | INFO  | module.py   | Setting up DataModule
+13:57:30 | INFO  | utils.py    | ── Module ────────────────────────────────────────
+13:57:30 | WARN  | module.py   | ! No hyperparameters provided - hyperparameter logging is disabled.
+13:57:30 | INFO  | module.py   |   Setting custom forward method.
+13:57:30 | INFO  | module.py   |   Setting attribute: self.model = <class 'models.hjepa.HJEPA'>
+13:57:30 | INFO  | module.py   |   Setting attribute: self.sigreg_level1 = <class 'loss.SIGReg'>
+13:57:30 | INFO  | module.py   |   Setting attribute: self.sigreg_level2 = <class 'loss.SIGReg'>
+13:57:30 | INFO  | module.py   |   Setting attribute: self.sigreg_level3 = <class 'loss.SIGReg'>
+13:57:30 | INFO  | module.py   |   Setting attribute: self.optim = <class 'dict'>
+13:57:30 | INFO  | module.py   |   No metrics configuration provided - automatic metric tracking is disabled.
+13:57:30 | INFO  | main_hjepa.~| 🫆🫆🫆 Run ID: runtime_smoke 🫆🫆🫆
+13:57:30 | INFO  | main_hjepa.~| Saved training normalizer artifact to /home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/ckpts/runtime_smoke/normalizer.pt
+/home/user/miniconda3/envs/hjepa/lib/python3.11/site-packages/lightning/fabric/connector.py:571: `precision=bf16` is supported for historical reasons but its usage is discouraged. Please set your precision to bf16-mixed instead!
+Using bfloat16 Automatic Mixed Precision (AMP)
+13:57:30 | INFO  | env_info.py |   EnvironmentDumpCallback initialized (filename=environment.json, async=True)
+13:57:30 | INFO  | utils.py    | ── HuggingFaceCheckpoint ─────────────────────────
+13:57:30 | INFO  | hf_models.py|   save_dir: <cyan>hf_exports</cyan>
+13:57:30 | INFO  | hf_models.py|   per_step: <cyan>False</cyan>  (False ⇒ overwrite single 'last/' subdir; True ⇒ keep step_N/)
+Adding 14 callbacks from entry point 'stablepretraining_callbacks': PrintProgressBar, ModuleRegistryCallback, LoggingCallback, EnvironmentDumpCallback, TrainerInfo, SklearnCheckpoint, WandbCheckpoint, TrackioCheckpoint, SwanLabCheckpoint, ModuleSummary, SLURMInfo, LogUnusedParametersOnce, HuggingFaceCheckpointCallback, HardwareMonitor
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Running in `fast_dev_run` mode: will run the requested loop using 1 batch(es). Logging and checkpointing is suppressed.
+13:57:30 | INFO  | utils.py    | ── SIGTERM preempt handler — install ─────────────
+13:57:30 | INFO  | manager.py  |   SLURM_JOB_ID         = None
+13:57:30 | INFO  | manager.py  |   SLURM_RESTART_COUNT  = '0'
+13:57:30 | INFO  | manager.py  |   SLURM_PROCID         = '?'
+13:57:30 | INFO  | manager.py  |   SLURM_NODEID         = '?'
+13:57:30 | INFO  | manager.py  |   → not under SLURM (SLURM_JOB_ID unset); leaving SIGTERM handler as-is. Forwarding to submitit's USR signal would be a no-op since submitit isn't running upstream.
+13:57:30 | INFO  | manager.py  |   Manager init: ckpt_path=None, weights_only=True
+13:57:30 | INFO  | utils.py    | ── WorkingDirectory ──────────────────────────────
+13:57:30 | INFO  | manager.py  |   cwd: /home/user/桌面/H-JEPA-main./H-JEPA-main/h_jepa
+13:57:30 | INFO  | utils.py    | ── Seed ──────────────────────────────────────────
+13:57:30 | INFO  | manager.py  |   seed: 42
+Seed set to 42
+13:57:30 | INFO  | utils.py    | ── RunDirectory ──────────────────────────────────
+13:57:30 | INFO  | manager.py  |   cache_dir = /home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/ckpts/runtime_smoke/spt
+13:57:30 | INFO  | manager.py  |   ddp: launch_key=(single-process) rank=0 is_rank_zero=True
+13:57:30 | INFO  | utils.py    | ── RunDirectory: requeue probe ───────────────────
+13:57:30 | INFO  | manager.py  |   SLURM session key   = (no SLURM)
+13:57:30 | INFO  | manager.py  |   SLURM_RESTART_COUNT = 0
+13:57:30 | INFO  | manager.py  |   in_requeue          = False
+13:57:30 | INFO  | utils.py    | ── RunDirectory: fresh ───────────────────────────
+13:57:30 | INFO  | manager.py  |   no user ckpt_path — training from scratch / pretrained backbone.
+13:57:30 | INFO  | manager.py  |   created run_dir = /home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/ckpts/runtime_smoke/spt/runs/20261113/135730/4a632c93ea97
+13:57:30 | INFO  | manager.py  |   wrote run_meta.json with run_id=4a632c93ea97
+13:57:30 | INFO  | manager.py  |   SLURM index = (no SLURM, skipped)
+13:57:30 | WARN  | manager.py  | ! cache_dir is set but the Trainer was passed as an already-instantiated object. Cannot override default_root_dir cleanly. Consider passing the trainer as a config dict instead.
+13:57:30 | WARN  | manager.py  | ! Hydra run.dir='/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/ckpts/runtime_smoke/hydra' will be ignored for trainer outputs (cache_dir takes precedence).
+13:57:30 | WARN  | manager.py  | ! Hydra sweep.dir='multirun/2026-11-13/13-57-30' will be ignored for trainer outputs (cache_dir takes precedence).
+13:57:30 | INFO  | logger.py   | [RegistryLogger] run_id=4a632c93ea97 run_dir=/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/ckpts/runtime_smoke/spt/runs/20261113/135730/4a632c93ea97 — sidecar.json + summary.json + metrics.csv will live here
+13:57:30 | INFO  | utils.py    | ── RegistryLogger ────────────────────────────────
+13:57:30 | INFO  | manager.py  |   run_dir: /home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/ckpts/runtime_smoke/spt/runs/20261113/135730/4a632c93ea97
+13:57:30 | INFO  | manager.py  |   run_id:  4a632c93ea97
+13:57:30 | INFO  | utils.py    | ── CSVLogger ─────────────────────────────────────
+13:57:30 | INFO  | manager.py  |   root_dir: /home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/ckpts/runtime_smoke/spt/runs/20261113/135730/4a632c93ea97/
+13:57:30 | INFO  | manager.py  |   save_dir: /home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/ckpts/runtime_smoke/spt/runs/20261113/135730/4a632c93ea97
+13:57:30 | INFO  | manager.py  |   log_dir: /home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/ckpts/runtime_smoke/spt/runs/20261113/135730/4a632c93ea97/
+13:57:30 | INFO  | utils.py    | ── SignalHandlers (after submitit setup (spt SIGTERM installed in __init__)) ──
+13:57:30 | INFO  | manager.py  |   SIGUSR1  → SIG_DFL (default OS action — terminate process)
+13:57:30 | INFO  | manager.py  |   SIGUSR2  → SIG_DFL (default OS action — terminate process)
+13:57:30 | INFO  | manager.py  |   SIGCONT  → SIG_DFL (default OS action — terminate process)
+13:57:30 | INFO  | manager.py  |   SIGTERM  → SIG_DFL (default OS action — terminate process)
+13:57:30 | INFO  | utils.py    | ── Callbacks ─────────────────────────────────────
+13:57:30 | INFO  | manager.py  |   count: 22
+13:57:30 | INFO  | utils.py    | ── CacheDirCheckpointing ─────────────────────────
+13:57:30 | INFO  | manager.py  |   Saving checkpoints to: /home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/ckpts/runtime_smoke/spt/runs/20261113/135730/4a632c93ea97/checkpoints
+13:57:30 | WARN  | manager.py  |   Redirecting HuggingFaceCheckpointCallback from 'hf_exports' to '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/ckpts/runtime_smoke/spt/runs/20261113/135730/4a632c93ea97/hf_exports' (cache_dir is active — prevents races on a shared cache)
+13:57:30 | INFO  | manager.py  |   Added requeue checkpoint (filename='last')
+13:57:30 | INFO  | utils.py    | ── LoadPath resolution ───────────────────────────
+13:57:30 | INFO  | manager.py  |   in_requeue = False
+13:57:30 | INFO  | manager.py  |   user ckpt_path = None
+13:57:30 | INFO  | manager.py  |   user weights_only = True
+13:57:30 | INFO  | manager.py  |   → no ckpt_path; training from scratch.
+13:57:30 | INFO  | utils.py    | ── TrainerFit ────────────────────────────────────
+13:57:30 | INFO  | manager.py  |   ckpt_path:     None
+13:57:30 | INFO  | manager.py  |   weights_only:  None
+13:57:30 | INFO  | utils.py    | ── SignalHandlers (before Trainer.fit() (handler installed in __init__)) ──
+13:57:30 | INFO  | manager.py  |   SIGUSR1  → SIG_DFL (default OS action — terminate process)
+13:57:30 | INFO  | manager.py  |   SIGUSR2  → SIG_DFL (default OS action — terminate process)
+13:57:30 | INFO  | manager.py  |   SIGCONT  → SIG_DFL (default OS action — terminate process)
+13:57:30 | INFO  | manager.py  |   SIGTERM  → SIG_DFL (default OS action — terminate process)
+13:57:30 | INFO  | manager.py  |   → entering Trainer.fit(); lightning's _SignalConnector will now register its own handlers. SIGTERM will become _HandlersCompose([_sigterm_notifier_fn, _sigterm_handler_fn, spt._handler]); USR-sig binding from submitit is preserved (lightning skips USR registration when one already exists).
+13:57:30 | OK    | module.py   | ✓ dataset for TrainerFn.FITTING loaded
+13:57:30 | INFO  | module.py   |   setup was done by user
+13:57:30 | INFO  | utils.py    | ── EnvironmentDump ───────────────────────────────
+13:57:30 | INFO  | env_info.py |   log_dir: /home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/ckpts/runtime_smoke/spt
+13:57:30 | INFO  | env_info.py |   Running environment dump in background thread (non-blocking)
+13:57:30 | INFO  | env_info.py |   Collecting environment information...
+13:57:30 | OK    | env_info.py | ✓ Background thread started successfully
+13:57:30 | OK    | env_info.py | ✓ Python 3.11.13
+13:57:30 | INFO  | trainer_inf~|   linking trainer to DataModule
+13:57:30 | OK    | env_info.py | ✓ System: Linux 7.0.0-43-generic (x86_64)
+13:57:30 | INFO  | utils.py    | ── Callbacks (in order) ──────────────────────────
+13:57:30 | INFO  | env_info.py |   Hostname: user
+13:57:30 | INFO  | utils.py    |     [ 0] DebugArtifactCleanupCallback
+13:57:30 | INFO  | utils.py    |     [ 1] ModelObjectCallBack
+13:57:30 | INFO  | utils.py    |     [ 2] PlanningEvalCallback
+13:57:30 | INFO  | utils.py    |     [ 3] FinalProbingDecodingEvalCallback
+13:57:30 | INFO  | utils.py    |     [ 4] LearningRateMonitor
+13:57:30 | INFO  | utils.py    |     [ 5] RichProgressBar
+13:57:30 | INFO  | utils.py    |     [ 6] RichModelSummary
+13:57:30 | INFO  | utils.py    |     [ 7] PrintProgressBar
+13:57:30 | INFO  | utils.py    |     [ 8] ModuleRegistryCallback
+13:57:30 | INFO  | utils.py    |     [ 9] LoggingCallback
+13:57:30 | INFO  | utils.py    |     [10] EnvironmentDumpCallback
+13:57:30 | INFO  | utils.py    |     [11] TrainerInfo
+13:57:30 | INFO  | utils.py    |     [12] SklearnCheckpoint
+13:57:30 | INFO  | utils.py    |     [13] WandbCheckpoint
+13:57:30 | INFO  | utils.py    |     [14] TrackioCheckpoint
+13:57:30 | INFO  | utils.py    |     [15] SwanLabCheckpoint
+13:57:30 | INFO  | utils.py    |     [16] ModuleSummary
+13:57:30 | INFO  | utils.py    |     [17] SLURMInfo
+13:57:30 | INFO  | utils.py    |     [18] LogUnusedParametersOnce
+13:57:30 | INFO  | utils.py    |     [19] HuggingFaceCheckpointCallback
+13:57:30 | INFO  | utils.py    |     [20] HardwareMonitor
+13:57:30 | INFO  | utils.py    |     [21] _RunDirCallback
+13:57:30 | INFO  | utils.py    |     [22] ModelCheckpoint
+13:57:30 | INFO  | utils.py    |   ⚑ marks order-sensitive callbacks; see AGENTS.md → Callback ordering for the full rules.
+13:57:30 | INFO  | utils.py    | ── SklearnCheckpoint ─────────────────────────────
+13:57:30 | INFO  | checkpoint_~|   Sklearn Modules:
+13:57:30 | INFO  | checkpoint_~| 
+┏━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━┓
+┃ Module   ┃ Name   ┃ Type   ┃
+┣━━━━━━━━━━╋━━━━━━━━╋━━━━━━━━┫
+┗━━━━━━━━━━┻━━━━━━━━┻━━━━━━━━┛
+13:57:30 | INFO  | utils.py    | ── WandbCheckpoint ───────────────────────────────
+13:57:30 | INFO  | utils.py    | ── TrackioCheckpoint ─────────────────────────────
+13:57:30 | INFO  | utils.py    | ── SwanLabCheckpoint ─────────────────────────────
+13:57:30 | INFO  | utils.py    | ── PyTorch Modules ───────────────────────────────
+13:57:30 | WARN  | module.py   | ! You are calling self.parameters which also gives callbacks parameters, to remove them, pass `with_callbacks=False`
+13:57:30 | INFO  | trainer_inf~| \n+------------------------------------------------------------------------------------+----------------------+--------------------------+--------------------------+---------+
+| Module                                                                             | Trainable parameters | Non Trainable parameters | Uninitialized parameters | Buffers |
++------------------------------------------------------------------------------------+----------------------+--------------------------+--------------------------+---------+
+|                                                                                    |             34758834 |                        0 |                        0 |   16541 |
+| callbacks_modules                                                                  |                    0 |                        0 |                        0 |       0 |
+| callbacks_metrics                                                                  |                    0 |                        0 |                        0 |       0 |
+| model                                                                              |             34758834 |                        0 |                        0 |   16388 |
+| model.jepas                                                                        |             34758834 |                        0 |                        0 |   16388 |
+| model.jepas.0                                                                      |             12349210 |                        0 |                        0 |    8194 |
+| model.jepas.0.encoder                                                              |              6362368 |                        0 |                        0 |    4097 |
+| model.jepas.0.encoder.pixel_encoder                                                |              6321792 |                        0 |                        0 |    4097 |
+| model.jepas.0.encoder.pixel_encoder.encoder                                        |              5397888 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.embeddings                             |                59136 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.embeddings.patch_embeddings            |                 9408 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.embeddings.patch_embeddings.projection |                 9408 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.embeddings.dropout                     |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers                                 |              5338368 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.0                               |               444864 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.0.attention                     |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.0.attention.q_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.0.attention.k_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.0.attention.v_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.0.attention.o_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.0.layernorm_before              |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.0.layernorm_after               |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.0.mlp                           |               295872 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.0.mlp.activation_fn             |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.0.mlp.fc1                       |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.0.mlp.fc2                       |               147648 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.0.dropout                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.1                               |               444864 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.1.attention                     |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.1.attention.q_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.1.attention.k_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.1.attention.v_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.1.attention.o_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.1.layernorm_before              |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.1.layernorm_after               |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.1.mlp                           |               295872 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.1.mlp.activation_fn             |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.1.mlp.fc1                       |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.1.mlp.fc2                       |               147648 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.1.dropout                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.2                               |               444864 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.2.attention                     |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.2.attention.q_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.2.attention.k_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.2.attention.v_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.2.attention.o_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.2.layernorm_before              |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.2.layernorm_after               |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.2.mlp                           |               295872 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.2.mlp.activation_fn             |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.2.mlp.fc1                       |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.2.mlp.fc2                       |               147648 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.2.dropout                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.3                               |               444864 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.3.attention                     |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.3.attention.q_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.3.attention.k_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.3.attention.v_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.3.attention.o_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.3.layernorm_before              |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.3.layernorm_after               |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.3.mlp                           |               295872 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.3.mlp.activation_fn             |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.3.mlp.fc1                       |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.3.mlp.fc2                       |               147648 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.3.dropout                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.4                               |               444864 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.4.attention                     |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.4.attention.q_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.4.attention.k_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.4.attention.v_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.4.attention.o_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.4.layernorm_before              |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.4.layernorm_after               |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.4.mlp                           |               295872 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.4.mlp.activation_fn             |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.4.mlp.fc1                       |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.4.mlp.fc2                       |               147648 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.4.dropout                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.5                               |               444864 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.5.attention                     |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.5.attention.q_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.5.attention.k_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.5.attention.v_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.5.attention.o_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.5.layernorm_before              |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.5.layernorm_after               |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.5.mlp                           |               295872 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.5.mlp.activation_fn             |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.5.mlp.fc1                       |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.5.mlp.fc2                       |               147648 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.5.dropout                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.6                               |               444864 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.6.attention                     |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.6.attention.q_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.6.attention.k_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.6.attention.v_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.6.attention.o_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.6.layernorm_before              |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.6.layernorm_after               |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.6.mlp                           |               295872 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.6.mlp.activation_fn             |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.6.mlp.fc1                       |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.6.mlp.fc2                       |               147648 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.6.dropout                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.7                               |               444864 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.7.attention                     |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.7.attention.q_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.7.attention.k_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.7.attention.v_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.7.attention.o_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.7.layernorm_before              |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.7.layernorm_after               |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.7.mlp                           |               295872 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.7.mlp.activation_fn             |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.7.mlp.fc1                       |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.7.mlp.fc2                       |               147648 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.7.dropout                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.8                               |               444864 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.8.attention                     |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.8.attention.q_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.8.attention.k_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.8.attention.v_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.8.attention.o_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.8.layernorm_before              |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.8.layernorm_after               |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.8.mlp                           |               295872 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.8.mlp.activation_fn             |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.8.mlp.fc1                       |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.8.mlp.fc2                       |               147648 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.8.dropout                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.9                               |               444864 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.9.attention                     |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.9.attention.q_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.9.attention.k_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.9.attention.v_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.9.attention.o_proj              |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.9.layernorm_before              |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.9.layernorm_after               |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.9.mlp                           |               295872 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.9.mlp.activation_fn             |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.9.mlp.fc1                       |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.9.mlp.fc2                       |               147648 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.9.dropout                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.10                              |               444864 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.10.attention                    |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.10.attention.q_proj             |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.10.attention.k_proj             |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.10.attention.v_proj             |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.10.attention.o_proj             |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.10.layernorm_before             |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.10.layernorm_after              |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.10.mlp                          |               295872 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.10.mlp.activation_fn            |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.10.mlp.fc1                      |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.10.mlp.fc2                      |               147648 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.10.dropout                      |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.11                              |               444864 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.11.attention                    |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.11.attention.q_proj             |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.11.attention.k_proj             |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.11.attention.v_proj             |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.11.attention.o_proj             |                37056 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.11.layernorm_before             |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.11.layernorm_after              |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.11.mlp                          |               295872 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.11.mlp.activation_fn            |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.11.mlp.fc1                      |               148224 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.11.mlp.fc2                      |               147648 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layers.11.dropout                      |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.encoder.layernorm                              |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.projector                                      |               923904 |                        0 |                        0 |    4097 |
+| model.jepas.0.encoder.pixel_encoder.projector.net                                  |               923904 |                        0 |                        0 |    4097 |
+| model.jepas.0.encoder.pixel_encoder.projector.net.0                                |               395264 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.projector.net.1                                |                 4096 |                        0 |                        0 |    4097 |
+| model.jepas.0.encoder.pixel_encoder.projector.net.2                                |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.projector.net.3                                |               524544 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.pixel_encoder.projector.final_norm                           |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.proprio_encoder                                              |                40576 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.proprio_encoder.encoder                                      |                40576 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.proprio_encoder.encoder.net                                  |                40576 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.proprio_encoder.encoder.net.0                                |                 7168 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.proprio_encoder.encoder.net.1                                |                  512 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.proprio_encoder.encoder.net.2                                |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.proprio_encoder.encoder.net.3                                |                32896 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.proprio_encoder.encoder.final_norm                           |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.proprio_encoder.projector                                    |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.encoder.projector                                                    |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor                                                            |              5379328 |                        0 |                        0 |    4097 |
+| model.jepas.0.predictor.predictor                                                  |              4193152 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.dropout                                          |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer                                      |              4192000 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.norm                                 |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers                               |              4043776 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0                             |              1010944 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0.attn                        |               393792 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0.attn.norm                   |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0.attn.attend                 |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0.attn.to_qkv                 |               294912 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0.attn.to_out                 |                98496 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0.attn.to_out.0               |                98496 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0.attn.to_out.1               |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0.mlp                         |               394816 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0.mlp.net                     |               394816 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0.mlp.net.0                   |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0.mlp.net.1                   |               197632 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0.mlp.net.2                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0.mlp.net.3                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0.mlp.net.4                   |               196800 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0.mlp.net.5                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0.norm1                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0.norm2                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0.adaLN_modulation            |               222336 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0.adaLN_modulation.0          |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.0.adaLN_modulation.1          |               222336 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1                             |              1010944 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1.attn                        |               393792 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1.attn.norm                   |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1.attn.attend                 |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1.attn.to_qkv                 |               294912 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1.attn.to_out                 |                98496 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1.attn.to_out.0               |                98496 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1.attn.to_out.1               |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1.mlp                         |               394816 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1.mlp.net                     |               394816 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1.mlp.net.0                   |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1.mlp.net.1                   |               197632 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1.mlp.net.2                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1.mlp.net.3                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1.mlp.net.4                   |               196800 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1.mlp.net.5                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1.norm1                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1.norm2                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1.adaLN_modulation            |               222336 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1.adaLN_modulation.0          |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.1.adaLN_modulation.1          |               222336 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2                             |              1010944 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2.attn                        |               393792 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2.attn.norm                   |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2.attn.attend                 |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2.attn.to_qkv                 |               294912 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2.attn.to_out                 |                98496 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2.attn.to_out.0               |                98496 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2.attn.to_out.1               |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2.mlp                         |               394816 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2.mlp.net                     |               394816 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2.mlp.net.0                   |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2.mlp.net.1                   |               197632 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2.mlp.net.2                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2.mlp.net.3                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2.mlp.net.4                   |               196800 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2.mlp.net.5                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2.norm1                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2.norm2                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2.adaLN_modulation            |               222336 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2.adaLN_modulation.0          |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.2.adaLN_modulation.1          |               222336 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3                             |              1010944 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3.attn                        |               393792 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3.attn.norm                   |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3.attn.attend                 |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3.attn.to_qkv                 |               294912 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3.attn.to_out                 |                98496 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3.attn.to_out.0               |                98496 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3.attn.to_out.1               |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3.mlp                         |               394816 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3.mlp.net                     |               394816 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3.mlp.net.0                   |                  384 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3.mlp.net.1                   |               197632 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3.mlp.net.2                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3.mlp.net.3                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3.mlp.net.4                   |               196800 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3.mlp.net.5                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3.norm1                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3.norm2                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3.adaLN_modulation            |               222336 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3.adaLN_modulation.0          |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.layers.3.adaLN_modulation.1          |               222336 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.input_proj                           |                73920 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.cond_proj                            |                73920 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.predictor.transformer.output_proj                          |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.projector                                                  |              1186176 |                        0 |                        0 |    4097 |
+| model.jepas.0.predictor.projector.net                                              |              1186176 |                        0 |                        0 |    4097 |
+| model.jepas.0.predictor.projector.net.0                                            |               395264 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.projector.net.1                                            |                 4096 |                        0 |                        0 |    4097 |
+| model.jepas.0.predictor.projector.net.2                                            |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.projector.net.3                                            |               786816 |                        0 |                        0 |       0 |
+| model.jepas.0.predictor.projector.final_norm                                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.action_embed                                                         |               607514 |                        0 |                        0 |       0 |
+| model.jepas.0.action_embed.patch_embed                                             |                  410 |                        0 |                        0 |       0 |
+| model.jepas.0.action_embed.embed                                                   |               607104 |                        0 |                        0 |       0 |
+| model.jepas.0.action_embed.embed.0                                                 |                16896 |                        0 |                        0 |       0 |
+| model.jepas.0.action_embed.embed.1                                                 |                    0 |                        0 |                        0 |       0 |
+| model.jepas.0.action_embed.embed.2                                                 |               590208 |                        0 |                        0 |       0 |
+| model.jepas.0.action_encoder                                                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1                                                                      |             11204812 |                        0 |                        0 |    4097 |
+| model.jepas.1.encoder                                                              |               296448 |                        0 |                        0 |       0 |
+| model.jepas.1.encoder.encoder                                                      |               296448 |                        0 |                        0 |       0 |
+| model.jepas.1.encoder.encoder.input_norm                                           |                  768 |                        0 |                        0 |       0 |
+| model.jepas.1.encoder.encoder.fc1                                                  |               147840 |                        0 |                        0 |       0 |
+| model.jepas.1.encoder.encoder.act                                                  |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.encoder.encoder.fc2                                                  |               147840 |                        0 |                        0 |       0 |
+| model.jepas.1.encoder.encoder.final_norm                                           |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.encoder.projector                                                    |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor                                                            |             10247552 |                        0 |                        0 |    4097 |
+| model.jepas.1.predictor.predictor                                                  |              8668160 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.dropout                                          |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer                                      |              8667008 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.norm                                 |                  448 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers                               |              8407680 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0                             |              1681536 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0.attn                        |               688800 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0.attn.norm                   |                  448 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0.attn.attend                 |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0.attn.to_qkv                 |               516096 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0.attn.to_out                 |               172256 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0.attn.to_out.0               |               172256 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0.attn.to_out.1               |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0.mlp                         |               690336 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0.mlp.net                     |               690336 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0.mlp.net.0                   |                  448 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0.mlp.net.1                   |               345600 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0.mlp.net.2                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0.mlp.net.3                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0.mlp.net.4                   |               344288 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0.mlp.net.5                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0.norm1                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0.norm2                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0.adaLN_modulation            |               302400 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0.adaLN_modulation.0          |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.0.adaLN_modulation.1          |               302400 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1                             |              1681536 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1.attn                        |               688800 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1.attn.norm                   |                  448 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1.attn.attend                 |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1.attn.to_qkv                 |               516096 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1.attn.to_out                 |               172256 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1.attn.to_out.0               |               172256 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1.attn.to_out.1               |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1.mlp                         |               690336 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1.mlp.net                     |               690336 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1.mlp.net.0                   |                  448 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1.mlp.net.1                   |               345600 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1.mlp.net.2                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1.mlp.net.3                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1.mlp.net.4                   |               344288 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1.mlp.net.5                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1.norm1                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1.norm2                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1.adaLN_modulation            |               302400 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1.adaLN_modulation.0          |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.1.adaLN_modulation.1          |               302400 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2                             |              1681536 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2.attn                        |               688800 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2.attn.norm                   |                  448 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2.attn.attend                 |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2.attn.to_qkv                 |               516096 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2.attn.to_out                 |               172256 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2.attn.to_out.0               |               172256 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2.attn.to_out.1               |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2.mlp                         |               690336 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2.mlp.net                     |               690336 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2.mlp.net.0                   |                  448 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2.mlp.net.1                   |               345600 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2.mlp.net.2                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2.mlp.net.3                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2.mlp.net.4                   |               344288 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2.mlp.net.5                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2.norm1                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2.norm2                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2.adaLN_modulation            |               302400 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2.adaLN_modulation.0          |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.2.adaLN_modulation.1          |               302400 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3                             |              1681536 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3.attn                        |               688800 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3.attn.norm                   |                  448 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3.attn.attend                 |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3.attn.to_qkv                 |               516096 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3.attn.to_out                 |               172256 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3.attn.to_out.0               |               172256 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3.attn.to_out.1               |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3.mlp                         |               690336 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3.mlp.net                     |               690336 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3.mlp.net.0                   |                  448 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3.mlp.net.1                   |               345600 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3.mlp.net.2                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3.mlp.net.3                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3.mlp.net.4                   |               344288 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3.mlp.net.5                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3.norm1                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3.norm2                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3.adaLN_modulation            |               302400 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3.adaLN_modulation.0          |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.3.adaLN_modulation.1          |               302400 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4                             |              1681536 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4.attn                        |               688800 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4.attn.norm                   |                  448 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4.attn.attend                 |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4.attn.to_qkv                 |               516096 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4.attn.to_out                 |               172256 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4.attn.to_out.0               |               172256 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4.attn.to_out.1               |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4.mlp                         |               690336 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4.mlp.net                     |               690336 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4.mlp.net.0                   |                  448 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4.mlp.net.1                   |               345600 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4.mlp.net.2                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4.mlp.net.3                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4.mlp.net.4                   |               344288 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4.mlp.net.5                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4.norm1                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4.norm2                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4.adaLN_modulation            |               302400 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4.adaLN_modulation.0          |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.layers.4.adaLN_modulation.1          |               302400 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.input_proj                           |                86240 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.cond_proj                            |                86240 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.predictor.transformer.output_proj                          |                86400 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.projector                                                  |              1579392 |                        0 |                        0 |    4097 |
+| model.jepas.1.predictor.projector.net                                              |              1579392 |                        0 |                        0 |    4097 |
+| model.jepas.1.predictor.projector.net.0                                            |               788480 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.projector.net.1                                            |                 4096 |                        0 |                        0 |    4097 |
+| model.jepas.1.predictor.projector.net.2                                            |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.projector.net.3                                            |               786816 |                        0 |                        0 |       0 |
+| model.jepas.1.predictor.projector.final_norm                                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.action_embed                                                         |               597888 |                        0 |                        0 |       0 |
+| model.jepas.1.action_embed.embed                                                   |               597888 |                        0 |                        0 |       0 |
+| model.jepas.1.action_embed.embed.0                                                 |                 7680 |                        0 |                        0 |       0 |
+| model.jepas.1.action_embed.embed.1                                                 |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.action_embed.embed.2                                                 |               590208 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder                                                       |                62924 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder.step_mlp                                              |                24640 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder.step_mlp.fc1                                          |                24640 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder.encoder                                               |                33472 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder.encoder.layers                                        |                33472 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder.encoder.layers.0                                      |                33472 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder.encoder.layers.0.self_attn                            |                16640 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder.encoder.layers.0.self_attn.out_proj                   |                 4160 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder.encoder.layers.0.linear1                              |                 8320 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder.encoder.layers.0.dropout                              |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder.encoder.layers.0.linear2                              |                 8256 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder.encoder.layers.0.norm1                                |                  128 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder.encoder.layers.0.norm2                                |                  128 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder.encoder.layers.0.dropout1                             |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder.encoder.layers.0.dropout2                             |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder.head                                                  |                 4548 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder.head.0                                                |                 4160 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder.head.1                                                |                    0 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder.head.2                                                |                  128 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder.head.3                                                |                  260 |                        0 |                        0 |       0 |
+| model.jepas.1.action_encoder.final_ln                                              |                    8 |                        0 |                        0 |       0 |
+| model.jepas.2                                                                      |             11204812 |                        0 |                        0 |    4097 |
+| model.jepas.2.encoder                                                              |               296448 |                        0 |                        0 |       0 |
+| model.jepas.2.encoder.encoder                                                      |               296448 |                        0 |                        0 |       0 |
+| model.jepas.2.encoder.encoder.input_norm                                           |                  768 |                        0 |                        0 |       0 |
+| model.jepas.2.encoder.encoder.fc1                                                  |               147840 |                        0 |                        0 |       0 |
+| model.jepas.2.encoder.encoder.act                                                  |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.encoder.encoder.fc2                                                  |               147840 |                        0 |                        0 |       0 |
+| model.jepas.2.encoder.encoder.final_norm                                           |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.encoder.projector                                                    |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor                                                            |             10247552 |                        0 |                        0 |    4097 |
+| model.jepas.2.predictor.predictor                                                  |              8668160 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.dropout                                          |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer                                      |              8667008 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.norm                                 |                  448 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers                               |              8407680 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0                             |              1681536 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0.attn                        |               688800 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0.attn.norm                   |                  448 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0.attn.attend                 |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0.attn.to_qkv                 |               516096 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0.attn.to_out                 |               172256 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0.attn.to_out.0               |               172256 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0.attn.to_out.1               |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0.mlp                         |               690336 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0.mlp.net                     |               690336 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0.mlp.net.0                   |                  448 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0.mlp.net.1                   |               345600 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0.mlp.net.2                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0.mlp.net.3                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0.mlp.net.4                   |               344288 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0.mlp.net.5                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0.norm1                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0.norm2                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0.adaLN_modulation            |               302400 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0.adaLN_modulation.0          |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.0.adaLN_modulation.1          |               302400 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1                             |              1681536 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1.attn                        |               688800 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1.attn.norm                   |                  448 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1.attn.attend                 |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1.attn.to_qkv                 |               516096 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1.attn.to_out                 |               172256 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1.attn.to_out.0               |               172256 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1.attn.to_out.1               |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1.mlp                         |               690336 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1.mlp.net                     |               690336 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1.mlp.net.0                   |                  448 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1.mlp.net.1                   |               345600 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1.mlp.net.2                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1.mlp.net.3                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1.mlp.net.4                   |               344288 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1.mlp.net.5                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1.norm1                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1.norm2                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1.adaLN_modulation            |               302400 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1.adaLN_modulation.0          |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.1.adaLN_modulation.1          |               302400 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2                             |              1681536 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2.attn                        |               688800 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2.attn.norm                   |                  448 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2.attn.attend                 |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2.attn.to_qkv                 |               516096 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2.attn.to_out                 |               172256 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2.attn.to_out.0               |               172256 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2.attn.to_out.1               |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2.mlp                         |               690336 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2.mlp.net                     |               690336 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2.mlp.net.0                   |                  448 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2.mlp.net.1                   |               345600 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2.mlp.net.2                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2.mlp.net.3                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2.mlp.net.4                   |               344288 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2.mlp.net.5                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2.norm1                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2.norm2                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2.adaLN_modulation            |               302400 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2.adaLN_modulation.0          |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.2.adaLN_modulation.1          |               302400 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3                             |              1681536 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3.attn                        |               688800 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3.attn.norm                   |                  448 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3.attn.attend                 |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3.attn.to_qkv                 |               516096 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3.attn.to_out                 |               172256 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3.attn.to_out.0               |               172256 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3.attn.to_out.1               |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3.mlp                         |               690336 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3.mlp.net                     |               690336 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3.mlp.net.0                   |                  448 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3.mlp.net.1                   |               345600 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3.mlp.net.2                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3.mlp.net.3                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3.mlp.net.4                   |               344288 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3.mlp.net.5                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3.norm1                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3.norm2                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3.adaLN_modulation            |               302400 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3.adaLN_modulation.0          |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.3.adaLN_modulation.1          |               302400 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4                             |              1681536 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4.attn                        |               688800 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4.attn.norm                   |                  448 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4.attn.attend                 |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4.attn.to_qkv                 |               516096 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4.attn.to_out                 |               172256 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4.attn.to_out.0               |               172256 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4.attn.to_out.1               |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4.mlp                         |               690336 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4.mlp.net                     |               690336 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4.mlp.net.0                   |                  448 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4.mlp.net.1                   |               345600 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4.mlp.net.2                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4.mlp.net.3                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4.mlp.net.4                   |               344288 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4.mlp.net.5                   |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4.norm1                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4.norm2                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4.adaLN_modulation            |               302400 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4.adaLN_modulation.0          |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.layers.4.adaLN_modulation.1          |               302400 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.input_proj                           |                86240 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.cond_proj                            |                86240 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.predictor.transformer.output_proj                          |                86400 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.projector                                                  |              1579392 |                        0 |                        0 |    4097 |
+| model.jepas.2.predictor.projector.net                                              |              1579392 |                        0 |                        0 |    4097 |
+| model.jepas.2.predictor.projector.net.0                                            |               788480 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.projector.net.1                                            |                 4096 |                        0 |                        0 |    4097 |
+| model.jepas.2.predictor.projector.net.2                                            |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.projector.net.3                                            |               786816 |                        0 |                        0 |       0 |
+| model.jepas.2.predictor.projector.final_norm                                       |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.action_embed                                                         |               597888 |                        0 |                        0 |       0 |
+| model.jepas.2.action_embed.embed                                                   |               597888 |                        0 |                        0 |       0 |
+| model.jepas.2.action_embed.embed.0                                                 |                 7680 |                        0 |                        0 |       0 |
+| model.jepas.2.action_embed.embed.1                                                 |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.action_embed.embed.2                                                 |               590208 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder                                                       |                62924 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder.step_mlp                                              |                24640 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder.step_mlp.fc1                                          |                24640 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder.encoder                                               |                33472 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder.encoder.layers                                        |                33472 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder.encoder.layers.0                                      |                33472 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder.encoder.layers.0.self_attn                            |                16640 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder.encoder.layers.0.self_attn.out_proj                   |                 4160 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder.encoder.layers.0.linear1                              |                 8320 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder.encoder.layers.0.dropout                              |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder.encoder.layers.0.linear2                              |                 8256 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder.encoder.layers.0.norm1                                |                  128 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder.encoder.layers.0.norm2                                |                  128 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder.encoder.layers.0.dropout1                             |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder.encoder.layers.0.dropout2                             |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder.head                                                  |                 4548 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder.head.0                                                |                 4160 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder.head.1                                                |                    0 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder.head.2                                                |                  128 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder.head.3                                                |                  260 |                        0 |                        0 |       0 |
+| model.jepas.2.action_encoder.final_ln                                              |                    8 |                        0 |                        0 |       0 |
+| sigreg_level1                                                                      |                    0 |                        0 |                        0 |      51 |
+| sigreg_level2                                                                      |                    0 |                        0 |                        0 |      51 |
+| sigreg_level3                                                                      |                    0 |                        0 |                        0 |      51 |
++------------------------------------------------------------------------------------+----------------------+--------------------------+--------------------------+---------+
+13:57:30 | INFO  | utils.py    | ── SLURM ─────────────────────────────────────────
+13:57:30 | INFO  | trainer_inf~|   Job ID: N/A
+13:57:30 | INFO  | trainer_inf~|   Task ID: N/A
+13:57:30 | INFO  | trainer_inf~|   Job Name: N/A
+13:57:30 | INFO  | trainer_inf~|   Nodes: N/A
+13:57:30 | INFO  | trainer_inf~|   Tasks: N/A
+13:57:30 | INFO  | trainer_inf~|   CPUs per node: N/A
+13:57:30 | INFO  | trainer_inf~|   CPUs per task: N/A
+13:57:30 | INFO  | trainer_inf~|   Memory per node: N/A
+13:57:30 | INFO  | trainer_inf~|   Memory per CPU: N/A
+13:57:30 | INFO  | trainer_inf~|   Time limit: N/A
+13:57:30 | INFO  | trainer_inf~|   Partition: N/A
+13:57:30 | INFO  | trainer_inf~|   Node List: N/A
+13:57:30 | INFO  | trainer_inf~|   Submit Directory: N/A
+13:57:30 | INFO  | utils.py    | ── HardwareMonitor ───────────────────────────────
+13:57:30 | INFO  | hardware_mo~|   interval: 10.0s
+13:57:30 | INFO  | hardware_mo~|   prefix:   'hardware/'
+13:57:30 | INFO  | hardware_mo~|   metrics:  cpu=True ram=True disk=True net=True gpu=True
+13:57:30 | INFO  | hardware_mo~|   per-rank: rank 0 only
+13:57:30 | WARN  | hardware_mo~| HardwareMonitor: pynvml unavailable (ModuleNotFoundError("No module named 'pynvml'")); GPU metrics disabled.
+[2026-11-13 13:57:30,655][gcsfs][INFO] - gcsfs experimental features enabled via GCSFS_EXPERIMENTAL_ZB_HNS_SUPPORT.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+13:57:30 | OK    | env_info.py | ✓ Packages: 344 packages collected in 0.20s
+13:57:30 | OK    | env_info.py | ✓ NVIDIA Driver: 580.178.04
+13:57:30 | OK    | env_info.py | ✓ Environment: 6 relevant variables captured
+13:57:30 | INFO  | env_info.py |   Serializing environment data...
+13:57:30 | INFO  | env_info.py |   File exists, using version 1: environment_v1.json
+13:57:30 | INFO  | env_info.py |   File exists, using version 1: requirements_frozen_v1.txt
+13:57:30 | INFO  | env_info.py |   Save directory: /home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/ckpts/runtime_smoke/spt
+13:57:30 | INFO  | env_info.py |   Writing environment to temp file...
+13:57:30 | INFO  | env_info.py |   Moving to: environment_v1.json
+13:57:30 | OK    | env_info.py | ✓ Environment file saved (21.3 KB)
+13:57:30 | OK    | env_info.py | ✓ Requirements file saved (7.7 KB)
+13:57:30 | INFO  | utils.py    | ── Optimizers ────────────────────────────────────
+13:57:30 | INFO  | module.py   |   Optimizer specified by Dict with keys ['model_opt']
+13:57:30 | INFO  | module.py   | 
+┏━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Optimizer   ┃ Pattern   ┃   Matched Modules ┃   Param Tensors ┃   Total Params ┃   RequiresGrad Tensors ┃
+┣━━━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ model_opt   ┃ model     ┃               604 ┃             508 ┃       34758834 ┃                    508 ┃
+┗━━━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━┛
+13:57:30 | INFO  | main_hjepa.~| HJEPA optimizer parameter groups: [('level1', 5e-05, 282), ('level2', 1e-05, 113), ('level3', 1e-05, 113)]
+13:57:30 | INFO  | lr_schedule~| 	User provided a callable with two args, calling with optimizer, module!!
+Loading `train_dataloader` to estimate number of stepping batches.
+13:57:30 | WARN  | module.py   | could not set pl_trainer to train dataset
+/home/user/miniconda3/envs/hjepa/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:434: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=23` in the `DataLoader` to improve performance.
+13:57:30 | INFO  | module.py   |   Configured optimizer 'model_opt' (modules=604, param_tensors=508, total_params=34758834) with ConstantLR scheduler.
+/home/user/miniconda3/envs/hjepa/lib/python3.11/site-packages/lightning/pytorch/utilities/model_summary/model_summary.py:242: Precision bf16-mixed is not supported by the model summary.  Estimated model size in MB will not be accurate. Using 32 bits instead.
+┏━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┓
+┃   ┃ Name              ┃ Type       ┃ Params ┃ Mode  ┃ FLOPs ┃
+┡━━━╇━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━┩
+│ 0 │ callbacks_modules │ ModuleDict │      0 │ train │     0 │
+│ 1 │ callbacks_metrics │ ModuleDict │      0 │ train │     0 │
+│ 2 │ model             │ HJEPA      │ 34.8 M │ train │     0 │
+│ 3 │ sigreg_level1     │ SIGReg     │      0 │ train │     0 │
+│ 4 │ sigreg_level2     │ SIGReg     │      0 │ train │     0 │
+│ 5 │ sigreg_level3     │ SIGReg     │      0 │ train │     0 │
+└───┴───────────────────┴────────────┴────────┴───────┴───────┘
+Trainable params: 34.8 M                                                        
+Non-trainable params: 0                                                         
+Total params: 34.8 M                                                            
+Total estimated model params size (MB): 139.035                                 
+Modules in train mode: 609                                                      
+Modules in eval mode: 0                                                         
+Total FLOPs: 0                                                                  
+13:57:30 | INFO  | logger.py   | [RegistryLogger] summary.json flushed (0 metrics, step=0, epoch=0) → /home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/ckpts/runtime_smoke/spt/runs/20261113/135730/4a632c93ea97/summary.json
+13:57:30 | WARN  | module.py   | could not set pl_trainer to train dataset
+/home/user/miniconda3/envs/hjepa/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:485: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test dataloaders.
+/home/user/miniconda3/envs/hjepa/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:434: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=23` in the `DataLoader` to improve performance.
+13:57:30 | WARN  | hf_models.py| ! No Hugging Face (PreTrainedModel) submodules found in LightningModule.
+13:57:30 | INFO  | utils.py    | ── Optimizers ────────────────────────────────────
+13:57:30 | INFO  | module.py   |   self.optimizers() gave us 1 optimizers
+13:57:30 | WARN  | module.py   | ! No clip val found for optimizer default_0
+13:57:30 | WARN  | module.py   | ! Will use the Trainer's value of 1.0
+13:57:30 | WARN  | module.py   | ! No clip algorithm found for optimizer default_0
+13:57:30 | WARN  | module.py   | ! Will use the Trainer's value of None
+13:57:30 | OK    | module.py   | ✓ Optimizer check complete:
++------------+-----------+----------------+-----------+-----------+
+| Opt. Index | Opt. name |      opt       | clip val. | clip alg. |
++------------+-----------+----------------+-----------+-----------+
+|     0      | default_0 | LightningAdamW |    1.0    |    None   |
++------------+-----------+----------------+-----------+-----------+
+13:57:30 | INFO  | utils.py    | ── LogUnusedParametersOnce ───────────────────────
+13:57:30 | INFO  | unused_para~|   registered hooks on 508 leaf parameters
+13:57:31 | WARN  | unused_para~| ! the following parameters did NOT receive gradients on the first backward pass (potentially causing Lightning's 'unused parameters' error):
+13:57:31 | WARN  | unused_para~|   model.jepas.0.encoder.pixel_encoder.encoder.embeddings.mask_token
+13:57:31 | INFO  | unused_para~|   hooks removed, callback disabled
+/home/user/miniconda3/envs/hjepa/lib/python3.11/site-packages/lightning/pytorch/utilities/data.py:79: Trying to infer the `batch_size` from an ambiguous collection. The batch size we found is 2. To avoid any miscalculations, use `self.log(..., batch_size=batch_size)`.
+13:57:31 | INFO  | trainer_inf~| \n+--------------------------------------------+-----------------------+
+|                   Metric                   |         Value         |
++--------------------------------------------+-----------------------+
+|          [0;34;40mfit/dim_max_loss_level1[0m           |        [0;32;40m1.421875[0m       |
+|          [0;34;40mfit/dim_max_loss_level2[0m           |       [0;32;40m0.78515625[0m      |
+|          [0;34;40mfit/dim_max_loss_level3[0m           |         [0;32;40m0.625[0m         |
+|          [0;34;40mfit/dim_mean_loss_level1[0m          |    [0;32;40m0.00921630859375[0m   |
+|          [0;34;40mfit/dim_mean_loss_level2[0m          |   [0;32;40m0.0029144287109375[0m  |
+|          [0;34;40mfit/dim_mean_loss_level3[0m          |    [0;32;40m-0.0089111328125[0m   |
+|          [0;34;40mfit/dim_min_loss_level1[0m           |        [0;32;40m-1.28125[0m       |
+|          [0;34;40mfit/dim_min_loss_level2[0m           |      [0;32;40m-0.75390625[0m      |
+|          [0;34;40mfit/dim_min_loss_level3[0m           |         [0;32;40m-0.625[0m        |
+|          [0;34;40mfit/dim_std_loss_level1[0m           |       [0;32;40m0.38671875[0m      |
+|          [0;34;40mfit/dim_std_loss_level2[0m           |      [0;32;40m0.212890625[0m      |
+|          [0;34;40mfit/dim_std_loss_level3[0m           |      [0;32;40m0.1884765625[0m     |
+|           [0;34;40mfit/embed_loss_level1[0m            |   [0;32;40m0.3505057394504547[0m  |
+|           [0;34;40mfit/embed_loss_level2[0m            |   [0;32;40m0.2449304610490799[0m  |
+|           [0;34;40mfit/embed_loss_level3[0m            |  [0;32;40m0.24275796115398407[0m  |
+|             [0;34;40mfit/l1_loss_level1[0m             |  [0;32;40m0.13743050396442413[0m  |
+|             [0;34;40mfit/l1_loss_level2[0m             |  [0;32;40m0.08585619926452637[0m  |
+|             [0;34;40mfit/l1_loss_level3[0m             |  [0;32;40m0.08496080338954926[0m  |
+|                  [0;34;40mfit/loss[0m                  |   [0;32;40m0.8381941914558411[0m  |
+|              [0;34;40mfit/loss_level1[0m               |   [0;32;40m0.3505057394504547[0m  |
+|              [0;34;40mfit/loss_level2[0m               |   [0;32;40m0.2449304610490799[0m  |
+|              [0;34;40mfit/loss_level3[0m               |  [0;32;40m0.24275796115398407[0m  |
+|            [0;34;40mfit/mse_loss_level1[0m             |   [0;32;40m0.2792166769504547[0m  |
+|            [0;34;40mfit/mse_loss_level2[0m             |   [0;32;40m0.1726648360490799[0m  |
+|            [0;34;40mfit/mse_loss_level3[0m             |  [0;32;40m0.17049233615398407[0m  |
+|            [0;34;40mfit/pred_loss_level1[0m            |   [0;32;40m0.2792166769504547[0m  |
+|            [0;34;40mfit/pred_loss_level2[0m            |   [0;32;40m0.1726648360490799[0m  |
+|            [0;34;40mfit/pred_loss_level3[0m            |  [0;32;40m0.17049233615398407[0m  |
+|           [0;34;40mfit/sigreg_loss_level1[0m           |       [0;32;40m0.79296875[0m      |
+|           [0;34;40mfit/sigreg_loss_level2[0m           |       [0;32;40m0.8046875[0m       |
+|           [0;34;40mfit/sigreg_loss_level3[0m           |       [0;32;40m0.8046875[0m       |
+|      [0;34;40mfit/teacher_forcing_loss_level1[0m       |   [0;32;40m0.2792166769504547[0m  |
+|      [0;34;40mfit/teacher_forcing_loss_level2[0m       |   [0;32;40m0.1726648360490799[0m  |
+|      [0;34;40mfit/teacher_forcing_loss_level3[0m       |  [0;32;40m0.17049233615398407[0m  |
+|            [0;34;40mhardware/cpu_percent[0m            |          [0;32;40m25.0[0m         |
+|          [0;34;40mhardware/disk_read_mb_s[0m           |   [0;32;40m226.45050048828125[0m  |
+|          [0;34;40mhardware/disk_write_mb_s[0m          |          [0;32;40m0.0[0m          |
+|           [0;34;40mhardware/net_recv_mb_s[0m           |          [0;32;40m0.0[0m          |
+|           [0;34;40mhardware/net_sent_mb_s[0m           |          [0;32;40m0.0[0m          |
+|            [0;34;40mhardware/ram_used_gb[0m            |   [0;32;40m9.364822387695312[0m   |
+|           [0;34;40mhardware/ram_used_pct[0m            |   [0;32;40m61.20000076293945[0m   |
+|            [0;34;40mhparams/lr_default_0[0m            | [0;32;40m4.999999873689376e-05[0m |
+|        [0;34;40mvalidate/dim_max_loss_level1[0m        |        [0;32;40m1.390625[0m       |
+|     [0;34;40mvalidate/dim_max_loss_level1_epoch[0m     |        [0;32;40m1.390625[0m       |
+|        [0;34;40mvalidate/dim_max_loss_level2[0m        |       [0;32;40m0.73046875[0m      |
+|     [0;34;40mvalidate/dim_max_loss_level2_epoch[0m     |       [0;32;40m0.73046875[0m      |
+|        [0;34;40mvalidate/dim_max_loss_level3[0m        |       [0;32;40m0.62890625[0m      |
+|     [0;34;40mvalidate/dim_max_loss_level3_epoch[0m     |       [0;32;40m0.62890625[0m      |
+|       [0;34;40mvalidate/dim_mean_loss_level1[0m        |   [0;32;40m0.0020904541015625[0m  |
+|    [0;34;40mvalidate/dim_mean_loss_level1_epoch[0m     |   [0;32;40m0.0020904541015625[0m  |
+|       [0;34;40mvalidate/dim_mean_loss_level2[0m        |   [0;32;40m-0.000518798828125[0m  |
+|    [0;34;40mvalidate/dim_mean_loss_level2_epoch[0m     |   [0;32;40m-0.000518798828125[0m  |
+|       [0;34;40mvalidate/dim_mean_loss_level3[0m        |   [0;32;40m-0.00775146484375[0m   |
+|    [0;34;40mvalidate/dim_mean_loss_level3_epoch[0m     |   [0;32;40m-0.00775146484375[0m   |
+|        [0;34;40mvalidate/dim_min_loss_level1[0m        |       [0;32;40m-1.171875[0m       |
+|     [0;34;40mvalidate/dim_min_loss_level1_epoch[0m     |       [0;32;40m-1.171875[0m       |
+|        [0;34;40mvalidate/dim_min_loss_level2[0m        |       [0;32;40m-0.640625[0m       |
+|     [0;34;40mvalidate/dim_min_loss_level2_epoch[0m     |       [0;32;40m-0.640625[0m       |
+|        [0;34;40mvalidate/dim_min_loss_level3[0m        |      [0;32;40m-0.64453125[0m      |
+|     [0;34;40mvalidate/dim_min_loss_level3_epoch[0m     |      [0;32;40m-0.64453125[0m      |
+|        [0;34;40mvalidate/dim_std_loss_level1[0m        |      [0;32;40m0.267578125[0m      |
+|     [0;34;40mvalidate/dim_std_loss_level1_epoch[0m     |      [0;32;40m0.267578125[0m      |
+|        [0;34;40mvalidate/dim_std_loss_level2[0m        |       [0;32;40m0.20703125[0m      |
+|     [0;34;40mvalidate/dim_std_loss_level2_epoch[0m     |       [0;32;40m0.20703125[0m      |
+|        [0;34;40mvalidate/dim_std_loss_level3[0m        |      [0;32;40m0.1806640625[0m     |
+|     [0;34;40mvalidate/dim_std_loss_level3_epoch[0m     |      [0;32;40m0.1806640625[0m     |
+|         [0;34;40mvalidate/embed_loss_level1[0m         |  [0;32;40m0.18662559986114502[0m  |
+|      [0;34;40mvalidate/embed_loss_level1_epoch[0m      |  [0;32;40m0.18662559986114502[0m  |
+|         [0;34;40mvalidate/embed_loss_level2[0m         |  [0;32;40m0.12995997071266174[0m  |
+|      [0;34;40mvalidate/embed_loss_level2_epoch[0m      |  [0;32;40m0.12995997071266174[0m  |
+|         [0;34;40mvalidate/embed_loss_level3[0m         |  [0;32;40m0.11510404944419861[0m  |
+|      [0;34;40mvalidate/embed_loss_level3_epoch[0m      |  [0;32;40m0.11510404944419861[0m  |
+|          [0;34;40mvalidate/l1_loss_level1[0m           |  [0;32;40m0.05491277948021889[0m  |
+|       [0;34;40mvalidate/l1_loss_level1_epoch[0m        |  [0;32;40m0.05491277948021889[0m  |
+|          [0;34;40mvalidate/l1_loss_level2[0m           |  [0;32;40m0.02762646973133087[0m  |
+|       [0;34;40mvalidate/l1_loss_level2_epoch[0m        |  [0;32;40m0.02762646973133087[0m  |
+|          [0;34;40mvalidate/l1_loss_level3[0m           |  [0;32;40m0.020686788484454155[0m |
+|       [0;34;40mvalidate/l1_loss_level3_epoch[0m        |  [0;32;40m0.020686788484454155[0m |
+|               [0;34;40mvalidate/loss[0m                |  [0;32;40m0.43168962001800537[0m  |
+|            [0;34;40mvalidate/loss_epoch[0m             |  [0;32;40m0.43168962001800537[0m  |
+|            [0;34;40mvalidate/loss_level1[0m            |  [0;32;40m0.18662559986114502[0m  |
+|         [0;34;40mvalidate/loss_level1_epoch[0m         |  [0;32;40m0.18662559986114502[0m  |
+|            [0;34;40mvalidate/loss_level2[0m            |  [0;32;40m0.12995997071266174[0m  |
+|         [0;34;40mvalidate/loss_level2_epoch[0m         |  [0;32;40m0.12995997071266174[0m  |
+|            [0;34;40mvalidate/loss_level3[0m            |  [0;32;40m0.11510404944419861[0m  |
+|         [0;34;40mvalidate/loss_level3_epoch[0m         |  [0;32;40m0.11510404944419861[0m  |
+|          [0;34;40mvalidate/mse_loss_level1[0m          |  [0;32;40m0.10996544361114502[0m  |
+|       [0;34;40mvalidate/mse_loss_level1_epoch[0m       |  [0;32;40m0.10996544361114502[0m  |
+|          [0;34;40mvalidate/mse_loss_level2[0m          |  [0;32;40m0.05525293946266174[0m  |
+|       [0;34;40mvalidate/mse_loss_level2_epoch[0m       |  [0;32;40m0.05525293946266174[0m  |
+|          [0;34;40mvalidate/mse_loss_level3[0m          |  [0;32;40m0.04137357696890831[0m  |
+|       [0;34;40mvalidate/mse_loss_level3_epoch[0m       |  [0;32;40m0.04137357696890831[0m  |
+|         [0;34;40mvalidate/pred_loss_level1[0m          |  [0;32;40m0.10996544361114502[0m  |
+|      [0;34;40mvalidate/pred_loss_level1_epoch[0m       |  [0;32;40m0.10996544361114502[0m  |
+|         [0;34;40mvalidate/pred_loss_level2[0m          |  [0;32;40m0.05525293946266174[0m  |
+|      [0;34;40mvalidate/pred_loss_level2_epoch[0m       |  [0;32;40m0.05525293946266174[0m  |
+|         [0;34;40mvalidate/pred_loss_level3[0m          |  [0;32;40m0.04137357696890831[0m  |
+|      [0;34;40mvalidate/pred_loss_level3_epoch[0m       |  [0;32;40m0.04137357696890831[0m  |
+|        [0;34;40mvalidate/sigreg_loss_level1[0m         |       [0;32;40m0.8515625[0m       |
+|     [0;34;40mvalidate/sigreg_loss_level1_epoch[0m      |       [0;32;40m0.8515625[0m       |
+|        [0;34;40mvalidate/sigreg_loss_level2[0m         |        [0;32;40m0.828125[0m       |
+|     [0;34;40mvalidate/sigreg_loss_level2_epoch[0m      |        [0;32;40m0.828125[0m       |
+|        [0;34;40mvalidate/sigreg_loss_level3[0m         |       [0;32;40m0.8203125[0m       |
+|     [0;34;40mvalidate/sigreg_loss_level3_epoch[0m      |       [0;32;40m0.8203125[0m       |
+|    [0;34;40mvalidate/teacher_forcing_loss_level1[0m    |  [0;32;40m0.10996544361114502[0m  |
+| [0;34;40mvalidate/teacher_forcing_loss_level1_epoch[0m |  [0;32;40m0.10996544361114502[0m  |
+|    [0;34;40mvalidate/teacher_forcing_loss_level2[0m    |  [0;32;40m0.05525293946266174[0m  |
+| [0;34;40mvalidate/teacher_forcing_loss_level2_epoch[0m |  [0;32;40m0.05525293946266174[0m  |
+|    [0;34;40mvalidate/teacher_forcing_loss_level3[0m    |  [0;32;40m0.04137357696890831[0m  |
+| [0;34;40mvalidate/teacher_forcing_loss_level3_epoch[0m |  [0;32;40m0.04137357696890831[0m  |
++--------------------------------------------+-----------------------+
+[2026-11-13 13:57:31,828][root][INFO] - Saved world model to /home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/ckpts/runtime_smoke/runtime_smoke_epoch_1_object.ckpt
+[2026-11-13 13:57:31,921][root][INFO] - Saved final world model to /home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/ckpts/runtime_smoke/runtime_smoke_object.ckpt
+[Epoch 0/1] done in 1.0s
+`Trainer.fit` stopped: `max_steps=1` reached.
+Epoch 0/0  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1 0:00:00 • 0:00:00 0.00it/s 
+13:57:32 | INFO  | utils.py    | ── SignalHandlers (after Trainer.fit() returned) ──
+13:57:32 | INFO  | manager.py  |   SIGUSR1  → SIG_DFL (default OS action — terminate process)
+13:57:32 | INFO  | manager.py  |   SIGUSR2  → SIG_DFL (default OS action — terminate process)
+13:57:32 | INFO  | manager.py  |   SIGCONT  → SIG_DFL (default OS action — terminate process)
+13:57:32 | INFO  | manager.py  |   SIGTERM  → SIG_DFL (default OS action — terminate process)

@@ -1,0 +1,69 @@
+[38;5;159m[Genesis] [13:54:35] [INFO] [38;5;121m╭───────────────────────────────────────────────╮[0m[38;5;159m[0m
+[38;5;159m[Genesis] [13:54:35] [INFO] [38;5;121m│┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈[0m[38;5;159m [38;5;121m[1m[3mGenesis[0m[38;5;159m [38;5;121m┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈│[0m[38;5;159m[0m
+[38;5;159m[Genesis] [13:54:35] [INFO] [38;5;121m╰───────────────────────────────────────────────╯[0m[38;5;159m[0m
+[38;5;159m[Genesis] [13:54:35] [INFO] Running on [38;5;121m[NVIDIA GeForce RTX 3060][0m[38;5;159m with backend [38;5;121mgs.cuda[0m[38;5;159m. Device memory: [38;5;121m11.62[0m[38;5;159m GB.[0m
+[38;5;159m[Genesis] [13:54:35] [INFO] 🚀 Genesis initialized. 🔖 version: [38;5;121m1.4.4[0m[38;5;159m, 🎨 theme: [38;5;121mdark[0m[38;5;159m, 🌱 seed: [38;5;121m0[0m[38;5;159m, 🐛 debug: [38;5;121mFalse[0m[38;5;159m, 📏 precision: [38;5;121m32[0m[38;5;159m, 🔥 performance: [38;5;121mFalse[0m[38;5;159m, 💬 verbose: [38;5;121mINFO[0m[38;5;159m[0m
+[38;5;226m[Genesis] [13:54:35] [WARNING] Scene.show_FPS is deprecated. Please use Scene.options.profiling.show_FPS[0m
+[38;5;159m[Genesis] [13:54:36] [INFO] Scene [38;5;121m[3m<9ed63fd>[0m[38;5;159m created.[0m
+[38;5;159m[Genesis] [13:54:36] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mplane_f7d0518[0m[38;5;159m. idx: [38;5;121m0[0m[38;5;159m, morph: [38;5;121m<gs.morphs.Plane>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;159m[Genesis] [13:54:36] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mbox_dbc2862[0m[38;5;159m. idx: [38;5;121m1[0m[38;5;159m, morph: [38;5;121m<gs.morphs.Box>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;159m[Genesis] [13:54:36] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mbox_698ec24[0m[38;5;159m. idx: [38;5;121m2[0m[38;5;159m, morph: [38;5;121m<gs.morphs.Box>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;159m[Genesis] [13:54:36] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mbox_a8cda8e[0m[38;5;159m. idx: [38;5;121m3[0m[38;5;159m, morph: [38;5;121m<gs.morphs.Box>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;159m[Genesis] [13:54:36] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mbox_20cc9e4[0m[38;5;159m. idx: [38;5;121m4[0m[38;5;159m, morph: [38;5;121m<gs.morphs.Box>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;226m[Genesis] [13:54:36] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [13:54:36] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [13:54:36] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [13:54:36] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [13:54:36] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;159m[Genesis] [13:54:36] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mbruce_fab5572[0m[38;5;159m. idx: [38;5;121m5[0m[38;5;159m, morph: [38;5;121m<gs.morphs.URDF(file='/home/user/桌面/H-JEPA-main./H-JEPA-main/BRUCE-OP-main/Simulation/models/bruce/urdf/bruce_genesis.urdf')>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;159m[Genesis] [13:54:36] [INFO] Building scene [38;5;121m[3m<9ed63fd>[0m[38;5;159m...[0m
+[38;5;226m[Genesis] [13:54:36] [WARNING] Neutral robot position (qpos0) exceeds joint limits.[0m
+[38;5;226m[Genesis] [13:54:37] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (6, 8), (13, 15). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+[38;5;159m[Genesis] [13:54:37] [INFO] Compiling simulation kernels...[0m
+[38;5;159m[Genesis] [13:54:38] [INFO] Building visualizer...[0m
+[collect] 数据集: output/bruce_sim_20261113/bruce_joint_trials_40.h5
+[collect] 目标 40 集，已录 0 集，seed=0
+[collect] 每集 350 帧 @ 100.0 Hz（20 仿真步/帧）
+  ep    0 | box_04   | clr    -8.5mm | FAIL(摔倒) | dx -0.037 | 总集 1
+  ep    1 | box_06   | clr    -7.9mm | FAIL(摔倒) | dx -0.089 | 总集 2
+  ep    2 | box_08   | clr   -47.8mm | FAIL(踢箱)(摔倒) | dx -0.031 | 总集 3
+  ep    3 | step_10  | clr   -26.3mm | FAIL(摔倒) | dx +0.027 | 总集 4
+  ep    4 | box_04   | clr    -5.1mm | FAIL(摔倒) | dx +0.034 | 总集 5
+  ep    5 | box_06   | clr   -52.2mm | FAIL(摔倒) | dx +0.026 | 总集 6
+  ep    6 | box_08   | clr   -12.4mm | FAIL(摔倒) | dx -0.083 | 总集 7
+  ep    7 | step_10  | clr   -28.0mm | FAIL(摔倒) | dx +0.026 | 总集 8
+  ep    8 | box_04   | clr    -0.6mm | FAIL(摔倒) | dx -0.281 | 总集 9
+  ep    9 | box_06   | clr    -6.3mm | FAIL(摔倒) | dx -0.026 | 总集 10
+  ep   10 | box_08   | clr   -40.7mm | FAIL(踢箱)(摔倒) | dx +0.045 | 总集 11
+  ep   11 | step_10  | clr   -26.3mm | FAIL(摔倒) | dx +0.031 | 总集 12
+  ep   12 | box_04   | clr   -36.0mm | FAIL(摔倒) | dx -0.112 | 总集 13
+  ep   13 | box_06   | clr   -47.3mm | FAIL(摔倒) | dx +0.015 | 总集 14
+  ep   14 | box_08   | clr    -6.1mm | FAIL(摔倒) | dx -0.038 | 总集 15
+  ep   15 | step_10  | clr   -29.7mm | FAIL(摔倒) | dx +0.024 | 总集 16
+  ep   16 | box_04   | clr    -8.6mm | FAIL(摔倒) | dx -0.084 | 总集 17
+  ep   17 | box_06   | clr   -42.5mm | FAIL(踢箱)(摔倒) | dx +0.023 | 总集 18
+  ep   18 | box_08   | clr    -6.5mm | FAIL(摔倒) | dx -0.015 | 总集 19
+  ep   19 | step_10  | clr   -27.7mm | FAIL(摔倒) | dx +0.026 | 总集 20
+  ep   20 | box_04   | clr   -29.9mm | FAIL(摔倒) | dx -0.031 | 总集 21
+  ep   21 | box_06   | clr    -4.9mm | FAIL(摔倒) | dx -0.039 | 总集 22
+  ep   22 | box_08   | clr    -6.8mm | FAIL(摔倒) | dx -0.030 | 总集 23
+  ep   23 | step_10  | clr   -30.6mm | FAIL(摔倒) | dx +0.024 | 总集 24
+  ep   24 | box_04   | clr   -40.6mm | FAIL(摔倒) | dx -0.121 | 总集 25
+  ep   25 | box_06   | clr   -55.2mm | FAIL(踢箱)(摔倒) | dx -0.119 | 总集 26
+  ep   26 | box_08   | clr    -7.9mm | FAIL(摔倒) | dx -0.029 | 总集 27
+  ep   27 | step_10  | clr   -22.8mm | FAIL(摔倒) | dx +0.022 | 总集 28
+  ep   28 | box_04   | clr   -30.5mm | FAIL(摔倒) | dx -0.003 | 总集 29
+  ep   29 | box_06   | clr   -48.3mm | FAIL(踢箱)(摔倒) | dx -0.013 | 总集 30
+  ep   30 | box_08   | clr   -22.3mm | FAIL(摔倒) | dx -0.257 | 总集 31
+  ep   31 | step_10  | clr   -31.0mm | FAIL(摔倒) | dx +0.020 | 总集 32
+  ep   32 | box_04   | clr   -32.5mm | FAIL(摔倒) | dx -0.052 | 总集 33
+  ep   33 | box_06   | clr   -18.2mm | FAIL(踢箱)(摔倒) | dx -0.009 | 总集 34
+  ep   34 | box_08   | clr   -12.2mm | FAIL(摔倒) | dx -0.285 | 总集 35
+  ep   35 | step_10  | clr   -26.5mm | FAIL(摔倒) | dx +0.026 | 总集 36
+  ep   36 | box_04   | clr   -11.2mm | FAIL(摔倒) | dx -0.267 | 总集 37
+  ep   37 | box_06   | clr    -6.2mm | FAIL(摔倒) | dx -0.045 | 总集 38
+  ep   38 | box_08   | clr   -13.3mm | FAIL(摔倒) | dx -0.122 | 总集 39
+  ep   39 | step_10  | clr   -30.1mm | FAIL(摔倒) | dx +0.022 | 总集 40
+[collect] 完成: 40 集, 成功 0 集, 用时 217.8s
+[collect] 侧车元数据: output/bruce_sim_20261113/bruce_joint_trials_40.meta.jsonl
+[38;5;159m[Genesis] [13:58:09] [INFO] 💤 Exiting Genesis and caching compiled kernels...[0m

@@ -1,0 +1,559 @@
+{
+  "status": "OFFLINE_PARAMETER_SEARCH_ONLY",
+  "cases": [
+    {
+      "accel_m_s2": 3.0,
+      "push_s": 0.20306666666666665,
+      "taper_s": 0.04,
+      "status": "INTEGRATED_MODEL_ONLY",
+      "failure": null,
+      "vz_m_s": 0.45120770683174155,
+      "ideal_apex_above_takeoff_m": 0.010376574653637045,
+      "peak_motor_speeds_rad_s": [
+        0.009035767751471784,
+        7.228060303865022,
+        7.22580612394485,
+        11.423759865297667,
+        6.484652334290881,
+        0.03915380309494733,
+        7.541936246571707,
+        7.496777015888142,
+        12.012599008822304,
+        6.776906885337385
+      ],
+      "motor_ids_exceeding_velocity_register": [
+        4,
+        9
+      ],
+      "peak_motor_acceleration_rad_s2": 135.85388286001748,
+      "peak_motor_current_A": 10.419824772072564,
+      "max_foot_drift_m": 2.553437786506759e-05,
+      "max_constraint_violation": 0.0003021918237314236
+    },
+    {
+      "accel_m_s2": 3.0,
+      "push_s": 0.22576666666666667,
+      "taper_s": 0.06,
+      "status": "REJECTED",
+      "failure": {
+        "time_s": 0.243,
+        "reason": "QP primal infeasible"
+      },
+      "vz_m_s": 0.7025878640155763,
+      "ideal_apex_above_takeoff_m": 0.025159516139753816,
+      "peak_motor_speeds_rad_s": [
+        0.17460919062976393,
+        21.01598447596041,
+        20.497413467771928,
+        21.125507670884474,
+        12.658330349740506,
+        0.184411335535001,
+        21.49895262736701,
+        21.185746390124663,
+        22.326633860462263,
+        13.240500945711041
+      ],
+      "motor_ids_exceeding_velocity_register": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "peak_motor_acceleration_rad_s2": 2689.23067580124,
+      "peak_motor_current_A": 13.601061761608152,
+      "max_foot_drift_m": 0.00013804188364251546,
+      "max_constraint_violation": 0.000750557123005689
+    },
+    {
+      "accel_m_s2": 3.0,
+      "push_s": 0.2484666666666667,
+      "taper_s": 0.08,
+      "status": "REJECTED",
+      "failure": {
+        "time_s": 0.243,
+        "reason": "QP primal infeasible"
+      },
+      "vz_m_s": 0.7094694736240582,
+      "ideal_apex_above_takeoff_m": 0.025654787665871467,
+      "peak_motor_speeds_rad_s": [
+        0.17896376706010048,
+        21.364946489544213,
+        20.827777428090894,
+        21.379042312571233,
+        12.817924736362421,
+        0.18811887624118384,
+        21.846022581162952,
+        21.519950180475224,
+        22.582119808645633,
+        13.400945723818396
+      ],
+      "motor_ids_exceeding_velocity_register": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "peak_motor_acceleration_rad_s2": 2851.764636794,
+      "peak_motor_current_A": 14.625187757334636,
+      "max_foot_drift_m": 0.00014005928428994057,
+      "max_constraint_violation": 0.0009849835886356045
+    },
+    {
+      "accel_m_s2": 3.0,
+      "push_s": 0.27116666666666667,
+      "taper_s": 0.1,
+      "status": "REJECTED",
+      "failure": {
+        "time_s": 0.243,
+        "reason": "QP primal infeasible"
+      },
+      "vz_m_s": 0.7094694736240582,
+      "ideal_apex_above_takeoff_m": 0.025654787665871467,
+      "peak_motor_speeds_rad_s": [
+        0.17896376706010048,
+        21.364946489544213,
+        20.827777428090894,
+        21.379042312571233,
+        12.817924736362421,
+        0.18811887624118384,
+        21.846022581162952,
+        21.519950180475224,
+        22.582119808645633,
+        13.400945723818396
+      ],
+      "motor_ids_exceeding_velocity_register": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "peak_motor_acceleration_rad_s2": 2851.764636794,
+      "peak_motor_current_A": 14.625187757334636,
+      "max_foot_drift_m": 0.00014005928428994057,
+      "max_constraint_violation": 0.0009849835886356045
+    },
+    {
+      "accel_m_s2": 4.0,
+      "push_s": 0.1498,
+      "taper_s": 0.04,
+      "status": "INTEGRATED_MODEL_ONLY",
+      "failure": null,
+      "vz_m_s": 0.44648706465627325,
+      "ideal_apex_above_takeoff_m": 0.010160586080804033,
+      "peak_motor_speeds_rad_s": [
+        0.029552030530241157,
+        4.244468326130777,
+        4.306007592276012,
+        7.77429420931737,
+        4.374777376637268,
+        0.01631100190364756,
+        4.3506164480982505,
+        4.265761575383197,
+        7.861323091044462,
+        4.407744833607456
+      ],
+      "motor_ids_exceeding_velocity_register": [],
+      "peak_motor_acceleration_rad_s2": 171.15015117540727,
+      "peak_motor_current_A": 11.239005273804999,
+      "max_foot_drift_m": 1.5417998502038798e-05,
+      "max_constraint_violation": 8.405494594393418e-05
+    },
+    {
+      "accel_m_s2": 4.0,
+      "push_s": 0.164325,
+      "taper_s": 0.06,
+      "status": "REJECTED",
+      "failure": {
+        "time_s": 0.221,
+        "reason": "QP primal infeasible"
+      },
+      "vz_m_s": 0.5023256883568844,
+      "ideal_apex_above_takeoff_m": 0.012860912190785818,
+      "peak_motor_speeds_rad_s": [
+        0.07801959276515617,
+        18.806589057210722,
+        18.45684525540249,
+        18.516000352427497,
+        11.126759488678092,
+        0.4124155106436595,
+        19.908761303866264,
+        19.77438186408353,
+        20.799679876919274,
+        12.33464715617196
+      ],
+      "motor_ids_exceeding_velocity_register": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "peak_motor_acceleration_rad_s2": 2334.6603423034994,
+      "peak_motor_current_A": 13.674203445209908,
+      "max_foot_drift_m": 0.00012044719781585175,
+      "max_constraint_violation": 0.0007627221849872576
+    },
+    {
+      "accel_m_s2": 4.0,
+      "push_s": 0.17885,
+      "taper_s": 0.08,
+      "status": "REJECTED",
+      "failure": {
+        "time_s": 0.212,
+        "reason": "QP primal infeasible"
+      },
+      "vz_m_s": 0.7806847080141546,
+      "ideal_apex_above_takeoff_m": 0.031063639822994177,
+      "peak_motor_speeds_rad_s": [
+        0.21049211281882318,
+        24.033846972635413,
+        23.454094486720106,
+        23.2937169342675,
+        14.032975481236207,
+        0.22232255531514614,
+        24.59678757080243,
+        24.25943514677115,
+        24.698184940302678,
+        14.713310970225525
+      ],
+      "motor_ids_exceeding_velocity_register": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "peak_motor_acceleration_rad_s2": 3238.5530919220246,
+      "peak_motor_current_A": 15.18067510471705,
+      "max_foot_drift_m": 0.00018510162866718465,
+      "max_constraint_violation": 0.0011212971274744367
+    },
+    {
+      "accel_m_s2": 4.0,
+      "push_s": 0.19337500000000002,
+      "taper_s": 0.1,
+      "status": "REJECTED",
+      "failure": {
+        "time_s": 0.211,
+        "reason": "QP primal infeasible"
+      },
+      "vz_m_s": 0.8141439282189158,
+      "ideal_apex_above_takeoff_m": 0.03378340141976183,
+      "peak_motor_speeds_rad_s": [
+        0.19965002177094615,
+        23.575679924346158,
+        23.094204455544865,
+        23.218866863560887,
+        13.961328213869,
+        0.21748982409493864,
+        24.1555122212085,
+        23.898902169625078,
+        24.643344877719386,
+        14.650416070332687
+      ],
+      "motor_ids_exceeding_velocity_register": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "peak_motor_acceleration_rad_s2": 3198.168277194035,
+      "peak_motor_current_A": 15.262912520277414,
+      "max_foot_drift_m": 0.00018001589177052578,
+      "max_constraint_violation": 0.0005037633808421267
+    },
+    {
+      "accel_m_s2": 5.0,
+      "push_s": 0.11783999999999999,
+      "taper_s": 0.04,
+      "status": "INTEGRATED_MODEL_ONLY",
+      "failure": null,
+      "vz_m_s": 0.4466860663382977,
+      "ideal_apex_above_takeoff_m": 0.010169645354779924,
+      "peak_motor_speeds_rad_s": [
+        0.03213038578537103,
+        3.7671833913684107,
+        3.8362288540116154,
+        6.881490137996877,
+        3.889788176295388,
+        0.018044407931011107,
+        3.8653579277293835,
+        3.7738884920104656,
+        6.939521311761525,
+        3.9077363232548765
+      ],
+      "motor_ids_exceeding_velocity_register": [],
+      "peak_motor_acceleration_rad_s2": 172.62227196447364,
+      "peak_motor_current_A": 12.057743770973737,
+      "max_foot_drift_m": 1.685904622890104e-05,
+      "max_constraint_violation": 0.0001977970546659935
+    },
+    {
+      "accel_m_s2": 5.0,
+      "push_s": 0.12746,
+      "taper_s": 0.06,
+      "status": "INTEGRATED_MODEL_ONLY",
+      "failure": null,
+      "vz_m_s": 0.4534182901047344,
+      "ideal_apex_above_takeoff_m": 0.010478498766641238,
+      "peak_motor_speeds_rad_s": [
+        0.02566711113675267,
+        5.077282068591606,
+        5.13618399020107,
+        9.311082232076831,
+        5.22583630536393,
+        0.010965399491661402,
+        5.206863558844436,
+        5.122458876724662,
+        9.450628639686338,
+        5.2837343192040995
+      ],
+      "motor_ids_exceeding_velocity_register": [],
+      "peak_motor_acceleration_rad_s2": 131.5633435508414,
+      "peak_motor_current_A": 12.057743770973737,
+      "max_foot_drift_m": 2.577442417049059e-05,
+      "max_constraint_violation": 4.6457929428942953e-05
+    },
+    {
+      "accel_m_s2": 5.0,
+      "push_s": 0.13708,
+      "taper_s": 0.08,
+      "status": "REJECTED",
+      "failure": {
+        "time_s": 0.195,
+        "reason": "QP primal infeasible"
+      },
+      "vz_m_s": 0.6736537782561117,
+      "ideal_apex_above_takeoff_m": 0.02312993949840645,
+      "peak_motor_speeds_rad_s": [
+        0.10966185488113145,
+        20.97562712885654,
+        20.55920685504636,
+        20.807725854140774,
+        12.492024136630873,
+        0.26382338182001064,
+        21.67452048239992,
+        21.464857899718943,
+        22.396380767441098,
+        13.2916629136216
+      ],
+      "motor_ids_exceeding_velocity_register": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "peak_motor_acceleration_rad_s2": 2364.8029213765976,
+      "peak_motor_current_A": 12.85121398761657,
+      "max_foot_drift_m": 0.0001601984098190142,
+      "max_constraint_violation": 0.0011228629413761225
+    },
+    {
+      "accel_m_s2": 5.0,
+      "push_s": 0.1467,
+      "taper_s": 0.1,
+      "status": "REJECTED",
+      "failure": {
+        "time_s": 0.19,
+        "reason": "QP primal infeasible"
+      },
+      "vz_m_s": 0.8465002995132429,
+      "ideal_apex_above_takeoff_m": 0.03652205693557645,
+      "peak_motor_speeds_rad_s": [
+        0.1971944169881212,
+        23.61629708194515,
+        23.212202512746344,
+        23.35065130594672,
+        14.037311705665331,
+        0.22075679019156774,
+        24.24157726487793,
+        24.05007685323584,
+        24.858944600884527,
+        14.766217035060217
+      ],
+      "motor_ids_exceeding_velocity_register": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "peak_motor_acceleration_rad_s2": 2952.493630474173,
+      "peak_motor_current_A": 15.172393766985774,
+      "max_foot_drift_m": 0.0001974463231707642,
+      "max_constraint_violation": 0.0009759211290802116
+    },
+    {
+      "accel_m_s2": 6.0,
+      "push_s": 0.09653333333333335,
+      "taper_s": 0.04,
+      "status": "INTEGRATED_MODEL_ONLY",
+      "failure": null,
+      "vz_m_s": 0.44360128942318533,
+      "ideal_apex_above_takeoff_m": 0.01002966890815049,
+      "peak_motor_speeds_rad_s": [
+        0.03316580913460586,
+        3.528719971008129,
+        3.6023867436621386,
+        6.430976108928168,
+        3.6479651433275015,
+        0.019075528013453996,
+        3.625294208195716,
+        3.5292199071867714,
+        6.478011768190397,
+        3.6597074512478502
+      ],
+      "motor_ids_exceeding_velocity_register": [],
+      "peak_motor_acceleration_rad_s2": 170.55255582952984,
+      "peak_motor_current_A": 12.87603993710375,
+      "max_foot_drift_m": 1.7593380472388017e-05,
+      "max_constraint_violation": 9.789711816264353e-05
+    },
+    {
+      "accel_m_s2": 6.0,
+      "push_s": 0.10288333333333333,
+      "taper_s": 0.06,
+      "status": "INTEGRATED_MODEL_ONLY",
+      "failure": null,
+      "vz_m_s": 0.44724983438856153,
+      "ideal_apex_above_takeoff_m": 0.01019533202653393,
+      "peak_motor_speeds_rad_s": [
+        0.03718101760706827,
+        4.446223315061895,
+        4.516539669835127,
+        8.137742133148928,
+        4.585075088952588,
+        0.020816093926619435,
+        4.558267176897503,
+        4.463774311480482,
+        8.220762547525293,
+        4.614928055478982
+      ],
+      "motor_ids_exceeding_velocity_register": [],
+      "peak_motor_acceleration_rad_s2": 169.56736768779672,
+      "peak_motor_current_A": 12.87603993710375,
+      "max_foot_drift_m": 2.4574171136650812e-05,
+      "max_constraint_violation": 9.245074575349642e-05
+    },
+    {
+      "accel_m_s2": 6.0,
+      "push_s": 0.10923333333333334,
+      "taper_s": 0.08,
+      "status": "INTEGRATED_MODEL_ONLY",
+      "failure": null,
+      "vz_m_s": 0.45654094874016793,
+      "ideal_apex_above_takeoff_m": 0.010623325070161704,
+      "peak_motor_speeds_rad_s": [
+        0.07008164147346156,
+        12.686628629148672,
+        12.548018267531692,
+        14.881970910521279,
+        8.732421367576897,
+        0.2409264839275093,
+        13.433697945797968,
+        13.384855558719016,
+        16.386051282960004,
+        9.523524685782128
+      ],
+      "motor_ids_exceeding_velocity_register": [
+        2,
+        3,
+        4,
+        7,
+        8,
+        9
+      ],
+      "peak_motor_acceleration_rad_s2": 875.02684841422,
+      "peak_motor_current_A": 12.87603993710375,
+      "max_foot_drift_m": 5.4138271143410515e-05,
+      "max_constraint_violation": 0.0003232486043168725
+    },
+    {
+      "accel_m_s2": 6.0,
+      "push_s": 0.11558333333333333,
+      "taper_s": 0.1,
+      "status": "REJECTED",
+      "failure": {
+        "time_s": 0.178,
+        "reason": "QP primal infeasible"
+      },
+      "vz_m_s": 0.7905858021571598,
+      "ideal_apex_above_takeoff_m": 0.03185657036556982,
+      "peak_motor_speeds_rad_s": [
+        0.1698982542384436,
+        24.202763448096427,
+        23.71997874798425,
+        23.323917232700456,
+        14.06494168164672,
+        0.2726370857558512,
+        24.903383403538598,
+        24.658094640648528,
+        24.97505117884795,
+        14.881208096980192
+      ],
+      "motor_ids_exceeding_velocity_register": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "peak_motor_acceleration_rad_s2": 3071.9053364672236,
+      "peak_motor_current_A": 15.078477486077068,
+      "max_foot_drift_m": 0.00020560140456163614,
+      "max_constraint_violation": 0.0009534988241788029
+    }
+  ],
+  "configured_motor_velocity_registers_rad_s": [
+    1000.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0,
+    10.0
+  ],
+  "hardware_actuation": false,
+  "physical_jump_validated": false,
+  "limitations": [
+    "Velocity register applies in motor modes 1 and 2, not force mode 3; comparison is informational only",
+    "Configuration is not a certified physical torque-speed envelope",
+    "Push only: no flight, landing, thermal or PD actuator dynamics",
+    "Mass, friction and contact model are assumed, not measured"
+  ]
+}

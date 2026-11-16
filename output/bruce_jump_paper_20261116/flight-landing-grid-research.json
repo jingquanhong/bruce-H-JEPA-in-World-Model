@@ -1,0 +1,354 @@
+{
+  "status": "MODEL_ONLY_GRID_SEARCH",
+  "cases": [
+    {
+      "body_weight": 0.0015,
+      "nominal_foot_downward_speed_m_s": 0.05,
+      "ending": {
+        "time_s": 0.032,
+        "reason": "model torso tilt exceeded 8-degree research bound"
+      },
+      "max_body_tilt_deg": 8.01584041687178,
+      "max_min_foot_clearance_m": 0.001937715810336929
+    },
+    {
+      "body_weight": 0.0015,
+      "nominal_foot_downward_speed_m_s": 0.1,
+      "ending": {
+        "time_s": 0.031,
+        "reason": "model torso tilt exceeded 8-degree research bound"
+      },
+      "max_body_tilt_deg": 8.050780653216712,
+      "max_min_foot_clearance_m": 0.0021819093227624445
+    },
+    {
+      "body_weight": 0.0015,
+      "nominal_foot_downward_speed_m_s": 0.15,
+      "ending": {
+        "time_s": 0.03,
+        "reason": "model torso tilt exceeded 8-degree research bound"
+      },
+      "max_body_tilt_deg": 8.104688925873338,
+      "max_min_foot_clearance_m": 0.002435389007442265
+    },
+    {
+      "body_weight": 0.0015,
+      "nominal_foot_downward_speed_m_s": 0.2,
+      "ending": {
+        "time_s": 0.029,
+        "reason": "model torso tilt exceeded 8-degree research bound"
+      },
+      "max_body_tilt_deg": 8.167897424783375,
+      "max_min_foot_clearance_m": 0.0026916803391669256
+    },
+    {
+      "body_weight": 0.002,
+      "nominal_foot_downward_speed_m_s": 0.05,
+      "ending": {
+        "time_s": 0.034,
+        "reason": "model torso tilt exceeded 8-degree research bound"
+      },
+      "max_body_tilt_deg": 8.188611294889531,
+      "max_min_foot_clearance_m": 0.0017930214124102298
+    },
+    {
+      "body_weight": 0.002,
+      "nominal_foot_downward_speed_m_s": 0.1,
+      "ending": {
+        "time_s": 0.033,
+        "reason": "model torso tilt exceeded 8-degree research bound"
+      },
+      "max_body_tilt_deg": 8.180382506723523,
+      "max_min_foot_clearance_m": 0.002029309343581108
+    },
+    {
+      "body_weight": 0.002,
+      "nominal_foot_downward_speed_m_s": 0.15,
+      "ending": {
+        "time_s": 0.031,
+        "reason": "model torso tilt exceeded 8-degree research bound"
+      },
+      "max_body_tilt_deg": 8.034638144376155,
+      "max_min_foot_clearance_m": 0.0022674433184603007
+    },
+    {
+      "body_weight": 0.002,
+      "nominal_foot_downward_speed_m_s": 0.2,
+      "ending": {
+        "time_s": 0.03,
+        "reason": "model torso tilt exceeded 8-degree research bound"
+      },
+      "max_body_tilt_deg": 8.089812342248056,
+      "max_min_foot_clearance_m": 0.0025155622850296863
+    },
+    {
+      "body_weight": 0.0025,
+      "nominal_foot_downward_speed_m_s": 0.05,
+      "ending": {
+        "time_s": 0.033,
+        "reason": "model foot reached floor; contact and impact not modeled"
+      },
+      "max_body_tilt_deg": 7.76135521099856,
+      "max_min_foot_clearance_m": 0.0016646029630905182,
+      "sticking_status": "primal infeasible",
+      "sliding_status": "solved",
+      "all_points_status": "primal infeasible",
+      "sliding_postimpact_speed_m_s": 0.128007523821042
+    },
+    {
+      "body_weight": 0.0025,
+      "nominal_foot_downward_speed_m_s": 0.1,
+      "ending": {
+        "time_s": 0.034,
+        "reason": "model torso tilt exceeded 8-degree research bound"
+      },
+      "max_body_tilt_deg": 8.14234526561444,
+      "max_min_foot_clearance_m": 0.0018895006426207575
+    },
+    {
+      "body_weight": 0.0025,
+      "nominal_foot_downward_speed_m_s": 0.15,
+      "ending": {
+        "time_s": 0.033,
+        "reason": "model torso tilt exceeded 8-degree research bound"
+      },
+      "max_body_tilt_deg": 8.145467470228978,
+      "max_min_foot_clearance_m": 0.002118775850491826
+    },
+    {
+      "body_weight": 0.0025,
+      "nominal_foot_downward_speed_m_s": 0.2,
+      "ending": {
+        "time_s": 0.031,
+        "reason": "model torso tilt exceeded 8-degree research bound"
+      },
+      "max_body_tilt_deg": 8.019537340983375,
+      "max_min_foot_clearance_m": 0.0023540351525590045
+    },
+    {
+      "body_weight": 0.003,
+      "nominal_foot_downward_speed_m_s": 0.05,
+      "ending": {
+        "time_s": 0.032,
+        "reason": "model foot reached floor; contact and impact not modeled"
+      },
+      "max_body_tilt_deg": 7.37163308631055,
+      "max_min_foot_clearance_m": 0.0015490810210986028,
+      "sticking_status": "primal infeasible",
+      "sliding_status": "solved",
+      "all_points_status": "primal infeasible",
+      "sliding_postimpact_speed_m_s": 0.13302289853633079
+    },
+    {
+      "body_weight": 0.003,
+      "nominal_foot_downward_speed_m_s": 0.1,
+      "ending": {
+        "time_s": 0.033,
+        "reason": "model foot reached floor; contact and impact not modeled"
+      },
+      "max_body_tilt_deg": 7.74379264011517,
+      "max_min_foot_clearance_m": 0.0017609844119034906,
+      "sticking_status": "primal infeasible",
+      "sliding_status": "solved",
+      "all_points_status": "primal infeasible",
+      "sliding_postimpact_speed_m_s": 0.13955027466518058
+    },
+    {
+      "body_weight": 0.003,
+      "nominal_foot_downward_speed_m_s": 0.15,
+      "ending": {
+        "time_s": 0.034,
+        "reason": "model torso tilt exceeded 8-degree research bound"
+      },
+      "max_body_tilt_deg": 8.09966410328642,
+      "max_min_foot_clearance_m": 0.001983559422829552
+    },
+    {
+      "body_weight": 0.003,
+      "nominal_foot_downward_speed_m_s": 0.2,
+      "ending": {
+        "time_s": 0.033,
+        "reason": "model torso tilt exceeded 8-degree research bound"
+      },
+      "max_body_tilt_deg": 8.113135081626218,
+      "max_min_foot_clearance_m": 0.002206415597932672
+    },
+    {
+      "body_weight": 0.004,
+      "nominal_foot_downward_speed_m_s": 0.05,
+      "ending": {
+        "time_s": 0.031,
+        "reason": "model foot reached floor; contact and impact not modeled"
+      },
+      "max_body_tilt_deg": 6.8461480696514485,
+      "max_min_foot_clearance_m": 0.0013442476656628857,
+      "sticking_status": "primal infeasible",
+      "sliding_status": "solved",
+      "all_points_status": "primal infeasible",
+      "sliding_postimpact_speed_m_s": 0.14104809911204172
+    },
+    {
+      "body_weight": 0.004,
+      "nominal_foot_downward_speed_m_s": 0.1,
+      "ending": {
+        "time_s": 0.032,
+        "reason": "model foot reached floor; contact and impact not modeled"
+      },
+      "max_body_tilt_deg": 7.199252430056794,
+      "max_min_foot_clearance_m": 0.0015433863857867644,
+      "sticking_status": "primal infeasible",
+      "sliding_status": "solved",
+      "all_points_status": "primal infeasible",
+      "sliding_postimpact_speed_m_s": 0.14747010194287152
+    },
+    {
+      "body_weight": 0.004,
+      "nominal_foot_downward_speed_m_s": 0.15,
+      "ending": {
+        "time_s": 0.033,
+        "reason": "model foot reached floor; contact and impact not modeled"
+      },
+      "max_body_tilt_deg": 7.539810764144131,
+      "max_min_foot_clearance_m": 0.0017435072992359399,
+      "sticking_status": "primal infeasible",
+      "sliding_status": "solved",
+      "all_points_status": "primal infeasible",
+      "sliding_postimpact_speed_m_s": 0.15476531672966937
+    },
+    {
+      "body_weight": 0.004,
+      "nominal_foot_downward_speed_m_s": 0.2,
+      "ending": {
+        "time_s": 0.034,
+        "reason": "model foot reached floor; contact and impact not modeled"
+      },
+      "max_body_tilt_deg": 7.8632917049370565,
+      "max_min_foot_clearance_m": 0.001954431387804663,
+      "sticking_status": "primal infeasible",
+      "sliding_status": "solved",
+      "all_points_status": "primal infeasible",
+      "sliding_postimpact_speed_m_s": 0.16312778332764563
+    },
+    {
+      "body_weight": 0.005,
+      "nominal_foot_downward_speed_m_s": 0.05,
+      "ending": {
+        "time_s": 0.029,
+        "reason": "model foot reached floor; contact and impact not modeled"
+      },
+      "max_body_tilt_deg": 6.232598242949506,
+      "max_min_foot_clearance_m": 0.0011787065287869325,
+      "sticking_status": "primal infeasible",
+      "sliding_status": "solved",
+      "all_points_status": "primal infeasible",
+      "sliding_postimpact_speed_m_s": 0.14070242669151697
+    },
+    {
+      "body_weight": 0.005,
+      "nominal_foot_downward_speed_m_s": 0.1,
+      "ending": {
+        "time_s": 0.031,
+        "reason": "model foot reached floor; contact and impact not modeled"
+      },
+      "max_body_tilt_deg": 6.723103547348398,
+      "max_min_foot_clearance_m": 0.001357606425562062,
+      "sticking_status": "primal infeasible",
+      "sliding_status": "solved",
+      "all_points_status": "primal infeasible",
+      "sliding_postimpact_speed_m_s": 0.1523777113492602
+    },
+    {
+      "body_weight": 0.005,
+      "nominal_foot_downward_speed_m_s": 0.15,
+      "ending": {
+        "time_s": 0.032,
+        "reason": "model foot reached floor; contact and impact not modeled"
+      },
+      "max_body_tilt_deg": 7.049553759082951,
+      "max_min_foot_clearance_m": 0.0015472164247542566,
+      "sticking_status": "primal infeasible",
+      "sliding_status": "solved",
+      "all_points_status": "primal infeasible",
+      "sliding_postimpact_speed_m_s": 0.1593861930652232
+    },
+    {
+      "body_weight": 0.005,
+      "nominal_foot_downward_speed_m_s": 0.2,
+      "ending": {
+        "time_s": 0.033,
+        "reason": "model foot reached floor; contact and impact not modeled"
+      },
+      "max_body_tilt_deg": 7.3625417787482785,
+      "max_min_foot_clearance_m": 0.0017376634604008914,
+      "sticking_status": "primal infeasible",
+      "sliding_status": "solved",
+      "all_points_status": "primal infeasible",
+      "sliding_postimpact_speed_m_s": 0.16715964611237097
+    },
+    {
+      "body_weight": 0.006,
+      "nominal_foot_downward_speed_m_s": 0.05,
+      "ending": {
+        "time_s": 0.028,
+        "reason": "model foot reached floor; contact and impact not modeled"
+      },
+      "max_body_tilt_deg": 5.833168021011399,
+      "max_min_foot_clearance_m": 0.0010351647144984447,
+      "sticking_status": "primal infeasible",
+      "sliding_status": "solved",
+      "all_points_status": "primal infeasible",
+      "sliding_postimpact_speed_m_s": 0.1427915920389952
+    },
+    {
+      "body_weight": 0.006,
+      "nominal_foot_downward_speed_m_s": 0.1,
+      "ending": {
+        "time_s": 0.029,
+        "reason": "model foot reached floor; contact and impact not modeled"
+      },
+      "max_body_tilt_deg": 6.156484342302994,
+      "max_min_foot_clearance_m": 0.0012049877881436868,
+      "sticking_status": "primal infeasible",
+      "sliding_status": "solved",
+      "all_points_status": "primal infeasible",
+      "sliding_postimpact_speed_m_s": 0.1491994467476593
+    },
+    {
+      "body_weight": 0.006,
+      "nominal_foot_downward_speed_m_s": 0.15,
+      "ending": {
+        "time_s": 0.03,
+        "reason": "model foot reached floor; contact and impact not modeled"
+      },
+      "max_body_tilt_deg": 6.473882836559924,
+      "max_min_foot_clearance_m": 0.001377427129617033,
+      "sticking_status": "primal infeasible",
+      "sliding_status": "solved",
+      "all_points_status": "primal infeasible",
+      "sliding_postimpact_speed_m_s": 0.15602720533613748
+    },
+    {
+      "body_weight": 0.006,
+      "nominal_foot_downward_speed_m_s": 0.2,
+      "ending": {
+        "time_s": 0.031,
+        "reason": "model foot reached floor; contact and impact not modeled"
+      },
+      "max_body_tilt_deg": 6.78236037356494,
+      "max_min_foot_clearance_m": 0.0015587795886750286,
+      "sticking_status": "primal infeasible",
+      "sliding_status": "solved",
+      "all_points_status": "primal infeasible",
+      "sliding_postimpact_speed_m_s": 0.16335787933564783
+    }
+  ],
+  "hardware_actuation": false,
+  "physical_jump_validated": false,
+  "landing_control_validated": false,
+  "limitations": [
+    "Assumed friction and unmeasured mass/inertia",
+    "No motor torque-speed, latency, thermal or impact-compliance model",
+    "Weight grid is not a proof of global feasibility",
+    "A sticking or sliding impact snapshot is not controlled landing recovery"
+  ]
+}

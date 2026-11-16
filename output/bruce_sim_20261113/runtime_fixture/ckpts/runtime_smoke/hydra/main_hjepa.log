@@ -1,0 +1,24 @@
+[2026-11-13 13:56:04,373][root][INFO] - Cached 'action' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_train.h5'
+[2026-11-13 13:56:04,373][root][INFO] - Cached 'xy' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_train.h5'
+[2026-11-13 13:56:04,373][root][INFO] - Cached 'qpos' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_train.h5'
+[2026-11-13 13:56:04,374][root][INFO] - Cached 'qvel' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_train.h5'
+[2026-11-13 13:56:04,376][root][INFO] - Merged columns ['qpos[2:]', 'qvel'] into 'proprio' and cached it
+[2026-11-13 13:56:04,376][root][INFO] - Cached 'action' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_val.h5'
+[2026-11-13 13:56:04,377][root][INFO] - Cached 'xy' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_val.h5'
+[2026-11-13 13:56:04,377][root][INFO] - Cached 'qpos' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_val.h5'
+[2026-11-13 13:56:04,377][root][INFO] - Cached 'qvel' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_val.h5'
+[2026-11-13 13:56:04,379][root][INFO] - Merged columns ['qpos[2:]', 'qvel'] into 'proprio' and cached it
+[2026-11-13 13:56:04,893][gcsfs][INFO] - gcsfs experimental features enabled via GCSFS_EXPERIMENTAL_ZB_HNS_SUPPORT.
+[2026-11-13 13:57:30,183][root][INFO] - Cached 'action' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_train.h5'
+[2026-11-13 13:57:30,183][root][INFO] - Cached 'xy' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_train.h5'
+[2026-11-13 13:57:30,183][root][INFO] - Cached 'qpos' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_train.h5'
+[2026-11-13 13:57:30,183][root][INFO] - Cached 'qvel' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_train.h5'
+[2026-11-13 13:57:30,185][root][INFO] - Merged columns ['qpos[2:]', 'qvel'] into 'proprio' and cached it
+[2026-11-13 13:57:30,186][root][INFO] - Cached 'action' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_val.h5'
+[2026-11-13 13:57:30,186][root][INFO] - Cached 'xy' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_val.h5'
+[2026-11-13 13:57:30,186][root][INFO] - Cached 'qpos' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_val.h5'
+[2026-11-13 13:57:30,186][root][INFO] - Cached 'qvel' from '/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/runtime_val.h5'
+[2026-11-13 13:57:30,188][root][INFO] - Merged columns ['qpos[2:]', 'qvel'] into 'proprio' and cached it
+[2026-11-13 13:57:30,655][gcsfs][INFO] - gcsfs experimental features enabled via GCSFS_EXPERIMENTAL_ZB_HNS_SUPPORT.
+[2026-11-13 13:57:31,828][root][INFO] - Saved world model to /home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/ckpts/runtime_smoke/runtime_smoke_epoch_1_object.ckpt
+[2026-11-13 13:57:31,921][root][INFO] - Saved final world model to /home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/runtime_fixture/ckpts/runtime_smoke/runtime_smoke_object.ckpt

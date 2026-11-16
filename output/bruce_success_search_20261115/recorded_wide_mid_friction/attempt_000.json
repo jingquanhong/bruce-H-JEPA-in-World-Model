@@ -1,0 +1,182 @@
+{
+  "height": 0.01,
+  "swing_time": 0.22,
+  "stop": "loss_of_balance",
+  "seconds": 2.745,
+  "body_height": 0.36,
+  "second_time": 0.6,
+  "config": {
+    "out": "output/bruce_success_search_20261115/recorded_wide_mid_friction",
+    "heights": [
+      0.01,
+      0.02,
+      0.03,
+      0.04,
+      0.06,
+      0.08
+    ],
+    "swing_time": [
+      0.22
+    ],
+    "second_time": 0.6,
+    "pulse_acc": 1.3,
+    "lateral": -0.03,
+    "swing_weight": 1000.0,
+    "attitude_weight": 50.0,
+    "attitude_kp": 40.0,
+    "foot_kp": 200.0,
+    "momentum_weight": 1000.0,
+    "capture_mode": "recapture",
+    "landing_min": null,
+    "swing_profile": "plateau",
+    "line_single": false,
+    "audit": true,
+    "track_swing_roll": false,
+    "capture_bias": 0.0,
+    "capture_wait": 0.6,
+    "second_y": null,
+    "arm_weight": 100.0,
+    "limit_horizon": 0.1,
+    "landing_z": 0.025,
+    "soft_single_com": false,
+    "record": true,
+    "second_profile": "arch",
+    "policy": "dynamic",
+    "point_contact": false,
+    "duration": 6.0,
+    "body_height": 0.36,
+    "base_x": -0.03,
+    "center_x": 0.17,
+    "thickness": 0.03,
+    "width": 0.5,
+    "friction": 0.8
+  },
+  "obstacle": {
+    "center_x": 0.17,
+    "height": 0.01,
+    "thickness": 0.03,
+    "width": 0.5
+  },
+  "friction": 0.8,
+  "base_force_peak": 0.0,
+  "torque_peak": 9.960082054138184,
+  "current_peak": 25.67499773842948,
+  "box_motion": 2.8784498627890697e-05,
+  "initial_mesh_intersections": [],
+  "contact_audit_at_2000hz": true,
+  "collision_mesh_transform_peak_error_m": 5.165676975060762e-08,
+  "robot_obstacle_contact_steps": 0,
+  "first_robot_obstacle_contact_s": null,
+  "sampled_mesh_intersections": [],
+  "final_feet": [
+    [
+      0.004183883313089609,
+      -0.08626920729875565,
+      0.02611883543431759
+    ],
+    [
+      0.24150672554969788,
+      0.13784563541412354,
+      0.021888628602027893
+    ]
+  ],
+  "events": [
+    {
+      "phase": "accelerate",
+      "t": 1.5,
+      "com": [
+        0.028057714097162303,
+        -0.029680498386921404,
+        0.3184229514724971
+      ],
+      "velocity": [
+        2.3261850547828857e-05,
+        -5.659857054289e-05,
+        4.0754138104007014e-05
+      ]
+    },
+    {
+      "phase": "first_swing",
+      "t": 1.62,
+      "com": [
+        0.03717316835215128,
+        -0.029461696697958287,
+        0.3182636979744184
+      ],
+      "velocity": [
+        0.15337923273959547,
+        0.0020085967874540873,
+        -0.0020053339593454978
+      ]
+    },
+    {
+      "phase": "capture",
+      "t": 1.845,
+      "com": [
+        0.1060757485534874,
+        0.026881667724318704,
+        0.32384387355364647
+      ],
+      "velocity": [
+        0.47539964249208333,
+        0.4946526960949313,
+        0.019559048473000766
+      ]
+    },
+    {
+      "phase": "recapture",
+      "t": 2.345,
+      "com": [
+        0.22548630125016253,
+        0.13621236615415125,
+        0.30843285045209495
+      ],
+      "velocity": [
+        0.017732324694010638,
+        0.14585046561431225,
+        -0.07788867900673586
+      ]
+    }
+  ],
+  "candidate_screen_passed": false,
+  "autonomous_crossing_success": false,
+  "trial": "crossing_attempt",
+  "recorded_frames": 136,
+  "record_hz": 50,
+  "control_hz": 200,
+  "physics_hz": 2000,
+  "warmup_seconds": 0.02,
+  "visual_hjepa_ready": false,
+  "control_mode": "joint_only",
+  "base_actuated": false,
+  "urdf": "/home/user/桌面/H-JEPA-main./H-JEPA-main/BRUCE-OP-main/Simulation/models/bruce/urdf/bruce_physical.urdf",
+  "urdf_sha256": "950dfffd951d47ebc9cd02fc69133cb7315040c301417a77dc339cc89ec1079e",
+  "action_kind": "four_consecutive_16_joint_torque_commands_Nm",
+  "action_order": "right_leg_5,left_leg_5,right_arm_3,left_arm_3",
+  "action_timing": "observation precedes four 5 ms commands; final incomplete block excluded",
+  "proprio_kind": "q10,dq10,body_specific_force3,body_gyro3,executed_leg_torque10",
+  "pixels_kind": "64x64 RGB fixed external camera; simulator truth, not onboard vision",
+  "physics_trace": "attempt_000.physics.npz",
+  "physics_trace_sha256": "112f9598112e03398fb9bab452b5f67901967c32883887934d6959e3197d81a8",
+  "link_names": [
+    "base_link",
+    "hip_yaw_link_r",
+    "hip_pitch_link_r",
+    "hip_roll_link_r",
+    "knee_pitch_link_r",
+    "ankle_pitch_link_r",
+    "hip_yaw_link_l",
+    "hip_pitch_link_l",
+    "hip_roll_link_l",
+    "knee_pitch_link_l",
+    "ankle_pitch_link_l",
+    "shoulder_pitch_link_r",
+    "shoulder_roll_link_r",
+    "elbow_pitch_link_r",
+    "shoulder_pitch_link_l",
+    "shoulder_roll_link_l",
+    "elbow_pitch_link_l"
+  ],
+  "leg_armature_kg_m2": 0.00182,
+  "purpose": "experimental_obstacle_attempt_not_success_demonstration"
+}

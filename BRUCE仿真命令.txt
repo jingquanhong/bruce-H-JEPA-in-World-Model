@@ -1,0 +1,44 @@
+# 在项目根目录执行。依赖现有 nudt 环境中的 Genesis、Pinocchio、OSQP、h5py、imageio、Pillow。
+# 2026-11-15：32条越障尝试、4244帧，成功仍为0；详见 output/bruce_collection_20261115/README.md。
+# 六种高度的实验续采，另依赖 nudt 中已安装的 Clarabel；拒绝覆盖原结果，没有成功时退出码2：
+BRUCE_CROSSING_OUTPUT=output/bruce_crossing_next bash BRUCE仿真命令.sh crossings
+# 读取本轮32个episode并检查每回合首尾窗口，只验证接口，不训练：
+/home/user/miniconda3/envs/hjepa/bin/python scripts/data/bruce/verify_physics_hjepa_read.py \
+  output/bruce_collection_20261115 --names bruce_obstacle_attempts_20261115
+
+# 2026-11-14 最新结果见 output/bruce_continue_20261114/README.md，8cm仍未通过。
+# 重心转移与抬脚前必要条件检查（换新目录，未就绪时退出码2）：
+BRUCE_VALIDATION_OUTPUT=output/bruce_support_recheck bash BRUCE仿真命令.sh support
+# 原8cm参考的支撑范围筛查（有限差分、平面支撑近似，不等于仿真成功）：
+BRUCE_VALIDATION_OUTPUT=output/bruce_support_recheck bash BRUCE仿真命令.sh audit
+
+# 播放新验证视频：
+xdg-open "BRUCE物理验证_站立.mp4"
+xdg-open "BRUCE物理验证_8cm未通过.mp4"
+
+# 重跑无辅助站立验证（已存在时请换一个输出目录）：
+PYOPENGL_PLATFORM=egl /home/user/miniconda3/envs/nudt/bin/python scripts/data/bruce/validate_physics.py \
+  --trial stand --out output/bruce_physics_check
+
+# 重跑8cm试验；目前未通过，退出码2表示任务失败，不表示已经越障成功：
+PYOPENGL_PLATFORM=egl /home/user/miniconda3/envs/nudt/bin/python scripts/data/bruce/validate_physics.py \
+  --trial box08 --out output/bruce_physics_check
+
+# 检查本轮已保存数据的对齐、实际力矩、耦合电流及基座无驱动：
+/home/user/miniconda3/envs/nudt/bin/python scripts/data/bruce/check_physics_record.py \
+  output/bruce_repair/validation_v4/stand.h5
+/home/user/miniconda3/envs/nudt/bin/python scripts/data/bruce/check_physics_record.py \
+  output/bruce_repair/validation_v4/box08.h5
+
+# 回归检查：
+/home/user/miniconda3/envs/nudt/bin/python -m unittest discover -s scripts/data/bruce -p test_collection.py -v
+
+# 用项目真实HDF5Dataset读取RGB、36维本体观测和动作块；只验证读取，不训练：
+/home/user/miniconda3/envs/hjepa/bin/python scripts/data/bruce/verify_physics_hjepa_read.py \
+  output/bruce_repair/validation_v4
+
+# 历史数据资格复核；原HDF5不修改，历史success不能解释为自主成功：
+/home/user/miniconda3/envs/nudt/bin/python scripts/data/bruce/check_dataset.py \
+  --dataset bruce_assisted_reference_50 --cache-dir output/bruce_sim_20261113
+/home/user/miniconda3/envs/nudt/bin/python scripts/data/bruce/check_dataset.py \
+  --dataset bruce_joint_trials_40 --cache-dir output/bruce_sim_20261113

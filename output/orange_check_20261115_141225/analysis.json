@@ -1,0 +1,28 @@
+{
+  "device": "DaBai",
+  "depth_resolution": [
+    640,
+    400
+  ],
+  "color_resolution": [
+    640,
+    480
+  ],
+  "depth_fps_observed": 26.94451485030952,
+  "color_fps_observed": 26.601999831025925,
+  "valid_depth_fraction": 0.5253125,
+  "nearest_pixel_m": 0.7170000076293945,
+  "depth_percentiles_m": {
+    "2": 0.800000011920929,
+    "10": 1.0399999618530273,
+    "50": 1.5010000467300415,
+    "90": 1.7619999647140503,
+    "98": 2.2920000553131104
+  },
+  "center_30x30_median_m": null,
+  "center_30x30_valid_fraction": 0.0,
+  "pixels_under_1m": 12296,
+  "pointcloud_points": 134480,
+  "depth_unit": "PNG pixel values are millimeters; 0 is invalid",
+  "note": "Depth/RGB are unregistered; frame sync not supported by this camera. Distances refer to the captured scene, not calibrated robot obstacle distances."
+}

@@ -1,0 +1,62 @@
+[38;5;159m[Genesis] [04:10:46] [INFO] [38;5;121m╭───────────────────────────────────────────────╮[0m[38;5;159m[0m
+[38;5;159m[Genesis] [04:10:46] [INFO] [38;5;121m│┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈[0m[38;5;159m [38;5;121m[1m[3mGenesis[0m[38;5;159m [38;5;121m┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈│[0m[38;5;159m[0m
+[38;5;159m[Genesis] [04:10:46] [INFO] [38;5;121m╰───────────────────────────────────────────────╯[0m[38;5;159m[0m
+[38;5;159m[Genesis] [04:10:46] [INFO] Running on [38;5;121m[NVIDIA GeForce RTX 3060][0m[38;5;159m with backend [38;5;121mgs.cuda[0m[38;5;159m. Device memory: [38;5;121m11.62[0m[38;5;159m GB.[0m
+[38;5;159m[Genesis] [04:10:46] [INFO] 🚀 Genesis initialized. 🔖 version: [38;5;121m1.4.4[0m[38;5;159m, 🎨 theme: [38;5;121mdark[0m[38;5;159m, 🌱 seed: [38;5;121m0[0m[38;5;159m, 🐛 debug: [38;5;121mFalse[0m[38;5;159m, 📏 precision: [38;5;121m32[0m[38;5;159m, 🔥 performance: [38;5;121mFalse[0m[38;5;159m, 💬 verbose: [38;5;121mINFO[0m[38;5;159m[0m
+[38;5;226m[Genesis] [04:10:46] [WARNING] Scene.show_FPS is deprecated. Please use Scene.options.profiling.show_FPS[0m
+[38;5;159m[Genesis] [04:10:46] [INFO] Scene [38;5;121m[3m<611d942>[0m[38;5;159m created.[0m
+[38;5;159m[Genesis] [04:10:46] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mplane_6459af7[0m[38;5;159m. idx: [38;5;121m0[0m[38;5;159m, morph: [38;5;121m<gs.morphs.Plane>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;159m[Genesis] [04:10:46] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mbox_ca0e2f3[0m[38;5;159m. idx: [38;5;121m1[0m[38;5;159m, morph: [38;5;121m<gs.morphs.Box>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;159m[Genesis] [04:10:46] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mbox_0bc2ca0[0m[38;5;159m. idx: [38;5;121m2[0m[38;5;159m, morph: [38;5;121m<gs.morphs.Box>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;159m[Genesis] [04:10:46] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mbox_17e12dc[0m[38;5;159m. idx: [38;5;121m3[0m[38;5;159m, morph: [38;5;121m<gs.morphs.Box>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;226m[Genesis] [04:10:47] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [04:10:47] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [04:10:47] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [04:10:47] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [04:10:47] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;159m[Genesis] [04:10:47] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mbruce_b93e5ac[0m[38;5;159m. idx: [38;5;121m4[0m[38;5;159m, morph: [38;5;121m<gs.morphs.URDF(file='/home/user/桌面/H-JEPA-main./H-JEPA-main/BRUCE-OP-main/Simulation/models/bruce/urdf/bruce_physical.urdf')>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;159m[Genesis] [04:10:47] [INFO] Building scene [38;5;121m[3m<611d942>[0m[38;5;159m...[0m
+[38;5;226m[Genesis] [04:10:47] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (5, 7), (10, 12). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+[38;5;159m[Genesis] [04:10:48] [INFO] Compiling simulation kernels...[0m
+[38;5;159m[Genesis] [04:10:48] [INFO] Building visualizer...[0m
+STEP 0.01 0.3 0.0 prepare [-0.03  0.    0.35]
+STEP 0.01 0.3 0.5 prepare [-0.0300093  -0.00312962  0.34988242]
+STEP 0.01 0.3 1.0 prepare [-0.02924636 -0.04906332  0.35023117]
+STEP 0.01 0.3 1.5 accelerate [-0.02875272 -0.05953337  0.3504411 ]
+STEP 0.01 0.3 2.0 capture [0.12967332 0.0839807  0.34933716]
+STEP 0.01 0.3 2.5 second_swing [0.21157897 0.13578539 0.3572772 ]
+RESULT {"height": 0.01, "swing_time": 0.3, "stop": "loss_of_balance", "seconds": 2.9, "body_height": 0.35, "second_time": 0.35, "config": {"out": "output/bruce_success_search_20261115/step_11", "heights": [0.01, 0.02, 0.04], "swing_time": [0.3, 0.35], "second_time": 0.35, "pulse_acc": 1.3, "lateral": -0.05, "swing_weight": 1000.0, "attitude_weight": 50.0, "momentum_weight": 0.0, "capture_mode": "planned", "landing_min": null, "swing_profile": "arch", "line_single": false, "duration": 6.0, "body_height": 0.35, "center_x": 0.15, "thickness": 0.05, "width": 0.3, "friction": 1.0}, "obstacle": {"center_x": 0.15, "height": 0.01, "thickness": 0.05, "width": 0.3}, "friction": 1.0, "base_force_peak": 0.0, "torque_peak": 8.857869148254395, "current_peak": 20.63110589981079, "box_motion": 2.8784499189472386e-05, "final_feet": [[-0.02287432551383972, -0.10759290307760239, 0.38397178053855896], [0.24951696395874023, 0.11399206519126892, 0.025562778115272522]], "candidate_screen_passed": false, "autonomous_crossing_success": false}
+STEP 0.01 0.35 0.0 prepare [-0.03  0.    0.35]
+STEP 0.01 0.35 0.5 prepare [-0.0300093  -0.00312962  0.34988242]
+STEP 0.01 0.35 1.0 prepare [-0.02924636 -0.04906332  0.35023117]
+STEP 0.01 0.35 1.5 accelerate [-0.02875272 -0.05953337  0.3504411 ]
+STEP 0.01 0.35 2.0 capture [0.18038431 0.1223496  0.34465155]
+RESULT {"height": 0.01, "swing_time": 0.35, "stop": "interior QP: PrimalInfeasible", "seconds": 2.115, "body_height": 0.35, "second_time": 0.35, "config": {"out": "output/bruce_success_search_20261115/step_11", "heights": [0.01, 0.02, 0.04], "swing_time": [0.3, 0.35], "second_time": 0.35, "pulse_acc": 1.3, "lateral": -0.05, "swing_weight": 1000.0, "attitude_weight": 50.0, "momentum_weight": 0.0, "capture_mode": "planned", "landing_min": null, "swing_profile": "arch", "line_single": false, "duration": 6.0, "body_height": 0.35, "center_x": 0.15, "thickness": 0.05, "width": 0.3, "friction": 1.0}, "obstacle": {"center_x": 0.15, "height": 0.01, "thickness": 0.05, "width": 0.3}, "friction": 1.0, "base_force_peak": 0.0, "torque_peak": 10.5, "current_peak": 29.990000384194513, "box_motion": 2.8784499189472386e-05, "final_feet": [[-0.025749677792191505, -0.06389810144901276, 0.04051417484879494], [0.3483676612377167, 0.181055948138237, 0.023815175518393517]], "candidate_screen_passed": false, "autonomous_crossing_success": false}
+STEP 0.02 0.3 0.0 prepare [-0.03  0.    0.35]
+STEP 0.02 0.3 0.5 prepare [-0.0300093  -0.00312962  0.34988242]
+STEP 0.02 0.3 1.0 prepare [-0.02924636 -0.04906332  0.35023117]
+STEP 0.02 0.3 1.5 accelerate [-0.02875272 -0.05953337  0.3504411 ]
+STEP 0.02 0.3 2.0 capture [0.12279303 0.09002607 0.34689572]
+STEP 0.02 0.3 2.5 second_swing [0.2080199  0.13263401 0.3607898 ]
+STEP 0.02 0.3 3.0 settle [0.1702297  0.10780107 0.3585055 ]
+RESULT {"height": 0.02, "swing_time": 0.3, "stop": "loss_of_balance", "seconds": 3.465, "body_height": 0.35, "second_time": 0.35, "config": {"out": "output/bruce_success_search_20261115/step_11", "heights": [0.01, 0.02, 0.04], "swing_time": [0.3, 0.35], "second_time": 0.35, "pulse_acc": 1.3, "lateral": -0.05, "swing_weight": 1000.0, "attitude_weight": 50.0, "momentum_weight": 0.0, "capture_mode": "planned", "landing_min": null, "swing_profile": "arch", "line_single": false, "duration": 6.0, "body_height": 0.35, "center_x": 0.15, "thickness": 0.05, "width": 0.3, "friction": 1.0}, "obstacle": {"center_x": 0.15, "height": 0.02, "thickness": 0.05, "width": 0.3}, "friction": 1.0, "base_force_peak": 0.0, "torque_peak": 8.607844352722168, "current_peak": 19.97494731630598, "box_motion": 0.03746341561802013, "final_feet": [[0.1626836508512497, 0.06544899940490723, 0.028036408126354218], [0.24525988101959229, 0.10797875374555588, 0.026439517736434937]], "candidate_screen_passed": false, "autonomous_crossing_success": false}
+STEP 0.02 0.35 0.0 prepare [-0.03  0.    0.35]
+STEP 0.02 0.35 0.5 prepare [-0.0300093  -0.00312962  0.34988242]
+STEP 0.02 0.35 1.0 prepare [-0.02924636 -0.04906332  0.35023117]
+STEP 0.02 0.35 1.5 accelerate [-0.02875272 -0.05953337  0.3504411 ]
+STEP 0.02 0.35 2.0 capture [0.17542176 0.12468496 0.3432741 ]
+RESULT {"height": 0.02, "swing_time": 0.35, "stop": "interior QP: PrimalInfeasible", "seconds": 2.105, "body_height": 0.35, "second_time": 0.35, "config": {"out": "output/bruce_success_search_20261115/step_11", "heights": [0.01, 0.02, 0.04], "swing_time": [0.3, 0.35], "second_time": 0.35, "pulse_acc": 1.3, "lateral": -0.05, "swing_weight": 1000.0, "attitude_weight": 50.0, "momentum_weight": 0.0, "capture_mode": "planned", "landing_min": null, "swing_profile": "arch", "line_single": false, "duration": 6.0, "body_height": 0.35, "center_x": 0.15, "thickness": 0.05, "width": 0.3, "friction": 1.0}, "obstacle": {"center_x": 0.15, "height": 0.02, "thickness": 0.05, "width": 0.3}, "friction": 1.0, "base_force_peak": 0.0, "torque_peak": 10.5, "current_peak": 29.990000384194513, "box_motion": 2.8786473593288343e-05, "final_feet": [[-0.013749079778790474, -0.07471764087677002, 0.036885906010866165], [0.34000343084335327, 0.17588886618614197, 0.024133503437042236]], "candidate_screen_passed": false, "autonomous_crossing_success": false}
+STEP 0.04 0.3 0.0 prepare [-0.03  0.    0.35]
+STEP 0.04 0.3 0.5 prepare [-0.0300093  -0.00312962  0.34988242]
+STEP 0.04 0.3 1.0 prepare [-0.02924636 -0.04906332  0.35023117]
+STEP 0.04 0.3 1.5 accelerate [-0.02875272 -0.05953337  0.3504411 ]
+STEP 0.04 0.3 2.0 capture [0.11844596 0.08807185 0.34443757]
+STEP 0.04 0.3 2.5 second_swing [0.22621503 0.26588663 0.3311851 ]
+RESULT {"height": 0.04, "swing_time": 0.3, "stop": "loss_of_balance", "seconds": 2.56, "body_height": 0.35, "second_time": 0.35, "config": {"out": "output/bruce_success_search_20261115/step_11", "heights": [0.01, 0.02, 0.04], "swing_time": [0.3, 0.35], "second_time": 0.35, "pulse_acc": 1.3, "lateral": -0.05, "swing_weight": 1000.0, "attitude_weight": 50.0, "momentum_weight": 0.0, "capture_mode": "planned", "landing_min": null, "swing_profile": "arch", "line_single": false, "duration": 6.0, "body_height": 0.35, "center_x": 0.15, "thickness": 0.05, "width": 0.3, "friction": 1.0}, "obstacle": {"center_x": 0.15, "height": 0.04, "thickness": 0.05, "width": 0.3}, "friction": 1.0, "base_force_peak": 0.0, "torque_peak": 9.613306999206543, "current_peak": 29.990000724792484, "box_motion": 0.0008212143694850793, "final_feet": [[-0.03235296905040741, 0.18793916702270508, 0.05248720943927765], [0.21974025666713715, 0.14210835099220276, 0.02539719268679619]], "candidate_screen_passed": false, "autonomous_crossing_success": false}
+STEP 0.04 0.35 0.0 prepare [-0.03  0.    0.35]
+STEP 0.04 0.35 0.5 prepare [-0.0300093  -0.00312962  0.34988242]
+STEP 0.04 0.35 1.0 prepare [-0.02924636 -0.04906332  0.35023117]
+STEP 0.04 0.35 1.5 accelerate [-0.02875272 -0.05953337  0.3504411 ]
+STEP 0.04 0.35 2.0 capture [0.16475071 0.1316333  0.3418827 ]
+RESULT {"height": 0.04, "swing_time": 0.35, "stop": "interior QP: PrimalInfeasible", "seconds": 2.075, "body_height": 0.35, "second_time": 0.35, "config": {"out": "output/bruce_success_search_20261115/step_11", "heights": [0.01, 0.02, 0.04], "swing_time": [0.3, 0.35], "second_time": 0.35, "pulse_acc": 1.3, "lateral": -0.05, "swing_weight": 1000.0, "attitude_weight": 50.0, "momentum_weight": 0.0, "capture_mode": "planned", "landing_min": null, "swing_profile": "arch", "line_single": false, "duration": 6.0, "body_height": 0.35, "center_x": 0.15, "thickness": 0.05, "width": 0.3, "friction": 1.0}, "obstacle": {"center_x": 0.15, "height": 0.04, "thickness": 0.05, "width": 0.3}, "friction": 1.0, "base_force_peak": 0.0, "torque_peak": 10.5, "current_peak": 29.989998851503646, "box_motion": 2.8789491078365626e-05, "final_feet": [[0.005209016613662243, -0.09261619299650192, 0.03088328056037426], [0.3078283369541168, 0.1821838617324829, 0.02629598043859005]], "candidate_screen_passed": false, "autonomous_crossing_success": false}
+[38;5;159m[Genesis] [04:11:32] [INFO] 💤 Exiting Genesis and caching compiled kernels...[0m

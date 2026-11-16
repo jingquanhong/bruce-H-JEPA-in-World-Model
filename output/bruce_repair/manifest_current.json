@@ -1,0 +1,32 @@
+{
+  "snapshot_kind": "physics_repair_current_source",
+  "sources": {
+    "scripts/data/bruce/test_collection.py": "46270c67cd819a508b2cbc10caabd83aae2ca2ca24ec22f87450b6a0a839113c",
+    "scripts/data/bruce/validate_physics.py": "ebcce70cb07e03d994039d481239773c59c04e915cb9076b31fb1fb2f9b2a0fe",
+    "scripts/data/bruce/collect_bruce.py": "a1fe5761f4e9252e839eab33c723ee79e6c7a2222a76eebf073b67fb5664106c",
+    "scripts/data/bruce/present_collection.py": "381b613a0a35cf1fadc4b6b20d28723d136be95b11524e7df3c92aeedf2e46df",
+    "scripts/data/bruce/standing_wbc.py": "b6742dfbda03181d459c68b677cb7e3c8889e1436f7c7a5a58195d30cb88fa53",
+    "scripts/data/bruce/bruce_signals.py": "eee6f5b8309cb68d933d07aedf2954b6e3071b52ebf7ef610f123ad73d9c8fdb",
+    "scripts/data/bruce/qualification.py": "ac9519ededc9862f6031418bc525c02cf5c031cd1ea377fc4504e8ce3ffbca51",
+    "scripts/data/bruce/verify_physics_hjepa_read.py": "476dbb1de377b23b25b16da7b423a2814dbd4c61e2ae13657ff615f575162d7e",
+    "scripts/data/bruce/check_dataset.py": "53a668271f63118a67c0b7dd63d597b8d779b4b2fe0248bad0fddd403a035c62",
+    "scripts/data/bruce/make_figures.py": "6f63af4df2a68d459b3728137c105dbf491dfdb9ae0dead84289bd25c92a5b84",
+    "scripts/data/bruce/bruce_expert.py": "b5a8170a81638604a75f6498313ef66dd48e69fe4d0c3329bd4acc48f6758405",
+    "scripts/data/bruce/check_physics_record.py": "c4a8d17cc353ed24b3bdbb25ff563a18f527a27bc5326f310348e1724c255de5",
+    "scripts/data/bruce/bruce_env.py": "6c6a60dd3c5140ae983cb9956c7e5d48c2f5c9a6dc12837705b35b3d9d25e1c9",
+    "scripts/data/bruce/verify_hjepa_read.py": "a3f9637f1a48cf138b2b0f5968a2b5a2e8008018f3758d42fc5303e216e85eeb",
+    "scripts/data/bruce/config/bruce_stepover.yaml": "ca3b505cbf9360cb7fc2fa20f2dacf2594c27e5aed0a9f372b967bf5885469c8",
+    "BRUCE仿真命令.sh": "88414877624e0a7ef89770ea9e9a39fa8816f8b018262565196c666b8613efa7",
+    "BRUCE仿真命令.txt": "a91555174cfcd1bd28e70015538ace321fb6804cfd4e80bc75bebf1a60d79794",
+    "BRUCE仿真说明.md": "7d7ec3526e46d97c71ddf5c8564e39e56e2abbbec298b0c20e23738c2d57d349",
+    "BRUCE-OP-main/Simulation/models/bruce/urdf/bruce_physical.urdf": "950dfffd951d47ebc9cd02fc69133cb7315040c301417a77dc339cc89ec1079e"
+  },
+  "datasets": {
+    "output/bruce_repair/validation_v4/stand.h5": "a946d4ed0111a23f5450ae41e81662202cc094c8be8e734a05708d66c4ae0561",
+    "output/bruce_repair/validation_v4/box08.h5": "bcab8b58618ff5db68d03424304e677f094f9d4550f2257789849c53162dcc9a"
+  },
+  "historical_hdf5_unchanged": {
+    "bruce_assisted_reference_50.h5": true,
+    "bruce_joint_trials_40.h5": true
+  }
+}

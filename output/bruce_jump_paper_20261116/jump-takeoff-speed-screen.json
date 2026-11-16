@@ -1,0 +1,97 @@
+{
+  "status": "KINEMATIC_SCREEN_ONLY",
+  "reference_geometry": "recorded anchor, fixed flat feet and fixed torso orientation",
+  "requested_com_rise_from_takeoff_m": 0.01,
+  "slow_crouch_reference_joint_speed_limit_rad_s": 0.3,
+  "cases": [
+    {
+      "takeoff_body_depth_m": 0.0,
+      "target_com_takeoff_vz_m_s": 0.442944691807002,
+      "com_speed_per_body_speed": 0.8694574827284262,
+      "body_takeoff_vz_m_s": 0.5094495137554129,
+      "joint_takeoff_speed_rad_s": [
+        0.0004944131301803126,
+        -0.028530997896006265,
+        -2.894973253699382,
+        5.763776393496406,
+        -2.868792546864531,
+        -0.0017981536973280445,
+        0.035357142724150914,
+        -2.9159997512227096,
+        5.820266743580154,
+        -2.904223127022376
+      ],
+      "maximum_joint_takeoff_speed_rad_s": 5.820266743580154,
+      "same_height_ideal_flight_s": 0.09030472819714618
+    },
+    {
+      "takeoff_body_depth_m": 0.01,
+      "target_com_takeoff_vz_m_s": 0.442944691807002,
+      "com_speed_per_body_speed": 0.8672026562711652,
+      "body_takeoff_vz_m_s": 0.5107741409736848,
+      "joint_takeoff_speed_rad_s": [
+        0.0005241209152425967,
+        -0.030244582332576108,
+        -2.6235004007512246,
+        5.209967371139014,
+        -2.5864554392093293,
+        -0.0019060703822710234,
+        0.037477785240790935,
+        -2.636116929426266,
+        5.250286520833459,
+        -2.614121733710606
+      ],
+      "maximum_joint_takeoff_speed_rad_s": 5.250286520833459,
+      "same_height_ideal_flight_s": 0.09030472819714618
+    },
+    {
+      "takeoff_body_depth_m": 0.02,
+      "target_com_takeoff_vz_m_s": 0.442944691807002,
+      "com_speed_per_body_speed": 0.865414139510183,
+      "body_takeoff_vz_m_s": 0.5118297374453634,
+      "joint_takeoff_speed_rad_s": [
+        0.0005562067647158082,
+        -0.032095234774930294,
+        -2.424264061764874,
+        4.801988966272417,
+        -2.377712328568029,
+        -0.0020226122269962777,
+        0.03976773649247802,
+        -2.431603147981893,
+        4.832547200882867,
+        -2.4008917423912792
+      ],
+      "maximum_joint_takeoff_speed_rad_s": 4.832547200882867,
+      "same_height_ideal_flight_s": 0.09030472819714618
+    },
+    {
+      "takeoff_body_depth_m": 0.03,
+      "target_com_takeoff_vz_m_s": 0.442944691807002,
+      "com_speed_per_body_speed": 0.8639147737357603,
+      "body_takeoff_vz_m_s": 0.512718042650909,
+      "joint_takeoff_speed_rad_s": [
+        0.0005910618616483546,
+        -0.03410549503765372,
+        -2.27088930319738,
+        4.4863880426766185,
+        -2.215484993823562,
+        -0.0021491976446963014,
+        0.04225482586227281,
+        -2.274563274808218,
+        4.510529383788338,
+        -2.23590880540416
+      ],
+      "maximum_joint_takeoff_speed_rad_s": 4.510529383788338,
+      "same_height_ideal_flight_s": 0.09030472819714618
+    }
+  ],
+  "hardware_actuation": false,
+  "jump_trajectory_validated": false,
+  "limitations": [
+    "Model mass distribution is not physically measured after arm removal and camera installation",
+    "Contact and impact are not simulated",
+    "Actuator torque/speed and transient current are not certified",
+    "This tests one kinematic path; it does not establish that all other paths are infeasible",
+    "The slow-crouch speed limit is a software limit, not a rated motor speed"
+  ]
+}

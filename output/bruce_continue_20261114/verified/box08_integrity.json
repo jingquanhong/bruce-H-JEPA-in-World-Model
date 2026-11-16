@@ -1,0 +1,22 @@
+{
+  "path": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_continue_20261114/verified/box08.h5",
+  "recording_valid": true,
+  "checks": {
+    "nonempty": true,
+    "aligned_columns": true,
+    "pixels": true,
+    "proprio": true,
+    "timing": true,
+    "episode": true,
+    "finite": true,
+    "executed_action": true,
+    "no_base_actuation": true,
+    "joint_torque_limit": true,
+    "coupled_current_limit": true,
+    "reset_acceleration_cleared": true,
+    "model_hash": true
+  },
+  "frames": 71,
+  "autonomous_crossing_success": false,
+  "note": "Recording integrity does not imply successful obstacle crossing."
+}

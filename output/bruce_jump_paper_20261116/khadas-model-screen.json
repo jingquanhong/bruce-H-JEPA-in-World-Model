@@ -1,0 +1,249 @@
+{
+  "status": "OFFLINE_MODEL_SCREEN_ONLY",
+  "robot_root": "/home/khadas/BRUCE/BRUCE-OP",
+  "source_sha256": {
+    "/home/khadas/BRUCE/BRUCE-OP/Settings/BRUCE_macros.py": "f3c7062f187b08b15cb95d63afd40875c92ce3b05120fd70c8b19c542fc78f08",
+    "/home/khadas/BRUCE/BRUCE-OP/Startups/run_bear.py": "0a1848ef101b7851255bb61b0fa6ad495f7a3599fad2521a86e10309bb57ae05",
+    "/home/khadas/BRUCE/BRUCE-OP/Startups/run_estimation.py": "fa2976a7d56fa0b80193133067f724cb38522fee98cbac226e1feb5bc08a8d2e",
+    "/home/khadas/BRUCE/BRUCE-OP/Library/ROBOT_MODEL/BRUCE_DYNAMICS_AOT.py": "c998df1f04d1ae33201580495fd11236cf70659841a50f413574ff4e05daca5a",
+    "/home/khadas/BRUCE/BRUCE-OP/Library/ROBOT_MODEL/BRUCE_dynamics.cpython-310-aarch64-linux-gnu.so": "cc651bc48c17764d4fda85ec184810fdae10be52c9c067aa1f5f1cdaa7464caa",
+    "/home/khadas/BRUCE/BRUCE-OP/Library/ROBOT_MODEL/BRUCE_kinematics.cpython-310-aarch64-linux-gnu.so": "f69575e2a612b21568dfaf0af6ba0a605cd298fb366f1651bebb0ba0a1651833",
+    "/home/khadas/BRUCE/jump-research-20261116/recorded-standing-fixture.json": "6c480fca3b4e59b0a4e5424c0bc25fd1248252109fae11cb10d5e2b4dfc41760"
+  },
+  "model_mass_kg": 4.53031,
+  "physical_mass_measured": false,
+  "compiled_mass_diagonal_kg": [
+    4.530310000001,
+    4.530310000001,
+    4.530310000001
+  ],
+  "source_mass_matches_binary": true,
+  "recorded_vs_current_H_max_abs": 0.02258285809579978,
+  "current_map_A_per_Nm": [
+    [
+      -2.857142857142857,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0
+    ],
+    [
+      -0.0,
+      -1.4285714285714286,
+      1.4285714285714286,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0
+    ],
+    [
+      -0.0,
+      -1.4285714285714286,
+      -1.4285714285714286,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      -2.857142857142857,
+      2.857142857142857,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.857142857142857,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -2.857142857142857,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0
+    ],
+    [
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -1.4285714285714286,
+      1.4285714285714286,
+      -0.0,
+      -0.0
+    ],
+    [
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -1.4285714285714286,
+      -1.4285714285714286,
+      -0.0,
+      -0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.857142857142857,
+      -2.857142857142857
+    ],
+    [
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -2.857142857142857
+    ]
+  ],
+  "thigh_m": 0.204949,
+  "shank_m": 0.199881,
+  "ballistic_1cm_com_rise": {
+    "takeoff_vz_m_s": 0.442944691807002,
+    "same_height_flight_s": 0.09030472819714618
+  },
+  "repetitions_per_case": 100,
+  "cases": [
+    {
+      "name": "recorded_stance",
+      "status": "SOLVED_AT_RECORDED_POSTURE",
+      "torque_abs_max_Nm": 2.3914157270704277,
+      "motor_current_abs_max_A": 11.143210811879984,
+      "constraint_violation": 7.763123477388945e-12,
+      "contact_normal_forces_N": [
+        28.349870387039143,
+        -7.397902870709948e-13,
+        16.090686668268006,
+        1.0856903158645604e-13
+      ],
+      "mean_total_qp_ms": 1.6254130800024313,
+      "p99_total_qp_ms": 1.7663180700304795,
+      "max_total_qp_ms": 1.8249330000230657,
+      "solver_only_last_ms": 0.127748
+    },
+    {
+      "name": "upward_acceleration_screen",
+      "status": "SOLVED_AT_RECORDED_POSTURE",
+      "torque_abs_max_Nm": 3.0846081972048642,
+      "motor_current_abs_max_A": 14.299991128718418,
+      "constraint_violation": 3.0773218460532907e-11,
+      "contact_normal_forces_N": [
+        36.75128822034698,
+        9.576634945291769e-12,
+        21.279782639272796,
+        -2.0061482682372545e-11
+      ],
+      "mean_total_qp_ms": 1.6099373900044611,
+      "p99_total_qp_ms": 1.6264519899851848,
+      "max_total_qp_ms": 1.6403110000169363,
+      "solver_only_last_ms": 0.12658100000000003
+    },
+    {
+      "name": "landing_deceleration_screen",
+      "status": "SOLVED_AT_RECORDED_POSTURE",
+      "torque_abs_max_Nm": 3.5945192121182186,
+      "motor_current_abs_max_A": 16.509263313665265,
+      "constraint_violation": 1.770899628081102e-11,
+      "contact_normal_forces_N": [
+        42.37725590954058,
+        5.669086946612061e-12,
+        24.714157488859332,
+        -1.163391523200782e-11
+      ],
+      "mean_total_qp_ms": 1.6106723700011116,
+      "p99_total_qp_ms": 1.64122391997239,
+      "max_total_qp_ms": 1.644978000001629,
+      "solver_only_last_ms": 0.126873
+    },
+    {
+      "name": "right_contact_only_screen",
+      "status": "SOLVED_AT_RECORDED_POSTURE",
+      "torque_abs_max_Nm": 4.29434026523852,
+      "motor_current_abs_max_A": 17.931678751396355,
+      "constraint_violation": 1.5715944891683713e-12,
+      "contact_normal_forces_N": [
+        40.049745637173025,
+        4.387064484597416,
+        5.206440004076558e-13,
+        -4.6035170701419925e-17
+      ],
+      "mean_total_qp_ms": 1.5283010299987154,
+      "p99_total_qp_ms": 1.551540659958164,
+      "max_total_qp_ms": 1.570020000031036,
+      "solver_only_last_ms": 0.126874
+    },
+    {
+      "name": "left_contact_only_screen",
+      "status": "SOLVED_AT_RECORDED_POSTURE",
+      "torque_abs_max_Nm": 6.232122592049974,
+      "motor_current_abs_max_A": 22.70452230428014,
+      "constraint_violation": 2.4816250300784856e-12,
+      "contact_normal_forces_N": [
+        -7.959657749576668e-13,
+        4.154074536922819e-13,
+        44.42981067932911,
+        7.247127052470933e-14
+      ],
+      "mean_total_qp_ms": 1.5268134699988423,
+      "p99_total_qp_ms": 1.5436452500199493,
+      "max_total_qp_ms": 1.5601040000206012,
+      "solver_only_last_ms": 0.12629
+    }
+  ],
+  "hardware_actuation": false,
+  "simulation_executed": false,
+  "control_loop_500Hz_verified": false,
+  "physical_jump_validated": false,
+  "limitations": [
+    "One recorded posture; no motion/contact transitions integrated",
+    "Recomputed H/CG/CMM and all contact Jacobians from recorded q/dq/body state",
+    "Joint PD set to zero for screen; driver PD not characterized",
+    "Model mass/inertia not measured after arms removed and camera fitted",
+    "QP timing excludes sensors, model computation, communication and scheduling"
+  ]
+}

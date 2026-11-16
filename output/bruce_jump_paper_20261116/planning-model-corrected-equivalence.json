@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "samples": 8,
+  "max_abs_errors": {
+    "H": 1.0002554340360348e-12,
+    "CG": 7.105427357601002e-15,
+    "AG": 2.108725001662115e-12,
+    "com": 2.2073315397719284e-13,
+    "foot": 1.457167719820518e-16
+  },
+  "hardware_actuation": false,
+  "existing_simulation_modified": false
+}

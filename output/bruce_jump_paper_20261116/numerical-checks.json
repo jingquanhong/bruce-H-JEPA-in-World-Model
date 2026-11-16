@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "tests": 12,
+  "failures": 0,
+  "errors": 0,
+  "seconds": 0.024924330000004602,
+  "hardware_actuation": false,
+  "simulation_executed": false,
+  "real_robot_model_used": false,
+  "physical_jump_validated": false
+}

@@ -1,0 +1,71 @@
+[
+  {
+    "dataset": "stand",
+    "frames": 250,
+    "clips": 243,
+    "sample_shapes": {
+      "pixels_level1": [
+        4,
+        3,
+        64,
+        64
+      ],
+      "proprio_level1": [
+        4,
+        36
+      ],
+      "action_level1": [
+        4,
+        128
+      ]
+    },
+    "action_alignment_passed": true,
+    "model_training_performed": false
+  },
+  {
+    "dataset": "box08",
+    "frames": 71,
+    "clips": 64,
+    "sample_shapes": {
+      "pixels_level1": [
+        4,
+        3,
+        64,
+        64
+      ],
+      "proprio_level1": [
+        4,
+        36
+      ],
+      "action_level1": [
+        4,
+        128
+      ]
+    },
+    "action_alignment_passed": true,
+    "model_training_performed": false
+  },
+  {
+    "dataset": "support",
+    "frames": 150,
+    "clips": 143,
+    "sample_shapes": {
+      "pixels_level1": [
+        4,
+        3,
+        64,
+        64
+      ],
+      "proprio_level1": [
+        4,
+        36
+      ],
+      "action_level1": [
+        4,
+        128
+      ]
+    },
+    "action_alignment_passed": true,
+    "model_training_performed": false
+  }
+]

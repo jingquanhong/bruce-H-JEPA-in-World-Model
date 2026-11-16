@@ -1,0 +1,27 @@
+{
+  "iterations": 202,
+  "environment_steps": 3309568,
+  "episodes": 70858,
+  "screened_successes": 0,
+  "qualified_successes": 0,
+  "elapsed_seconds": 380.14522533499985,
+  "config": {
+    "out": "output/bruce_rl_20261115/round_01",
+    "envs": 512,
+    "iterations": 400,
+    "rollout": 32,
+    "epochs": 5,
+    "minibatches": 4,
+    "lr": 0.0003,
+    "entropy": 0.003,
+    "gamma": 0.995,
+    "height": 0.01,
+    "center": 0.12,
+    "thickness": 0.02,
+    "friction": 0.8,
+    "body_height": 0.4,
+    "seed": 0,
+    "resume": null,
+    "resume_optimizer": false
+  }
+}

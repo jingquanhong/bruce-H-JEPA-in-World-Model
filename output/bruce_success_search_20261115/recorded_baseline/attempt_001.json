@@ -1,0 +1,634 @@
+{
+  "height": 0.02,
+  "swing_time": 0.22,
+  "stop": "interior QP: PrimalInfeasible",
+  "seconds": 3.6,
+  "body_height": 0.35,
+  "second_time": 0.35,
+  "config": {
+    "out": "output/bruce_success_search_20261115/recorded_baseline",
+    "heights": [
+      0.01,
+      0.02,
+      0.04,
+      0.06,
+      0.08
+    ],
+    "swing_time": [
+      0.22
+    ],
+    "second_time": 0.35,
+    "pulse_acc": 1.3,
+    "lateral": -0.03,
+    "swing_weight": 1000.0,
+    "attitude_weight": 50.0,
+    "attitude_kp": 40.0,
+    "foot_kp": 200.0,
+    "momentum_weight": 0.0,
+    "capture_mode": "recapture",
+    "landing_min": 0.235,
+    "swing_profile": "plateau",
+    "line_single": false,
+    "audit": true,
+    "track_swing_roll": true,
+    "capture_bias": 0.0,
+    "capture_wait": 0.6,
+    "second_y": null,
+    "arm_weight": 100.0,
+    "limit_horizon": 0.1,
+    "landing_z": 0.025,
+    "soft_single_com": false,
+    "record": true,
+    "duration": 6.0,
+    "body_height": 0.35,
+    "base_x": -0.03,
+    "center_x": 0.15,
+    "thickness": 0.05,
+    "width": 0.3,
+    "friction": 1.0
+  },
+  "obstacle": {
+    "center_x": 0.15,
+    "height": 0.02,
+    "thickness": 0.05,
+    "width": 0.3
+  },
+  "friction": 1.0,
+  "base_force_peak": 0.0,
+  "torque_peak": 10.499999046325684,
+  "current_peak": 29.99000106539045,
+  "box_motion": 0.07783158301007398,
+  "initial_mesh_intersections": [],
+  "contact_audit_at_2000hz": true,
+  "collision_mesh_transform_peak_error_m": 5.165676975060762e-08,
+  "robot_obstacle_contact_steps": 2826,
+  "first_robot_obstacle_contact_s": 1.6965000000000001,
+  "sampled_mesh_intersections": [
+    {
+      "t": 1.7,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 1.82,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 1.86,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 1.8800000000000001,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 1.9000000000000001,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 1.92,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 1.94,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 1.96,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 1.98,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.0,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.02,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.04,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.06,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.08,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.1,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.12,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.14,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.16,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.18,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.2,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.22,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.24,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.2600000000000002,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.2800000000000002,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.3000000000000003,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.32,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.34,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.36,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.38,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.4,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.42,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.44,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.46,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.48,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.5,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.52,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.54,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.56,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.58,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.6,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.62,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.64,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.66,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.68,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.7,
+      "links": [
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.82,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 2.84,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 2.86,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 2.88,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 2.9,
+      "links": [
+        "ankle_pitch_link_r",
+        "ankle_pitch_link_l"
+      ]
+    },
+    {
+      "t": 2.92,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 2.94,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 2.96,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 3.0,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 3.02,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 3.04,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 3.06,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 3.08,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 3.1,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 3.12,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 3.14,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 3.16,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 3.18,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 3.2,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 3.22,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 3.24,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 3.2600000000000002,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 3.3000000000000003,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 3.38,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 3.58,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    },
+    {
+      "t": 3.6,
+      "links": [
+        "ankle_pitch_link_r"
+      ]
+    }
+  ],
+  "final_feet": [
+    [
+      0.14670202136039734,
+      0.05290169268846512,
+      0.04654818773269653
+    ],
+    [
+      0.31271934509277344,
+      0.10370342433452606,
+      0.025197383016347885
+    ]
+  ],
+  "events": [
+    {
+      "phase": "accelerate",
+      "t": 1.5,
+      "com": [
+        0.02926621857441887,
+        -0.029762656682101724,
+        0.30974749419806735
+      ],
+      "velocity": [
+        1.8833100689475276e-05,
+        -7.033448285765433e-05,
+        2.6782199668049722e-05
+      ]
+    },
+    {
+      "phase": "first_swing",
+      "t": 1.605,
+      "com": [
+        0.036279591873864876,
+        -0.02959883917183419,
+        0.30967461727900003
+      ],
+      "velocity": [
+        0.13521548913282827,
+        0.0017218600296859878,
+        -0.0007548566254948747
+      ]
+    },
+    {
+      "phase": "capture",
+      "t": 1.83,
+      "com": [
+        0.09857964267504722,
+        0.028496369394850948,
+        0.3169868843195085
+      ],
+      "velocity": [
+        0.4023184670714066,
+        0.4586638574071057,
+        0.03641978042340053
+      ]
+    },
+    {
+      "phase": "recapture",
+      "t": 2.33,
+      "com": [
+        0.22425229022827767,
+        0.11419277715495928,
+        0.3091913067765714
+      ],
+      "velocity": [
+        0.056041717816435264,
+        0.015817675494030837,
+        -0.01183233078732697
+      ]
+    },
+    {
+      "phase": "second_swing",
+      "t": 2.645,
+      "com": [
+        0.23726674414619126,
+        0.1269486690299585,
+        0.30776181163830485
+      ],
+      "velocity": [
+        0.018986332231764012,
+        0.02453591970481944,
+        -0.0016203448008651935
+      ]
+    },
+    {
+      "phase": "settle",
+      "t": 3.38,
+      "com": [
+        0.34702956819368197,
+        0.07917462073086258,
+        0.3163196979167905
+      ],
+      "velocity": [
+        0.36625352082233315,
+        -0.18788755690001926,
+        -0.003638326820101201
+      ]
+    }
+  ],
+  "candidate_screen_passed": false,
+  "autonomous_crossing_success": false,
+  "trial": "crossing_attempt",
+  "recorded_frames": 179,
+  "record_hz": 50,
+  "control_hz": 200,
+  "physics_hz": 2000,
+  "warmup_seconds": 0.02,
+  "visual_hjepa_ready": false,
+  "control_mode": "joint_only",
+  "base_actuated": false,
+  "urdf": "/home/user/桌面/H-JEPA-main./H-JEPA-main/BRUCE-OP-main/Simulation/models/bruce/urdf/bruce_physical.urdf",
+  "urdf_sha256": "950dfffd951d47ebc9cd02fc69133cb7315040c301417a77dc339cc89ec1079e",
+  "action_kind": "four_consecutive_16_joint_torque_commands_Nm",
+  "action_order": "right_leg_5,left_leg_5,right_arm_3,left_arm_3",
+  "action_timing": "observation precedes four 5 ms commands; final incomplete block excluded",
+  "proprio_kind": "q10,dq10,body_specific_force3,body_gyro3,executed_leg_torque10",
+  "pixels_kind": "64x64 RGB fixed external camera; simulator truth, not onboard vision",
+  "physics_trace": "attempt_001.physics.npz",
+  "physics_trace_sha256": "897a0b2eda66e3e3ff614a10b71cf8038584850bf3b8b534a3b061e2e29ddde6",
+  "link_names": [
+    "base_link",
+    "hip_yaw_link_r",
+    "hip_pitch_link_r",
+    "hip_roll_link_r",
+    "knee_pitch_link_r",
+    "ankle_pitch_link_r",
+    "hip_yaw_link_l",
+    "hip_pitch_link_l",
+    "hip_roll_link_l",
+    "knee_pitch_link_l",
+    "ankle_pitch_link_l",
+    "shoulder_pitch_link_r",
+    "shoulder_roll_link_r",
+    "elbow_pitch_link_r",
+    "shoulder_pitch_link_l",
+    "shoulder_roll_link_l",
+    "elbow_pitch_link_l"
+  ],
+  "leg_armature_kg_m2": 0.00182,
+  "purpose": "experimental_obstacle_attempt_not_success_demonstration"
+}

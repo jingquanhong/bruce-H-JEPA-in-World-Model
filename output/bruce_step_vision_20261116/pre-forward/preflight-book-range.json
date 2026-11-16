@@ -1,0 +1,19 @@
+{
+  "source": "current pre-forward RGB-D frame after stance restored",
+  "roi_xyxy": [
+    223,
+    332,
+    349,
+    407
+  ],
+  "red_book_depth_valid_fraction": 1.0,
+  "optical_depth_percentiles_m": [
+    1.017,
+    1.076,
+    1.167
+  ],
+  "camera_to_foot_extrinsic_calibrated": false,
+  "human_foot_near_path": true,
+  "motion_requested": false,
+  "pending": "operator clears human foot and supplies approximate toe-to-book-edge gap"
+}

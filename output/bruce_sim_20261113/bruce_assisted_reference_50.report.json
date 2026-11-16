@@ -1,0 +1,897 @@
+{
+  "dataset": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/bruce_assisted_reference_50.h5",
+  "control_mode": "assisted",
+  "schema_version": "bruce_obstacle_v2",
+  "episodes": 50,
+  "frames": 17500,
+  "duration_seconds": 175.0,
+  "collection_valid": true,
+  "success": 37,
+  "scenes": {
+    "box_04": {
+      "episodes": 13,
+      "success": 7,
+      "fell": 0,
+      "kicked": 5,
+      "completed": 12
+    },
+    "box_06": {
+      "episodes": 13,
+      "success": 11,
+      "fell": 0,
+      "kicked": 2,
+      "completed": 13
+    },
+    "box_08": {
+      "episodes": 12,
+      "success": 9,
+      "fell": 0,
+      "kicked": 3,
+      "completed": 12
+    },
+    "step_10": {
+      "episodes": 12,
+      "success": 10,
+      "fell": 0,
+      "kicked": 0,
+      "completed": 10
+    }
+  },
+  "checks": [
+    {
+      "name": "nonempty_episodes",
+      "passed": true,
+      "detail": "[350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350]"
+    },
+    {
+      "name": "episode_offsets",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "metadata_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_action",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_imu_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_imu_gyro",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_foot_contact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_leg_q",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_leg_dq",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_joint_torque_est",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_est_body_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_est_body_vel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_est_body_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_est_yaw",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_sim_body_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_sim_body_vel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_sim_base_quat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_sim_contact_force",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_sim_joint_torque",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_sim_ankle_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_action",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_action",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_ep_idx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_ep_idx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_est_body_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_est_body_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_est_body_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_est_body_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_est_body_vel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_est_body_vel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_est_yaw",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_est_yaw",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_foot_contact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_foot_contact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_imu_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_imu_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_imu_gyro",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_imu_gyro",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_joint_torque_est",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_joint_torque_est",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_leg_dq",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_leg_dq",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_leg_q",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_leg_q",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_ankle_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_ankle_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_base_quat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_base_quat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_body_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_body_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_body_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_body_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_body_vel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_body_vel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_contact_force",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_contact_force",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_control_force",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_control_force",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_joint_torque",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_joint_torque",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_reference",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_reference",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_step_idx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_step_idx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_timestamp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_timestamp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_0_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_0_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_1_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_1_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_2_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_2_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_3_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_3_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_4_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_4_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_5_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_5_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_6_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_6_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_7_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_7_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_8_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_8_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_9_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_9_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_10_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_10_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_11_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_11_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_12_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_12_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_13_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_13_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_14_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_14_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_15_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_15_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_16_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_16_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_17_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_17_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_18_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_18_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_19_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_19_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_20_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_20_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_21_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_21_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_22_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_22_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_23_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_23_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_24_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_24_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_25_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_25_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_26_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_26_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_27_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_27_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_28_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_28_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_29_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_29_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_30_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_30_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_31_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_31_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_32_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_32_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_33_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_33_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_34_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_34_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_35_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_35_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_36_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_36_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_37_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_37_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_38_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_38_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_39_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_39_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_40_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_40_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_41_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_41_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_42_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_42_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_43_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_43_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_44_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_44_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_45_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_45_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_46_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_46_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_47_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_47_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_48_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_48_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_49_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_49_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "binary_contact_proxy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "torque_estimate_bound",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "recorded_action_equals_executed_hold_target",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "imu_specific_force_transform",
+      "passed": true,
+      "detail": "max error 0.03972 m/s²"
+    }
+  ],
+  "notes": [
+    "Collection validity and obstacle success are separate.",
+    "est_* are synthetic truth-plus-noise proxies, not EKF output.",
+    "clearance is an ankle-based geometric proxy, not full-mesh distance."
+  ]
+}

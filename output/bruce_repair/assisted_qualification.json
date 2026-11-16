@@ -1,0 +1,2156 @@
+{
+  "dataset": "/home/user/桌面/H-JEPA-main./H-JEPA-main/output/bruce_sim_20261113/bruce_assisted_reference_50.h5",
+  "control_mode": "assisted",
+  "schema_version": "bruce_obstacle_v2",
+  "episodes": 50,
+  "frames": 17500,
+  "duration_seconds": 175.0,
+  "collection_valid": true,
+  "success": 0,
+  "historical_criterion_passed": 37,
+  "autonomous_qualification": [
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 27.793331146240234,
+      "leg_control_torque_peak_abs_Nm": 17.110973358154297,
+      "coupled_motor_current_peak_abs_A": 76.77182878766742
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 32.20708465576172,
+      "leg_control_torque_peak_abs_Nm": 16.07318878173828,
+      "coupled_motor_current_peak_abs_A": 73.29590116228377
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": false,
+        "no_fall": true,
+        "no_box_displacement_failure": false,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "trajectory_criterion_passed",
+        "no_box_displacement_failure",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 122.07222747802734,
+      "leg_control_torque_peak_abs_Nm": 20.263267517089844,
+      "coupled_motor_current_peak_abs_A": 78.9687238420759
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": true,
+        "coupled_motor_current_within_30_A": true,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 22.162708282470703,
+      "leg_control_torque_peak_abs_Nm": 5.58377742767334,
+      "coupled_motor_current_peak_abs_A": 23.79990032741002
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 35.316650390625,
+      "leg_control_torque_peak_abs_Nm": 20.375932693481445,
+      "coupled_motor_current_peak_abs_A": 92.39185060773578
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 44.62052917480469,
+      "leg_control_torque_peak_abs_Nm": 26.938983917236328,
+      "coupled_motor_current_peak_abs_A": 116.32229668753489
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 34.275726318359375,
+      "leg_control_torque_peak_abs_Nm": 18.410449981689453,
+      "coupled_motor_current_peak_abs_A": 85.05640029907227
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": true,
+        "coupled_motor_current_within_30_A": true,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 22.97861099243164,
+      "leg_control_torque_peak_abs_Nm": 5.672583103179932,
+      "coupled_motor_current_peak_abs_A": 24.17865412575858
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 25.42283821105957,
+      "leg_control_torque_peak_abs_Nm": 11.996578216552734,
+      "coupled_motor_current_peak_abs_A": 52.1610164642334
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 37.97808074951172,
+      "leg_control_torque_peak_abs_Nm": 19.307485580444336,
+      "coupled_motor_current_peak_abs_A": 89.33289936610632
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 47.38536071777344,
+      "leg_control_torque_peak_abs_Nm": 29.379117965698242,
+      "coupled_motor_current_peak_abs_A": 127.48398917061942
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": true,
+        "coupled_motor_current_within_30_A": true,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 22.846324920654297,
+      "leg_control_torque_peak_abs_Nm": 5.690359592437744,
+      "coupled_motor_current_peak_abs_A": 24.255427633013046
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": false,
+        "no_fall": true,
+        "no_box_displacement_failure": false,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "trajectory_criterion_passed",
+        "no_box_displacement_failure",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 113.24600982666016,
+      "leg_control_torque_peak_abs_Nm": 12.076844215393066,
+      "coupled_motor_current_peak_abs_A": 42.815608978271484
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 39.6627082824707,
+      "leg_control_torque_peak_abs_Nm": 21.792919158935547,
+      "coupled_motor_current_peak_abs_A": 99.78600638253349
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 31.903118133544922,
+      "leg_control_torque_peak_abs_Nm": 28.282054901123047,
+      "coupled_motor_current_peak_abs_A": 110.99555969238281
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": true,
+        "coupled_motor_current_within_30_A": true,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 23.071195602416992,
+      "leg_control_torque_peak_abs_Nm": 5.690290927886963,
+      "coupled_motor_current_peak_abs_A": 24.25522531781878
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 26.79227066040039,
+      "leg_control_torque_peak_abs_Nm": 14.513921737670898,
+      "coupled_motor_current_peak_abs_A": 65.97558430262974
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 45.37236785888672,
+      "leg_control_torque_peak_abs_Nm": 27.025026321411133,
+      "coupled_motor_current_peak_abs_A": 116.63023812430247
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 40.755035400390625,
+      "leg_control_torque_peak_abs_Nm": 24.480520248413086,
+      "coupled_motor_current_peak_abs_A": 105.5493382045201
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": true,
+        "coupled_motor_current_within_30_A": true,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 22.730987548828125,
+      "leg_control_torque_peak_abs_Nm": 5.690059185028076,
+      "coupled_motor_current_peak_abs_A": 24.25433908190046
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 24.711170196533203,
+      "leg_control_torque_peak_abs_Nm": 11.976421356201172,
+      "coupled_motor_current_peak_abs_A": 53.21114676339286
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 33.25425720214844,
+      "leg_control_torque_peak_abs_Nm": 32.11076354980469,
+      "coupled_motor_current_peak_abs_A": 128.87989589146207
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 37.37995910644531,
+      "leg_control_torque_peak_abs_Nm": 19.918481826782227,
+      "coupled_motor_current_peak_abs_A": 91.04775837489538
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": true,
+        "coupled_motor_current_within_30_A": true,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 22.951086044311523,
+      "leg_control_torque_peak_abs_Nm": 5.687495708465576,
+      "coupled_motor_current_peak_abs_A": 24.2448970249721
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": false,
+        "no_fall": true,
+        "no_box_displacement_failure": false,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "trajectory_criterion_passed",
+        "no_box_displacement_failure",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 133.11001586914062,
+      "leg_control_torque_peak_abs_Nm": 13.96807861328125,
+      "coupled_motor_current_peak_abs_A": 42.38410132271903
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": false,
+        "no_fall": true,
+        "no_box_displacement_failure": false,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "trajectory_criterion_passed",
+        "no_box_displacement_failure",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 160.72372436523438,
+      "leg_control_torque_peak_abs_Nm": 19.800457000732422,
+      "coupled_motor_current_peak_abs_A": 55.02143451145717
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 37.51620864868164,
+      "leg_control_torque_peak_abs_Nm": 19.854724884033203,
+      "coupled_motor_current_peak_abs_A": 90.57637895856585
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": true,
+        "coupled_motor_current_within_30_A": true,
+        "trajectory_criterion_passed": false,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "trajectory_criterion_passed",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 23.8778018951416,
+      "leg_control_torque_peak_abs_Nm": 5.659929275512695,
+      "coupled_motor_current_peak_abs_A": 24.13010597229004
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": false,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "trajectory_criterion_passed",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 31.76799201965332,
+      "leg_control_torque_peak_abs_Nm": 23.41073226928711,
+      "coupled_motor_current_peak_abs_A": 98.61815588814872
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": false,
+        "no_fall": true,
+        "no_box_displacement_failure": false,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "trajectory_criterion_passed",
+        "no_box_displacement_failure",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 192.34483337402344,
+      "leg_control_torque_peak_abs_Nm": 18.929119110107422,
+      "coupled_motor_current_peak_abs_A": 84.0808187212263
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": false,
+        "no_fall": true,
+        "no_box_displacement_failure": false,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "trajectory_criterion_passed",
+        "no_box_displacement_failure",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 158.4185333251953,
+      "leg_control_torque_peak_abs_Nm": 22.151344299316406,
+      "coupled_motor_current_peak_abs_A": 84.7981289454869
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": true,
+        "coupled_motor_current_within_30_A": true,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 22.812223434448242,
+      "leg_control_torque_peak_abs_Nm": 5.6225199699401855,
+      "coupled_motor_current_peak_abs_A": 23.971360070364817
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": false,
+        "no_fall": true,
+        "no_box_displacement_failure": false,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "trajectory_criterion_passed",
+        "no_box_displacement_failure",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 138.0779266357422,
+      "leg_control_torque_peak_abs_Nm": 17.768030166625977,
+      "coupled_motor_current_peak_abs_A": 75.03473554338728
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 37.70609664916992,
+      "leg_control_torque_peak_abs_Nm": 21.867311477661133,
+      "coupled_motor_current_peak_abs_A": 93.78862653459822
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": false,
+        "no_fall": true,
+        "no_box_displacement_failure": false,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "trajectory_criterion_passed",
+        "no_box_displacement_failure",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 160.13462829589844,
+      "leg_control_torque_peak_abs_Nm": 27.964805603027344,
+      "coupled_motor_current_peak_abs_A": 114.43258830479213
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": true,
+        "coupled_motor_current_within_30_A": true,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 21.87057876586914,
+      "leg_control_torque_peak_abs_Nm": 5.597548961639404,
+      "coupled_motor_current_peak_abs_A": 23.275184631347656
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": false,
+        "no_fall": true,
+        "no_box_displacement_failure": false,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "trajectory_criterion_passed",
+        "no_box_displacement_failure",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 140.38037109375,
+      "leg_control_torque_peak_abs_Nm": 16.676387786865234,
+      "coupled_motor_current_peak_abs_A": 70.69282804216658
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 28.949081420898438,
+      "leg_control_torque_peak_abs_Nm": 26.082372665405273,
+      "coupled_motor_current_peak_abs_A": 103.19881439208984
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 33.67219924926758,
+      "leg_control_torque_peak_abs_Nm": 33.3198127746582,
+      "coupled_motor_current_peak_abs_A": 136.24768393380302
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": true,
+        "coupled_motor_current_within_30_A": true,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 22.762319564819336,
+      "leg_control_torque_peak_abs_Nm": 5.663319110870361,
+      "coupled_motor_current_peak_abs_A": 24.144345692225865
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 32.02344512939453,
+      "leg_control_torque_peak_abs_Nm": 23.48001480102539,
+      "coupled_motor_current_peak_abs_A": 98.88084956577846
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 38.087013244628906,
+      "leg_control_torque_peak_abs_Nm": 19.273296356201172,
+      "coupled_motor_current_peak_abs_A": 88.99331774030414
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 32.0346794128418,
+      "leg_control_torque_peak_abs_Nm": 27.88345718383789,
+      "coupled_motor_current_peak_abs_A": 109.79043415614538
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": true,
+        "coupled_motor_current_within_30_A": true,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 22.336210250854492,
+      "leg_control_torque_peak_abs_Nm": 5.477381706237793,
+      "coupled_motor_current_peak_abs_A": 23.352578708103728
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": false,
+        "no_fall": true,
+        "no_box_displacement_failure": false,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "trajectory_criterion_passed",
+        "no_box_displacement_failure",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 122.25263214111328,
+      "leg_control_torque_peak_abs_Nm": 13.242362976074219,
+      "coupled_motor_current_peak_abs_A": 51.73055240086147
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 33.81138229370117,
+      "leg_control_torque_peak_abs_Nm": 18.064279556274414,
+      "coupled_motor_current_peak_abs_A": 81.48345402308874
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 42.7221565246582,
+      "leg_control_torque_peak_abs_Nm": 30.249755859375,
+      "coupled_motor_current_peak_abs_A": 127.81340735299247
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": true,
+        "coupled_motor_current_within_30_A": true,
+        "trajectory_criterion_passed": false,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "trajectory_criterion_passed",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 24.92336654663086,
+      "leg_control_torque_peak_abs_Nm": 5.6880364418029785,
+      "coupled_motor_current_peak_abs_A": 24.24712521689279
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 30.168691635131836,
+      "leg_control_torque_peak_abs_Nm": 27.79671287536621,
+      "coupled_motor_current_peak_abs_A": 115.19004549298968
+    },
+    {
+      "autonomous_success": false,
+      "qualification_checks": {
+        "joint_only_control": false,
+        "base_force_zero": false,
+        "leg_torque_within_10_5_Nm": false,
+        "coupled_motor_current_within_30_A": false,
+        "trajectory_criterion_passed": true,
+        "no_fall": true,
+        "no_box_displacement_failure": true,
+        "mesh_clearance_verified": false,
+        "landing_stability_verified": false
+      },
+      "qualification_failures": [
+        "joint_only_control",
+        "base_force_zero",
+        "leg_torque_within_10_5_Nm",
+        "coupled_motor_current_within_30_A",
+        "mesh_clearance_verified",
+        "landing_stability_verified"
+      ],
+      "base_control_force_peak_abs": 23.102676391601562,
+      "leg_control_torque_peak_abs_Nm": 22.72635269165039,
+      "coupled_motor_current_peak_abs_A": 90.41882378714426
+    }
+  ],
+  "visual_hjepa_ready": false,
+  "scenes": {
+    "box_04": {
+      "episodes": 13,
+      "success": 0,
+      "historical_criterion_passed": 7,
+      "fell": 0,
+      "kicked": 5,
+      "completed": 12
+    },
+    "box_06": {
+      "episodes": 13,
+      "success": 0,
+      "historical_criterion_passed": 11,
+      "fell": 0,
+      "kicked": 2,
+      "completed": 13
+    },
+    "box_08": {
+      "episodes": 12,
+      "success": 0,
+      "historical_criterion_passed": 9,
+      "fell": 0,
+      "kicked": 3,
+      "completed": 12
+    },
+    "step_10": {
+      "episodes": 12,
+      "success": 0,
+      "historical_criterion_passed": 10,
+      "fell": 0,
+      "kicked": 0,
+      "completed": 10
+    }
+  },
+  "checks": [
+    {
+      "name": "nonempty_episodes",
+      "passed": true,
+      "detail": "[350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350]"
+    },
+    {
+      "name": "episode_offsets",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "metadata_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_action",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_imu_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_imu_gyro",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_foot_contact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_leg_q",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_leg_dq",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_joint_torque_est",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_est_body_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_est_body_vel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_est_body_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_est_yaw",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_sim_body_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_sim_body_vel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_sim_base_quat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_sim_contact_force",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_sim_joint_torque",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "shape_sim_ankle_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_action",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_action",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_ep_idx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_ep_idx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_est_body_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_est_body_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_est_body_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_est_body_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_est_body_vel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_est_body_vel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_est_yaw",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_est_yaw",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_foot_contact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_foot_contact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_imu_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_imu_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_imu_gyro",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_imu_gyro",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_joint_torque_est",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_joint_torque_est",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_leg_dq",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_leg_dq",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_leg_q",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_leg_q",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_ankle_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_ankle_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_base_quat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_base_quat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_body_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_body_acc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_body_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_body_pos",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_body_vel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_body_vel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_contact_force",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_contact_force",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_control_force",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_control_force",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_joint_torque",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_joint_torque",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_sim_reference",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_sim_reference",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_step_idx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_step_idx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "length_timestamp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "finite_timestamp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_0_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_0_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_1_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_1_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_2_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_2_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_3_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_3_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_4_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_4_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_5_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_5_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_6_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_6_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_7_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_7_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_8_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_8_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_9_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_9_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_10_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_10_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_11_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_11_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_12_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_12_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_13_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_13_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_14_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_14_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_15_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_15_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_16_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_16_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_17_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_17_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_18_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_18_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_19_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_19_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_20_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_20_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_21_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_21_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_22_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_22_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_23_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_23_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_24_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_24_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_25_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_25_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_26_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_26_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_27_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_27_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_28_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_28_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_29_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_29_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_30_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_30_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_31_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_31_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_32_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_32_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_33_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_33_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_34_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_34_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_35_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_35_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_36_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_36_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_37_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_37_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_38_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_38_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_39_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_39_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_40_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_40_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_41_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_41_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_42_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_42_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_43_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_43_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_44_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_44_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_45_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_45_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_46_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_46_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_47_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_47_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_48_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_48_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_49_indices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "episode_49_timestamps",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "binary_contact_proxy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "torque_estimate_bound",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "recorded_action_equals_executed_hold_target",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "imu_specific_force_transform",
+      "passed": true,
+      "detail": "max error 0.03972 m/s²"
+    }
+  ],
+  "notes": [
+    "Collection validity and obstacle success are separate.",
+    "Historical success flags are trajectory criteria, not verified autonomous successes.",
+    "No episode has verified full-mesh clearance and stable landing.",
+    "est_* are synthetic truth-plus-noise proxies, not EKF output.",
+    "clearance is an ankle-based geometric proxy, not full-mesh distance."
+  ]
+}

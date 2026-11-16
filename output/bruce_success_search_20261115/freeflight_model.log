@@ -1,0 +1,61 @@
+[38;5;159m[Genesis] [03:18:49] [INFO] [38;5;121m╭───────────────────────────────────────────────╮[0m[38;5;159m[0m
+[38;5;159m[Genesis] [03:18:49] [INFO] [38;5;121m│┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈[0m[38;5;159m [38;5;121m[1m[3mGenesis[0m[38;5;159m [38;5;121m┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈┉┈│[0m[38;5;159m[0m
+[38;5;159m[Genesis] [03:18:49] [INFO] [38;5;121m╰───────────────────────────────────────────────╯[0m[38;5;159m[0m
+[38;5;159m[Genesis] [03:18:49] [INFO] Running on [38;5;121m[NVIDIA GeForce RTX 3060][0m[38;5;159m with backend [38;5;121mgs.cuda[0m[38;5;159m. Device memory: [38;5;121m11.62[0m[38;5;159m GB.[0m
+[38;5;159m[Genesis] [03:18:49] [INFO] 🚀 Genesis initialized. 🔖 version: [38;5;121m1.4.4[0m[38;5;159m, 🎨 theme: [38;5;121mdark[0m[38;5;159m, 🌱 seed: [38;5;121m0[0m[38;5;159m, 🐛 debug: [38;5;121mFalse[0m[38;5;159m, 📏 precision: [38;5;121m32[0m[38;5;159m, 🔥 performance: [38;5;121mFalse[0m[38;5;159m, 💬 verbose: [38;5;121mINFO[0m[38;5;159m[0m
+[38;5;226m[Genesis] [03:18:49] [WARNING] Scene.show_FPS is deprecated. Please use Scene.options.profiling.show_FPS[0m
+[38;5;159m[Genesis] [03:18:49] [INFO] Scene [38;5;121m[3m<125a6b0>[0m[38;5;159m created.[0m
+[38;5;159m[Genesis] [03:18:49] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mplane_371e6a8[0m[38;5;159m. idx: [38;5;121m0[0m[38;5;159m, morph: [38;5;121m<gs.morphs.Plane>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;226m[Genesis] [03:18:50] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [03:18:50] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [03:18:50] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [03:18:50] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;226m[Genesis] [03:18:50] [WARNING] Mesh is not watertight. Falling back to convex hull for estimating inertial properties.[0m
+[38;5;159m[Genesis] [03:18:50] [INFO] Adding [38;5;121m<gs.engine.entities.RigidEntity>[0m[38;5;159m [38;5;121m[3mbruce_d5cfe1c[0m[38;5;159m. idx: [38;5;121m1[0m[38;5;159m, morph: [38;5;121m<gs.morphs.URDF(file='/home/user/桌面/H-JEPA-main./H-JEPA-main/BRUCE-OP-main/Simulation/models/bruce/urdf/bruce_physical.urdf')>[0m[38;5;159m, material: [38;5;121m<gs.materials.Rigid>[0m[38;5;159m.[0m
+[38;5;159m[Genesis] [03:18:50] [INFO] Building scene [38;5;121m[3m<125a6b0>[0m[38;5;159m...[0m
+[38;5;226m[Genesis] [03:18:50] [WARNING] Filtered out geometry pairs causing self-collision for the neutral configuration (qpos0): (2, 4), (7, 9). Consider tuning Morph option 'decompose_robot_error_threshold' or specify dedicated collision meshes. This behavior can be disabled by setting Morph option 'enable_neutral_collision=True'.[0m
+[38;5;159m[Genesis] [03:18:51] [INFO] Compiling simulation kernels...[0m
+[38;5;159m[Genesis] [03:18:51] [INFO] Building visualizer...[0m
+{
+  "schur_max_abs_error": 1.0023103761552798e-06,
+  "mass_matrix_max_abs_error": 1.0042720733210997e-06,
+  "engine_com": [
+    0.016155943274497986,
+    0.00024970827507786453,
+    1.4490559101104736
+  ],
+  "pin_com": [
+    0.016155950345996387,
+    0.0002497049133434355,
+    1.449055968914753
+  ],
+  "predicted_body_angular_acc": [
+    4.756155576575801e-06,
+    0.021969253382490325,
+    -2.633281301145985e-05
+  ],
+  "actual_body_angular_acc": [
+    -5.990266799926758e-06,
+    0.021663665771484375,
+    -1.9587576389312744e-05
+  ],
+  "command": [
+    -0.00041060751359921725,
+    0.012274625029745745,
+    -0.0009340493130778089,
+    -0.41354301567574764,
+    0.08814110929639017,
+    -0.00016491288771151483,
+    0.010259005788827047,
+    -0.0005943599986546904,
+    -0.41305574212132284,
+    0.08816570093995243,
+    -0.0001977064370958445,
+    0.0028453272897599607,
+    0.00010554489818426007,
+    3.3914036676350095e-05,
+    -0.001554227949549264,
+    -0.00010029755244171696
+  ]
+}
+[38;5;159m[Genesis] [03:18:52] [INFO] 💤 Exiting Genesis and caching compiled kernels...[0m

@@ -1,0 +1,240 @@
+{
+  "target": "visually confirmed orange, tracked by color and geometry",
+  "observation_count": 16,
+  "valid_direct_ranges": 0,
+  "range_accepted": false,
+  "distance_m": null,
+  "candidate_range_median_m": null,
+  "acceptance_rule": ">=3 valid frames, >=75% frames valid, range spread <=0.10m; no hole filling",
+  "target_range_m": 1.0,
+  "range_is": "camera to visible orange surface; center offset not calibrated",
+  "samples": [
+    {
+      "index": 0,
+      "target_candidates": 1,
+      "direct_range_valid": false,
+      "distance_m": null,
+      "spatial_alignment": "SDK ALIGN_D2C_SW_MODE",
+      "hardware_frame_sync": false,
+      "bbox_xyxy": [
+        310,
+        264,
+        320,
+        275
+      ],
+      "center_xy": [
+        314.5,
+        269.0
+      ],
+      "mask_pixels": 89,
+      "inner_pixels": 56,
+      "valid_depth_pixels": 0,
+      "valid_depth_fraction": 0.0
+    },
+    {
+      "index": 1,
+      "target_candidates": 1,
+      "direct_range_valid": false,
+      "distance_m": null,
+      "spatial_alignment": "SDK ALIGN_D2C_SW_MODE",
+      "hardware_frame_sync": false,
+      "bbox_xyxy": [
+        310,
+        264,
+        320,
+        272
+      ],
+      "center_xy": [
+        314.5,
+        267.5
+      ],
+      "mask_pixels": 61,
+      "inner_pixels": 34,
+      "valid_depth_pixels": 0,
+      "valid_depth_fraction": 0.0
+    },
+    {
+      "index": 2,
+      "target_candidates": 1,
+      "direct_range_valid": false,
+      "distance_m": null,
+      "spatial_alignment": "SDK ALIGN_D2C_SW_MODE",
+      "hardware_frame_sync": false,
+      "bbox_xyxy": [
+        310,
+        264,
+        320,
+        274
+      ],
+      "center_xy": [
+        314.5,
+        268.5
+      ],
+      "mask_pixels": 73,
+      "inner_pixels": 43,
+      "valid_depth_pixels": 0,
+      "valid_depth_fraction": 0.0
+    },
+    {
+      "index": 3,
+      "target_candidates": 1,
+      "direct_range_valid": false,
+      "distance_m": null,
+      "spatial_alignment": "SDK ALIGN_D2C_SW_MODE",
+      "hardware_frame_sync": false,
+      "bbox_xyxy": [
+        309,
+        264,
+        320,
+        273
+      ],
+      "center_xy": [
+        314.0,
+        268.0
+      ],
+      "mask_pixels": 80,
+      "inner_pixels": 50,
+      "valid_depth_pixels": 0,
+      "valid_depth_fraction": 0.0
+    },
+    {
+      "index": 4,
+      "target_candidates": 1,
+      "direct_range_valid": false,
+      "distance_m": null,
+      "spatial_alignment": "SDK ALIGN_D2C_SW_MODE",
+      "hardware_frame_sync": false,
+      "bbox_xyxy": [
+        308,
+        263,
+        320,
+        275
+      ],
+      "center_xy": [
+        313.5,
+        268.5
+      ],
+      "mask_pixels": 109,
+      "inner_pixels": 70,
+      "valid_depth_pixels": 0,
+      "valid_depth_fraction": 0.0
+    },
+    {
+      "index": 5,
+      "target_candidates": 1,
+      "direct_range_valid": false,
+      "distance_m": null,
+      "spatial_alignment": "SDK ALIGN_D2C_SW_MODE",
+      "hardware_frame_sync": false,
+      "bbox_xyxy": [
+        308,
+        263,
+        320,
+        275
+      ],
+      "center_xy": [
+        313.5,
+        268.5
+      ],
+      "mask_pixels": 106,
+      "inner_pixels": 69,
+      "valid_depth_pixels": 0,
+      "valid_depth_fraction": 0.0
+    },
+    {
+      "index": 6,
+      "target_candidates": 1,
+      "direct_range_valid": false,
+      "distance_m": null,
+      "spatial_alignment": "SDK ALIGN_D2C_SW_MODE",
+      "hardware_frame_sync": false,
+      "bbox_xyxy": [
+        310,
+        265,
+        316,
+        272
+      ],
+      "center_xy": [
+        312.5,
+        268.0
+      ],
+      "mask_pixels": 29,
+      "inner_pixels": 11,
+      "valid_depth_pixels": 0,
+      "valid_depth_fraction": 0.0
+    },
+    {
+      "index": 7,
+      "target_candidates": 0,
+      "direct_range_valid": false,
+      "distance_m": null,
+      "spatial_alignment": "SDK ALIGN_D2C_SW_MODE",
+      "hardware_frame_sync": false
+    },
+    {
+      "index": 8,
+      "target_candidates": 0,
+      "direct_range_valid": false,
+      "distance_m": null,
+      "spatial_alignment": "SDK ALIGN_D2C_SW_MODE",
+      "hardware_frame_sync": false
+    },
+    {
+      "index": 9,
+      "target_candidates": 0,
+      "direct_range_valid": false,
+      "distance_m": null,
+      "spatial_alignment": "SDK ALIGN_D2C_SW_MODE",
+      "hardware_frame_sync": false
+    },
+    {
+      "index": 10,
+      "target_candidates": 0,
+      "direct_range_valid": false,
+      "distance_m": null,
+      "spatial_alignment": "SDK ALIGN_D2C_SW_MODE",
+      "hardware_frame_sync": false
+    },
+    {
+      "index": 11,
+      "target_candidates": 0,
+      "direct_range_valid": false,
+      "distance_m": null,
+      "spatial_alignment": "SDK ALIGN_D2C_SW_MODE",
+      "hardware_frame_sync": false
+    },
+    {
+      "index": 12,
+      "target_candidates": 0,
+      "direct_range_valid": false,
+      "distance_m": null,
+      "spatial_alignment": "SDK ALIGN_D2C_SW_MODE",
+      "hardware_frame_sync": false
+    },
+    {
+      "index": 13,
+      "target_candidates": 0,
+      "direct_range_valid": false,
+      "distance_m": null,
+      "spatial_alignment": "SDK ALIGN_D2C_SW_MODE",
+      "hardware_frame_sync": false
+    },
+    {
+      "index": 14,
+      "target_candidates": 0,
+      "direct_range_valid": false,
+      "distance_m": null,
+      "spatial_alignment": "SDK ALIGN_D2C_SW_MODE",
+      "hardware_frame_sync": false
+    },
+    {
+      "index": 15,
+      "target_candidates": 0,
+      "direct_range_valid": false,
+      "distance_m": null,
+      "spatial_alignment": "SDK ALIGN_D2C_SW_MODE",
+      "hardware_frame_sync": false
+    }
+  ],
+  "motor_commands_written": false
+}
