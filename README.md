@@ -375,7 +375,50 @@ with planners `flat` for LeWM and `l2` for H-JEPA/HWM.
 | `l2`, `l3`, `l4` | Hierarchical planning for H-JEPA and HWM |
 | `l2_project`, `l3_project`, `l4_project` | Level-1 planning with cost in the level-2/3/4 latent |
 
-## 6) Citation
+## 6) Bruce humanoid work (this fork)
+
+This fork extends H-JEPA with a **BRUCE humanoid** pipeline: Genesis-based step-over
+data collection, signal-fidelity modelling against the real BRUCE-OP hardware chain,
+and on-robot lateral diagnostics.
+
+### 6.1) Step-over data collection (Genesis)
+
+| File | Role |
+|---|---|
+| `scripts/data/bruce/collect_bruce.py` | Episode runner: reset, warm-up, target interpolation, 100 Hz recording, clearance/kick/fall judging |
+| `scripts/data/bruce/bruce_env.py` | Genesis scene wrapper: robot/box build, contact attribution, foot forces, ankle frames |
+| `scripts/data/bruce/bruce_signals.py` | Signal taxonomy (`REAL_COLUMNS` / `DERIVED_COLUMNS` / `SIM_COLUMNS`), torque-estimate quantisation chain, IMU bias model |
+| `scripts/data/bruce/config/bruce_stepover.yaml` | Scene set, DR ranges, output layout |
+| `scripts/data/bruce/check_dataset.py` | 22 structural + 7 physical-consistency checks, per-scene statistics |
+| `scripts/data/bruce/make_figures.py` | Static PNG figures (trajectory, time series, dataset statistics) |
+| `scripts/data/bruce/verify_hjepa_read.py` | Verifies the produced HDF5 loads through `stable_worldmodel.data.dataset.HDF5Dataset` |
+
+Signal fidelity follows the BRUCE-OP hardware chain: 10-D leg-joint actions, current
+quantisation at 0.0333 A/LSB through `IQ2TORQUE = 0.35`, torque saturation at
+±10.5 N·m, and IMU specific force computed as `Rᵀ(a_world + g)`.
+
+```bash
+# collect (needs the `nudt` env for Genesis)
+python scripts/data/bruce/collect_bruce.py \
+  --config scripts/data/bruce/config/bruce_stepover.yaml \
+  --episodes 50 --out bruce_stepover_50
+
+# QC (needs the `hjepa` env for h5py/hdf5plugin)
+python scripts/data/bruce/check_dataset.py --dataset bruce_stepover_50
+```
+
+Latest batch: 50 episodes / 17 500 frames at 100 Hz, 70.0 % success, 0 falls.
+See [`scripts/data/bruce/README.md`](scripts/data/bruce/README.md) for the full record
+and the known limitations.
+
+### 6.2) On-robot lateral diagnostics
+
+`output/orange_approach_20261115/` holds the Khadas-side Bruce-OP tooling: bounded
+side-step requests, feedback health checks, and offline supervisor tests. The lateral
+bout runner is strictly an **observer** — it never opens an actuator interface, and
+all motion is executed by the single standing supervisor.
+
+## 7) Citation
 
 ```bibtex
 @article{zhang2026hjepa,
@@ -386,6 +429,6 @@ with planners `flat` for LeWM and `l2` for H-JEPA/HWM.
 }
 ```
 
-## 7) License
+## 8) License
 
 MIT (see `LICENSE`).
