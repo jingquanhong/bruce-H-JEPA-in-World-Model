@@ -7,7 +7,7 @@
 产出:
   traj_xz.png       每场景的 x-z 剖面（基座 / 双踝 / 障碍箱 / 最小净空标注）
   timeseries.png    单条 episode 的信号时序（IMU / 足底 / 腿角 / 力矩估计）
-  dataset_stats.png 逐场景成功率、净空分布、抬脚余量-净空关系、基座位移轨迹
+  dataset_stats.png 逐场景轨迹判据通过率、净空分布、抬脚余量-净空关系、基座位移轨迹
 """
 
 from __future__ import annotations
@@ -196,8 +196,8 @@ def fig_stats(path, ep_len, ep_off, cols, metas, outdir):
     ax.set_xticks(range(len(scenes)))
     ax.set_xticklabels(scenes, fontsize=9)
     ax.set_ylim(0, 112)
-    ax.set_ylabel("成功率 (%)")
-    ax.set_title("逐场景成功率", fontsize=11)
+    ax.set_ylabel("轨迹判据通过率 (%)")
+    ax.set_title("逐场景轨迹判据通过率", fontsize=11)
     ax.grid(alpha=0.25, axis="y")
 
     ax = axes[0, 1]
@@ -226,7 +226,7 @@ def fig_stats(path, ep_len, ep_off, cols, metas, outdir):
     ax.axhline(0.0, color="#888", ls="--", lw=1.0)
     ax.set_xlabel("抬脚净空余量 lift_extra (mm)")
     ax.set_ylabel("实测越障净空 (mm)")
-    ax.set_title("抬脚余量 → 实际净空（绿=成功 / 红=失败）", fontsize=11)
+    ax.set_title("抬脚余量 → 实际净空（绿=通过 / 红=未通过）", fontsize=11)
     ax.legend(fontsize=8)
     ax.grid(alpha=0.25)
 
@@ -238,12 +238,15 @@ def fig_stats(path, ep_len, ep_off, cols, metas, outdir):
                 color=C_OK if m["success"] else C_BAD, alpha=0.8)
     ax.set_xlabel("基座 x (m)")
     ax.set_ylabel("episode")
-    ax.set_title("逐集基座位移（绿=成功 / 红=失败）", fontsize=11)
+    ax.set_title("逐集基座位移（绿=通过 / 红=未通过）", fontsize=11)
     ax.grid(alpha=0.25)
 
-    mode = "基座辅助参考" if metas[0].get("base_actuated") else "自由基座尝试"
+    if "base_actuated" in metas[0]:
+        mode = "基座辅助参考" if metas[0]["base_actuated"] else "自由基座尝试"
+    else:
+        mode = "驱动模式未记录"
     fig.suptitle(f"Bruce {mode}（{len(metas)} 集，"
-                 f"成功率 {succ.mean()*100:.0f}%）", fontsize=13)
+                 f"轨迹判据通过率 {succ.mean()*100:.0f}%）", fontsize=13)
     fig.tight_layout()
     p = outdir / "dataset_stats.png"
     fig.savefig(p)

@@ -18,6 +18,21 @@ def load_meta(f):
     return [json.loads(m.decode() if isinstance(m, bytes) else m) for m in f['ep_meta'][:]]
 
 
+def control_force_matrix(f, total):
+    """重建 (N, 22) 控制力矩阵：基座6 | 右腿5 | 左腿5 | 右臂3 | 左臂3。
+
+    新采集器直接记录 22 维 sim_control_force；早期数据集只存了腿段
+    sim_joint_torque，此时基座与手臂项以 0 填充，仅供结构检查跑通，
+    不构成「基座未驱动」的证据。
+    """
+    if 'sim_control_force' in f:
+        return np.asarray(f['sim_control_force'][:], dtype=float), 'sim_control_force'
+    forces = np.zeros((int(total), 22))
+    if 'sim_joint_torque' in f:
+        forces[:, 6:16] = np.asarray(f['sim_joint_torque'][:], dtype=float)
+    return forces, 'sim_joint_torque(legs only)'
+
+
 def validate(path):
     checks = []
 
@@ -54,11 +69,11 @@ def validate(path):
         tau = f['joint_torque_est'][:]
         add('torque_estimate_bound', np.abs(tau).max() <= bs.TORQUE_MAX + 1e-8)
         mode = str(f.attrs.get('control_mode', 'legacy_unspecified'))
+        forces, force_source = control_force_matrix(f, total)
         if 'sim_reference' in f:
             add('recorded_action_equals_executed_hold_target',
                 np.array_equal(f['action'][:], f['sim_reference'][:, 6:16]))
         if mode == 'joint_only':
-            forces = f['sim_control_force'][:]
             add('unactuated_base', np.abs(forces[:, :6]).max() < 1e-6)
             add('leg_actuator_force_bound', np.abs(forces[:, 6:16]).max() <= 10.5 + 1e-4)
         if 'sim_body_acc' in f:
@@ -70,7 +85,7 @@ def validate(path):
         qualifications = []
         for m, off, n in zip(metas, offsets, lens):
             sl = slice(int(off), int(off + n))
-            qualifications.append(qualify(m, f['sim_control_force'][sl]))
+            qualifications.append(qualify(m, forces[sl]))
         for m, qualification in zip(metas, qualifications):
             row = summary.setdefault(m['scene'], dict(episodes=0, success=0,
                 historical_criterion_passed=0, fell=0, kicked=0, completed=0))
@@ -80,6 +95,7 @@ def validate(path):
             for k in ('fell', 'kicked', 'completed'):
                 row[k] += int(m.get(k, False))
         report = dict(dataset=str(Path(path).resolve()), control_mode=mode,
+                      control_force_source=force_source,
                       schema_version=str(f.attrs.get('schema_version', 'legacy')),
                       episodes=len(lens), frames=total,
                       duration_seconds=sum(int(n) / m['record_hz'] for n, m in zip(lens, metas)),
